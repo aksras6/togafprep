@@ -254,12 +254,10 @@ function _finishMock() {
   const weakest = withPct.reduce((min, r) => r.pct < min.pct ? r : min, withPct[0]);
 
   try {
-    const hist = JSON.parse(localStorage.getItem('togaf_exam_history') || '[]');
-    hist.unshift({
+    examHistory.add({
       part: 2, score: totalPts, total: maxPts, passed: pct >= 60,
       timestamp: new Date().toISOString(), duration,
     });
-    localStorage.setItem('togaf_exam_history', JSON.stringify(hist.slice(0, 50)));
   } catch (e) {}
 
   const rows = results.map(r => `
