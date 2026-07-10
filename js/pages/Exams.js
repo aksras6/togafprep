@@ -69,6 +69,7 @@ function _renderDrillScenario() {
 
   document.getElementById('p2-runner').innerHTML = `
     <div class="p2-progress">
+      <button class="p2-exit-btn" onclick="window._p2ExitConfirm()">← Exit to Menu</button>
       <span class="p2-prog-txt">Scenario ${_p2State.idx + 1} / ${_p2State.pool.length}</span>
       <span class="p2-prog-lesson">${esc(s.lessonTitle)}</span>
     </div>
@@ -208,6 +209,7 @@ function _renderMockScenario() {
 
   document.getElementById('p2-runner').innerHTML = `
     <div class="p2-mock-header">
+      <button class="p2-exit-btn" onclick="window._p2ExitConfirm()">← Exit to Menu</button>
       <span class="p2-prog-txt">Scenario ${_p2State.idx + 1} / 8</span>
       <span id="p2-mock-timer" class="p2-mock-timer">90:00</span>
     </div>
@@ -279,6 +281,13 @@ function _finishMock() {
       </div>
     </div>`;
 }
+
+window._p2ExitConfirm = function () {
+  if (_p2State && _p2State.type === 'mock') {
+    if (!confirm('Exit the mock exam? Your progress on this attempt will not be saved.')) return;
+  }
+  window._p2Restart();
+};
 
 window._p2Restart = function () {
   clearInterval(_p2Timer);
@@ -385,7 +394,7 @@ ${history.length ? `
 .p2-progress{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-size:.8rem;}
 .p2-prog-txt{font-family:var(--font-mono);color:var(--text-muted);}
 .p2-prog-lesson{color:var(--text-secondary);}
-.p2-mock-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+.p2-mock-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;} .p2-exit-btn{padding:5px 12px;font-size:.74rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg-elevated);color:var(--text-muted);cursor:pointer;font-family:var(--font-mono);} .p2-exit-btn:hover{border-color:var(--danger);color:var(--danger);}
 .p2-mock-timer{font-family:var(--font-mono);font-size:1.1rem;font-weight:bold;padding:6px 14px;border:1px solid var(--border);border-radius:var(--radius);color:var(--text-primary);}
 .p2-timer-warn{color:var(--warning);border-color:var(--warning);}
 .p2-timer-danger{color:var(--danger);border-color:var(--danger);animation:p2blink .8s step-end infinite;}
