@@ -10,22 +10,30 @@
       {
         "letter": "A",
         "points": 0,
-        "text": "All outputs in the Reference Library. Wrong — the Reference Library is not a catch-all."
+        "text": "All outputs in the Reference Library. Wrong — the Reference Library is not a catch-all.",
+        "action": "All outputs in the Reference Library.",
+        "rationale": "Wrong — the Reference Library is not a catch-all."
       },
       {
         "letter": "B",
         "points": 1,
-        "text": "Vision and principles in Landscape; compliance in Governance; data entity catalog and patterns in Reference Library. Partially right but incorrectly groups the data entity catalog with integration patterns."
+        "text": "Vision and principles in Landscape; compliance in Governance; data entity catalog and patterns in Reference Library. Partially right but incorrectly groups the data entity catalog with integration patterns.",
+        "action": "Vision and principles in Landscape; compliance in Governance; data entity catalog and patterns in Reference Library.",
+        "rationale": "Partially right but incorrectly groups the data entity catalog with integration patterns."
       },
       {
         "letter": "C",
         "points": 3,
-        "text": "Vision and principles in Landscape; compliance in Governance; data entity catalog in Landscape; patterns in Reference Library. Mostly right but misplaces principles — they belong in the Architecture Metamodel, not the Landscape."
+        "text": "Vision and principles in Landscape; compliance in Governance; data entity catalog in Landscape; patterns in Reference Library. Mostly right but misplaces principles — they belong in the Architecture Metamodel, not the Landscape.",
+        "action": "Vision and principles in Landscape; compliance in Governance; data entity catalog in Landscape; patterns in Reference Library.",
+        "rationale": "Mostly right but misplaces principles — they belong in the Architecture Metamodel, not the Landscape."
       },
       {
         "letter": "D",
         "points": 5,
-        "text": "Architecture Vision in Architecture Landscape; principles in Architecture Metamodel; compliance record in Governance Repository; data entity catalog in Architecture Landscape; integration patterns in Reference Library. Correct placement of every output."
+        "text": "Architecture Vision in Architecture Landscape; principles in Architecture Metamodel; compliance record in Governance Repository; data entity catalog in Architecture Landscape; integration patterns in Reference Library. Correct placement of every output.",
+        "action": "Architecture Vision in Architecture Landscape; principles in Architecture Metamodel; compliance record in Governance Repository; data entity catalog in Architecture Landscape; integration patterns in Reference Library.",
+        "rationale": "Correct placement of every output."
       }
     ],
     "maxScore": 5,
@@ -42,22 +50,30 @@
       {
         "letter": "A",
         "points": 1,
-        "text": "Agree — ADM allows flexibility and Azure has been selected. Partially right on flexibility but wrong in practice — skipping Phase D means no validated Technology Architecture exists."
+        "text": "Agree — ADM allows flexibility and Azure has been selected. Partially right on flexibility but wrong in practice — skipping Phase D means no validated Technology Architecture exists.",
+        "action": "Agree — ADM allows flexibility and Azure has been selected.",
+        "rationale": "Partially right on flexibility but wrong in practice — skipping Phase D means no validated Technology Architecture exists."
       },
       {
         "letter": "B",
         "points": 0,
-        "text": "Decline — all phases must be completed in strict sequence. Contradicts TOGAF directly."
+        "text": "Decline — all phases must be completed in strict sequence. Contradicts TOGAF directly.",
+        "action": "Decline — all phases must be completed in strict sequence.",
+        "rationale": "Contradicts TOGAF directly."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Acknowledge the Azure selection partially addresses concerns, but Phase D must still be completed — to formally document the Technology Architecture, validate it against Phases B and C, and identify gaps or constraints the contract may have introduced. Best answer."
+        "text": "Acknowledge the Azure selection partially addresses concerns, but Phase D must still be completed — to formally document the Technology Architecture, validate it against Phases B and C, and identify gaps or constraints the contract may have introduced. Best answer.",
+        "action": "Acknowledge the Azure selection partially addresses concerns, but Phase D must still be completed — to formally document the Technology Architecture, validate it against Phases B and C, and identify gaps or constraints the contract may have introduced.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 0,
-        "text": "Escalate to Architecture Board and suspend all work. Disproportionate for a routine delivery situation."
+        "text": "Escalate to Architecture Board and suspend all work. Disproportionate for a routine delivery situation.",
+        "action": "Escalate to Architecture Board and suspend all work.",
+        "rationale": "Disproportionate for a routine delivery situation."
       }
     ],
     "maxScore": 5,
@@ -74,22 +90,30 @@
       {
         "letter": "A",
         "points": 0,
-        "text": "Agree with the junior architect. Since Azure is already confirmed as the platform, starting at the Physical level is an efficient use of time and consistent with the ADM's flexibility. Wrong — ADM flexibility applies to phase sequencing, not to skipping abstraction levels within a phase. Starting at Physical without Conceptual or Logical means the data model is driven by the platform's constraints rather than the business's requirements."
+        "text": "Agree with the junior architect. Since Azure is already confirmed as the platform, starting at the Physical level is an efficient use of time and consistent with the ADM's flexibility. Wrong — ADM flexibility applies to phase sequencing, not to skipping abstraction levels within a phase. Starting at Physical without Conceptual or Logical means the data model is driven by the platform's constraints rather than the business's requirements.",
+        "action": "Agree with the junior architect. Since Azure is already confirmed as the platform, starting at the Physical level is an efficient use of time and consistent with the ADM's flexibility.",
+        "rationale": "Wrong — ADM flexibility applies to phase sequencing, not to skipping abstraction levels within a phase. Starting at Physical without Conceptual or Logical means the data model is driven by the platform's constraints rather than the business's requirements."
       },
       {
         "letter": "B",
         "points": 1,
-        "text": "Disagree. The junior architect should begin at the Logical level before moving to the Physical level, since the Logical level is implementation-independent. Partially right in identifying the need for a Logical level, but skips the Conceptual level entirely — without first defining the business data entities (what \"Customer,\" \"Invoice,\" \"Employee\" mean to GlobalTech), the Logical data model will be incomplete."
+        "text": "Disagree. The junior architect should begin at the Logical level before moving to the Physical level, since the Logical level is implementation-independent. Partially right in identifying the need for a Logical level, but skips the Conceptual level entirely — without first defining the business data entities (what \"Customer,\" \"Invoice,\" \"Employee\" mean to GlobalTech), the Logical data model will be incomplete.",
+        "action": "Disagree. The junior architect should begin at the Logical level before moving to the Physical level, since the Logical level is implementation-independent.",
+        "rationale": "Partially right in identifying the need for a Logical level, but skips the Conceptual level entirely — without first defining the business data entities (what \"Customer,\" \"Invoice,\" \"Employee\" mean to GlobalTech), the Logical data model will be incomplete."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Disagree. The correct approach is to work through the abstraction levels in sequence: Contextual (why this data matters — what business goals and drivers it supports), Conceptual (what data entities the business needs — \"Customer,\" \"Invoice,\" \"Absence Record\"), Logical (how those entities are structured and related, implementation-independent), then Physical (how they are implemented in Azure SQL). Starting at the Physical level means the data schema will be shaped by what Azure SQL makes easy, rather than what GlobalTech's business processes require. The result is a data model that is technically functional but architecturally misaligned — and expensive to fix once data is migrated. Best answer."
+        "text": "Disagree. The correct approach is to work through the abstraction levels in sequence: Contextual (why this data matters — what business goals and drivers it supports), Conceptual (what data entities the business needs — \"Customer,\" \"Invoice,\" \"Absence Record\"), Logical (how those entities are structured and related, implementation-independent), then Physical (how they are implemented in Azure SQL). Starting at the Physical level means the data schema will be shaped by what Azure SQL makes easy, rather than what GlobalTech's business processes require. The result is a data model that is technically functional but architecturally misaligned — and expensive to fix once data is migrated. Best answer.",
+        "action": "Disagree. The correct approach is to work through the abstraction levels in sequence: Contextual (why this data matters — what business goals and drivers it supports), Conceptual (what data entities the business needs — \"Customer,\" \"Invoice,\" \"Absence Record\"), Logical (how those entities are structured and related, implementation-independent), then Physical (how they are implemented in Azure SQL).",
+        "rationale": "Starting at the Physical level means the data schema will be shaped by what Azure SQL makes easy, rather than what GlobalTech's business processes require. The result is a data model that is technically functional but architecturally misaligned — and expensive to fix once data is migrated. Best answer."
       },
       {
         "letter": "D",
         "points": 3,
-        "text": "Disagree. The junior architect should first complete the Data Entity model (the conceptual level) to ensure all business data concepts are captured before designing the database schema. Correctly identifies the need to start at the Conceptual level. Loses marks for not mentioning the Logical level between Conceptual and Physical, and for not explaining why the sequence matters architecturally."
+        "text": "Disagree. The junior architect should first complete the Data Entity model (the conceptual level) to ensure all business data concepts are captured before designing the database schema. Correctly identifies the need to start at the Conceptual level. Loses marks for not mentioning the Logical level between Conceptual and Physical, and for not explaining why the sequence matters architecturally.",
+        "action": "Disagree. The junior architect should first complete the Data Entity model (the conceptual level) to ensure all business data concepts are captured before designing the database schema.",
+        "rationale": "Correctly identifies the need to start at the Conceptual level. Loses marks for not mentioning the Logical level between Conceptual and Physical, and for not explaining why the sequence matters architecturally."
       }
     ],
     "maxScore": 5,
@@ -106,22 +130,30 @@
       {
         "letter": "A",
         "points": 1,
-        "text": "Agree. A single Architecture Definition Document is the correct TOGAF deliverable for Phase B. Technically true about the deliverable, but completely misses Views and Viewpoints."
+        "text": "Agree. A single Architecture Definition Document is the correct TOGAF deliverable for Phase B. Technically true about the deliverable, but completely misses Views and Viewpoints.",
+        "action": "Agree. A single Architecture Definition Document is the correct TOGAF deliverable for Phase B.",
+        "rationale": "Technically true about the deliverable, but completely misses Views and Viewpoints."
       },
       {
         "letter": "B",
         "points": 0,
-        "text": "Disagree. TOGAF requires separate Architecture Definition Documents for each stakeholder. Wrong — TOGAF does not require separate deliverables per stakeholder."
+        "text": "Disagree. TOGAF requires separate Architecture Definition Documents for each stakeholder. Wrong — TOGAF does not require separate deliverables per stakeholder.",
+        "action": "Disagree. TOGAF requires separate Architecture Definition Documents for each stakeholder.",
+        "rationale": "Wrong — TOGAF does not require separate deliverables per stakeholder."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Disagree. While a single Architecture Definition Document may be the formal deliverable, TOGAF's Views and Viewpoints approach requires specific Views for each stakeholder group — each using an appropriate Viewpoint to address that group's particular concerns. Best answer."
+        "text": "Disagree. While a single Architecture Definition Document may be the formal deliverable, TOGAF's Views and Viewpoints approach requires specific Views for each stakeholder group — each using an appropriate Viewpoint to address that group's particular concerns. Best answer.",
+        "action": "Disagree. While a single Architecture Definition Document may be the formal deliverable, TOGAF's Views and Viewpoints approach requires specific Views for each stakeholder group — each using an appropriate Viewpoint to address that group's particular concerns.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 3,
-        "text": "Agree but recommend structuring the document with an executive summary for the CFO, technical appendix for IT Ops, and data flow section for the DPO. Practically reasonable but doesn't use TOGAF vocabulary. Partial credit."
+        "text": "Agree but recommend structuring the document with an executive summary for the CFO, technical appendix for IT Ops, and data flow section for the DPO. Practically reasonable but doesn't use TOGAF vocabulary. Partial credit.",
+        "action": "Agree but recommend structuring the document with an executive summary for the CFO, technical appendix for IT Ops, and data flow section for the DPO.",
+        "rationale": "Practically reasonable but doesn't use TOGAF vocabulary. Partial credit."
       }
     ],
     "maxScore": 5,
@@ -138,22 +170,30 @@
       {
         "letter": "A",
         "points": 1,
-        "text": "Comply. ADM is flexible; Preliminary can run in parallel with Phase A. Acknowledges flexibility correctly but misses the core risk: making architecture decisions before governance rules are established."
+        "text": "Comply. ADM is flexible; Preliminary can run in parallel with Phase A. Acknowledges flexibility correctly but misses the core risk: making architecture decisions before governance rules are established.",
+        "action": "Comply. ADM is flexible; Preliminary can run in parallel with Phase A.",
+        "rationale": "Acknowledges flexibility correctly but misses the core risk: making architecture decisions before governance rules are established."
       },
       {
         "letter": "B",
         "points": 0,
-        "text": "Decline until full Preliminary Phase is completed. Contradicts TOGAF — the Standard does not require Preliminary to be fully completed before Phase A begins."
+        "text": "Decline until full Preliminary Phase is completed. Contradicts TOGAF — the Standard does not require Preliminary to be fully completed before Phase A begins.",
+        "action": "Decline until full Preliminary Phase is completed.",
+        "rationale": "Contradicts TOGAF — the Standard does not require Preliminary to be fully completed before Phase A begins."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Negotiate a time-boxed, lightweight Preliminary Phase — minimum viable outputs: agree scope, establish a basic governance checkpoint, define a starter set of Architecture Principles, do minimal tailoring. Document the risk and get the CTO's acknowledgement. Best answer."
+        "text": "Negotiate a time-boxed, lightweight Preliminary Phase — minimum viable outputs: agree scope, establish a basic governance checkpoint, define a starter set of Architecture Principles, do minimal tailoring. Document the risk and get the CTO's acknowledgement. Best answer.",
+        "action": "Negotiate a time-boxed, lightweight Preliminary Phase — minimum viable outputs: agree scope, establish a basic governance checkpoint, define a starter set of Architecture Principles, do minimal tailoring. Document the risk and get the CTO's acknowledgement.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 3,
-        "text": "Begin Phase A immediately and raise absence of Principles and governance as risks in the Architecture Vision, planning to retrospectively establish Preliminary outputs. Better than ignoring the problem but architecturally backwards — decisions made before the rules that govern them exist."
+        "text": "Begin Phase A immediately and raise absence of Principles and governance as risks in the Architecture Vision, planning to retrospectively establish Preliminary outputs. Better than ignoring the problem but architecturally backwards — decisions made before the rules that govern them exist.",
+        "action": "Begin Phase A immediately and raise absence of Principles and governance as risks in the Architecture Vision, planning to retrospectively establish Preliminary outputs.",
+        "rationale": "Better than ignoring the problem but architecturally backwards — decisions made before the rules that govern them exist."
       }
     ],
     "maxScore": 5,
@@ -170,22 +210,30 @@
       {
         "letter": "A",
         "points": 3,
-        "text": "Agree to add a brief note and proceed. Process detail belongs in Phase B. Partially right — Phase A is high-level. But \"add a note and move on\" is too casual; the concern needs formal capture."
+        "text": "Agree to add a brief note and proceed. Process detail belongs in Phase B. Partially right — Phase A is high-level. But \"add a note and move on\" is too casual; the concern needs formal capture.",
+        "action": "Agree to add a brief note and proceed. Process detail belongs in Phase B.",
+        "rationale": "Partially right — Phase A is high-level. But \"add a note and move on\" is too casual; the concern needs formal capture."
       },
       {
         "letter": "B",
         "points": 0,
-        "text": "Decline until a full detailed analysis of the financial close process is completed. Contradicts TOGAF — Phase A produces a high-level aspirational vision, not detailed process analysis."
+        "text": "Decline until a full detailed analysis of the financial close process is completed. Contradicts TOGAF — Phase A produces a high-level aspirational vision, not detailed process analysis.",
+        "action": "Decline until a full detailed analysis of the financial close process is completed.",
+        "rationale": "Contradicts TOGAF — Phase A produces a high-level aspirational vision, not detailed process analysis."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Acknowledge the concern formally. Update the stakeholder map. Ensure the financial close process is referenced in the Architecture Vision scope, flagged as a high-priority risk in the Statement of Architecture Work, and identified as a specific focus area for Phase B. Then proceed. Best answer."
+        "text": "Acknowledge the concern formally. Update the stakeholder map. Ensure the financial close process is referenced in the Architecture Vision scope, flagged as a high-priority risk in the Statement of Architecture Work, and identified as a specific focus area for Phase B. Then proceed. Best answer.",
+        "action": "Acknowledge the concern formally. Update the stakeholder map. Ensure the financial close process is referenced in the Architecture Vision scope, flagged as a high-priority risk in the Statement of Architecture Work, and identified as a specific focus area for Phase B. Then proceed.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 1,
-        "text": "Escalate to the Architecture Board before proceeding. Disproportionate — a stakeholder raising a process concern is a routine governance event, not an Architecture Board escalation trigger."
+        "text": "Escalate to the Architecture Board before proceeding. Disproportionate — a stakeholder raising a process concern is a routine governance event, not an Architecture Board escalation trigger.",
+        "action": "Escalate to the Architecture Board before proceeding.",
+        "rationale": "Disproportionate — a stakeholder raising a process concern is a routine governance event, not an Architecture Board escalation trigger."
       }
     ],
     "maxScore": 5,
@@ -202,22 +250,30 @@
       {
         "letter": "A",
         "points": 3,
-        "text": "Agree. TOGAF supports parallel development — no rule prevents Phase C beginning while Phase B is in progress for HR. Correctly identifies TOGAF flexibility. Loses marks for not acknowledging governance requirement (updating Statement of Architecture Work) or the dependency risk."
+        "text": "Agree. TOGAF supports parallel development — no rule prevents Phase C beginning while Phase B is in progress for HR. Correctly identifies TOGAF flexibility. Loses marks for not acknowledging governance requirement (updating Statement of Architecture Work) or the dependency risk.",
+        "action": "Agree. TOGAF supports parallel development — no rule prevents Phase C beginning while Phase B is in progress for HR.",
+        "rationale": "Correctly identifies TOGAF flexibility. Loses marks for not acknowledging governance requirement (updating Statement of Architecture Work) or the dependency risk."
       },
       {
         "letter": "B",
         "points": 0,
-        "text": "Decline. Phase B must be fully completed before Phase C begins. Directly contradicts TOGAF."
+        "text": "Decline. Phase B must be fully completed before Phase C begins. Directly contradicts TOGAF.",
+        "action": "Decline. Phase B must be fully completed before Phase C begins.",
+        "rationale": "Directly contradicts TOGAF."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Agree to begin Phase C for Finance in parallel with completing Phase B for HR, provided this is formally reflected in the Statement of Architecture Work and approved under Architecture Governance. Document the dependency risk — Data Architecture for HR cannot be finalised until Phase B for HR is complete. Best answer."
+        "text": "Agree to begin Phase C for Finance in parallel with completing Phase B for HR, provided this is formally reflected in the Statement of Architecture Work and approved under Architecture Governance. Document the dependency risk — Data Architecture for HR cannot be finalised until Phase B for HR is complete. Best answer.",
+        "action": "Agree to begin Phase C for Finance in parallel with completing Phase B for HR, provided this is formally reflected in the Statement of Architecture Work and approved under Architecture Governance. Document the dependency risk — Data Architecture for HR cannot be finalised until Phase B for HR is complete.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 1,
-        "text": "Escalate to the Architecture Board. Architecture Board escalation not required for phasing decisions within the scope of an approved Statement of Architecture Work."
+        "text": "Escalate to the Architecture Board. Architecture Board escalation not required for phasing decisions within the scope of an approved Statement of Architecture Work.",
+        "action": "Escalate to the Architecture Board.",
+        "rationale": "Architecture Board escalation not required for phasing decisions within the scope of an approved Statement of Architecture Work."
       }
     ],
     "maxScore": 5,
@@ -234,22 +290,30 @@
       {
         "letter": "A",
         "points": 0,
-        "text": "Agree. These are data quality and infrastructure issues, not architecture concerns. Fundamentally wrong — all three are core Phase C architectural concerns."
+        "text": "Agree. These are data quality and infrastructure issues, not architecture concerns. Fundamentally wrong — all three are core Phase C architectural concerns.",
+        "action": "Agree. These are data quality and infrastructure issues, not architecture concerns.",
+        "rationale": "Fundamentally wrong — all three are core Phase C architectural concerns."
       },
       {
         "letter": "B",
         "points": 1,
-        "text": "Disagree. All three issues must be fully resolved before Phase C can close. Correctly identifies them as architectural concerns but wrong on the action — Phase C identifies and creates roadmap work packages, not necessarily resolves everything before proceeding."
+        "text": "Disagree. All three issues must be fully resolved before Phase C can close. Correctly identifies them as architectural concerns but wrong on the action — Phase C identifies and creates roadmap work packages, not necessarily resolves everything before proceeding.",
+        "action": "Disagree. All three issues must be fully resolved before Phase C can close.",
+        "rationale": "Correctly identifies them as architectural concerns but wrong on the action — Phase C identifies and creates roadmap work packages, not necessarily resolves everything before proceeding."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Disagree. All three are architectural concerns Phase C is designed to surface. They must be formally documented in the Architecture Definition Document and Architecture Requirements Specification, and work packages added to the roadmap candidates. Phase D can begin once formally captured and governed — they cannot be parked in a project risk register. Best answer."
+        "text": "Disagree. All three are architectural concerns Phase C is designed to surface. They must be formally documented in the Architecture Definition Document and Architecture Requirements Specification, and work packages added to the roadmap candidates. Phase D can begin once formally captured and governed — they cannot be parked in a project risk register. Best answer.",
+        "action": "Disagree. All three are architectural concerns Phase C is designed to surface. They must be formally documented in the Architecture Definition Document and Architecture Requirements Specification, and work packages added to the roadmap candidates. Phase D can begin once formally captured and governed — they cannot be parked in a project risk register.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 1,
-        "text": "Escalate to the Architecture Board. Discovery of data quality issues during Phase C is a normal, expected outcome — not an Architecture Board escalation trigger."
+        "text": "Escalate to the Architecture Board. Discovery of data quality issues during Phase C is a normal, expected outcome — not an Architecture Board escalation trigger.",
+        "action": "Escalate to the Architecture Board.",
+        "rationale": "Discovery of data quality issues during Phase C is a normal, expected outcome — not an Architecture Board escalation trigger."
       }
     ],
     "maxScore": 5,
@@ -266,22 +330,30 @@
       {
         "letter": "A",
         "points": 1,
-        "text": "Agree. ADM is flexible and cost/team experience are valid architectural considerations. Correctly identifies these as valid inputs but misses the governance requirement — a platform change of this scale requires Architecture Board approval, not a bilateral conversation."
+        "text": "Agree. ADM is flexible and cost/team experience are valid architectural considerations. Correctly identifies these as valid inputs but misses the governance requirement — a platform change of this scale requires Architecture Board approval, not a bilateral conversation.",
+        "action": "Agree. ADM is flexible and cost/team experience are valid architectural considerations.",
+        "rationale": "Correctly identifies these as valid inputs but misses the governance requirement — a platform change of this scale requires Architecture Board approval, not a bilateral conversation."
       },
       {
         "letter": "B",
         "points": 0,
-        "text": "Decline — there is a Microsoft-only Architecture Principle. Wrong — no such principle exists. Also shuts down a legitimate concern without analysis."
+        "text": "Decline — there is a Microsoft-only Architecture Principle. Wrong — no such principle exists. Also shuts down a legitimate concern without analysis.",
+        "action": "Decline — there is a Microsoft-only Architecture Principle.",
+        "rationale": "Wrong — no such principle exists. Also shuts down a legitimate concern without analysis."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Acknowledge the concern as legitimate. Conduct a formal trade-off analysis comparing Azure and AWS against requirements from Phases B, C, and D — data residency, Dynamics 365 integration, cost, skills. Present options to the Architecture Board for a governed decision. The current Technology Architecture baseline must not change without Architecture Board approval. Best answer."
+        "text": "Acknowledge the concern as legitimate. Conduct a formal trade-off analysis comparing Azure and AWS against requirements from Phases B, C, and D — data residency, Dynamics 365 integration, cost, skills. Present options to the Architecture Board for a governed decision. The current Technology Architecture baseline must not change without Architecture Board approval. Best answer.",
+        "action": "Acknowledge the concern as legitimate. Conduct a formal trade-off analysis comparing Azure and AWS against requirements from Phases B, C, and D — data residency, Dynamics 365 integration, cost, skills. Present options to the Architecture Board for a governed decision. The current Technology Architecture baseline must not change without Architecture Board approval.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 1,
-        "text": "Defer the decision to Phase E. Partially right — TOGAF does say significant product selection belongs in Phase E — but switching the entire cloud platform would require revisiting Application Architecture, Data Architecture, and possibly Phase B. This is an Architecture Board decision, not a Phase E item."
+        "text": "Defer the decision to Phase E. Partially right — TOGAF does say significant product selection belongs in Phase E — but switching the entire cloud platform would require revisiting Application Architecture, Data Architecture, and possibly Phase B. This is an Architecture Board decision, not a Phase E item.",
+        "action": "Defer the decision to Phase E.",
+        "rationale": "Partially right — TOGAF does say significant product selection belongs in Phase E — but switching the entire cloud platform would require revisiting Application Architecture, Data Architecture, and possibly Phase B. This is an Architecture Board decision, not a Phase E item."
       }
     ],
     "maxScore": 5,
@@ -298,22 +370,30 @@
       {
         "letter": "A",
         "points": 1,
-        "text": "Agree. ADM explicitly supports parallel execution of work packages. Correctly notes TOGAF supports parallel execution but ignores the specific architectural dependency formally validated in Phase E. \"TOGAF supports parallel execution\" does not override a specific, documented dependency."
+        "text": "Agree. ADM explicitly supports parallel execution of work packages. Correctly notes TOGAF supports parallel execution but ignores the specific architectural dependency formally validated in Phase E. \"TOGAF supports parallel execution\" does not override a specific, documented dependency.",
+        "action": "Agree. ADM explicitly supports parallel execution of work packages.",
+        "rationale": "Correctly notes TOGAF supports parallel execution but ignores the specific architectural dependency formally validated in Phase E. \"TOGAF supports parallel execution\" does not override a specific, documented dependency."
       },
       {
         "letter": "B",
         "points": 0,
-        "text": "Disagree. In Phase F, all work packages must be executed in the exact sequence defined in the Architecture Roadmap. Fundamentally wrong — TOGAF does not require exact adherence to Phase E sequence in Phase F."
+        "text": "Disagree. In Phase F, all work packages must be executed in the exact sequence defined in the Architecture Roadmap. Fundamentally wrong — TOGAF does not require exact adherence to Phase E sequence in Phase F.",
+        "action": "Disagree. In Phase F, all work packages must be executed in the exact sequence defined in the Architecture Roadmap.",
+        "rationale": "Fundamentally wrong — TOGAF does not require exact adherence to Phase E sequence in Phase F."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Disagree. The WP2→WP3 dependency was formally validated in Phase E (Step 6) based on the architectural requirement that Customer master data must be cleansed before migration into Dynamics 365 Finance. Proceeding with WP3 before WP2 would migrate dirty data into the target system. The correct response is to formally document this as a risk, escalate to the Architecture Board, and propose either accelerating WP2 or formally revising the Architecture Roadmap through the governance process — not making an ad hoc delivery decision that overrides an architecturally validated dependency. Best answer."
+        "text": "Disagree. The WP2→WP3 dependency was formally validated in Phase E (Step 6) based on the architectural requirement that Customer master data must be cleansed before migration into Dynamics 365 Finance. Proceeding with WP3 before WP2 would migrate dirty data into the target system. The correct response is to formally document this as a risk, escalate to the Architecture Board, and propose either accelerating WP2 or formally revising the Architecture Roadmap through the governance process — not making an ad hoc delivery decision that overrides an architecturally validated dependency. Best answer.",
+        "action": "Disagree. The WP2→WP3 dependency was formally validated in Phase E (Step 6) based on the architectural requirement that Customer master data must be cleansed before migration into Dynamics 365 Finance. Proceeding with WP3 before WP2 would migrate dirty data into the target system. The correct response is to formally document this as a risk, escalate to the Architecture Board, and propose either accelerating WP2 or formally revising the Architecture Roadmap through the governance process — not making an ad hoc delivery decision that overrides an architecturally validated dependency.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 3,
-        "text": "Accept conditionally — a parallel running period will allow data quality issues to be identified and remediated before go-live. Shows genuine architectural thinking — parallel running is a legitimate technique. Loses marks for not engaging with the governance dimension. Accepting a change that overrides a formally validated dependency without Architecture Board involvement is a governance failure, even if the mitigation is technically sound."
+        "text": "Accept conditionally — a parallel running period will allow data quality issues to be identified and remediated before go-live. Shows genuine architectural thinking — parallel running is a legitimate technique. Loses marks for not engaging with the governance dimension. Accepting a change that overrides a formally validated dependency without Architecture Board involvement is a governance failure, even if the mitigation is technically sound.",
+        "action": "Accept conditionally — a parallel running period will allow data quality issues to be identified and remediated before go-live.",
+        "rationale": "Shows genuine architectural thinking — parallel running is a legitimate technique. Loses marks for not engaging with the governance dimension. Accepting a change that overrides a formally validated dependency without Architecture Board involvement is a governance failure, even if the mitigation is technically sound."
       }
     ],
     "maxScore": 5,
@@ -330,22 +410,30 @@
       {
         "letter": "A",
         "points": 0,
-        "text": "All four are incremental changes — all approved via standard change management. Wrong on every count. CR-01 is simplification; CR-04 is re-architecting; CR-03 affects the entire enterprise."
+        "text": "All four are incremental changes — all approved via standard change management. Wrong on every count. CR-01 is simplification; CR-04 is re-architecting; CR-03 affects the entire enterprise.",
+        "action": "All four are incremental changes — all approved via standard change management.",
+        "rationale": "Wrong on every count. CR-01 is simplification; CR-04 is re-architecting; CR-03 affects the entire enterprise."
       },
       {
         "letter": "B",
         "points": 3,
-        "text": "CR-01: Simplification. CR-02: Incremental. CR-03: Incremental (partial re-architecting of Technology Architecture). CR-04: Re-architecting. Correct on three; loses marks because CR-03 — replacing a security protocol across ALL integrations — affects every integration pattern and every stakeholder. The Standard's guideline (two or more stakeholders = likely requires redesign) makes CR-03 a re-architecting change, not incremental."
+        "text": "CR-01: Simplification. CR-02: Incremental. CR-03: Incremental (partial re-architecting of Technology Architecture). CR-04: Re-architecting. Correct on three; loses marks because CR-03 — replacing a security protocol across ALL integrations — affects every integration pattern and every stakeholder. The Standard's guideline (two or more stakeholders = likely requires redesign) makes CR-03 a re-architecting change, not incremental.",
+        "action": "CR-01: Simplification. CR-02: Incremental. CR-03: Incremental (partial re-architecting of Technology Architecture). CR-04: Re-architecting.",
+        "rationale": "Correct on three; loses marks because CR-03 — replacing a security protocol across ALL integrations — affects every integration pattern and every stakeholder. The Standard's guideline (two or more stakeholders = likely requires redesign) makes CR-03 a re-architecting change, not incremental."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "CR-01: Simplification (change management). CR-02: Incremental (change management). CR-03: Re-architecting (new ADM cycle — affects all integrations, all stakeholders, all Architecture Contracts). CR-04: Re-architecting (new ADM cycle). Two new Requests for Architecture Work issued. Best answer."
+        "text": "CR-01: Simplification (change management). CR-02: Incremental (change management). CR-03: Re-architecting (new ADM cycle — affects all integrations, all stakeholders, all Architecture Contracts). CR-04: Re-architecting (new ADM cycle). Two new Requests for Architecture Work issued. Best answer.",
+        "action": "CR-01: Simplification (change management). CR-02: Incremental (change management). CR-03: Re-architecting (new ADM cycle — affects all integrations, all stakeholders, all Architecture Contracts). CR-04: Re-architecting (new ADM cycle). Two new Requests for Architecture Work issued.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 1,
-        "text": "CR-01, 02, 03 are simplification; CR-04 is re-architecting. CR-03 as simplification is a significant error. CR-02 as simplification (not incremental) is also imprecise."
+        "text": "CR-01, 02, 03 are simplification; CR-04 is re-architecting. CR-03 as simplification is a significant error. CR-02 as simplification (not incremental) is also imprecise.",
+        "action": "CR-01, 02, 03 are simplification; CR-04 is re-architecting.",
+        "rationale": "CR-03 as simplification is a significant error. CR-02 as simplification (not incremental) is also imprecise."
       }
     ],
     "maxScore": 5,
@@ -362,22 +450,30 @@
       {
         "letter": "A",
         "points": 1,
-        "text": "Agree. Mandatory regulatory requirements take highest priority and should be implemented immediately. Correctly identifies high priority. Loses marks for bypassing the Requirements Management process — no Requirements Impact Assessment, no identification of cross-phase impacts, no Architecture Board involvement."
+        "text": "Agree. Mandatory regulatory requirements take highest priority and should be implemented immediately. Correctly identifies high priority. Loses marks for bypassing the Requirements Management process — no Requirements Impact Assessment, no identification of cross-phase impacts, no Architecture Board involvement.",
+        "action": "Agree. Mandatory regulatory requirements take highest priority and should be implemented immediately.",
+        "rationale": "Correctly identifies high priority. Loses marks for bypassing the Requirements Management process — no Requirements Impact Assessment, no identification of cross-phase impacts, no Architecture Board involvement."
       },
       {
         "letter": "B",
         "points": 0,
-        "text": "Disagree — new requirements during Phase D cannot be incorporated into the current cycle; defer to the Repository. Fundamentally wrong. TOGAF explicitly manages new requirements mid-cycle; deferring a mandatory regulatory requirement to a future cycle is indefensible."
+        "text": "Disagree — new requirements during Phase D cannot be incorporated into the current cycle; defer to the Repository. Fundamentally wrong. TOGAF explicitly manages new requirements mid-cycle; deferring a mandatory regulatory requirement to a future cycle is indefensible.",
+        "action": "Disagree — new requirements during Phase D cannot be incorporated into the current cycle; defer to the Repository.",
+        "rationale": "Fundamentally wrong. TOGAF explicitly manages new requirements mid-cycle; deferring a mandatory regulatory requirement to a future cycle is indefensible."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Formally capture the requirement in the Requirements Management process immediately. Generate a Requirements Impact Assessment to assess impact on Phase D (Technology Architecture revision), Phase C (check data flows through non-Australian services), and Phases E–F (Roadmap and migration timeline impacts). Route the decision to the Architecture Board — not a unilateral call by the EA or Head of Compliance. Best answer."
+        "text": "Formally capture the requirement in the Requirements Management process immediately. Generate a Requirements Impact Assessment to assess impact on Phase D (Technology Architecture revision), Phase C (check data flows through non-Australian services), and Phases E–F (Roadmap and migration timeline impacts). Route the decision to the Architecture Board — not a unilateral call by the EA or Head of Compliance. Best answer.",
+        "action": "Formally capture the requirement in the Requirements Management process immediately. Generate a Requirements Impact Assessment to assess impact on Phase D (Technology Architecture revision), Phase C (check data flows through non-Australian services), and Phases E–F (Roadmap and migration timeline impacts). Route the decision to the Architecture Board — not a unilateral call by the EA or Head of Compliance.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 3,
-        "text": "Agree, but require formal documentation in the Architecture Requirements Specification and update the Architecture Definition Document — no Architecture Board involvement needed as it is mandatory. Better than A but wrong to exclude Architecture Board. A change to the baselined Technology Architecture affecting previous phases requires Board review and approval."
+        "text": "Agree, but require formal documentation in the Architecture Requirements Specification and update the Architecture Definition Document — no Architecture Board involvement needed as it is mandatory. Better than A but wrong to exclude Architecture Board. A change to the baselined Technology Architecture affecting previous phases requires Board review and approval.",
+        "action": "Agree, but require formal documentation in the Architecture Requirements Specification and update the Architecture Definition Document — no Architecture Board involvement needed as it is mandatory.",
+        "rationale": "Better than A but wrong to exclude Architecture Board. A change to the baselined Technology Architecture affecting previous phases requires Board review and approval."
       }
     ],
     "maxScore": 5,
@@ -394,22 +490,30 @@
       {
         "letter": "A",
         "points": 0,
-        "text": "Support the Head of HR on both points. Architecture Governance should be pragmatic and the HR analytics platform is a business decision. Fundamentally wrong — CTO overruling the Board destroys governance authority; adopting a vendor without compliance review bypasses the governance framework entirely."
+        "text": "Support the Head of HR on both points. Architecture Governance should be pragmatic and the HR analytics platform is a business decision. Fundamentally wrong — CTO overruling the Board destroys governance authority; adopting a vendor without compliance review bypasses the governance framework entirely.",
+        "action": "Support the Head of HR on both points. Architecture Governance should be pragmatic and the HR analytics platform is a business decision.",
+        "rationale": "Fundamentally wrong — CTO overruling the Board destroys governance authority; adopting a vendor without compliance review bypasses the governance framework entirely."
       },
       {
         "letter": "B",
         "points": 3,
-        "text": "Uphold both Architecture Board decisions. CTO overruling the Board undermines governance; the HR analytics platform requires compliance review. Correct in outcome but doesn't identify the formal mechanism — the Dispute Resolution process — that the Head of HR can use to escalate the dispensation decision."
+        "text": "Uphold both Architecture Board decisions. CTO overruling the Board undermines governance; the HR analytics platform requires compliance review. Correct in outcome but doesn't identify the formal mechanism — the Dispute Resolution process — that the Head of HR can use to escalate the dispensation decision.",
+        "action": "Uphold both Architecture Board decisions.",
+        "rationale": "CTO overruling the Board undermines governance; the HR analytics platform requires compliance review. Correct in outcome but doesn't identify the formal mechanism — the Dispute Resolution process — that the Head of HR can use to escalate the dispensation decision."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Advise the CTO: (1) the formal escalation mechanism for the dispensation is the Architecture Board's Dispute Resolution process — not CTO override; (2) the HR analytics platform requires Architecture Compliance review before any adoption decision — the review will determine whether dispensation is appropriate, the architecture needs updating, or the platform should be rejected. Best answer."
+        "text": "Advise the CTO: (1) the formal escalation mechanism for the dispensation is the Architecture Board's Dispute Resolution process — not CTO override; (2) the HR analytics platform requires Architecture Compliance review before any adoption decision — the review will determine whether dispensation is appropriate, the architecture needs updating, or the platform should be rejected. Best answer.",
+        "action": "Advise the CTO: (1) the formal escalation mechanism for the dispensation is the Architecture Board's Dispute Resolution process — not CTO override; (2) the HR analytics platform requires Architecture Compliance review before any adoption decision — the review will determine whether dispensation is appropriate, the architecture needs updating, or the platform should be rejected.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 1,
-        "text": "Convene an emergency Architecture Board meeting to give the Head of HR's concerns equal weight to the Board's previous decisions. Partially recognises the Board as the decision-making body, but \"equal weight\" mischaracterises governance — the Board's decisions stand until formally overturned through the Board's own process."
+        "text": "Convene an emergency Architecture Board meeting to give the Head of HR's concerns equal weight to the Board's previous decisions. Partially recognises the Board as the decision-making body, but \"equal weight\" mischaracterises governance — the Board's decisions stand until formally overturned through the Board's own process.",
+        "action": "Convene an emergency Architecture Board meeting to give the Head of HR's concerns equal weight to the Board's previous decisions.",
+        "rationale": "Partially recognises the Board as the decision-making body, but \"equal weight\" mischaracterises governance — the Board's decisions stand until formally overturned through the Board's own process."
       }
     ],
     "maxScore": 5,
@@ -426,22 +530,30 @@
       {
         "letter": "A",
         "points": 1,
-        "text": "Maria Chen: Manage Closely (sponsor must be deeply involved). Robert Patel: Keep Informed. Anna Kowalski: Monitor. James Liu: Keep Satisfied. Maria Chen as Manage Closely is wrong — the CTO is high power but low direct interest (too busy for detail = Keep Satisfied). Robert Patel as Keep Informed is significantly wrong — high power, high interest, currently opposed = Manage Closely, highest-priority engagement."
+        "text": "Maria Chen: Manage Closely (sponsor must be deeply involved). Robert Patel: Keep Informed. Anna Kowalski: Monitor. James Liu: Keep Satisfied. Maria Chen as Manage Closely is wrong — the CTO is high power but low direct interest (too busy for detail = Keep Satisfied). Robert Patel as Keep Informed is significantly wrong — high power, high interest, currently opposed = Manage Closely, highest-priority engagement.",
+        "action": "Maria Chen: Manage Closely (sponsor must be deeply involved). Robert Patel: Keep Informed. Anna Kowalski: Monitor. James Liu: Keep Satisfied.",
+        "rationale": "Maria Chen as Manage Closely is wrong — the CTO is high power but low direct interest (too busy for detail = Keep Satisfied). Robert Patel as Keep Informed is significantly wrong — high power, high interest, currently opposed = Manage Closely, highest-priority engagement."
       },
       {
         "letter": "B",
         "points": 5,
-        "text": "Maria Chen: Keep Satisfied (high power but \"very busy, rarely available\" signals low direct interest in programme details — classic Keep Satisfied). Robert Patel: Manage Closely (high power, high interest, currently opposed — most important stakeholder engagement in Phase A). Anna Kowalski: Keep Informed (direct interest in data extraction outcomes; low formal power but high disruption potential). James Liu: Monitor initially, reclassify to Keep Informed as integration redesign approaches. Best answer — sophisticated and correct."
+        "text": "Maria Chen: Keep Satisfied (high power but \"very busy, rarely available\" signals low direct interest in programme details — classic Keep Satisfied). Robert Patel: Manage Closely (high power, high interest, currently opposed — most important stakeholder engagement in Phase A). Anna Kowalski: Keep Informed (direct interest in data extraction outcomes; low formal power but high disruption potential). James Liu: Monitor initially, reclassify to Keep Informed as integration redesign approaches. Best answer — sophisticated and correct.",
+        "action": "Maria Chen: Keep Satisfied (high power but \"very busy, rarely available\" signals low direct interest in programme details — classic Keep Satisfied). Robert Patel: Manage Closely (high power, high interest, currently opposed — most important stakeholder engagement in Phase A). Anna Kowalski: Keep Informed (direct interest in data extraction outcomes; low formal power but high disruption potential). James Liu: Monitor initially, reclassify to Keep Informed as integration redesign approaches.",
+        "rationale": "Best answer — sophisticated and correct."
       },
       {
         "letter": "C",
         "points": 1,
-        "text": "Maria Chen: Manage Closely. Robert Patel: Keep Satisfied. Anna Kowalski: Monitor. All four stakeholders receive Architecture Vision documents. Maria Chen as Manage Closely is wrong. Also, saying all four need Architecture Vision documents misunderstands Step 4 (Tailor Deliverables) — different stakeholders need different artifacts."
+        "text": "Maria Chen: Manage Closely. Robert Patel: Keep Satisfied. Anna Kowalski: Monitor. All four stakeholders receive Architecture Vision documents. Maria Chen as Manage Closely is wrong. Also, saying all four need Architecture Vision documents misunderstands Step 4 (Tailor Deliverables) — different stakeholders need different artifacts.",
+        "action": "Maria Chen: Manage Closely. Robert Patel: Keep Satisfied. Anna Kowalski: Monitor. All four stakeholders receive Architecture Vision documents.",
+        "rationale": "Maria Chen as Manage Closely is wrong. Also, saying all four need Architecture Vision documents misunderstands Step 4 (Tailor Deliverables) — different stakeholders need different artifacts."
       },
       {
         "letter": "D",
         "points": 1,
-        "text": "Maria Chen: Keep Satisfied. Robert Patel: Monitor (his opposition makes him a risk to manage at distance). Anna Kowalski: Manage Closely. James Liu: Keep Satisfied. Robert Patel as Monitor is a serious error — managing an opposed high-power stakeholder at a distance is exactly the wrong approach. Opposition intensifies the need for engagement, not reduces it."
+        "text": "Maria Chen: Keep Satisfied. Robert Patel: Monitor (his opposition makes him a risk to manage at distance). Anna Kowalski: Manage Closely. James Liu: Keep Satisfied. Robert Patel as Monitor is a serious error — managing an opposed high-power stakeholder at a distance is exactly the wrong approach. Opposition intensifies the need for engagement, not reduces it.",
+        "action": "Maria Chen: Keep Satisfied. Robert Patel: Monitor (his opposition makes him a risk to manage at distance). Anna Kowalski: Manage Closely. James Liu: Keep Satisfied.",
+        "rationale": "Robert Patel as Monitor is a serious error — managing an opposed high-power stakeholder at a distance is exactly the wrong approach. Opposition intensifies the need for engagement, not reduces it."
       }
     ],
     "maxScore": 5,
@@ -458,22 +570,30 @@
       {
         "letter": "A",
         "points": 0,
-        "text": "Team B is right on both counts: the data replication is within the Finance partition; Finance should approve the API Management change. Wrong on both — a Segment partition cannot override a Strategic Architecture principle; Finance does not own the platform."
+        "text": "Team B is right on both counts: the data replication is within the Finance partition; Finance should approve the API Management change. Wrong on both — a Segment partition cannot override a Strategic Architecture principle; Finance does not own the platform.",
+        "action": "Team B is right on both counts: the data replication is within the Finance partition; Finance should approve the API Management change.",
+        "rationale": "Wrong on both — a Segment partition cannot override a Strategic Architecture principle; Finance does not own the platform."
       },
       {
         "letter": "B",
         "points": 3,
-        "text": "Team A is right on Problem 1 (Strategic Architecture governs Segment decisions); Team C is right on Problem 2 (platform decisions within their partition; Team B must adapt). Correct on Problem 1. Loses marks on Problem 2 — a platform change that breaks multiple Segment partitions requires cross-partition coordination, not unilateral action."
+        "text": "Team A is right on Problem 1 (Strategic Architecture governs Segment decisions); Team C is right on Problem 2 (platform decisions within their partition; Team B must adapt). Correct on Problem 1. Loses marks on Problem 2 — a platform change that breaks multiple Segment partitions requires cross-partition coordination, not unilateral action.",
+        "action": "Team A is right on Problem 1 (Strategic Architecture governs Segment decisions); Team C is right on Problem 2 (platform decisions within their partition; Team B must adapt).",
+        "rationale": "Correct on Problem 1. Loses marks on Problem 2 — a platform change that breaks multiple Segment partitions requires cross-partition coordination, not unilateral action."
       },
       {
         "letter": "C",
         "points": 1,
-        "text": "Both problems should be escalated to the Architecture Board regardless. Not wrong — Board resolves disputes — but disproportionate for Problem 2 if teams can resolve via cross-partition coordination. Architecture Board is escalation, not first resort."
+        "text": "Both problems should be escalated to the Architecture Board regardless. Not wrong — Board resolves disputes — but disproportionate for Problem 2 if teams can resolve via cross-partition coordination. Architecture Board is escalation, not first resort.",
+        "action": "Both problems should be escalated to the Architecture Board regardless.",
+        "rationale": "Not wrong — Board resolves disputes — but disproportionate for Problem 2 if teams can resolve via cross-partition coordination. Architecture Board is escalation, not first resort."
       },
       {
         "letter": "D",
         "points": 5,
-        "text": "Problem 1: Strategic Architecture governs Segment partitions — Team B cannot override an enterprise principle by claiming partition ownership. Problem 2: Even within a partition, changes that materially affect other partitions require cross-partition coordination. This is the governance relationship that partitioning establishes — boundaries with defined interfaces, not isolation. Architecture Board escalation is the backstop if coordination fails. Best answer."
+        "text": "Problem 1: Strategic Architecture governs Segment partitions — Team B cannot override an enterprise principle by claiming partition ownership. Problem 2: Even within a partition, changes that materially affect other partitions require cross-partition coordination. This is the governance relationship that partitioning establishes — boundaries with defined interfaces, not isolation. Architecture Board escalation is the backstop if coordination fails. Best answer.",
+        "action": "Problem 1: Strategic Architecture governs Segment partitions — Team B cannot override an enterprise principle by claiming partition ownership. Problem 2: Even within a partition, changes that materially affect other partitions require cross-partition coordination. This is the governance relationship that partitioning establishes — boundaries with defined interfaces, not isolation. Architecture Board escalation is the backstop if coordination fails.",
+        "rationale": "Best answer."
       }
     ],
     "maxScore": 5,
@@ -490,22 +610,30 @@
       {
         "letter": "A",
         "points": 1,
-        "text": "Agree. A scheduled automated file upload achieves the same outcome as Degree 3A — update the specification. Recognises pragmatism correctly. Loses marks for accepting the deviation without formal assessment or governance. A scheduled upload is NOT equivalent to Degree 3A — the business impact of the scheduling delay must be assessed first."
+        "text": "Agree. A scheduled automated file upload achieves the same outcome as Degree 3A — update the specification. Recognises pragmatism correctly. Loses marks for accepting the deviation without formal assessment or governance. A scheduled upload is NOT equivalent to Degree 3A — the business impact of the scheduling delay must be assessed first.",
+        "action": "Agree. A scheduled automated file upload achieves the same outcome as Degree 3A — update the specification.",
+        "rationale": "Recognises pragmatism correctly. Loses marks for accepting the deviation without formal assessment or governance. A scheduled upload is NOT equivalent to Degree 3A — the business impact of the scheduling delay must be assessed first."
       },
       {
         "letter": "B",
         "points": 0,
-        "text": "Disagree — if the vendor cannot support Degree 3A, GlobalTech must select a different Procurement system. Too rigid. TOGAF supports pragmatic solutions and explicitly addresses reconciling interoperability requirements with potential solutions (ADM Techniques §6.6)."
+        "text": "Disagree — if the vendor cannot support Degree 3A, GlobalTech must select a different Procurement system. Too rigid. TOGAF supports pragmatic solutions and explicitly addresses reconciling interoperability requirements with potential solutions (ADM Techniques §6.6).",
+        "action": "Disagree — if the vendor cannot support Degree 3A, GlobalTech must select a different Procurement system.",
+        "rationale": "Too rigid. TOGAF supports pragmatic solutions and explicitly addresses reconciling interoperability requirements with potential solutions (ADM Techniques §6.6)."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Partially agree, but requires formal governance. Degree 2 is technically NOT equivalent to Degree 3A. The business impact must be assessed — does the scheduling frequency meet the business requirement for how quickly purchase orders must flow to Dynamics 365? If the deviation is acceptable, it requires a formal Change Request to the Application Architecture, Architecture Board approval, and specification updated. If the scheduling frequency does not meet business requirements, alternatives must be evaluated. Best answer."
+        "text": "Partially agree, but requires formal governance. Degree 2 is technically NOT equivalent to Degree 3A. The business impact must be assessed — does the scheduling frequency meet the business requirement for how quickly purchase orders must flow to Dynamics 365? If the deviation is acceptable, it requires a formal Change Request to the Application Architecture, Architecture Board approval, and specification updated. If the scheduling frequency does not meet business requirements, alternatives must be evaluated. Best answer.",
+        "action": "Partially agree, but requires formal governance. Degree 2 is technically NOT equivalent to Degree 3A. The business impact must be assessed — does the scheduling frequency meet the business requirement for how quickly purchase orders must flow to Dynamics 365? If the deviation is acceptable, it requires a formal Change Request to the Application Architecture, Architecture Board approval, and specification updated. If the scheduling frequency does not meet business requirements, alternatives must be evaluated.",
+        "rationale": "Best answer."
       },
       {
         "letter": "D",
         "points": 0,
-        "text": "The programme should be paused and the Procurement vendor replaced immediately. Disproportionate and contradicts TOGAF's pragmatic approach. Architecture specifications can be changed through formal governance."
+        "text": "The programme should be paused and the Procurement vendor replaced immediately. Disproportionate and contradicts TOGAF's pragmatic approach. Architecture specifications can be changed through formal governance.",
+        "action": "The programme should be paused and the Procurement vendor replaced immediately.",
+        "rationale": "Disproportionate and contradicts TOGAF's pragmatic approach. Architecture specifications can be changed through formal governance."
       }
     ],
     "maxScore": 5,
@@ -522,22 +650,30 @@
       {
         "letter": "A",
         "points": 0,
-        "text": "Agree — Azure is obviously right, alternatives analysis is redundant. This is exactly how organisations end up with undocumented, ungoverned decisions that cause problems years later."
+        "text": "Agree — Azure is obviously right, alternatives analysis is redundant. This is exactly how organisations end up with undocumented, ungoverned decisions that cause problems years later.",
+        "action": "Agree — Azure is obviously right, alternatives analysis is redundant.",
+        "rationale": "This is exactly how organisations end up with undocumented, ungoverned decisions that cause problems years later."
       },
       {
         "letter": "B",
         "points": 3,
-        "text": "Partially agree — if Azure clearly aligns, the analysis can be abbreviated: document criteria, confirm Azure meets them, briefly note why others weren't selected. Pragmatic and TOGAF-aligned (\"just enough detail\"), but loses marks for not acknowledging the hidden requirement (vendor concentration risk) already surfaced."
+        "text": "Partially agree — if Azure clearly aligns, the analysis can be abbreviated: document criteria, confirm Azure meets them, briefly note why others weren't selected. Pragmatic and TOGAF-aligned (\"just enough detail\"), but loses marks for not acknowledging the hidden requirement (vendor concentration risk) already surfaced.",
+        "action": "Partially agree — if Azure clearly aligns, the analysis can be abbreviated: document criteria, confirm Azure meets them, briefly note why others weren't selected.",
+        "rationale": "Pragmatic and TOGAF-aligned (\"just enough detail\"), but loses marks for not acknowledging the hidden requirement (vendor concentration risk) already surfaced."
       },
       {
         "letter": "C",
         "points": 1,
-        "text": "Disagree — all three alternatives require full architecture views and impact assessments regardless. Over-rigid; TOGAF explicitly allows proportionate depth (\"just enough detail to support the decision\")."
+        "text": "Disagree — all three alternatives require full architecture views and impact assessments regardless. Over-rigid; TOGAF explicitly allows proportionate depth (\"just enough detail to support the decision\").",
+        "action": "Disagree — all three alternatives require full architecture views and impact assessments regardless.",
+        "rationale": "Over-rigid; TOGAF explicitly allows proportionate depth (\"just enough detail to support the decision\")."
       },
       {
         "letter": "D",
         "points": 5,
-        "text": "Disagree with the CFO's characterisation — the analysis already surfaced a significant hidden concern (vendor concentration risk) not captured in the Vision or Principles. Even if Azure is selected, the analysis produced real value: a new Architecture Principle proposal and documented rationale. Complete to the level needed for a governed Board decision — not a bilateral CFO/EA agreement. Best answer."
+        "text": "Disagree with the CFO's characterisation — the analysis already surfaced a significant hidden concern (vendor concentration risk) not captured in the Vision or Principles. Even if Azure is selected, the analysis produced real value: a new Architecture Principle proposal and documented rationale. Complete to the level needed for a governed Board decision — not a bilateral CFO/EA agreement. Best answer.",
+        "action": "Disagree with the CFO's characterisation — the analysis already surfaced a significant hidden concern (vendor concentration risk) not captured in the Vision or Principles. Even if Azure is selected, the analysis produced real value: a new Architecture Principle proposal and documented rationale.",
+        "rationale": "Complete to the level needed for a governed Board decision — not a bilateral CFO/EA agreement. Best answer."
       }
     ],
     "maxScore": 5,
@@ -554,22 +690,30 @@
       {
         "letter": "A",
         "points": 0,
-        "text": "Agree — the diagram makes the matrix redundant. Misunderstands the different purposes: a diagram cannot support systematic queries like \"which of our 40 applications depend on the Customer entity?\""
+        "text": "Agree — the diagram makes the matrix redundant. Misunderstands the different purposes: a diagram cannot support systematic queries like \"which of our 40 applications depend on the Customer entity?\"",
+        "action": "Agree — the diagram makes the matrix redundant.",
+        "rationale": "Misunderstands the different purposes: a diagram cannot support systematic queries like \"which of our 40 applications depend on the Customer entity?\""
       },
       {
         "letter": "B",
         "points": 1,
-        "text": "Disagree — every catalog/matrix/diagram in the Content Framework must be produced without exception. Overly rigid; the Standard allows tailoring based on programme needs."
+        "text": "Disagree — every catalog/matrix/diagram in the Content Framework must be produced without exception. Overly rigid; the Standard allows tailoring based on programme needs.",
+        "action": "Disagree — every catalog/matrix/diagram in the Content Framework must be produced without exception.",
+        "rationale": "Overly rigid; the Standard allows tailoring based on programme needs."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Disagree with \"duplicate work\" — diagrams communicate visually to a broad audience; matrices support systematic governance queries impractical from a diagram alone. Tie the decision to GlobalTech's actual need: SAP decommissioning requires the Application/Data Matrix for migration scoping — not optional given the governance decisions Phase C must inform. Best answer."
+        "text": "Disagree with \"duplicate work\" — diagrams communicate visually to a broad audience; matrices support systematic governance queries impractical from a diagram alone. Tie the decision to GlobalTech's actual need: SAP decommissioning requires the Application/Data Matrix for migration scoping — not optional given the governance decisions Phase C must inform. Best answer.",
+        "action": "Disagree with \"duplicate work\" — diagrams communicate visually to a broad audience; matrices support systematic governance queries impractical from a diagram alone. Tie the decision to GlobalTech's actual need: SAP decommissioning requires the Application/Data Matrix for migration scoping.",
+        "rationale": "Not optional given the governance decisions Phase C must inform. Best answer."
       },
       {
         "letter": "D",
         "points": 0,
-        "text": "Escalate to the Architecture Board as a Compliance breach. Disproportionate — a content gap is addressed through normal EA practice, not Board escalation."
+        "text": "Escalate to the Architecture Board as a Compliance breach. Disproportionate — a content gap is addressed through normal EA practice, not Board escalation.",
+        "action": "Escalate to the Architecture Board as a Compliance breach.",
+        "rationale": "Disproportionate — a content gap is addressed through normal EA practice, not Board escalation."
       }
     ],
     "maxScore": 5,
@@ -586,22 +730,30 @@
       {
         "letter": "A",
         "points": 0,
-        "text": "Agree — this is a minor administrative task, no formal process needed. Treats a change to the practice's structural framework as trivial — precisely the ungoverned drift that undermines credibility over time."
+        "text": "Agree — this is a minor administrative task, no formal process needed. Treats a change to the practice's structural framework as trivial — precisely the ungoverned drift that undermines credibility over time.",
+        "action": "Agree — this is a minor administrative task, no formal process needed.",
+        "rationale": "Treats a change to the practice's structural framework as trivial — precisely the ungoverned drift that undermines credibility over time."
       },
       {
         "letter": "B",
         "points": 5,
-        "text": "Disagree. This is a change to the practice's own Architecture Framework — a new deliverable type. Process through Phase H of the practice's own ADM cycle: classify as simplification/incremental/re-architecting; update Framework, Ontology, and Accountability Matrix; ensure governed before applying to any programme. Best answer."
+        "text": "Disagree. This is a change to the practice's own Architecture Framework — a new deliverable type. Process through Phase H of the practice's own ADM cycle: classify as simplification/incremental/re-architecting; update Framework, Ontology, and Accountability Matrix; ensure governed before applying to any programme. Best answer.",
+        "action": "Disagree. This is a change to the practice's own Architecture Framework — a new deliverable type. Process through Phase H of the practice's own ADM cycle: classify as simplification/incremental/re-architecting; update Framework, Ontology, and Accountability Matrix; ensure governed before applying to any programme.",
+        "rationale": "Best answer."
       },
       {
         "letter": "C",
         "points": 1,
-        "text": "Disagree — any change must always trigger a completely new ADM cycle from Phase A regardless of scale. Overly rigid, contradicts TOGAF's flexibility emphasis."
+        "text": "Disagree — any change must always trigger a completely new ADM cycle from Phase A regardless of scale. Overly rigid, contradicts TOGAF's flexibility emphasis.",
+        "action": "Disagree — any change must always trigger a completely new ADM cycle from Phase A regardless of scale.",
+        "rationale": "Overly rigid, contradicts TOGAF's flexibility emphasis."
       },
       {
         "letter": "D",
         "points": 1,
-        "text": "Agree it's not a big deal but require project-specific Board approval without involving the practice's broader Framework. Excludes the reusable, governed template — undermining the Framework's purpose."
+        "text": "Agree it's not a big deal but require project-specific Board approval without involving the practice's broader Framework. Excludes the reusable, governed template — undermining the Framework's purpose.",
+        "action": "Agree it's not a big deal but require project-specific Board approval without involving the practice's broader Framework.",
+        "rationale": "Excludes the reusable, governed template — undermining the Framework's purpose."
       }
     ],
     "maxScore": 5,
@@ -618,22 +770,30 @@
       {
         "letter": "A",
         "points": 1,
-        "text": "Use Target First since the target (Azure) is stated — elaborate it first, then map back. Misapplies the decision criteria — Target First requires the baseline to be understood, which it explicitly isn't here."
+        "text": "Use Target First since the target (Azure) is stated — elaborate it first, then map back. Misapplies the decision criteria — Target First requires the baseline to be understood, which it explicitly isn't here.",
+        "action": "Use Target First since the target (Azure) is stated — elaborate it first, then map back.",
+        "rationale": "Misapplies the decision criteria — Target First requires the baseline to be understood, which it explicitly isn't here."
       },
       {
         "letter": "B",
         "points": 5,
-        "text": "Use Baseline First — the baseline (undocumented, independently managed) is complex and unclear, exactly the trigger condition. Classify as a Foundational Change Initiative — although the target direction is known, the true nature/scope of the problem isn't yet understood. Best answer."
+        "text": "Use Baseline First — the baseline (undocumented, independently managed) is complex and unclear, exactly the trigger condition. Classify as a Foundational Change Initiative — although the target direction is known, the true nature/scope of the problem isn't yet understood. Best answer.",
+        "action": "Use Baseline First — the baseline (undocumented, independently managed) is complex and unclear, exactly the trigger condition. Classify as a Foundational Change Initiative — although the target direction is known, the true nature/scope of the problem isn't yet understood.",
+        "rationale": "Best answer."
       },
       {
         "letter": "C",
         "points": 1,
-        "text": "Use Target First, classify as Bounded since the CTO has a clear desired outcome. Conflates \"has a target direction\" with \"Bounded\" — the real complexity is in the unknown baseline."
+        "text": "Use Target First, classify as Bounded since the CTO has a clear desired outcome. Conflates \"has a target direction\" with \"Bounded\" — the real complexity is in the unknown baseline.",
+        "action": "Use Target First, classify as Bounded since the CTO has a clear desired outcome.",
+        "rationale": "Conflates \"has a target direction\" with \"Bounded\" — the real complexity is in the unknown baseline."
       },
       {
         "letter": "D",
         "points": 0,
-        "text": "Neither approach appropriate until a full new Preliminary Phase reassesses the entire Architecture Capability. Unnecessarily disruptive — confuses content decisions with Capability iteration, which is only needed if the capability itself is inadequate."
+        "text": "Neither approach appropriate until a full new Preliminary Phase reassesses the entire Architecture Capability. Unnecessarily disruptive — confuses content decisions with Capability iteration, which is only needed if the capability itself is inadequate.",
+        "action": "Neither approach appropriate until a full new Preliminary Phase reassesses the entire Architecture Capability.",
+        "rationale": "Unnecessarily disruptive — confuses content decisions with Capability iteration, which is only needed if the capability itself is inadequate."
       }
     ],
     "maxScore": 5,
@@ -650,22 +810,30 @@
       {
         "letter": "A",
         "points": 0,
-        "text": "Agree — technical fix, not architecture. Have IT adjust the database directly. Mechanism ❌ none named. Governance ❌ \"quietly\"/\"have IT\" bypasses everything. Contradiction ❌ this IS a Data Security Diagram / Compliance concern — calling it \"not architecture\" is factually wrong."
+        "text": "Agree — technical fix, not architecture. Have IT adjust the database directly. Mechanism ❌ none named. Governance ❌ \"quietly\"/\"have IT\" bypasses everything. Contradiction ❌ this IS a Data Security Diagram / Compliance concern — calling it \"not architecture\" is factually wrong.",
+        "action": "Agree — technical fix, not architecture. Have IT adjust the database directly.",
+        "rationale": "Mechanism ❌ none named. Governance ❌ \"quietly\"/\"have IT\" bypasses everything. Contradiction ❌ this IS a Data Security Diagram / Compliance concern — calling it \"not architecture\" is factually wrong."
       },
       {
         "letter": "B",
         "points": 1,
-        "text": "Disagree — must go through a full new ADM cycle from Phase A. Mechanism ✅ names ADM cycle. Governance ⚠️ over-applies. Pressure ❌ ignores timeline entirely. This is likely Simplification/Incremental, not Re-architecting."
+        "text": "Disagree — must go through a full new ADM cycle from Phase A. Mechanism ✅ names ADM cycle. Governance ⚠️ over-applies. Pressure ❌ ignores timeline entirely. This is likely Simplification/Incremental, not Re-architecting.",
+        "action": "Disagree — must go through a full new ADM cycle from Phase A.",
+        "rationale": "Mechanism ✅ names ADM cycle. Governance ⚠️ over-applies. Pressure ❌ ignores timeline entirely. This is likely Simplification/Incremental, not Re-architecting."
       },
       {
         "letter": "C",
         "points": 5,
-        "text": "Acknowledge as a Data Security concern. Raise as a Compliance Assessment against the Data Security Diagram and Architecture Principles. Classify as Simplification/Incremental (configuration change, not new pattern), resolve via existing Change Request process, document and verify before go-live — without skipping governance. Hits all four MGP-C criteria."
+        "text": "Acknowledge as a Data Security concern. Raise as a Compliance Assessment against the Data Security Diagram and Architecture Principles. Classify as Simplification/Incremental (configuration change, not new pattern), resolve via existing Change Request process, document and verify before go-live — without skipping governance. Hits all four MGP-C criteria.",
+        "action": "Acknowledge as a Data Security concern. Raise as a Compliance Assessment against the Data Security Diagram and Architecture Principles. Classify as Simplification/Incremental (configuration change, not new pattern), resolve via existing Change Request process, document and verify before go-live — without skipping governance.",
+        "rationale": "Hits all four MGP-C criteria."
       },
       {
         "letter": "D",
         "points": 3,
-        "text": "Escalate immediately to an emergency out-of-cycle Architecture Board session. Names the Board ⚠️ but disproportionate — an emergency session is slower to convene than a standard Change Request, actually worse for the timeline than Option C."
+        "text": "Escalate immediately to an emergency out-of-cycle Architecture Board session. Names the Board ⚠️ but disproportionate — an emergency session is slower to convene than a standard Change Request, actually worse for the timeline than Option C.",
+        "action": "Escalate immediately to an emergency out-of-cycle Architecture Board session.",
+        "rationale": "Names the Board ⚠️ but disproportionate — an emergency session is slower to convene than a standard Change Request, actually worse for the timeline than Option C."
       }
     ],
     "maxScore": 5,

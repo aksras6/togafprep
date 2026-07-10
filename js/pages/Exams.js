@@ -64,7 +64,7 @@ function _renderDrillScenario() {
   const optsHtml = shuffle(s.options).map(o => `
     <div class="p2-opt" data-letter="${o.letter}" onclick="window._p2Select('${o.letter}')">
       <span class="p2-opt-letter">${o.letter}</span>
-      <span class="p2-opt-text">${esc(o.text)}</span>
+      <span class="p2-opt-text">${esc(o.action)}</span>
     </div>`).join('');
 
   document.getElementById('p2-runner').innerHTML = `
@@ -109,7 +109,7 @@ window._p2Select = function (letter) {
         ${s.options.slice().sort((a,b) => b.points - a.points).map(o => `
           <div class="p2-rat-row ${o.letter === letter ? 'p2-rat-yours' : ''}">
             <span class="p2-rat-score" style="color:${scoreColor(o.points, s.maxScore)}">${o.letter} — ${o.points}pt${o.points===1?'':'s'}</span>
-            <span class="p2-rat-text">${esc(o.text)}${o.letter === letter ? ' <em>(your choice)</em>' : ''}</span>
+            <span class="p2-rat-text">${esc(o.action)} <span class="p2-rat-verdict">${esc(o.rationale)}</span>${o.letter === letter ? ' <em>(your choice)</em>' : ''}</span>
           </div>`).join('')}
       </div>
       <div class="p2-source-tag">Source: ${esc(s.sourceCitation)} · ${esc(s.lessonTitle)}</div>
@@ -203,7 +203,7 @@ function _renderMockScenario() {
   const optsHtml = shuffle(s.options).map(o => `
     <div class="p2-opt" data-letter="${o.letter}" onclick="window._p2SelectMock('${o.letter}')">
       <span class="p2-opt-letter">${o.letter}</span>
-      <span class="p2-opt-text">${esc(o.text)}</span>
+      <span class="p2-opt-text">${esc(o.action)}</span>
     </div>`).join('');
 
   document.getElementById('p2-runner').innerHTML = `
@@ -409,7 +409,7 @@ ${history.length ? `
 .p2-rat-row{display:flex;gap:10px;padding:8px 10px;border-radius:var(--radius);background:var(--bg-elevated);font-size:.8rem;}
 .p2-rat-yours{border:1px solid var(--part2-color);}
 .p2-rat-score{font-family:var(--font-mono);font-weight:bold;flex-shrink:0;min-width:60px;}
-.p2-rat-text{color:var(--text-secondary);line-height:1.4;}
+.p2-rat-text{color:var(--text-secondary);line-height:1.4;} .p2-rat-verdict{display:block;margin-top:4px;font-style:italic;color:var(--text-muted);}
 .p2-source-tag{margin-top:10px;font-size:.7rem;color:var(--text-muted);font-family:var(--font-mono);}
 .p2-summary{background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;text-align:center;}
 .p2-sum-score{font-size:3rem;font-weight:bold;font-family:var(--font-mono);}
