@@ -1,0 +1,83 @@
+{
+  "id": "LES-09",
+  "moduleId": "MOD-L09",
+  "order": 9,
+  "title": "Architecture Views and Viewpoints",
+  "sourceCitation": "C220Part0e — Section 3.16",
+  "estimatedMinutes": 25,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Different stakeholders need different information from the same architecture — just as a patient, surgeon, facilities manager, and fire marshal all need different views of the same hospital. A Viewpoint is the template (lens setting). A View is the specific output produced using that template (the photograph). The Architecture Description is the complete set of all Views." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points — Three Core Definitions" },
+    { "type": "list", "ordered": false, "items": [
+      "**Viewpoint**: A definition of the perspective from which a view is taken. Specifies the conventions for constructing and using a view. A template or specification — exists before any specific architecture is created. Think of it as the camera lens setting.",
+      "**View**: A representation of a whole system from a particular Viewpoint. The specific diagram, model, or document produced. Always derived from a Viewpoint. Think of it as the photograph.",
+      "**Architecture Description**: The complete set of Views that describes an architecture from all relevant stakeholder perspectives. Not one document — a collection."
+    ]},
+    { "type": "paragraph", "text": "The stakeholder chain: **Stakeholder → has Concerns → Viewpoint addresses those Concerns → View is produced using the Viewpoint → Architecture is described by multiple Views.**" },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"A View is what you see. A Viewpoint is where you stand to see it.\"" },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — CANDIDATES FLIP VIEW AND VIEWPOINT. Viewpoint = TEMPLATE/CONVENTION (generic, reusable across many architectures). View = SPECIFIC OUTPUT (produced for one architecture)." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — NOT ONE VIEWPOINT PER INDIVIDUAL STAKEHOLDER. You identify categories of concerns and create viewpoints for those categories. Multiple stakeholders can share one viewpoint." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What is the precise difference between a View and a Viewpoint?" },
+    { "type": "paragraph", "text": "A Viewpoint is the template/convention for constructing a view (generic, reusable). A View is the specific output produced using that Viewpoint for a particular architecture." },
+    { "type": "heading", "level": 4, "text": "2. State the full stakeholder chain in TOGAF." },
+    { "type": "paragraph", "text": "Stakeholder → has Concerns → Viewpoint addresses those Concerns (template) → View is produced using the Viewpoint (the actual output) → Architecture is described by multiple Views." },
+    { "type": "heading", "level": 4, "text": "3. What is an Architecture Description?" },
+    { "type": "paragraph", "text": "The complete set of Views that together describe an architecture from all relevant stakeholder perspectives. Not a single document — a collection of all the views." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — ServiceNow ITSM" },
+    { "type": "list", "ordered": false, "items": [
+      "**CTO's View**: One-page executive summary. Executive/business viewpoint — high-level, business language.",
+      "**Service Desk Manager's View**: BPMN process flow diagrams. Operational/process viewpoint.",
+      "**Integration Architect's View**: Application interaction diagram. Application integration viewpoint.",
+      "**Security Team's View**: Data flow diagram showing where personal data flows. Security/data viewpoint."
+    ]},
+    { "type": "paragraph", "text": "All four together form the Architecture Description for the ServiceNow implementation." },
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes the difference between a View and a Viewpoint?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) A View is a high-level summary; a Viewpoint is a detailed technical spec",
+      "B) A Viewpoint defines the perspective and conventions; a View is the specific representation produced using that Viewpoint ✓",
+      "C) A View is produced by architects; a Viewpoint by stakeholders",
+      "D) They are interchangeable"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — Viewpoint = template; View = specific output." },
+    { "type": "heading", "level": 4, "text": "Q2. A CFO asks for an understanding of how the Dynamics 365 migration will impact financial reporting. What should the EA produce?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) A Viewpoint specifically for the CFO",
+      "B) A View addressing the CFO's concern, based on an appropriate Viewpoint ✓",
+      "C) A full Architecture Description",
+      "D) A Conceptual abstraction level model"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — you don't create a new Viewpoint for one stakeholder; you produce a View using an existing appropriate Viewpoint." },
+    { "type": "heading", "level": 4, "text": "Q3. An architect describes an ITSM system showing required services and behaviour, without specifying products, to communicate to business stakeholders. Which abstraction level and output type?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Physical level; producing an SBB",
+      "B) Logical level; producing an Architecture Definition Document",
+      "C) Conceptual level; producing a View using a business-oriented Viewpoint ✓",
+      "D) Contextual level; producing an Architecture Vision"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — Conceptual = what services/behaviour. View using a business viewpoint = the communication mechanism." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech is in Phase B. Three stakeholder groups need architecture outputs: CFO (cost impact and financial process changes), Head of IT Ops (downtime risk and integration complexity), DPO (personal data flows and GDPR). The lead architect suggests: \"Let's produce one detailed architecture document — stakeholders can read whichever sections are relevant.\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 1 pt", "Agree. A single Architecture Definition Document is the correct TOGAF deliverable for Phase B. Technically true about the deliverable, but completely misses Views and Viewpoints."],
+      ["B — 0 pts", "Disagree. TOGAF requires separate Architecture Definition Documents for each stakeholder. Wrong — TOGAF does not require separate deliverables per stakeholder."],
+      ["C — 5 pts", "Disagree. While a single Architecture Definition Document may be the formal deliverable, TOGAF's Views and Viewpoints approach requires specific Views for each stakeholder group — each using an appropriate Viewpoint to address that group's particular concerns. Best answer."],
+      ["D — 3 pts", "Agree but recommend structuring the document with an executive summary for the CFO, technical appendix for IT Ops, and data flow section for the DPO. Practically reasonable but doesn't use TOGAF vocabulary. Partial credit."]
+    ]}
+  ]
+}

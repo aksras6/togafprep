@@ -1,0 +1,103 @@
+{
+  "id": "LES-18",
+  "moduleId": "MOD-L18",
+  "order": 18,
+  "title": "Architecture Governance — Framework, Board, Contracts, and Compliance",
+  "sourceCitation": "C220Part5e — Chapters 3, 4, 5, 6",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Architecture Governance is the constitutional framework for architecture — it establishes how architecture is created, approved, monitored, enforced, and changed across the enterprise. It operates within a hierarchy: **Corporate Governance → Technology Governance → IT Governance → Architecture Governance**. Critical: Architecture Governance is NOT just Phase G. Phase G is one aspect of Architecture Governance, which covers ALL aspects of architecture development and evolution from Preliminary through Phase H." },
+
+    { "type": "heading", "level": 3, "text": "2a. Key Points — Governance Framework" },
+    { "type": "paragraph", "text": "Six characteristics of governance: **Discipline · Transparency · Independence · Accountability · Responsibility · Fairness**." },
+    { "type": "paragraph", "text": "Six key governance processes: Policy Management and Take-On · Compliance · Dispensation · Monitoring and Reporting · Business Control · Environment Management." },
+    { "type": "paragraph", "text": "Three elements of an effective Architecture Governance strategy: A cross-organisational Architecture Board with executive backing · A comprehensive set of Architecture Principles · An Architecture Compliance strategy." },
+
+    { "type": "heading", "level": 3, "text": "2b. Key Points — The Architecture Board" },
+    { "type": "paragraph", "text": "**Composition**: Cross-organisational; representative of all key stakeholders; typically 4–5 permanent members, no more than 10; needs an executive sponsor from the highest level of the corporation." },
+    { "type": "paragraph", "text": "**Strategic responsibilities**: Basis for all decision-making regarding architectures · Ensuring consistency between sub-architectures · Establishing targets for re-use · Ensuring flexibility of the EA · Improving architecture maturity." },
+    { "type": "paragraph", "text": "**Operational responsibilities**: Monitoring and control of Architecture Contracts · Enforcing compliance and granting dispensations · Resolving escalated conflicts · Meeting regularly · Publishing architecture documentation under controlled conditions." },
+    { "type": "paragraph", "text": "**Architecture Board meeting agenda** — exam-tested items: Minutes of previous meeting · Requests for Change · Dispensations · Compliance Assessments · Dispute Resolution · Architecture Strategy and Direction." },
+
+    { "type": "heading", "level": 3, "text": "2c. Key Points — Architecture Contracts" },
+    { "type": "paragraph", "text": "**Definition**: Joint agreements between development partners and sponsors on the deliverables, quality, and fitness-for-purpose of an architecture." },
+    { "type": "paragraph", "text": "Three types — mapped to ADM timing:" },
+    { "type": "table", "headers": ["Type", "When", "What it covers"], "rows": [
+      ["Statement of Architecture Work", "Phase A", "Contract between architecting organisation and sponsor — scope, deliverables, resources, approval to proceed"],
+      ["Architecture Design and Development Contract", "Phases B–D (or Preliminary)", "Contract with external development partners (systems integrators, application providers)"],
+      ["Contract with Business Stakeholders", "End of Phase F / Phase G", "Contract between the architecture function and business users who will build and deploy systems"]
+    ]},
+    { "type": "callout", "variant": "info", "text": "The Standard explicitly states: \"The Statement of Architecture Work created in Phase A is effectively an Architecture Contract between the architecting organisation and the sponsor.\"" },
+
+    { "type": "heading", "level": 3, "text": "2d. Key Points — Architecture Compliance" },
+    { "type": "paragraph", "text": "Five levels of compliance: **Irrelevant · Consistent · Compliant · Conformant · Exceeds**." },
+    { "type": "paragraph", "text": "Primary goal of a compliance review: Catch errors in the project architecture early to reduce cost and risk of later changes." },
+    { "type": "paragraph", "text": "**Dispensation**: Granted for a given time period; conditioned on identified criteria; triggers ongoing compliance monitoring." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "Governance hierarchy: \"Corporate Technology IT Architecture\" — each level operates within the one above.\n\nArchitecture Board size: 4–5 recommended, maximum 10.\n\nThree Contract types mapped to ADM: Statement of Architecture Work (Phase A) → Design and Development Contract (Phases B–D) → Business Stakeholders Contract (end Phase F / Phase G).\n\nFive compliance levels: Irrelevant → Consistent → Compliant → Conformant → Exceeds." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — PHASE G ≠ ARCHITECTURE GOVERNANCE. Phase G (Implementation Governance) is just ONE aspect of Architecture Governance. Architecture Governance covers ALL aspects of architecture development and evolution from the Preliminary Phase through Phase H." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — STATEMENT OF ARCHITECTURE WORK IS AN ARCHITECTURE CONTRACT. The Standard explicitly identifies the Statement of Architecture Work as an Architecture Contract. It is BOTH a Phase A deliverable AND the first Architecture Contract in the ADM cycle." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — ARCHITECTURE BOARD SIZE IS SPECIFIC. 4–5 permanent members recommended, no more than 10. Do not say \"as many as needed.\" This is directly tested in Part 1." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. Phase G is dedicated to Implementation Governance. Is this the same as Architecture Governance?" },
+    { "type": "paragraph", "text": "No. Implementation Governance (Phase G) is just ONE aspect of Architecture Governance. Architecture Governance covers the management and control of ALL aspects of the development and evolution of Enterprise Architectures — from the Preliminary Phase through Phase H." },
+    { "type": "heading", "level": 4, "text": "2. Name the three types of Architecture Contract and when each appears in the ADM." },
+    { "type": "paragraph", "text": "(1) Statement of Architecture Work — Phase A; contract between architecting organisation and sponsor. (2) Architecture Design and Development Contract — Phases B–D or Preliminary; contract with external development partners. (3) Contract with Business Stakeholders — end of Phase F / Phase G; contract with business users who will build and deploy." },
+    { "type": "heading", "level": 4, "text": "3. What is the recommended Architecture Board size?" },
+    { "type": "paragraph", "text": "4–5 permanent members recommended, with a maximum of 10. The Board must have an executive sponsor from the highest level of the corporation." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "paragraph", "text": "**Architecture Board established in Preliminary Phase**: CTO (executive sponsor), EA Lead, Head of Finance, Head of IT Operations, Head of HR, External Audit representative. Five members — within the 4–5 recommended range." },
+    { "type": "paragraph", "text": "**Phase A — first Architecture Contract**: Statement of Architecture Work approved by CTO and Architecture Board = the first Architecture Contract. Defines scope (Finance and HR migration), deliverables, timeline (18 months), constraints (Australian data residency, $4.2M budget), and Architecture Principles governing all decisions." },
+    { "type": "paragraph", "text": "**Phases B–D — Design and Development Contract**: GlobalTech engages a cloud architecture consultancy for Phase D. Architecture Design and Development Contract drawn up — defines scope (Technology Architecture only), conformance requirements (all designs align with GlobalTech's Architecture Principles), deliverables, time window, and escalation process." },
+    { "type": "paragraph", "text": "**Phase H — Architecture Board monthly agenda**: Requests for Change (AI cash flow feature — incremental, approved via change management) · Dispensations (Procurement integration 90-day dispensation — formally closed once migrated to API Management) · Compliance Assessments (Wave 2 HR project initiation — reviewed and approved to proceed) · Dispute Resolution (Finance vs HR data ownership dispute — Board directs working party to resolve within 30 days)." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: ARCHITECTURE GOVERNANCE WITHOUT EXECUTIVE SPONSORSHIP IS FICTION. The Architecture Board needs not just a sponsor but an active champion willing to say no to business units seeking shortcuts. If the CTO routinely overrides Architecture Board decisions, the governance framework collapses within months." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: COMPLIANCE REVIEWS ARE MOST VALUABLE WHEN HELD EARLY. The primary goal is to catch errors when they are cheap to fix — at project initiation and initial design. Reviews held just before go-live find problems that are impossibly expensive to correct." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes the relationship between Phase G and Architecture Governance?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Phase G and Architecture Governance are the same thing",
+      "B) Phase G is just one aspect of Architecture Governance — Architecture Governance covers all aspects of architecture development and evolution ✓",
+      "C) Architecture Governance is a subset of Phase G",
+      "D) Phase G replaces Architecture Governance during the delivery phase"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — the Standard explicitly states this. Frequently tested." },
+    { "type": "heading", "level": 4, "text": "Q2. The Statement of Architecture Work is explicitly identified by the TOGAF Standard as which type of governance document?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) An Architecture Definition Document",
+      "B) An Architecture Compliance Assessment",
+      "C) An Architecture Contract ✓",
+      "D) An Architecture Requirements Specification"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — the Standard states it is \"effectively an Architecture Contract between the architecting organisation and the sponsor.\"" },
+    { "type": "heading", "level": 4, "text": "Q3. The recommended permanent membership size for an Architecture Board is:" },
+    { "type": "list", "ordered": false, "items": [
+      "A) One or two senior executives only",
+      "B) As many representatives as needed",
+      "C) Four or five members, no more than ten ✓",
+      "D) Exactly seven members"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — directly stated in the Standard. Tested in Part 1." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: Wave 2 is in delivery. The Head of HR raises two concerns with the CTO: (1) the Architecture Board rejected the Self-Service HR module's dispensation request — the Head of HR believes the Board is \"too rigid\" and wants the CTO to overrule it; (2) a new HR analytics vendor offers a platform integrating directly with Dynamics 365 HR, bypassing Synapse Analytics entirely — the Head of HR wants to adopt it without an Architecture Compliance review." },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 0 pts", "Support the Head of HR on both points. Architecture Governance should be pragmatic and the HR analytics platform is a business decision. Fundamentally wrong — CTO overruling the Board destroys governance authority; adopting a vendor without compliance review bypasses the governance framework entirely."],
+      ["B — 3 pts", "Uphold both Architecture Board decisions. CTO overruling the Board undermines governance; the HR analytics platform requires compliance review. Correct in outcome but doesn't identify the formal mechanism — the Dispute Resolution process — that the Head of HR can use to escalate the dispensation decision."],
+      ["C — 5 pts", "Advise the CTO: (1) the formal escalation mechanism for the dispensation is the Architecture Board's Dispute Resolution process — not CTO override; (2) the HR analytics platform requires Architecture Compliance review before any adoption decision — the review will determine whether dispensation is appropriate, the architecture needs updating, or the platform should be rejected. Best answer."],
+      ["D — 1 pt", "Convene an emergency Architecture Board meeting to give the Head of HR's concerns equal weight to the Board's previous decisions. Partially recognises the Board as the decision-making body, but \"equal weight\" mischaracterises governance — the Board's decisions stand until formally overturned through the Board's own process."]
+    ]}
+  ]
+}

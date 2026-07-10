@@ -1,0 +1,92 @@
+[
+  {
+    "id": "GLOS-001",
+    "term": "Architecture Domain",
+    "definition": "One of four distinct specialisations in enterprise architecture: Business Architecture, Data Architecture, Application Architecture, and Technology Architecture. Together they form the complete Enterprise Architecture.",
+    "adm_phases": ["A", "B", "C", "D"],
+    "relatedTermIds": ["GLOS-002"],
+    "part": "both",
+    "tags": ["core", "foundation", "domains"]
+  },
+  {
+    "id": "GLOS-002",
+    "term": "Enterprise Architecture",
+    "definition": "A coherent whole of principles, methods, and models that are used in the design and realisation of an enterprise's organisational structure, business processes, information systems, and IT infrastructure.",
+    "adm_phases": ["Preliminary", "A"],
+    "relatedTermIds": ["GLOS-001", "GLOS-006"],
+    "part": "both",
+    "tags": ["core", "foundation"]
+  },
+  {
+    "id": "GLOS-003",
+    "term": "Enterprise Continuum",
+    "definition": "A view of the Architecture Repository that provides methods for classifying architecture and solution artefacts, ranging from generic Foundation Architectures to Organisation-Specific Architectures.",
+    "adm_phases": ["Preliminary"],
+    "relatedTermIds": ["GLOS-004"],
+    "part": 1,
+    "tags": ["repository", "classification", "foundation"]
+  },
+  {
+    "id": "GLOS-004",
+    "term": "Architecture Repository",
+    "definition": "A holding area for all architecture-related projects within the enterprise. Organised into six classes: Architecture Metamodel, Architecture Capability, Architecture Landscape, Standards Information Base, Reference Library, and Governance Log.",
+    "adm_phases": ["Preliminary"],
+    "relatedTermIds": ["GLOS-003"],
+    "part": 1,
+    "tags": ["repository", "governance", "core"]
+  },
+  {
+    "id": "GLOS-005",
+    "term": "Stakeholder",
+    "definition": "An individual, team, organisation, or class thereof having an interest in a system. Different stakeholders with different roles have different concerns — the architecture must address all relevant stakeholder concerns.",
+    "adm_phases": ["A"],
+    "relatedTermIds": [],
+    "part": "both",
+    "tags": ["stakeholders", "governance", "Phase A"]
+  },
+  {
+    "id": "GLOS-006",
+    "term": "Architecture Development Method (ADM)",
+    "definition": "The core of the TOGAF Standard. A step-by-step approach to developing an enterprise architecture. It comprises a Preliminary Phase, Phases A through H, and Requirements Management at the centre.",
+    "adm_phases": ["Preliminary", "A", "B", "C", "D", "E", "F", "G", "H"],
+    "relatedTermIds": ["GLOS-002"],
+    "part": "both",
+    "tags": ["ADM", "core", "foundation", "process"]
+  },
+  {
+    "id": "GLOS-007",
+    "term": "Statement of Architecture Work",
+    "definition": "A document that defines the scope and approach that will be used to complete an architecture development cycle. Produced in Phase A. Provides formal acceptance and sign-off by sponsoring organisation.",
+    "adm_phases": ["A"],
+    "relatedTermIds": ["GLOS-008"],
+    "part": 1,
+    "tags": ["Phase A", "deliverables", "governance"]
+  },
+  {
+    "id": "GLOS-008",
+    "term": "Architecture Definition Document",
+    "definition": "A deliverable container for the core architectural artefacts created during the architecture project. Describes the Baseline and Target Architectures for Business, Data, Application, and Technology domains.",
+    "adm_phases": ["B", "C", "D"],
+    "relatedTermIds": ["GLOS-007"],
+    "part": "both",
+    "tags": ["deliverables", "ADM", "artefacts"]
+  },
+  {
+    "id": "GLOS-009",
+    "term": "Transition Architecture",
+    "definition": "A formal description of one state of the architecture at an architecturally significant point in time between Baseline and Target Architectures. Used when moving from the current to the target state requires multiple intermediate states.",
+    "adm_phases": ["E", "F"],
+    "relatedTermIds": [],
+    "part": "both",
+    "tags": ["Phase E", "Phase F", "migration", "roadmap"]
+  },
+  {
+    "id": "GLOS-010",
+    "term": "Architecture Board",
+    "definition": "The cross-organisational body responsible for overseeing the implementation of the IT strategy. Ensures consistency and flexibility of the architecture, manages dispensations and exceptions, and approves Architecture Contracts.",
+    "adm_phases": ["G"],
+    "relatedTermIds": [],
+    "part": 2,
+    "tags": ["governance", "Phase G", "board", "compliance"]
+  }
+]

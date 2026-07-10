@@ -1,0 +1,80 @@
+{
+  "id": "LES-05",
+  "moduleId": "MOD-L05",
+  "order": 5,
+  "title": "Architecture Principles — The Rules That Govern Everything",
+  "sourceCitation": "C220Part0e — Section 3.8",
+  "estimatedMinutes": 25,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Principles are general rules and guidelines, intended to be enduring and seldom amended, that inform and support how an organisation fulfils its mission. They work in a hierarchy: **Enterprise Principles** (the constitution — highest authority) → **Architecture Principles** (derived from the constitution) → **Domain Principles** (by-laws for IT, HR, Finance — must not contradict parent)." },
+    { "type": "paragraph", "text": "Principles make governance possible — without them, every architecture decision becomes a negotiation." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points to Remember" },
+    { "type": "paragraph", "text": "The four components of a well-formed principle — **NSRI**:" },
+    { "type": "table", "headers": ["Component", "Purpose"], "rows": [
+      ["Name", "Short, memorable title conveying the essence"],
+      ["Statement", "One or two sentences unambiguously defining the rule"],
+      ["Rationale", "Business benefits; relationship to other principles"],
+      ["Implications", "Requirements for carrying out the principle (resources, costs, tasks)"]
+    ]},
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "NSRI = \"Now Say the Reason It matters\"\n\nHierarchy: \"Enterprise Architecture Principles Dominate\" — Enterprise (what the business believes) → Architecture (how that shapes architecture work) → Domain (subsidiary, must not contradict parent)." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — PRINCIPLES VS POLICIES VS STANDARDS. Principles are enduring and value-based. Policies are operational rules that change more frequently. Standards are specific, measurable requirements. Principles sit above both." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — HIERARCHY MUST BE RESPECTED. Architecture Principles must embody Enterprise Principles — they cannot contradict them. A subsidiary principle that conflicts with its parent is architecturally invalid." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. Name the four components of a well-formed principle in order." },
+    { "type": "paragraph", "text": "Name, Statement, Rationale, Implications — NSRI." },
+    { "type": "heading", "level": 4, "text": "2. What is the correct hierarchy of principles in TOGAF?" },
+    { "type": "paragraph", "text": "Enterprise Principles (highest) → Architecture Principles → Domain Principles (lowest). Lower levels cannot contradict higher levels." },
+    { "type": "heading", "level": 4, "text": "3. What is the most commonly missing component when architects write principles?" },
+    { "type": "paragraph", "text": "Implications — the requirements for carrying out the principle (impact on resources, costs, tasks). Candidates often write Name, Statement, and Rationale but forget Implications." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — ServiceNow Principle in TOGAF Format" },
+    { "type": "table", "headers": ["Component", "Content"], "rows": [
+      ["Name", "Integration via Middleware Only"],
+      ["Statement", "All application integrations must be implemented through the approved enterprise middleware layer; direct point-to-point connections are not permitted."],
+      ["Rationale", "Point-to-point connections create a fragile integration landscape. Middleware enables reuse, monitoring, and consistent security controls."],
+      ["Implications", "All projects must budget for middleware configuration. Direct DB connections require Architecture Board exception approval."]
+    ]},
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes the relationship between Enterprise Principles and Architecture Principles?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) They are independent — Enterprise Principles apply to business; Architecture Principles apply to IT",
+      "B) Architecture Principles elaborate on and must remain within the bounds of Enterprise Principles ✓",
+      "C) Enterprise Principles are derived from Architecture Principles after the architecture is approved",
+      "D) They are interchangeable"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — the hierarchy always flows top-down." },
+    { "type": "heading", "level": 4, "text": "Q2. An architect has written a name, statement, and rationale for a principle. What critical component is missing?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Sign-off from the Architecture Board",
+      "B) Cross-reference to the relevant ADM phase",
+      "C) The implications ✓",
+      "D) A version number and review date"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — Implications are the most commonly forgotten component." },
+    { "type": "heading", "level": 4, "text": "Q3. Which is an example of an Architecture Principle, rather than an Enterprise Principle?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) \"The organisation will invest in professional development of all staff\"",
+      "B) \"Customer data privacy is a fundamental right\"",
+      "C) \"All applications must support single sign-on using the enterprise identity provider\" ✓",
+      "D) \"The company will pursue a cloud-first strategy\""
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — specific to architecture work (application design and identity integration)." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's Architecture Board has approved: \"Data is a strategic corporate asset and must be managed accordingly.\" Two weeks later, the Finance team proposes: \"Financial data may be stored locally within Finance systems without requiring registration in the enterprise data catalogue, to enable faster project delivery.\"" },
+    { "type": "paragraph", "text": "Question: What is the architectural problem, and what would you recommend?" },
+    { "type": "callout", "variant": "tip", "text": "Strong Answer: The Finance team's proposed principle directly contradicts the Enterprise Principle that data is a strategic corporate asset. Subsidiary domain principles must exist within the bounds of Enterprise Principles — they cannot contradict them. This exemption would fragment data governance, undermine the enterprise's ability to treat data as a shared asset, and set a precedent for other business units.\n\nReject the proposed principle as non-compliant. The underlying concern (faster delivery) is legitimate. Recommend a revised principle: \"All financial data entities must be registered in the enterprise data catalogue prior to go-live; interim exceptions require Architecture Board approval and must be remediated within a defined timeframe.\"" }
+  ]
+}

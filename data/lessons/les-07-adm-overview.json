@@ -1,0 +1,88 @@
+{
+  "id": "LES-07",
+  "moduleId": "MOD-L07",
+  "order": 7,
+  "title": "The ADM — The Heart of TOGAF",
+  "sourceCitation": "C220Part0e — Section 3.4 | C220-Part1e",
+  "estimatedMinutes": 30,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "The ADM — Architecture Development Method — is TOGAF's core method. Picture it as a clock face — a circle of phases with Requirements Management at the centre, continuously feeding into every phase. The cycle is iterative — you don't do it once and stop. Critical: The ADM does NOT mandate a specific sequence and does NOT mandate waterfall. It is a reference model, adapted to your context." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points — The 10 ADM Elements" },
+    { "type": "table", "headers": ["Phase", "Name", "Core Question"], "rows": [
+      ["Preliminary", "Preparation & Initiation", "Are we ready to do architecture?"],
+      ["A", "Architecture Vision", "What are we trying to achieve?"],
+      ["B", "Business Architecture", "How must the business change?"],
+      ["C", "Information Systems Architectures", "What data and apps are needed?"],
+      ["D", "Technology Architecture", "What technology enables it?"],
+      ["E", "Opportunities & Solutions", "How do we deliver it?"],
+      ["F", "Migration Planning", "How do we get there step by step?"],
+      ["G", "Implementation Governance", "Are projects building what we designed?"],
+      ["H", "Architecture Change Management", "How do we manage ongoing change?"],
+      ["Req. Mgmt", "Centre of the cycle — continuous", "What do stakeholders need — always?"]
+    ]},
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"Prepare → Agree Vision → Build business case → Create systems plan → Design tech → Explore options → Finalise migration → Govern the build → Handle changes.\"\n\nThree bookends: Preliminary = SETTING UP · Phase A = STARTING every cycle · Phase H = SUSTAINING the architecture." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — PHASE G IS NOT PROJECT MANAGEMENT. Phase G is Implementation Governance. The EA team reviews architectural compliance — they do not run projects." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — REQUIREMENTS MANAGEMENT IS NOT PHASE I. It is a continuous process at the centre of the ADM — not a ninth sequential phase." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — ADM IS NOT WATERFALL. Phases can be revisited, iterated, and run in parallel. Flexibility ≠ skipping critical work." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. Where does Requirements Management sit in the ADM, and why does it matter?" },
+    { "type": "paragraph", "text": "At the centre of the ADM cycle — it is a continuous process, not a phase. It operates throughout all phases, managing, storing, and feeding requirements into every part of the ADM." },
+    { "type": "heading", "level": 4, "text": "2. What is Phase G responsible for, and what is it explicitly NOT responsible for?" },
+    { "type": "paragraph", "text": "Phase G (Implementation Governance) reviews architectural compliance — ensuring projects are building what was designed. It is NOT responsible for project management or running delivery projects." },
+    { "type": "heading", "level": 4, "text": "3. Name the three \"bookend\" phases and what each one does." },
+    { "type": "paragraph", "text": "Preliminary = sets up the EA practice before any cycle begins. Phase A = starts every ADM cycle (scope, vision, approval). Phase H = sustains the architecture by monitoring for change and triggering new cycles." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — ServiceNow ITSM mapped to the ADM" },
+    { "type": "list", "ordered": false, "items": [
+      "**Preliminary**: Set up steering committee, agreed ITIL as framework, appointed Programme Architect, set ground rules.",
+      "**Phase A**: Scope defined (Incident, Change, Problem, Request). Stakeholders mapped. Vision: \"Single unified ITSM platform replacing 4 tools.\" Statement of Architecture Work approved by CTO.",
+      "**Phase B**: Current-state process maps drawn. Target-state processes defined (aligned to ITIL v4). CAB structure agreed.",
+      "**Phase C**: Data — CMDB taxonomy defined. Application — ServiceNow modules selected, integration points mapped.",
+      "**Phase D**: ServiceNow SaaS on AWS Sydney, MID Server on-prem, TLS 1.3, Azure AD for SSO.",
+      "**Phase E**: Three workstreams defined — Core ITSM, CMDB build, integrations. Work Packages confirmed.",
+      "**Phase F**: Phased rollout — Wave 1: Incident & Request. Wave 2: Change & Problem. Wave 3: HRSD.",
+      "**Phase G**: Architecture review at each wave gate. Compliance checks against integration standards.",
+      "**Phase H**: New requirement post-go-live — integrate ServiceNow with Teams. Phase H evaluates whether this needs a new ADM cycle."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which phase is primarily concerned with obtaining approval to proceed, identifying stakeholders, and defining scope?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Preliminary", "B) Phase A ✓", "C) Phase B", "D) Phase E"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — Phase A is the entry point of every ADM cycle." },
+    { "type": "heading", "level": 4, "text": "Q2. Which statement about Requirements Management is correct?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) It is Phase I, executed after Phase H",
+      "B) It is a continuous process at the centre of the ADM cycle ✓",
+      "C) It is only performed during Phases A and B",
+      "D) It is optional"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — continuous, not sequential, not optional." },
+    { "type": "heading", "level": 4, "text": "Q3. An EA is reviewing whether a proposed cloud platform complies with designs from Phases B, C, and D. Which phase?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Phase E", "B) Phase F", "C) Phase G ✓", "D) Phase H"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — Phase G is specifically about architectural compliance review during implementation." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech is in Phase E. The infrastructure team has already selected Azure and signed a three-year contract. The delivery manager says: \"Can we just skip Phase D — Technology Architecture — and go straight to planning the migration?\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 1 pt", "Agree — ADM allows flexibility and Azure has been selected. Partially right on flexibility but wrong in practice — skipping Phase D means no validated Technology Architecture exists."],
+      ["B — 0 pts", "Decline — all phases must be completed in strict sequence. Contradicts TOGAF directly."],
+      ["C — 5 pts", "Acknowledge the Azure selection partially addresses concerns, but Phase D must still be completed — to formally document the Technology Architecture, validate it against Phases B and C, and identify gaps or constraints the contract may have introduced. Best answer."],
+      ["D — 0 pts", "Escalate to Architecture Board and suspend all work. Disproportionate for a routine delivery situation."]
+    ]}
+  ]
+}

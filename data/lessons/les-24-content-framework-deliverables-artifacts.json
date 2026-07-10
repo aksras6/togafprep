@@ -1,0 +1,104 @@
+{
+  "id": "LES-24",
+  "moduleId": "MOD-L24",
+  "order": 23,
+  "title": "Architecture Content Framework — Deliverables and Artifacts by Phase",
+  "sourceCitation": "C220-Part4e — Chapters 3 & 4 (Architecture Content)",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "The Architecture Content Framework answers: \"For any given ADM phase, what specific catalogs, matrices, and diagrams should I produce — and why?\" Recall the three artifact types from Lesson 4: Catalogs (lists of things), Matrices (relationships between things), Diagrams (pictures of things). The Content Framework applies this systematically to every ADM phase — a tested, standard menu of outputs proven to answer the questions stakeholders actually ask." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points" },
+    { "type": "paragraph", "text": "Four content concepts — **BCMD**:" },
+    { "type": "table", "headers": ["Concept", "Definition"], "rows": [
+      ["Building Block", "An entity of a particular type within the metamodel (e.g., a business service \"Purchase Order\"). Carries metadata supporting query and analysis."],
+      ["Catalog", "A list of building blocks of a specific type, used for governance or reference (e.g., an organisation chart)"],
+      ["Matrix", "A grid showing relationships between two or more model entities — used when relationships are list-based, not graphical (e.g., a CRUD matrix)"],
+      ["Diagram", "A graphical rendering of architectural content for visual stakeholder communication"]
+    ]},
+    { "type": "paragraph", "text": "Key artifacts by phase:" },
+    { "type": "table", "headers": ["Phase", "Key Catalogs", "Key Matrices", "Key Diagrams"], "rows": [
+      ["Preliminary", "Principles Catalog", "—", "—"],
+      ["Phase A", "Stakeholder Catalog", "—", "Value Chain, Solution Concept, Business Model, Business Capability Map, Value Stream Map"],
+      ["Phase B", "Organization/Actor, Driver/Goal/Objective, Role, Business Service/Function, Location, Process/Event/Control/Product, Contract/Measure", "Business Interaction, Actor/Role", "Business Footprint, Functional Decomposition, Process Flow, Use-Case"],
+      ["Phase C (Data)", "Data Entity/Data Component", "Data Entity/Business Function, Application/Data", "Conceptual Data, Logical Data, Data Security, Data Migration, Data Dissemination"],
+      ["Phase C (App)", "Application Portfolio, Interface", "Application/Organization, Role/Application, Application Interaction", "Application Communication, Application Migration, Software Distribution"],
+      ["Phase D", "Technology Standards, Technology Portfolio", "Application/Technology", "Environments and Locations, Platform Decomposition, Networked Computing"],
+      ["Phase E", "—", "—", "Project Context, Benefits"]
+    ]},
+    { "type": "paragraph", "text": "**Data Entity/Business Function Matrix vs Application/Data Matrix**: The former shows which business functions create/read/update/delete which data entities (CRUD, governance/ownership). The latter shows which applications use which data entities (dependency/migration scope). Different purposes — frequently confused." },
+    { "type": "paragraph", "text": "**Content Framework and the ADM**: The ADM tells you when to produce artifacts; the Content Framework tells you what those artifacts should specifically be and what metamodel entities each contains." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "BCMD: Building Block → Catalog → Matrix → Diagram.\n\nArtifact-type pattern by phase stage: Early phases (Preliminary, A) = mostly diagrams + one catalog (broad orientation). Middle phases (B, C, D) = heaviest catalogs and matrices (detailed governance). Late phases (E, F) = return to diagrams (programme-level communication)." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — NOT EQUAL ARTIFACT VOLUME ACROSS PHASES. Phases B and C produce the largest number of catalogs and matrices — governance traceability is highest there. Phase A and E are lighter, mostly diagrams." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — DATA ENTITY/BUSINESS FUNCTION MATRIX ≠ APPLICATION/DATA MATRIX. One is about business process governance (CRUD by function); the other is about application/data dependency mapping. Frequently confused on the exam." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — CATALOG ≠ MATRIX EVEN WHEN BOTH ARE TABLES. A catalog lists one type of thing. A matrix cross-references two or more dimensions. One column of entities = catalog. Cross-referenced dimensions = matrix." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 4 — CONTENT FRAMEWORK ≠ ENTERPRISE CONTINUUM ≠ ARCHITECTURE REPOSITORY. Three distinct concepts. Content Framework = what to produce. Enterprise Continuum = classification by genericity. Architecture Repository = storage. Easily confused if not clearly separated." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. Name the four content concepts (BCMD) with a one-sentence definition each." },
+    { "type": "paragraph", "text": "Building Block — an entity within the metamodel. Catalog — a list of building blocks of one type. Matrix — a grid of relationships between two or more entity types. Diagram — a graphical rendering for visual communication." },
+    { "type": "heading", "level": 4, "text": "2. What is the difference between the Data Entity/Business Function Matrix and the Application/Data Matrix?" },
+    { "type": "paragraph", "text": "Data Entity/Business Function Matrix = which business functions CRUD which data entities (ownership/governance). Application/Data Matrix = which applications use which data entities (migration scope/dependency)." },
+    { "type": "heading", "level": 4, "text": "3. Which phases produce the heaviest concentration of catalogs and matrices, and why?" },
+    { "type": "paragraph", "text": "Phase B and Phase C (Data and Application) — these require the most detailed governance traceability. Early (Preliminary, A) and late (E, F) phases rely more on diagrams for broad orientation and communication." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "list", "ordered": false, "items": [
+      "**Preliminary**: Principles Catalog — the six Architecture Principles, each in NSRI format.",
+      "**Phase A**: Stakeholder Catalog (CFO, Head of Finance, IT Ops, DPO, invisible team). Solution Concept Diagram (SAP → Dynamics 365 sketch). Business Capability Map (Finance and HR capabilities at a glance).",
+      "**Phase B**: Business Service/Function Catalog (GL, AP, AR, Fixed Assets, Financial Reporting as formal functions). Contract/Measure Catalog (the \"3-day close\" SLA as a trackable measure).",
+      "**Phase C (Data)**: Data Entity/Data Component Catalog (all 14 master data entities including the new Absence Record). Data Entity/Business Function Matrix — would have surfaced the SAP-to-AD identity reconciliation gap earlier had it existed at Baseline time. Data Security Diagram (personal data flows, reviewed by DPO).",
+      "**Phase C (Application)**: Application Portfolio Catalog (SAP ECC, SAP HR, Procurement, Power BI, AD → target: Dynamics 365 Finance/HR, API Management, Data Factory). Application Interaction Matrix — the artifact underlying the Procurement→Finance and Audit→Finance integration mapping.",
+      "**Phase D**: Technology Standards Catalog (Azure services, TLS 1.3, SAML 2.0). Platform Decomposition Diagram (App Service + SQL + AD + API Management = the Dynamics 365 stack).",
+      "**Phase E**: Benefits Diagram — connects WP3 (Finance Core) to its $280k/year savings."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: NOBODY PRODUCES EVERY ARTIFACT. EA teams select the subset that matters, driven by stakeholder concerns (Lesson 9) and transformation scale. A small Segment programme might produce five or six artifacts; GlobalTech's enterprise-wide, regulated programme produces a dozen or more." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: MATRICES ARE THE MOST COMMONLY SKIPPED — AND MOST COSTLY TO SKIP. Diagrams are visually satisfying; catalogs feel like straightforward inventory. Matrices — systematically mapping every entity of one type against another — are tedious and often skipped under time pressure. But the Application/Data Matrix is exactly what would have surfaced the Power BI-to-SAP dependency before it became an urgent discovery." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which correctly describes a \"Matrix\" as a content concept?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) A list of building blocks of a specific type, used for governance",
+      "B) A grid showing relationships between two or more model entities, used when relationships are difficult to show graphically ✓",
+      "C) A graphical rendering of architectural content for visual retrieval",
+      "D) An entity within the metamodel carrying metadata for query and analysis"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — precise definition. A = Catalog; C = Diagram; D = Building Block." },
+    { "type": "heading", "level": 4, "text": "Q2. An architect needs to know which applications create, read, update, or delete customer data, to plan a migration. Which artifact?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) The Data Entity/Data Component Catalog",
+      "B) The Application/Data Matrix ✓",
+      "C) The Conceptual Data Diagram",
+      "D) The Application Portfolio Catalog"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — shows which applications use which data entities, exactly what's needed for migration scoping." },
+    { "type": "heading", "level": 4, "text": "Q3. Which best describes the relationship between the Content Framework and the Enterprise Continuum?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) The same concept — both classify artifacts from generic to organisation-specific",
+      "B) Content Framework defines what to produce at each phase; Enterprise Continuum classifies assets from generic to organisation-specific — distinct concepts ✓",
+      "C) Content Framework is a subset of the Enterprise Continuum",
+      "D) Enterprise Continuum defines artifacts; Content Framework stores them"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — two distinct concepts. Confusing them is a common exam error." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: Phase C is complete. The EA team produced an Application Portfolio Catalog, Interface Catalog, and several diagrams — but no Application Interaction Matrix or Application/Data Matrix. The Head of IT Operations says: \"We have the diagrams — they show the same information visually. Do we really need the matrices too?\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 0 pts", "Agree — the diagram makes the matrix redundant. Misunderstands the different purposes: a diagram cannot support systematic queries like \"which of our 40 applications depend on the Customer entity?\""],
+      ["B — 1 pt", "Disagree — every catalog/matrix/diagram in the Content Framework must be produced without exception. Overly rigid; the Standard allows tailoring based on programme needs."],
+      ["C — 5 pts", "Disagree with \"duplicate work\" — diagrams communicate visually to a broad audience; matrices support systematic governance queries impractical from a diagram alone. Tie the decision to GlobalTech's actual need: SAP decommissioning requires the Application/Data Matrix for migration scoping — not optional given the governance decisions Phase C must inform. Best answer."],
+      ["D — 0 pts", "Escalate to the Architecture Board as a Compliance breach. Disproportionate — a content gap is addressed through normal EA practice, not Board escalation."]
+    ]}
+  ]
+}

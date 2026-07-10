@@ -1,0 +1,92 @@
+{
+  "id": "LES-17",
+  "moduleId": "MOD-L17",
+  "order": 17,
+  "title": "Requirements Management — The Continuous Process at the Centre",
+  "sourceCitation": "C220-Part1e — Chapter 13",
+  "estimatedMinutes": 30,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Requirements Management sits at the centre of the ADM clock face because it is the only element that runs continuously through every single phase, never stopping, never completing. It is a process — an ongoing mechanism for capturing, storing, managing, and feeding requirements into and out of every part of the ADM." },
+    { "type": "paragraph", "text": "The critical distinction: Requirements Management does **NOT** dispose of, address, or prioritise requirements. That is done within the relevant ADM phase. Requirements Management is the postal service of the ADM — it receives, sorts, stores, and delivers requirements to the right phase at the right time. The phases themselves decide what to do with them." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points" },
+    { "type": "paragraph", "text": "Three objectives: Ensure the process operates for all relevant ADM phases · Manage architecture requirements identified during any execution of the ADM · Ensure relevant requirements are available for use by each phase as it is executed." },
+    { "type": "paragraph", "text": "Four key characteristics: **Continuous** (never stops) · **Dynamic** (requirements constantly added, changed, retired) · **Non-disposing** (does NOT prioritise or resolve — that's the phase's job) · **Cross-cycle** (the Repository holds requirements from multiple ADM cycles)." },
+    { "type": "paragraph", "text": "Three key artifacts:" },
+    { "type": "table", "headers": ["Artifact", "Scope", "Purpose"], "rows": [
+      ["Architecture Requirements Specification", "Current ADM cycle only", "Documents authorised requirements for this cycle; updated throughout"],
+      ["Architecture Requirements Repository", "Multiple ADM cycles", "Stores ALL requirements including deferred ones; cross-cycle persistence"],
+      ["Requirements Impact Assessment", "Triggered by change", "Steers the architecture team — which phases need revisiting?"]
+    ]},
+    { "type": "paragraph", "text": "**Gap requirement**: A requirement generated when gap analysis reveals something was accidentally eliminated — not intentionally. Must be addressed and the Target Architecture revised. NOT the same as Intentionally Omitted." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"Capture every requirement, store it, track it, and feed it to the right phase at the right time — but never decide what to do with it.\"\n\nThe postal service analogy: Requirements Management = the postal service (sorts, stores, delivers). ADM phases = the recipients (decide what to do). Architecture Requirements Repository = the sorting office (holds all mail across multiple cycles). Requirements Impact Assessment = a priority dispatch notice (flags which phases must act)." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — REQUIREMENTS MANAGEMENT DOES NOT PRIORITISE. Prioritisation happens WITHIN the relevant ADM phase. Requirements Management stores and delivers — the phase decides what to do." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — REPOSITORY ≠ SPECIFICATION. Architecture Requirements Repository = cross-cycle, holds deferred requirements. Architecture Requirements Specification = current cycle only, scoped to the current Statement of Architecture Work." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — GAP REQUIREMENT ≠ INTENTIONAL OMISSION. A gap requirement is something accidentally eliminated in gap analysis. An intentional omission is a deliberate, documented decision to defer a known gap. Completely different governance responses." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What does Requirements Management explicitly NOT do — and who does it instead?" },
+    { "type": "paragraph", "text": "Requirements Management does NOT dispose of, address, or prioritise requirements. That is done within the relevant ADM phase. Requirements Management manages the process — stores, tracks, and delivers. The phases decide what to do." },
+    { "type": "heading", "level": 4, "text": "2. What is the difference between the Architecture Requirements Specification and the Architecture Requirements Repository?" },
+    { "type": "paragraph", "text": "Architecture Requirements Specification = current ADM cycle only, scoped to the current Statement of Architecture Work. Architecture Requirements Repository = persists across multiple ADM cycles, holds all requirements including those deferred for future cycles." },
+    { "type": "heading", "level": 4, "text": "3. What is a \"gap requirement\" in TOGAF?" },
+    { "type": "paragraph", "text": "A gap requirement is generated when gap analysis reveals something was accidentally eliminated — not by design. It must be addressed and the Target Architecture revised. It is NOT an intentional omission, which is a deliberate, documented decision to defer." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "list", "ordered": false, "items": [
+      "**Phase A**: First requirements surface — DPO: \"All data must reside in Australian data centres.\" CFO: \"Financial close must be achievable in 3 days.\" Both documented in Architecture Requirements Specification and Architecture Requirements Repository.",
+      "**Phase B — new requirement**: \"Absence Record entity must integrate with payroll for leave liability calculations.\" Requirements Impact Assessment generated — flags Phase C Data and Application Architecture. Both downstream phases notified.",
+      "**Phase C — changed requirement**: Payroll migration deferred from Wave 1 to Wave 2. Requirements Impact Assessment generated — Phase E (Work Packages re-sequenced), Phase F (timeline affected). Both notified.",
+      "**Deferred requirement (cross-cycle)**: IT Operations raises Azure disaster recovery requirement — out of scope for current Statement of Architecture Work. Moved from Architecture Requirements Specification to Architecture Requirements Repository. Will be picked up in next ADM cycle.",
+      "**Gap requirement example**: Phase B gap analysis marks AR reconciliation process as \"Retained.\" Phase C discovers SAP's AR uses a custom field that doesn't exist in Dynamics 365 standard — accidentally eliminated. Gap requirement generated: custom AR reconciliation field must be redesigned. Target Architecture revised."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: REQUIREMENTS MANAGEMENT IS THE MOST NEGLECTED PROCESS. Most organisations have a requirements document — a spreadsheet, a Jira backlog — and call it \"requirements management.\" What they're missing is the formal process: capturing changes during architecture development, assessing impact on current and previous phases, and formally feeding the change back. Without this, requirements change silently and phases make decisions based on outdated information." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: THE BOUNDARY BETWEEN SPECIFICATION AND REPOSITORY MATTERS MORE THAN IT LOOKS. The Specification is what the current programme is committed to. The Repository is the full landscape including deferred items. Without this distinction, deferred requirements get lost between ADM cycles — nobody owns them, nobody tracks them, they never appear in the next Architecture Vision." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes the role of Requirements Management?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) To identify, prioritise, and resolve all requirements before Phase B begins",
+      "B) To continuously manage requirements throughout the ADM — capturing, storing, and feeding them into the relevant phases, without itself prioritising or resolving them ✓",
+      "C) To document the final agreed requirements at the end of Phase A",
+      "D) To manage project requirements on behalf of development teams in Phases G and H"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — the critical phrase is \"without itself prioritising or resolving them.\" That is done by the relevant ADM phase." },
+    { "type": "heading", "level": 4, "text": "Q2. During Phase C, a new requirement emerges that is outside the scope of the current Statement of Architecture Work. How should it be handled?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Added to the Architecture Requirements Specification and addressed in the current cycle",
+      "B) Rejected — no new requirements accepted after Phase A",
+      "C) Documented in the Architecture Requirements Repository for management through Requirements Management and addressed in a future ADM cycle ✓",
+      "D) Raised with the Architecture Board as a Change Request requiring immediate assessment"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — requirements outside the scope of the current Statement of Architecture Work go to the Repository, not the Specification." },
+    { "type": "heading", "level": 4, "text": "Q3. Phase B gap analysis identifies a business capability that was accidentally eliminated from the Target Architecture — not a deliberate design decision. What is this called and what must happen?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) A compliance breach — escalate to the Architecture Board immediately",
+      "B) A gap requirement — the eliminated capability must be addressed, documented in the Repository, and the Target Architecture revised accordingly ✓",
+      "C) An intentional omission — classified as a deliberate decision",
+      "D) A scope change requiring a new Statement of Architecture Work"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — a gap requirement is specifically an accidental elimination in gap analysis. It must be addressed and the Target Architecture revised." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's Phase D is underway. A new APRA regulation requires all financial services firms to store and process financial transaction metadata only in Australian data centres — directly affecting GlobalTech's planned use of Azure's globally replicated backup service in the Target Technology Architecture. The Head of Compliance says: \"This is mandatory. Can we just update the Technology Architecture immediately and keep going?\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 1 pt", "Agree. Mandatory regulatory requirements take highest priority and should be implemented immediately. Correctly identifies high priority. Loses marks for bypassing the Requirements Management process — no Requirements Impact Assessment, no identification of cross-phase impacts, no Architecture Board involvement."],
+      ["B — 0 pts", "Disagree — new requirements during Phase D cannot be incorporated into the current cycle; defer to the Repository. Fundamentally wrong. TOGAF explicitly manages new requirements mid-cycle; deferring a mandatory regulatory requirement to a future cycle is indefensible."],
+      ["C — 5 pts", "Formally capture the requirement in the Requirements Management process immediately. Generate a Requirements Impact Assessment to assess impact on Phase D (Technology Architecture revision), Phase C (check data flows through non-Australian services), and Phases E–F (Roadmap and migration timeline impacts). Route the decision to the Architecture Board — not a unilateral call by the EA or Head of Compliance. Best answer."],
+      ["D — 3 pts", "Agree, but require formal documentation in the Architecture Requirements Specification and update the Architecture Definition Document — no Architecture Board involvement needed as it is mandatory. Better than A but wrong to exclude Architecture Board. A change to the baselined Technology Architecture affecting previous phases requires Board review and approval."]
+    ]}
+  ]
+}

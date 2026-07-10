@@ -1,0 +1,91 @@
+{
+  "id": "LES-23",
+  "moduleId": "MOD-L23",
+  "order": 22,
+  "title": "Architecture Alternatives and Trade-offs",
+  "sourceCitation": "C220Part2e — Chapter 9 (ADM Techniques)",
+  "estimatedMinutes": 30,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Every architecture programme reaches a point where more than one valid way forward exists. Architecture Alternatives and Trade-offs is TOGAF's formal technique for handling this: when multiple Target Architectures could all validly conform to the Vision, Principles, and Requirements, how do you identify options, compare them honestly, and make a governed decision?" },
+    { "type": "paragraph", "text": "The technique matters for three reasons beyond simply choosing: it surfaces hidden agendas (stakeholders reveal real priorities when shown explicit trade-offs), it surfaces hidden requirements (reactions to alternatives reveal undocumented constraints), and it creates a governed decision trail (a documented rationale that survives scrutiny years later)." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points" },
+    { "type": "paragraph", "text": "The concept: There is often more than one possible Target Architecture that would conform to the Architecture Vision, Principles, and Requirements. Presenting alternatives and trade-offs to stakeholders helps architects extract hidden agendas, principles, and requirements that could impact the final Target Architecture." },
+    { "type": "paragraph", "text": "The three-part Trade-off Method:" },
+    { "type": "table", "headers": ["Part", "What it does"], "rows": [
+      ["1. Define Criteria", "Use Architecture Vision, Principles, Requirements, and stakeholder concerns to establish evaluation criteria"],
+      ["2. Identify and Describe Alternatives", "For each: define overview criteria, describe the architecture, estimate gaps from baseline, understand impacts across the Architecture Landscape"],
+      ["3. Select or Combine", "Choose one alternative, or combine features from multiple into a proposed hybrid"]
+    ]},
+    { "type": "paragraph", "text": "Applies at: Any phase in the ADM, any level of the architecture (Strategic/Segment/Capability), and per domain — with per-domain alternatives mergeable into a whole-architecture analysis." },
+    { "type": "paragraph", "text": "Typical criteria: Flexibility · Time and cost of realisation (including transitions and \"islands of stability\") · Time period over which benefits are achieved · Adherence to architecture styles/guidelines · Solution delivery method (re-use, develop, buy) · Minimal impact on business capabilities during implementation · Minimised risk." },
+    { "type": "paragraph", "text": "Step 4 of Part 2 — impacts and trade-offs: For each alternative, identify impact on any existing architectures and Transition Architectures within the Architecture Landscape, and impact on any running or planned implementation projects." },
+    { "type": "paragraph", "text": "Relationship to Architecture Principles: Criteria must include the Architecture Principles. An alternative that is cheaper/faster but violates a principle is not automatically valid — it requires a formal governance decision (exception or principle revision), not an informal workaround." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "The three-part method — \"CDC\": Criteria → Describe alternatives → Choose or Combine.\n\nThe forcing-function insight: Presenting alternatives with explicit trade-offs forces stakeholders to reveal what they actually prioritise — not what they said in the abstract." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — APPLIED PER DOMAIN, THEN MERGED. Alternatives are typically evaluated per domain (Application Architecture separately from Technology Architecture) to simplify analysis, then merged into a whole-architecture view. Not one set of alternatives immediately for the whole architecture." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — NON-COMPLIANT ALTERNATIVES ARE NOT AUTOMATICALLY DISQUALIFIED. An alternative violating a principle may prompt the Architecture Board to reconsider the principle — but this requires formal governance, not an informal workaround." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — APPLIES AT ANY PHASE, NOT JUST PHASE E. The technique feeds into Phase E's roadmap consolidation but is performed wherever significant architectural decisions arise throughout the ADM." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 4 — THE ARCHITECT PROPOSES; THE ARCHITECTURE BOARD SELECTS. Consistent with all major TOGAF governance decisions: the EA does the analysis, the governance body makes the call." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What are the three parts of the Architecture Trade-off Method?" },
+    { "type": "paragraph", "text": "Part 1 — Define Criteria (from Vision, Principles, Requirements, stakeholder concerns). Part 2 — Identify and Describe Alternatives (criteria, architecture description, gap estimate, Landscape impacts). Part 3 — Select or Combine (choose one or merge features into a hybrid)." },
+    { "type": "heading", "level": 4, "text": "2. Why does presenting alternatives help \"extract hidden agendas, principles, and requirements\"?" },
+    { "type": "paragraph", "text": "Explicit trade-offs force stakeholders to reveal what they actually prioritise — a stakeholder who says \"I want the best solution\" reveals real priorities when shown Alternative A costs $2M more but delivers twice as fast. This surfaces constraints never formally articulated." },
+    { "type": "heading", "level": 4, "text": "3. At which ADM phases and levels can this technique be applied?" },
+    { "type": "paragraph", "text": "Any phase in the ADM and any level of the architecture (Strategic, Segment, Capability) — not limited to Phase E." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "paragraph", "text": "**Phase D integration layer decision** — three alternatives evaluated: Alt 1: Azure API Management (high principle adherence, fast, managed service, Microsoft vendor dependency) · Alt 2: Self-hosted MuleSoft on Azure IaaS (maximum flexibility, high operational burden, longer implementation, lower vendor dependency) · Alt 3: Direct REST connections (cheapest, fastest, but violates the \"approved middleware only\" principle)." },
+    { "type": "paragraph", "text": "**Hidden requirement surfaced**: When shown Alternative 2, the Head of IT Operations reveals a previously undisclosed concern about Microsoft vendor lock-in. This surfaces a new criterion: \"minimise vendor concentration risk.\"" },
+    { "type": "paragraph", "text": "**Architecture Board decision**: Alternative 3 eliminated as non-compliant. Alternative 1 selected for principle alignment, skills fit, and timeline — but the vendor concentration concern is formalised as a new Architecture Principle: \"No single vendor shall provide more than 60% of enterprise middleware capability.\" Full rationale documented in the Architecture Repository for future reference." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: MOST ORGANISATIONS SKIP THIS AND PAY FOR IT LATER. Technology decisions are frequently made informally — \"the infra team knows Azure.\" Without a documented trade-off analysis, the decision has no defensible rationale when challenged years later." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: CRITERIA MUST BE AGREED BEFORE ALTERNATIVES ARE SHOWN. If stakeholders see alternatives first, they unconsciously define criteria that favour their preferred option. Criteria come from Vision, Principles, and Requirements — established before anyone knows which alternative they'll favour." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes the primary purpose of the Architecture Alternatives and Trade-offs technique?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) To identify the cheapest and fastest Target Architecture",
+      "B) To identify alternative Target Architectures conforming to Vision, Principles, and Requirements, and understand trade-offs to support a governed decision ✓",
+      "C) To allow project teams to select their preferred technology without Board involvement",
+      "D) To document why the initially proposed architecture was rejected"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — the Architecture Board makes the final selection, not project teams; the goal is governed decision-making, not cost minimisation." },
+    { "type": "heading", "level": 4, "text": "Q2. At what point should evaluation criteria be defined?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) After all alternatives are described, tailored to distinguish them",
+      "B) Before alternatives are identified — derived from Vision, Principles, Requirements, stakeholder concerns ✓",
+      "C) During Phase E when the roadmap is finalised",
+      "D) By the Architecture Board at the point of decision"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — defining criteria after alternatives are known allows unconscious bias to shape the evaluation." },
+    { "type": "heading", "level": 4, "text": "Q3. An alternative — direct REST connections — clearly violates \"all integrations must use approved middleware.\" How should the architect handle this?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Exclude it — only compliant alternatives should be presented",
+      "B) Include it — presenting a non-compliant alternative makes the cost of the principle visible and may prompt the Board to reaffirm or reconsider it ✓",
+      "C) Apply for a Dispensation before including it",
+      "D) Include it only if formally requested by the project team"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — including non-compliant alternatives deliberately makes trade-offs visible. The decision remains with the Architecture Board." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: Three cloud platform alternatives are analysed: Azure (aligns with Dynamics 365, familiar, highest vendor concentration risk), AWS (lowest unit cost, highest integration complexity), Hybrid (lowest vendor risk, highest operational complexity). The CFO says: \"We're already on Azure — this analysis is just extra work. Can we just document the Azure decision and move on?\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 0 pts", "Agree — Azure is obviously right, alternatives analysis is redundant. This is exactly how organisations end up with undocumented, ungoverned decisions that cause problems years later."],
+      ["B — 3 pts", "Partially agree — if Azure clearly aligns, the analysis can be abbreviated: document criteria, confirm Azure meets them, briefly note why others weren't selected. Pragmatic and TOGAF-aligned (\"just enough detail\"), but loses marks for not acknowledging the hidden requirement (vendor concentration risk) already surfaced."],
+      ["C — 1 pt", "Disagree — all three alternatives require full architecture views and impact assessments regardless. Over-rigid; TOGAF explicitly allows proportionate depth (\"just enough detail to support the decision\")."],
+      ["D — 5 pts", "Disagree with the CFO's characterisation — the analysis already surfaced a significant hidden concern (vendor concentration risk) not captured in the Vision or Principles. Even if Azure is selected, the analysis produced real value: a new Architecture Principle proposal and documented rationale. Complete to the level needed for a governed Board decision — not a bilateral CFO/EA agreement. Best answer."]
+    ]}
+  ]
+}

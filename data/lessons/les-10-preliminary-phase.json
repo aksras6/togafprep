@@ -1,0 +1,84 @@
+{
+  "id": "LES-10",
+  "moduleId": "MOD-L10",
+  "order": 10,
+  "title": "The Preliminary Phase",
+  "sourceCitation": "C220-Part1e — Architecture Development Method",
+  "estimatedMinutes": 30,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "The Preliminary Phase happens before the first ADM cycle begins. It sets up the organisation's ability to do architecture work properly, consistently, and with authority. It answers five fundamental questions: Where do we do architecture? (scope) · What do we do it with? (framework) · Why do we do it? (drivers) · Who does it? (team/governance) · How do we do it? (process/tools/principles)." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points" },
+    { "type": "paragraph", "text": "Two objectives:" },
+    { "type": "list", "ordered": false, "items": [
+      "**Determine** the Architecture Capability desired (review context, scope elements, identify existing frameworks, establish maturity target)",
+      "**Establish** the Architecture Capability (define Organisational Model for EA, define Architecture Governance, select tools, define Architecture Principles)"
+    ]},
+    { "type": "paragraph", "text": "Six steps — \"Scope, Governance, Team, Principles, Tailor, Tools\"" },
+    { "type": "paragraph", "text": "Three types of tailoring — **TPC**: Terminology · Process · Content" },
+    { "type": "paragraph", "text": "Three enterprise scope categories: **Core** (most affected, most value) · **Soft** (will see change, not directly targeted) · **Extended** (outside scope but affected)" },
+    { "type": "paragraph", "text": "Key outputs: Organisational Model for EA · Tailored Architecture Framework (including Architecture Principles) · Initial Architecture Repository · Architecture Governance Framework" },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"Where What Why Who How\" · \"Scope, Governance, Team, Principles, Tailor, Tools\" · TPC = \"The Proper Customisation\"" },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — PRELIMINARY IS NOT PART OF THE ADM CYCLE. It sits outside and before the cycle. Phase A (Architecture Vision) is where the cycle begins. It is not \"Phase 0.\"" },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — PRINCIPLES CREATED IN PRELIMINARY, NOT PHASE A. Architecture Principles are established in the Preliminary Phase. Phase A confirms and elaborates them — it does not create them." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What are the five questions the Preliminary Phase answers?" },
+    { "type": "paragraph", "text": "Where do we do architecture? (scope) · What do we do it with? (framework) · Why do we do it? (drivers) · Who does it? (team/governance) · How do we do it? (process/tools/principles)" },
+    { "type": "heading", "level": 4, "text": "2. Name the three types of tailoring in the Preliminary Phase." },
+    { "type": "paragraph", "text": "Terminology tailoring (language/glossary) · Process tailoring (adapt steps, add checkpoints, link to other processes) · Content tailoring (adapt the Architecture Content Framework)." },
+    { "type": "heading", "level": 4, "text": "3. Where are Architecture Principles established — in Preliminary or Phase A?" },
+    { "type": "paragraph", "text": "In the Preliminary Phase. Phase A confirms and elaborates them but does not create them from scratch (unless Preliminary was skipped)." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "list", "ordered": false, "items": [
+      "**Scope**: Finance, HR, IT Operations = core. Procurement, Legal = soft. External partners = extended.",
+      "**Governance**: Architecture Board reports into IT Steering Committee. Architecture Review checkpoints at every PMO stage gate.",
+      "**EA Team**: One Senior EA, two Solution Architects, one Architecture Analyst. Level 1 maturity → target Level 3 within 18 months.",
+      "**Principles**: Six established — \"Technology follows business strategy\"; \"Data is a corporate asset\"; \"All integrations must use approved middleware\"; \"Cloud-first\"; \"Reuse before buy, buy before build\"; \"Security and privacy by design.\"",
+      "**Tailoring**: Terminology tailored for business stakeholders. Architecture Reviews embedded in PMO stage gates. Azure Well-Architected Framework adopted alongside TOGAF's Technology Architecture framework.",
+      "**Tools**: Sparx Enterprise Architect · Confluence · JIRA · Power BI."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes the primary purpose of the Preliminary Phase?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) To develop the Architecture Vision",
+      "B) To prepare the organisation by establishing Architecture Capability, governance, principles, and a tailored framework ✓",
+      "C) To review existing architectures and identify gaps",
+      "D) To obtain formal sponsorship and budget approval"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — Preliminary is about setting up the EA capability before any cycle begins." },
+    { "type": "heading", "level": 4, "text": "Q2. An organisation removes redundant ADM steps, adds governance checkpoints, and aligns the ADM to their procurement process. Which type of tailoring?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Content", "B) Terminology", "C) Process ✓", "D) Framework"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — removing tasks, adding checkpoints, aligning to other processes = Process tailoring." },
+    { "type": "heading", "level": 4, "text": "Q3. Which is a key output of the Preliminary Phase?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) The Architecture Vision document",
+      "B) The Statement of Architecture Work",
+      "C) The Tailored Architecture Framework, including Architecture Principles ✓",
+      "D) The Architecture Definition Document"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — the Tailored Architecture Framework (including Architecture Principles) is the primary output." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's CTO directs the newly appointed EA to begin work immediately on the Dynamics 365 migration: \"We've wasted too much time in planning already. Go straight to defining the architecture. We'll sort out governance and principles as we go.\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 1 pt", "Comply. ADM is flexible; Preliminary can run in parallel with Phase A. Acknowledges flexibility correctly but misses the core risk: making architecture decisions before governance rules are established."],
+      ["B — 0 pts", "Decline until full Preliminary Phase is completed. Contradicts TOGAF — the Standard does not require Preliminary to be fully completed before Phase A begins."],
+      ["C — 5 pts", "Negotiate a time-boxed, lightweight Preliminary Phase — minimum viable outputs: agree scope, establish a basic governance checkpoint, define a starter set of Architecture Principles, do minimal tailoring. Document the risk and get the CTO's acknowledgement. Best answer."],
+      ["D — 3 pts", "Begin Phase A immediately and raise absence of Principles and governance as risks in the Architecture Vision, planning to retrospectively establish Preliminary outputs. Better than ignoring the problem but architecturally backwards — decisions made before the rules that govern them exist."]
+    ]}
+  ]
+}

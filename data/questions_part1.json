@@ -1,0 +1,3550 @@
+[
+  {
+    "id": "Q1-001",
+    "moduleId": "MOD-001",
+    "lessonId": "LES-001",
+    "stem": "Which ADM phase is specifically responsible for developing the Target Business Architecture?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Phase A: Architecture Vision"
+      },
+      {
+        "key": "B",
+        "text": "Phase B: Business Architecture"
+      },
+      {
+        "key": "C",
+        "text": "Phase C: Information Systems Architecture"
+      },
+      {
+        "key": "D",
+        "text": "Phase E: Opportunities and Solutions"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Phase B develops the Baseline and Target Business Architectures. Phase A only creates a high-level vision. Phase C covers Data and Application architectures. Phase E identifies work packages to bridge the gap.",
+    "difficulty": "easy",
+    "tags": [
+      "ADM",
+      "Phase B",
+      "Business Architecture"
+    ],
+    "adm_phase": "B",
+    "domain": "Business"
+  },
+  {
+    "id": "Q1-002",
+    "moduleId": "MOD-001",
+    "lessonId": "LES-001",
+    "stem": "In TOGAF, which of the four architecture domains is concerned with the structure of logical and physical data assets?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Business Architecture"
+      },
+      {
+        "key": "B",
+        "text": "Application Architecture"
+      },
+      {
+        "key": "C",
+        "text": "Data Architecture"
+      },
+      {
+        "key": "D",
+        "text": "Technology Architecture"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Data Architecture defines the structure of an organisation's logical and physical data assets and data management resources. Application Architecture deals with individual applications and their interactions. Technology Architecture covers hardware and software infrastructure.",
+    "difficulty": "easy",
+    "tags": [
+      "domains",
+      "Data Architecture"
+    ],
+    "adm_phase": "C",
+    "domain": "Data"
+  },
+  {
+    "id": "Q1-003",
+    "moduleId": "MOD-001",
+    "lessonId": "LES-002",
+    "stem": "Which of the following best describes the purpose of the Enterprise Continuum?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A governance framework for managing architecture change requests"
+      },
+      {
+        "key": "B",
+        "text": "A view of the Architecture Repository classifying assets from generic to organisation-specific"
+      },
+      {
+        "key": "C",
+        "text": "A database storing all project deliverables and work packages"
+      },
+      {
+        "key": "D",
+        "text": "A migration plan for transitioning from Baseline to Target Architecture"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Enterprise Continuum provides a classification scheme for architectures and solutions, ranging from Foundation Architectures (most generic) through Common Systems and Industry Architectures to Organisation-Specific Architectures. It is a view of the Architecture Repository.",
+    "difficulty": "medium",
+    "tags": [
+      "Enterprise Continuum",
+      "Architecture Repository"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-004",
+    "moduleId": "MOD-001",
+    "lessonId": "LES-002",
+    "stem": "The Architecture Repository contains six classes of architectural information. Which of the following is NOT one of them?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Standards Information Base"
+      },
+      {
+        "key": "B",
+        "text": "Governance Log"
+      },
+      {
+        "key": "C",
+        "text": "Project Management Office Records"
+      },
+      {
+        "key": "D",
+        "text": "Architecture Capability"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "The six classes in the Architecture Repository are: Architecture Metamodel, Architecture Capability, Architecture Landscape, Standards Information Base, Reference Library, and Governance Log. PMO Records are not part of the Architecture Repository.",
+    "difficulty": "medium",
+    "tags": [
+      "Architecture Repository",
+      "foundation"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-005",
+    "moduleId": "MOD-001",
+    "lessonId": "LES-003",
+    "stem": "In TOGAF terminology, what is the difference between a View and a Viewpoint?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A View is a set of stakeholders; a Viewpoint is a specific concern"
+      },
+      {
+        "key": "B",
+        "text": "A View is what you see; a Viewpoint is the specification of conventions for constructing that view"
+      },
+      {
+        "key": "C",
+        "text": "A View is a governance artefact; a Viewpoint is a migration plan"
+      },
+      {
+        "key": "D",
+        "text": "They are synonymous terms used interchangeably in TOGAF"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "A View is a representation of a system from the perspective of a set of related concerns. A Viewpoint is the specification of conventions for constructing and using a view — it defines what can be in a view and how to express it.",
+    "difficulty": "medium",
+    "tags": [
+      "views",
+      "viewpoints",
+      "stakeholders"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-006",
+    "moduleId": "MOD-002",
+    "lessonId": "LES-004",
+    "stem": "Which ADM phase produces the Statement of Architecture Work?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Preliminary Phase"
+      },
+      {
+        "key": "B",
+        "text": "Phase A: Architecture Vision"
+      },
+      {
+        "key": "C",
+        "text": "Phase B: Business Architecture"
+      },
+      {
+        "key": "D",
+        "text": "Phase G: Implementation Governance"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Statement of Architecture Work is a key output of Phase A: Architecture Vision. It defines the scope of the architecture work, the approach, and obtains formal sign-off. The Preliminary phase establishes the framework; Phase B develops the Business Architecture.",
+    "difficulty": "easy",
+    "tags": [
+      "ADM",
+      "Phase A",
+      "deliverables",
+      "Statement of Architecture Work"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-007",
+    "moduleId": "MOD-002",
+    "lessonId": "LES-004",
+    "stem": "Requirements Management in TOGAF ADM is best described as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "A one-time activity performed only in Phase A"
+      },
+      {
+        "key": "B",
+        "text": "A continuous process that feeds requirements into and from all ADM phases"
+      },
+      {
+        "key": "C",
+        "text": "A sub-phase within Phase B: Business Architecture"
+      },
+      {
+        "key": "D",
+        "text": "The responsibility of the project management office, not the architecture team"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Requirements Management is a continuous process at the centre of the ADM wheel. It manages the identification, storage, and feeding of requirements into and out of relevant ADM phases throughout the architecture lifecycle.",
+    "difficulty": "easy",
+    "tags": [
+      "ADM",
+      "Requirements Management"
+    ],
+    "adm_phase": "Requirements Management",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-008",
+    "moduleId": "MOD-002",
+    "lessonId": "LES-005",
+    "stem": "Which phase of the ADM is primarily responsible for developing the Architecture Roadmap?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Phase D: Technology Architecture"
+      },
+      {
+        "key": "B",
+        "text": "Phase E: Opportunities and Solutions"
+      },
+      {
+        "key": "C",
+        "text": "Phase F: Migration Planning"
+      },
+      {
+        "key": "D",
+        "text": "Phase G: Implementation Governance"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Phase E: Opportunities and Solutions generates the initial Architecture Roadmap. It identifies work packages and Transition Architectures. Phase F refines and finalises the detailed Migration Plan and Architecture Roadmap.",
+    "difficulty": "medium",
+    "tags": [
+      "ADM",
+      "Phase E",
+      "Architecture Roadmap"
+    ],
+    "adm_phase": "E",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-009",
+    "moduleId": "MOD-002",
+    "lessonId": "LES-005",
+    "stem": "An Architecture Contract in TOGAF is best described as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "A legal agreement between the enterprise and an IT vendor"
+      },
+      {
+        "key": "B",
+        "text": "A joint agreement between development partners and sponsors on deliverables, quality, and fitness-for-purpose"
+      },
+      {
+        "key": "C",
+        "text": "A document produced in Phase A that authorises the architecture project"
+      },
+      {
+        "key": "D",
+        "text": "A compliance checklist used during architecture reviews"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "An Architecture Contract is a joint agreement between development partners and sponsors on the deliverables, quality, and fitness-for-purpose of an architecture. It is established in Phase G: Implementation Governance to ensure ongoing conformance.",
+    "difficulty": "medium",
+    "tags": [
+      "Architecture Contract",
+      "Phase G",
+      "governance"
+    ],
+    "adm_phase": "G",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-010",
+    "moduleId": "MOD-002",
+    "lessonId": "LES-006",
+    "stem": "In the TOGAF Architecture Landscape, which level addresses the detailed building blocks needed to support a particular business unit?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Strategic Architecture"
+      },
+      {
+        "key": "B",
+        "text": "Segment Architecture"
+      },
+      {
+        "key": "C",
+        "text": "Capability Architecture"
+      },
+      {
+        "key": "D",
+        "text": "Foundation Architecture"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Capability Architecture shows how the enterprise needs to be organised to deliver a specific outcome or respond to a strategic driver. Segment Architecture addresses a specific area of the enterprise (e.g., a business unit). Strategic Architecture provides the long-term direction.",
+    "difficulty": "hard",
+    "tags": [
+      "Architecture Landscape",
+      "capability",
+      "strategic",
+      "segment"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-011",
+    "moduleId": "MOD-F-01",
+    "domainTag": "Core Concepts",
+    "difficulty": 2,
+    "stem": "A technology director tells her team: 'We use TOGAF so all our architectural decisions must comply with The Open Group's vendor recommendations.' Which aspect of this statement is incorrect?",
+    "options": [
+      {
+        "key": "A",
+        "text": "TOGAF does not belong to The Open Group"
+      },
+      {
+        "key": "B",
+        "text": "TOGAF is vendor-neutral and does not make vendor recommendations"
+      },
+      {
+        "key": "C",
+        "text": "Architectural decisions are not governed by TOGAF"
+      },
+      {
+        "key": "D",
+        "text": "The Open Group is a commercial software company"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "TOGAF is explicitly vendor-neutral — it does not endorse, recommend, or favour any specific products, tools, or technology vendors. The Open Group is a vendor-neutral industry consortium, not a vendor itself.",
+    "explanation": {
+      "whyCorrect": "TOGAF's vendor neutrality is a foundational characteristic. The Open Group deliberately maintains independence from commercial vendors so that TOGAF can be adopted without creating technology lock-in. No part of TOGAF recommends specific products.",
+      "whyOthersWrong": "A is false — TOGAF is owned and maintained by The Open Group. C is false — TOGAF governance does constrain architectural decisions through principles and compliance requirements. D is false — The Open Group is a vendor-neutral consortium, not a software company.",
+      "examTip": "When you see statements pairing TOGAF with vendor recommendations or product preferences, the answer is always that TOGAF is vendor-neutral. This principle is tested across multiple question types."
+    },
+    "tags": [
+      "TOGAF",
+      "vendor-neutral",
+      "The Open Group",
+      "Core Concepts"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-012",
+    "moduleId": "MOD-F-01",
+    "domainTag": "Core Concepts",
+    "difficulty": 2,
+    "stem": "Which of the following most accurately describes the relationship between TOGAF and ITIL?",
+    "options": [
+      {
+        "key": "A",
+        "text": "TOGAF replaces ITIL for organisations doing large-scale digital transformation"
+      },
+      {
+        "key": "B",
+        "text": "ITIL is a subset of TOGAF, covered within the ADM's operational phases"
+      },
+      {
+        "key": "C",
+        "text": "TOGAF and ITIL address different concerns and can be used together"
+      },
+      {
+        "key": "D",
+        "text": "TOGAF's Preliminary Phase eliminates the need for a separate ITSM framework"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "TOGAF covers architecture development; ITIL covers IT service management and operations. They are complementary — TOGAF defines how services should be architecturally designed; ITIL governs how they are run and improved operationally.",
+    "explanation": {
+      "whyCorrect": "TOGAF explicitly recognises other management frameworks and is designed to coexist with them. The Preliminary Phase specifically addresses how TOGAF integrates with ITIL, COBIT, and PRINCE2.",
+      "whyOthersWrong": "A is wrong — TOGAF never claims to replace project management or service management frameworks. B is wrong — ITIL is an independent framework, not contained within TOGAF. D is wrong — the Preliminary Phase defines integration points, not replacements.",
+      "examTip": "Any question suggesting TOGAF 'replaces' another named framework is wrong. TOGAF's standard answer to coexistence questions is: complementary, not competing."
+    },
+    "tags": [
+      "TOGAF",
+      "ITIL",
+      "frameworks",
+      "integration"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-013",
+    "moduleId": "MOD-F-01",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "An organisation's Head of Strategy says: 'We need our Enterprise Architecture to start with what the business wants to achieve — not with what IT has available.' Which TOGAF domain most directly reflects this priority?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Technology Architecture — it defines the infrastructure strategy"
+      },
+      {
+        "key": "B",
+        "text": "Application Architecture — it maps systems to business processes"
+      },
+      {
+        "key": "C",
+        "text": "Business Architecture — it describes strategy, governance, and key business processes"
+      },
+      {
+        "key": "D",
+        "text": "Data Architecture — it governs how enterprise information assets are managed"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Business Architecture is the domain that covers business strategy, governance, organisation structure, and key business processes. It is explicitly the first domain developed in the ADM (Phase B), because business needs drive all subsequent architecture decisions.",
+    "explanation": {
+      "whyCorrect": "The BDAT sequence exists precisely for this reason: Business Architecture establishes what the enterprise needs to do before Data, Application, or Technology decisions are made. Starting with Business Architecture is the TOGAF mechanism for ensuring business drives IT.",
+      "whyOthersWrong": "Technology Architecture (A) is the last domain developed — it responds to the others, not leads them. Application Architecture (B) maps systems to already-defined business processes. Data Architecture (D) governs information, which itself is defined by business need.",
+      "examTip": "Whenever a question emphasises business primacy in architecture, Business Architecture and the BDAT sequence are the correct anchors."
+    },
+    "tags": [
+      "Business Architecture",
+      "BDAT",
+      "domains",
+      "strategy"
+    ],
+    "adm_phase": "B",
+    "domain": "Business"
+  },
+  {
+    "id": "Q1-014",
+    "moduleId": "MOD-F-01",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "A TOGAF practitioner describes the ADM as 'the prescriptive cookbook that organisations must follow step-by-step to produce valid architectures.' Which part of this description requires correction?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The ADM is not part of TOGAF"
+      },
+      {
+        "key": "B",
+        "text": "The ADM is iterative and must be tailored to the organisation's context — it is not a rigid sequential prescription"
+      },
+      {
+        "key": "C",
+        "text": "The ADM does not produce architectures — it only produces governance documents"
+      },
+      {
+        "key": "D",
+        "text": "The term 'cookbook' accurately describes the ADM's intent"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "TOGAF explicitly states that the ADM must be adapted and tailored. It is iterative, not linear. Organisations select applicable phases, adjust artefact requirements, and adapt processes to their context. Treating it as a rigid step-by-step prescription misrepresents TOGAF's design intent.",
+    "explanation": {
+      "whyCorrect": "The Preliminary Phase is dedicated to tailoring TOGAF. ADM iteration (architecture iteration, transition iteration, landscape iteration) is a documented feature, not an exception. 'Must follow step-by-step' contradicts core TOGAF guidance.",
+      "whyOthersWrong": "A is false — the ADM is the core of TOGAF. C is false — ADM phases produce architecture deliverables including the Architecture Definition Document. D is false — the 'cookbook' metaphor implies rigid prescription, which TOGAF explicitly rejects.",
+      "examTip": "Questions testing ADM flexibility follow a pattern: a statement about rigid application is incorrect; the correct answer emphasises tailoring, iteration, and adaptation."
+    },
+    "tags": [
+      "ADM",
+      "tailoring",
+      "iteration",
+      "Core Concepts"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-015",
+    "moduleId": "MOD-F-01",
+    "domainTag": "Core Concepts",
+    "difficulty": 4,
+    "stem": "An enterprise has three subsidiaries each operating different Architecture Frameworks. The group CTO wants to adopt TOGAF as the group standard while allowing subsidiaries to retain local practices where appropriate. Which TOGAF concept most directly supports this requirement?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Architecture Partitioning — dividing the architecture landscape into Strategic, Segment, and Capability levels"
+      },
+      {
+        "key": "B",
+        "text": "Architecture Principles — establishing enterprise-wide rules that subsidiaries must follow"
+      },
+      {
+        "key": "C",
+        "text": "The Enterprise Continuum — classifying assets from generic to organisation-specific"
+      },
+      {
+        "key": "D",
+        "text": "ADM tailoring — adapting TOGAF to integrate with existing subsidiary frameworks"
+      }
+    ],
+    "correctKey": "D",
+    "rationale": "The Preliminary Phase's tailoring capability directly supports integration with existing frameworks. TOGAF can be adapted to coexist with other architecture methods — tailoring the terminology, process steps, and governance processes to align with what each subsidiary already uses.",
+    "explanation": {
+      "whyCorrect": "TOGAF's tailoring guidelines explicitly address integration with other frameworks, including adapting TOGAF's terminology and process to match existing practices. This is precisely the Preliminary Phase's purpose.",
+      "whyOthersWrong": "Architecture Partitioning (A) addresses governance levels, not framework integration. Architecture Principles (B) set rules but don't resolve framework coexistence. The Enterprise Continuum (C) classifies assets, not frameworks.",
+      "examTip": "Framework integration and coexistence scenarios almost always point to the Preliminary Phase's tailoring and integration activities."
+    },
+    "tags": [
+      "tailoring",
+      "Preliminary Phase",
+      "framework integration",
+      "adaptation"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-016",
+    "moduleId": "MOD-F-02",
+    "domainTag": "Core Concepts",
+    "difficulty": 2,
+    "stem": "A banking IT team is looking for an existing security architecture reference model that applies broadly across the financial services industry, before designing their own. At which level of the Enterprise Continuum should they search?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Foundation Architectures — they contain the most generic and reusable patterns"
+      },
+      {
+        "key": "B",
+        "text": "Organisation-Specific Architectures — they are most directly applicable"
+      },
+      {
+        "key": "C",
+        "text": "Industry Architectures — they provide sector-specific reference models"
+      },
+      {
+        "key": "D",
+        "text": "Common Systems Architectures — they address cross-industry technical concerns"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Industry Architectures are specific to a vertical sector (e.g., BIAN for banking, HL7 for healthcare). For a bank seeking a financial services security architecture, the Industry level is the most directly applicable starting point.",
+    "explanation": {
+      "whyCorrect": "The Enterprise Continuum levels progress from generic (Foundation) to sector-specific (Industry) to enterprise-specific (Organisation-Specific). A bank seeking a financial services reference model should look at Industry Architectures first.",
+      "whyOthersWrong": "Foundation (A) is too generic — it applies to any industry. Organisation-Specific (B) is the bank's own architecture, not a starting reference. Common Systems (D) addresses cross-industry IT patterns, not financial services specifically.",
+      "examTip": "Match the specificity of the search to the Continuum level. Sector-specific = Industry. Any industry = Common Systems. Any enterprise anywhere = Foundation."
+    },
+    "tags": [
+      "Enterprise Continuum",
+      "Industry Architecture",
+      "BIAN"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-017",
+    "moduleId": "MOD-F-02",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "Which statement correctly describes the relationship between the Enterprise Continuum and the Architecture Repository?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The Architecture Repository is a sub-component of the Enterprise Continuum"
+      },
+      {
+        "key": "B",
+        "text": "The Enterprise Continuum is a classification view of what is stored in the Architecture Repository"
+      },
+      {
+        "key": "C",
+        "text": "They are independent TOGAF concepts with no formal relationship"
+      },
+      {
+        "key": "D",
+        "text": "The Enterprise Continuum replaces the Architecture Repository in TOGAF 10"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Enterprise Continuum is a view of the Architecture Repository — it is a way of classifying the assets stored in the Repository according to how generic or specific they are. The Repository stores; the Continuum classifies.",
+    "explanation": {
+      "whyCorrect": "TOGAF defines this relationship explicitly: the Enterprise Continuum provides a classification scheme for architectures and solutions, and these assets are stored in the Architecture Repository. The Continuum is how you understand the Repository's contents.",
+      "whyOthersWrong": "A reverses the relationship — the Repository isn't inside the Continuum. C is incorrect — they have a formal, documented relationship. D is false — both concepts exist in TOGAF 10.",
+      "examTip": "Remember the analogy: the Repository is the library; the Continuum is the catalogue system that tells you where to find things based on how generic they are."
+    },
+    "tags": [
+      "Enterprise Continuum",
+      "Architecture Repository",
+      "relationship"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-018",
+    "moduleId": "MOD-F-02",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "An architect finds that the Architecture Repository's Standards Information Base contains an approved open-source API gateway. A project team requests to use a commercial alternative. Where should the outcome of this governance decision be recorded?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Standards Information Base — updating the approved standards list"
+      },
+      {
+        "key": "B",
+        "text": "Architecture Landscape — as a new application component"
+      },
+      {
+        "key": "C",
+        "text": "Governance Log — recording the dispensation decision"
+      },
+      {
+        "key": "D",
+        "text": "Reference Library — as a new architecture pattern"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Governance decisions — including dispensations from approved standards — are recorded in the Governance Log class of the Architecture Repository. The Governance Log is specifically designed to hold records of compliance reviews, dispensations, and Architecture Board decisions.",
+    "explanation": {
+      "whyCorrect": "The Governance Log exists precisely for this scenario: a project deviating from an approved standard (SIB) with Architecture Board approval. The decision, its justification, and its time limit must be documented there.",
+      "whyOthersWrong": "The SIB (A) holds approved standards, not governance decisions. The Architecture Landscape (B) holds architecture descriptions, not governance outcomes. The Reference Library (C) holds patterns and templates, not decisions.",
+      "examTip": "Governance decisions, dispensations, and compliance review outcomes always go in the Governance Log. It is the audit trail of architecture governance."
+    },
+    "tags": [
+      "Governance Log",
+      "Architecture Repository",
+      "dispensation",
+      "SIB"
+    ],
+    "adm_phase": "G",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-019",
+    "moduleId": "MOD-F-02",
+    "domainTag": "Core Concepts",
+    "difficulty": 4,
+    "stem": "An enterprise has an Organisation-Specific Architecture for its customer identity platform. A new subsidiary acquisition brings a different identity platform. The EA team wants to assess both against common patterns before deciding on a target. Which direction of the Enterprise Continuum should guide this analysis?",
+    "options": [
+      {
+        "key": "A",
+        "text": "From Organisation-Specific toward Foundation — seeking common patterns to compare both platforms against"
+      },
+      {
+        "key": "B",
+        "text": "From Foundation toward Organisation-Specific — specialising a generic pattern for each platform"
+      },
+      {
+        "key": "C",
+        "text": "Across Industry Architectures only — since identity is a cross-industry concern"
+      },
+      {
+        "key": "D",
+        "text": "Within the Solutions Continuum only — since both platforms are deployed solutions"
+      }
+    ],
+    "correctKey": "A",
+    "rationale": "When comparing two organisation-specific solutions, moving toward more generic levels (Common Systems or Foundation) identifies common patterns that both can be assessed against. This provides a neutral architectural reference point for the comparison.",
+    "explanation": {
+      "whyCorrect": "The Enterprise Continuum runs from Foundation (generic) to Organisation-Specific (particular). Moving left (toward Foundation) finds common ground. Both identity platforms can be assessed against a Common Systems identity architecture pattern as a neutral reference.",
+      "whyOthersWrong": "Option B describes the normal specialisation direction for creating new architecture, not comparison. Option C limits search unnecessarily. Option D is too narrow — understanding architectural intent requires the Architecture Continuum, not just the Solutions Continuum.",
+      "examTip": "For comparison exercises, move toward the generic end of the Continuum. For creation exercises, move from generic toward specific."
+    },
+    "tags": [
+      "Enterprise Continuum",
+      "Architecture Continuum",
+      "comparison"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-020",
+    "moduleId": "MOD-F-02",
+    "domainTag": "Core Concepts",
+    "difficulty": 4,
+    "stem": "An architect states: 'The Requirements Repository is a separate system from the Architecture Repository.' A colleague disagrees. Who is correct and why?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The architect is correct — requirements are managed in a dedicated requirements management tool outside TOGAF"
+      },
+      {
+        "key": "B",
+        "text": "The colleague is correct — the Requirements Repository is part of the Architecture Landscape class within the Architecture Repository"
+      },
+      {
+        "key": "C",
+        "text": "Both are partially correct — requirements can be stored either inside or outside the Architecture Repository depending on organisational preference"
+      },
+      {
+        "key": "D",
+        "text": "The colleague is correct — requirements are stored in the Standards Information Base class of the Architecture Repository"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Requirements Repository is part of the Architecture Landscape class of the Architecture Repository. It is not a separate system — requirements are architecture assets and are stored within the formal Architecture Repository structure.",
+    "explanation": {
+      "whyCorrect": "TOGAF positions requirements as architectural assets. The Architecture Landscape class holds descriptions of the architecture at different levels — and requirements are part of that landscape. Storing them elsewhere would break traceability.",
+      "whyOthersWrong": "A is wrong — TOGAF is clear that the Requirements Repository sits within the Architecture Repository. D is wrong — the SIB holds approved standards, not requirements. C introduces ambiguity that TOGAF doesn't support.",
+      "examTip": "Requirements in TOGAF are always architecture assets stored in the Architecture Landscape class of the Architecture Repository — not in external tools or the SIB."
+    },
+    "tags": [
+      "Requirements Repository",
+      "Architecture Repository",
+      "Architecture Landscape"
+    ],
+    "adm_phase": "Requirements Management",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-021",
+    "moduleId": "MOD-F-03",
+    "domainTag": "Core Concepts",
+    "difficulty": 2,
+    "stem": "Which component of an Architecture Principle provides the business justification for why the principle exists?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Name"
+      },
+      {
+        "key": "B",
+        "text": "Statement"
+      },
+      {
+        "key": "C",
+        "text": "Rationale"
+      },
+      {
+        "key": "D",
+        "text": "Implications"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "The Rationale component of an Architecture Principle provides the business justification — explaining why the enterprise has adopted this principle and what benefits it delivers. This distinguishes Rationale from Implications, which describe the practical consequences of the principle.",
+    "explanation": {
+      "whyCorrect": "Rationale answers 'why does this principle exist?' and provides the business case for it. For example: 'Data is an enterprise asset — Rationale: shared data reduces redundancy, improves quality, and enables cross-enterprise reporting.'",
+      "whyOthersWrong": "Name (A) is just the short identifier. Statement (B) declares what the principle requires. Implications (D) describe the consequences of adopting it — costs, organisational changes, constraints. Implications are often confused with Rationale but they answer 'what happens as a result?' not 'why does this principle exist?'",
+      "examTip": "Rationale = the justification (the 'why it was adopted'). Implications = the consequences (the 'what must change as a result'). This distinction is one of the most frequently tested on OGEA-101."
+    },
+    "tags": [
+      "Architecture Principles",
+      "Rationale",
+      "Implications",
+      "four components"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-022",
+    "moduleId": "MOD-F-03",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "A principle states: 'All enterprise applications must use standard REST APIs for system integration.' The consequence is that three teams must replace their existing proprietary integration protocols, and a new API governance function must be established. This consequence represents which component?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The Rationale — it justifies why the principle was adopted"
+      },
+      {
+        "key": "B",
+        "text": "The Statement — it declares the principle"
+      },
+      {
+        "key": "C",
+        "text": "The Implications — it describes the practical consequences of adopting the principle"
+      },
+      {
+        "key": "D",
+        "text": "The Name — it identifies the principle concisely"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Implications describe the practical consequences of adopting a principle — what must change, what must be invested in, and what constraints are created. Replacing proprietary protocols and establishing governance are consequences of adoption, making this the Implications component.",
+    "explanation": {
+      "whyCorrect": "Implications answer: 'If we adopt this principle, what concrete changes must happen?' They typically include costs, organisational changes, technology investments, and operational constraints. They are the most operationally important component.",
+      "whyOthersWrong": "Rationale (A) would be something like: 'Standard APIs reduce integration cost and enable ecosystem interoperability.' Statement (B) is the principle declaration itself. Name (D) would be something like 'API-First Integration'.",
+      "examTip": "When a question presents a consequence or cost of a principle — what must be done as a result — that is always Implications. The exam frequently presents scenarios requiring you to classify principle components."
+    },
+    "tags": [
+      "Architecture Principles",
+      "Implications",
+      "components"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-023",
+    "moduleId": "MOD-F-03",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "During a programme review, a project team argues that their solution should be exempt from the enterprise's 'Cloud First' architecture principle because on-premise hosting is cheaper for their specific workload. What is the architecturally correct response?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Accept the exemption — cost is always a valid override for architectural principles"
+      },
+      {
+        "key": "B",
+        "text": "Escalate to the Architecture Board for a formal dispensation assessment with documented justification"
+      },
+      {
+        "key": "C",
+        "text": "Update the principle immediately to include a cost exception clause"
+      },
+      {
+        "key": "D",
+        "text": "Allow the project to proceed — principles are guidelines, not mandatory rules"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Architecture Principles are fundamental rules, not preferences. Deviating from a principle requires formal governance approval via the dispensation process — not unilateral project decisions or immediate principle revision.",
+    "explanation": {
+      "whyCorrect": "TOGAF's governance process provides the dispensation mechanism for exactly this situation. The Architecture Board reviews the case — assessing the justification, risk, and time period — and either approves or rejects the exception. The decision is documented in the Governance Log.",
+      "whyOthersWrong": "A is wrong — cost alone doesn't override principles; the governance process must decide. C is wrong — revising a principle because of one project's constraint undermines the principle's stability. D is wrong — principles are specifically described as fundamental rules, not guidelines.",
+      "examTip": "Any scenario where a project wants to deviate from a principle should trigger your 'dispensation' response. The Architecture Board decides; the Governance Log records it."
+    },
+    "tags": [
+      "Architecture Principles",
+      "dispensation",
+      "governance",
+      "Architecture Board"
+    ],
+    "adm_phase": "G",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-024",
+    "moduleId": "MOD-F-03",
+    "domainTag": "Core Concepts",
+    "difficulty": 4,
+    "stem": "An enterprise has twelve architecture principles. A review reveals that Principle 3 ('Maximise reuse of existing components') conflicts with Principle 9 ('All new solutions must use cloud-native patterns'). Some existing components are not cloud-native. Which quality of good Architecture Principles does this situation violate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Understandable — the principles are too complex for non-architects to apply"
+      },
+      {
+        "key": "B",
+        "text": "Stable — the principles change too frequently to be relied upon"
+      },
+      {
+        "key": "C",
+        "text": "Consistent — principles should not internally contradict each other"
+      },
+      {
+        "key": "D",
+        "text": "Complete — the principles do not cover all relevant architectural concerns"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "A set of Architecture Principles must be consistent — no principle should contradict another. When two principles pull in opposite directions, architects cannot apply them both, which undermines governance. Conflicts must be resolved by defining priority rules or reconciling the principles.",
+    "explanation": {
+      "whyCorrect": "TOGAF's five qualities of good principles include Consistent: the principles must not conflict with each other. Where genuine tensions exist, the principles should define how to resolve them. An unresolved conflict leaves architects unable to make governed decisions.",
+      "whyOthersWrong": "Understandable (A) relates to clarity for non-technical stakeholders. Stable (B) relates to frequency of change. Complete (D) relates to whether all major architectural concerns are addressed. None of these relate to internal contradiction.",
+      "examTip": "The five principle qualities are: Understandable, Robust, Complete, Consistent, Stable. Map each quality to its specific concern — Consistent specifically addresses internal contradictions."
+    },
+    "tags": [
+      "Architecture Principles",
+      "Consistent",
+      "principle qualities",
+      "conflicts"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-025",
+    "moduleId": "MOD-F-03",
+    "domainTag": "Core Concepts",
+    "difficulty": 5,
+    "stem": "An enterprise architect argues: 'We should update our Architecture Principles every time a new programme reveals a gap.' A governance consultant disagrees. Which of the following best supports the consultant's position?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Principles should never be updated — they are permanent commitments"
+      },
+      {
+        "key": "B",
+        "text": "Updating principles per-programme would undermine their Stability quality, making them unreliable as enterprise-wide rules"
+      },
+      {
+        "key": "C",
+        "text": "Principles are documents, not rules, so updating them has no governance consequence"
+      },
+      {
+        "key": "D",
+        "text": "The Architecture Board cannot update principles — only The Open Group can"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "One of the five qualities of good principles is Stability — they should not change with every new project or programme. Frequent updates undermine the principle's value as an enterprise-wide rule that all decisions are made against consistently.",
+    "explanation": {
+      "whyCorrect": "Principles can evolve — but through a deliberate, governed process when the enterprise strategy genuinely changes, not as a reaction to individual programme gaps. Frequent per-programme updates mean the principles are no longer stable enterprise-level constraints.",
+      "whyOthersWrong": "A is wrong — principles can legitimately evolve when enterprise strategy changes. C is wrong — principles are governance rules, and updating them has real architectural consequences. D is wrong — organisations create and update their own principles; The Open Group has no role.",
+      "examTip": "Stability in principles means they persist across multiple programmes. The test is: does this change reflect a genuine enterprise strategy shift, or just one programme's convenience? The former can justify a principle update; the latter should not."
+    },
+    "tags": [
+      "Architecture Principles",
+      "Stable",
+      "principle qualities",
+      "governance"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-026",
+    "moduleId": "MOD-F-04",
+    "domainTag": "Core Concepts",
+    "difficulty": 2,
+    "stem": "A CFO has expressed concern that the proposed architecture will increase operational costs without providing clear business benefit reporting. In TOGAF terminology, what is this?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A stakeholder requirement"
+      },
+      {
+        "key": "B",
+        "text": "A stakeholder concern"
+      },
+      {
+        "key": "C",
+        "text": "An architecture principle"
+      },
+      {
+        "key": "D",
+        "text": "A compliance assessment criterion"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "A concern is a stakeholder's area of interest, worry, or responsibility in the architecture. The CFO's worry about cost and benefit visibility is a concern — it is broader and less formally structured than a requirement, and it motivates the creation of views to address it.",
+    "explanation": {
+      "whyCorrect": "TOGAF defines a concern as an interest that pertains to the system's development, operation, or any aspect of the system's objectives. The CFO's worry about costs and benefits is exactly this — an interest that the architecture must address.",
+      "whyOthersWrong": "A requirement (A) is a specific, formally stated need derived from a concern — more precise than a concern. A principle (C) is a governance rule. A compliance criterion (D) is used in Phase G reviews.",
+      "examTip": "Concerns are the raw material that stakeholders bring. Requirements are derived from concerns through Business Scenarios. Concerns → Scenarios → Requirements is the TOGAF chain."
+    },
+    "tags": [
+      "stakeholders",
+      "concerns",
+      "requirements",
+      "views"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-027",
+    "moduleId": "MOD-F-04",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "An architect creates a document defining the notation, content, and conventions for representing a system's security architecture for a risk and compliance audience. A colleague uses this document to produce an actual security architecture diagram for the current programme. What has each person produced?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The architect produced an architecture view; the colleague produced an architecture viewpoint"
+      },
+      {
+        "key": "B",
+        "text": "The architect produced an architecture viewpoint; the colleague produced an architecture view"
+      },
+      {
+        "key": "C",
+        "text": "Both produced architecture views — one is the template, one is the instance"
+      },
+      {
+        "key": "D",
+        "text": "Both produced architecture viewpoints — views are only produced during Phase D"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "A viewpoint is the specification — the definition of conventions for constructing a type of view. A view is the actual representation produced by applying a viewpoint to specific architecture content. The architect defined the template; the colleague produced the instance.",
+    "explanation": {
+      "whyCorrect": "Viewpoint = recipe (how to build this type of view). View = the dish (the actual view built for this architecture). The first architect defined the specification; the colleague applied it to produce a specific view.",
+      "whyOthersWrong": "A reverses the definitions. C is wrong — a viewpoint is not a 'template view'; it is a specification of conventions. D is wrong — views are produced in all domain phases (A through D), not only Phase D.",
+      "examTip": "Viewpoint = specification/recipe. View = instance/result. One viewpoint can generate many views across different architectures. This distinction is reliably tested."
+    },
+    "tags": [
+      "views",
+      "viewpoints",
+      "stakeholders",
+      "architecture description"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-028",
+    "moduleId": "MOD-F-04",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "During Phase A, the architecture team produces a high-level diagram showing how the proposed transformation will affect the enterprise's core business capabilities. This diagram is targeted at senior business executives. What type of artefact is this, and what purpose does it serve?",
+    "options": [
+      {
+        "key": "A",
+        "text": "An architecture principle — establishing the rules for the transformation"
+      },
+      {
+        "key": "B",
+        "text": "An architecture view — representing the architecture from a specific stakeholder perspective"
+      },
+      {
+        "key": "C",
+        "text": "An architecture viewpoint — defining conventions for future views"
+      },
+      {
+        "key": "D",
+        "text": "A compliance assessment — reviewing the architecture against standards"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "An architecture view is an actual representation of the architecture from a specific stakeholder perspective — in this case, a business capability view for senior executives. It presents selected architectural content in a format accessible and relevant to that audience.",
+    "explanation": {
+      "whyCorrect": "Views are the deliverables — the actual diagrams, documents, and models produced for specific audiences addressing their specific concerns. A business capability diagram for executives is a view addressing executives' strategic concerns.",
+      "whyOthersWrong": "A principle (A) is a governance rule, not a diagram. A viewpoint (C) is the specification for how to build this type of diagram — not the diagram itself. A compliance assessment (D) is a Phase G governance activity.",
+      "examTip": "Any concrete architecture representation produced for a specific audience is a view. The specification that defined how to produce it would be a viewpoint."
+    },
+    "tags": [
+      "views",
+      "viewpoints",
+      "artefacts",
+      "Phase A"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-029",
+    "moduleId": "MOD-F-04",
+    "domainTag": "Core Concepts",
+    "difficulty": 4,
+    "stem": "Two architecture views of the same enterprise show different owners for the 'Customer Master Record' data entity. One shows the Sales department as owner; the other shows the Data Governance team. What does this indicate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Different views are expected to show different information — this is normal"
+      },
+      {
+        "key": "B",
+        "text": "The viewpoints used were inappropriate for the respective audiences"
+      },
+      {
+        "key": "C",
+        "text": "There is an unresolved inconsistency in the underlying architecture that must be corrected"
+      },
+      {
+        "key": "D",
+        "text": "The Data Architecture view should take precedence and the Sales view should be deleted"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "All views of an architecture must be consistent — they are different presentations of the same underlying architectural truth. Conflicting information between views indicates an unresolved architectural problem, not a communication issue.",
+    "explanation": {
+      "whyCorrect": "Views are windows onto a single underlying architecture. When two windows show contradictory information, the architecture itself has a flaw — in this case, the data ownership model is unresolved. This must be corrected in the underlying architecture, not papered over by choosing one view over the other.",
+      "whyOthersWrong": "A is wrong — different views present different aspects, but they must be consistent. B is wrong — the viewpoints may be correct; the problem is the underlying architecture. D is wrong — deleting a view doesn't fix the architectural inconsistency.",
+      "examTip": "View inconsistency = architecture problem, not a communication problem. The fix is always in the underlying architecture, not in the views."
+    },
+    "tags": [
+      "views",
+      "consistency",
+      "architecture quality",
+      "data ownership"
+    ],
+    "adm_phase": "C",
+    "domain": "Data"
+  },
+  {
+    "id": "Q1-030",
+    "moduleId": "MOD-F-04",
+    "domainTag": "Core Concepts",
+    "difficulty": 4,
+    "stem": "An architecture programme produces a single 250-page document containing every architectural detail for all stakeholder audiences. The document is technically accurate but receives no approvals from the steering committee. What does this situation most likely indicate about the architecture communication approach?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The architecture is too complex for the steering committee — it should be simplified"
+      },
+      {
+        "key": "B",
+        "text": "The architecture lacks appropriate views — different stakeholders need targeted representations addressing their specific concerns"
+      },
+      {
+        "key": "C",
+        "text": "The steering committee should be replaced by architects on the approval board"
+      },
+      {
+        "key": "D",
+        "text": "A 250-page document is insufficient — more detail is needed to achieve approval"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Architecture views exist to address specific stakeholder concerns in appropriate formats. A single document for all audiences fails to address any audience's specific concerns effectively. Different stakeholders (CFO, CTO, Operations) need different views — not different versions of one document.",
+    "explanation": {
+      "whyCorrect": "This is the core value proposition of views and viewpoints: architecture communication must be tailored to each audience's concerns. An executive view focuses on business value and risk; a technical view focuses on component interactions. One document serves none well.",
+      "whyOthersWrong": "A misidentifies the problem — the issue isn't complexity, it's audience targeting. C is impractical and contrary to TOGAF governance. D is wrong — more detail makes the targeting problem worse, not better.",
+      "examTip": "When architecture documents fail to get approval, consider whether the right views have been produced for the right audiences. Architecture communication effectiveness = stakeholder concern addressed + appropriate format."
+    },
+    "tags": [
+      "views",
+      "viewpoints",
+      "stakeholder communication",
+      "architecture vision"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-031",
+    "moduleId": "MOD-F-04",
+    "domainTag": "Core Concepts",
+    "difficulty": 5,
+    "stem": "A compliance regulator is identified as a stakeholder with concerns about audit trail completeness and data retention. The EA team argues this regulator 'isn't really a stakeholder' because they are external and not part of the programme. Which TOGAF concept most clearly refutes this argument?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Architecture Principles — which require regulatory compliance as a standard principle"
+      },
+      {
+        "key": "B",
+        "text": "TOGAF's definition of a stakeholder — which includes any individual, team, or organisation with an interest in the architecture, regardless of whether they are internal"
+      },
+      {
+        "key": "C",
+        "text": "Phase G compliance reviews — which only address internal governance, not external regulatory compliance"
+      },
+      {
+        "key": "D",
+        "text": "The Architecture Vision — which limits stakeholder scope to the sponsoring organisation"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "TOGAF defines a stakeholder as any individual, team, or organisation that has an interest in — or concern about — the architecture. External parties, including regulators, auditors, and partner organisations, fully qualify as stakeholders if the architecture affects their interests.",
+    "explanation": {
+      "whyCorrect": "The TOGAF definition of stakeholder is deliberately broad. Regulators who will audit the system post-implementation have a direct interest in how the architecture handles audit trails and data retention. Excluding them from stakeholder analysis creates governance risk.",
+      "whyOthersWrong": "A is irrelevant — principles don't define who is a stakeholder. C is wrong — Phase G compliance reviews can and do address regulatory requirements. D is wrong — the Architecture Vision must address all stakeholders' concerns, not just the sponsor's.",
+      "examTip": "When a question proposes limiting stakeholders to 'internal' or 'project' people, the answer is always that TOGAF's stakeholder definition is broader. Regulators, end users, future maintainers, and partner organisations can all be stakeholders."
+    },
+    "tags": [
+      "stakeholders",
+      "definition",
+      "concerns",
+      "external"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-032",
+    "moduleId": "MOD-F-04",
+    "domainTag": "Core Concepts",
+    "difficulty": 5,
+    "stem": "A project team says: 'We produced ten architecture views, so we have addressed all stakeholder concerns.' The architecture governance review rejects this claim. What is the most likely reason?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ten views exceed the maximum permitted by TOGAF governance"
+      },
+      {
+        "key": "B",
+        "text": "The number of views is irrelevant — the question is whether every significant stakeholder concern is addressed by at least one view"
+      },
+      {
+        "key": "C",
+        "text": "Views must be approved before they count — unapproved views have no governance status"
+      },
+      {
+        "key": "D",
+        "text": "Views can only be produced in Phases B through D — Phase A views are not recognised"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The governance criterion for views is not quantity — it is coverage. Every significant stakeholder concern must be addressed by at least one architecture view. Ten views could leave some concerns unaddressed, or thirty views might not cover a critical concern.",
+    "explanation": {
+      "whyCorrect": "TOGAF's view creation objective is stakeholder concern coverage. The governance review would check whether each identified concern has a corresponding view addressing it — not count views.",
+      "whyOthersWrong": "A is false — TOGAF has no maximum view count. C conflates view production with view approval — both matter, but the quantity argument is still wrong. D is false — views are produced in Phase A (Architecture Vision views) and in all domain phases.",
+      "examTip": "The quality test for views is always: 'Does each significant stakeholder concern have a corresponding view addressing it?' Volume of views is irrelevant."
+    },
+    "tags": [
+      "views",
+      "stakeholder concerns",
+      "coverage",
+      "governance"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-033",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 2,
+    "stem": "An architect specifies that a 'Notification Service' building block must support email, SMS, and push notifications, expose a REST API, and process 10,000 messages per hour. No specific product is mentioned. What type of building block is this?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Solution Building Block (SBB) — it is a specific implementation"
+      },
+      {
+        "key": "B",
+        "text": "An Architecture Building Block (ABB) — it is an abstract specification of required capability"
+      },
+      {
+        "key": "C",
+        "text": "A Foundation Architecture building block — it is the most generic type"
+      },
+      {
+        "key": "D",
+        "text": "A Technology Building Block only — since it addresses infrastructure concerns"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "An Architecture Building Block (ABB) is an abstract specification of what a component must do — its required capabilities and interfaces — without specifying a concrete implementation. The described notification service defines capabilities without naming a specific product.",
+    "explanation": {
+      "whyCorrect": "ABBs answer 'what must it do?' SBBs answer 'what product or system does it?' This is an ABB — it specifies the required capability (email/SMS/push, REST API, 10k msg/hr) but leaves the implementation choice open.",
+      "whyOthersWrong": "An SBB (A) would be a specific product — e.g., 'Amazon SNS configured for enterprise use'. Foundation architecture (C) refers to the most generic Continuum level, not an ABB type. Technology Building Block (D) isn't wrong as a description, but ABB is the more precise answer.",
+      "examTip": "Abstract capability specification = ABB. Concrete product or implementation = SBB. This distinction is one of the most tested in the Architecture Content domain."
+    },
+    "tags": [
+      "ABB",
+      "SBB",
+      "building blocks",
+      "Architecture Content"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-034",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "In which ADM phase are Solution Building Blocks (SBBs) primarily selected to fulfil Architecture Building Blocks (ABBs)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Phase B: Business Architecture"
+      },
+      {
+        "key": "B",
+        "text": "Phase D: Technology Architecture"
+      },
+      {
+        "key": "C",
+        "text": "Phase E: Opportunities and Solutions"
+      },
+      {
+        "key": "D",
+        "text": "Phase G: Implementation Governance"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Phase E is specifically where ABBs are mapped to SBBs — concrete products, platforms, or bespoke solutions that fulfil the abstract architectural specifications. This is the transition from architectural intent to implementation reality.",
+    "explanation": {
+      "whyCorrect": "Phase E's role as the bridge between architecture and implementation includes selecting SBBs. The ABBs from Phases A–D define what is needed; Phase E identifies what will implement it (retained existing systems, commercial products, or bespoke development).",
+      "whyOthersWrong": "Phase B (A) defines Business Architecture ABBs but doesn't select SBBs. Phase D (B) defines Technology ABBs but SBB selection comes in Phase E. Phase G (D) governs conformance of SBBs to ABBs — it doesn't select them.",
+      "examTip": "ABBs in Phases A–D; SBBs in Phase E. Phase G checks that delivered SBBs conform to their ABB specifications. This timeline is reliably tested."
+    },
+    "tags": [
+      "ABB",
+      "SBB",
+      "Phase E",
+      "building blocks"
+    ],
+    "adm_phase": "E",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-035",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "An enterprise has defined an ABB for 'Payment Processing' specifying PCI-DSS compliance, support for VISA and Mastercard, and a REST interface. Subsidiary A implements this with Stripe; Subsidiary B implements it with Braintree. Which statement best describes this situation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "This is an architectural inconsistency — both subsidiaries must use the same SBB"
+      },
+      {
+        "key": "B",
+        "text": "This is architecturally valid — one ABB can be fulfilled by different SBBs in different contexts"
+      },
+      {
+        "key": "C",
+        "text": "The ABB is invalid because it can be implemented in more than one way"
+      },
+      {
+        "key": "D",
+        "text": "Both subsidiaries need a dispensation because neither is using the enterprise-standard implementation"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "One of the key benefits of the ABB/SBB model is that an ABB can be fulfilled by different SBBs in different contexts. Both Stripe and Braintree can satisfy the same ABB specification — this is architecturally sound, not inconsistent.",
+    "explanation": {
+      "whyCorrect": "ABBs define requirements; SBBs implement them. Multiple valid SBBs can satisfy the same ABB — this is the power of the model. Both subsidiaries comply with the ABB (PCI-DSS, VISA/Mastercard, REST) while using different products.",
+      "whyOthersWrong": "A is wrong — the ABB standard is being met by both SBBs. C is wrong — the ability to have multiple implementations is a feature, not a flaw. D is wrong — dispensations are for deviations from standards, not legitimate alternative implementations.",
+      "examTip": "The ABB/SBB model explicitly supports context-appropriate implementation variety. If both SBBs satisfy the ABB specification, both are valid — no dispensation needed."
+    },
+    "tags": [
+      "ABB",
+      "SBB",
+      "building blocks",
+      "implementation variety"
+    ],
+    "adm_phase": "E",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-036",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "An architect is designing a new enterprise integration platform. She specifies that all integration components must 'interact through well-defined interfaces and have no internal dependencies on each other's implementation details.' Which building block characteristic is she enforcing?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Purposeful — each building block has a defined purpose"
+      },
+      {
+        "key": "B",
+        "text": "Standards-compliant — building blocks use open standards"
+      },
+      {
+        "key": "C",
+        "text": "Loosely coupled — building blocks interact through interfaces, not internal assumptions"
+      },
+      {
+        "key": "D",
+        "text": "Measurable — building blocks have testable specifications"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Loose coupling — interacting through well-defined interfaces without internal dependencies — is the characteristic that enables building blocks to be reused, replaced, or changed independently. This is precisely what the architect is enforcing.",
+    "explanation": {
+      "whyCorrect": "Loose coupling is the characteristic that makes building blocks genuinely reusable. Without it, changing one component requires changing all components that depend on its internals. Well-defined interfaces are the mechanism of loose coupling.",
+      "whyOthersWrong": "Purposeful (A) relates to having a clear purpose. Standards-compliant (B) relates to open standards usage. Measurable (D) relates to having clear, testable specifications. Each is a distinct characteristic.",
+      "examTip": "Loose coupling is the most critical characteristic for reuse. If a question mentions 'interfaces', 'no internal dependencies', or 'independently replaceable', the answer is loose coupling."
+    },
+    "tags": [
+      "building blocks",
+      "loose coupling",
+      "characteristics",
+      "reuse"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-037",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "A Phase G compliance review finds that an implementation team has delivered a customer authentication component that satisfies all the functional requirements in the ABB but used a tightly-coupled design that makes it impossible to replace without significant rework. What is the most accurate architectural assessment?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The component is Fully Conformant — all functional requirements are met"
+      },
+      {
+        "key": "B",
+        "text": "The component is Non-conformant — tight coupling violates building block design principles"
+      },
+      {
+        "key": "C",
+        "text": "The component is Compliant — it meets the spirit of the architecture"
+      },
+      {
+        "key": "D",
+        "text": "Coupling is an implementation concern, not an architectural concern"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Loose coupling is an architectural characteristic of building blocks, not just an implementation preference. A tightly coupled component fails to meet the architectural specification even if functional requirements are met. This is a non-conformance requiring remediation.",
+    "explanation": {
+      "whyCorrect": "If the ABB specification includes loose coupling as a requirement — which good building block ABBs should — then tight coupling is a violation of the ABB, not just a design preference. Architecture includes non-functional and structural requirements, not just functional ones.",
+      "whyOthersWrong": "Fully Conformant (A) requires all mandatory architecture requirements to be met — tight coupling violates a structural requirement. Compliant (C) would mean it broadly follows the approach. D is wrong — coupling is an architectural quality, not just an implementation detail.",
+      "examTip": "Architecture requirements include structural qualities (coupling, cohesion, scalability) as well as functional capabilities. Meeting functional requirements while violating structural requirements is non-conformance."
+    },
+    "tags": [
+      "building blocks",
+      "loose coupling",
+      "compliance",
+      "Phase G"
+    ],
+    "adm_phase": "G",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-038",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "An organisation's Architecture Repository contains a 'Payment Gateway' ABB from three years ago. A new programme is designing payment capabilities. The architect wants to start from scratch because 'technology has changed significantly.' Which TOGAF principle should guide this decision?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Start from scratch — outdated ABBs should not be used as they create technical debt"
+      },
+      {
+        "key": "B",
+        "text": "First check the Repository ABB, assess its currency, and either update/reuse it or formally replace it — not ignore it"
+      },
+      {
+        "key": "C",
+        "text": "Only Foundation-level building blocks from the Enterprise Continuum should be used as starting points"
+      },
+      {
+        "key": "D",
+        "text": "ABBs are permanently valid once published — they cannot be replaced without Architecture Board approval"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Enterprise Continuum and Architecture Repository exist specifically to promote reuse. The correct approach is always to check the Repository first, assess whether existing assets can be used or updated, and only create new ones when necessary. Ignoring existing Repository assets defeats the purpose of the Repository.",
+    "explanation": {
+      "whyCorrect": "TOGAF's reuse principle: check the Repository first. The existing ABB may need updating (if technology has changed), but the assessment process, the specification structure, and any still-valid requirements should be incorporated rather than discarded.",
+      "whyOthersWrong": "A contradicts TOGAF's reuse ethos. C is too restrictive — organisation-specific and industry ABBs are valuable starting points too. D is wrong — ABBs can be updated through governance, but the correct process is to update, not ignore.",
+      "examTip": "Enterprise Continuum + Repository = reuse over rebuild. Always check what exists before creating new. This is a foundational TOGAF principle."
+    },
+    "tags": [
+      "building blocks",
+      "reuse",
+      "Architecture Repository",
+      "Enterprise Continuum"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-039",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "A programme is implementing an enterprise integration hub. Phase E has selected RabbitMQ as the SBB for the 'Message Broker' ABB. During Phase G, an integration developer proposes replacing RabbitMQ with Apache Kafka because it is better suited for the programme's eventual streaming requirements. What is the most appropriate architectural response?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Approve the change — developers understand technology better than architects"
+      },
+      {
+        "key": "B",
+        "text": "Assess whether Kafka satisfies the Message Broker ABB specification; if it does, the SBB can be changed through the Architecture Board with documented justification"
+      },
+      {
+        "key": "C",
+        "text": "Reject the change — SBBs selected in Phase E cannot be changed once implementation begins"
+      },
+      {
+        "key": "D",
+        "text": "Accept the change without governance — SBB selection is an implementation concern, not architectural"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "SBBs can be changed — but through architectural governance. The key question is whether the proposed SBB (Kafka) satisfies the same ABB specification as the original (RabbitMQ). If it does, and the Architecture Board approves the change with documented justification, it is architecturally valid.",
+    "explanation": {
+      "whyCorrect": "The governance process allows SBB changes when they can be justified and when the new SBB satisfies the ABB. The architect's role is to assess ABB conformance and process the change through the Architecture Board, not block or blindly approve it.",
+      "whyOthersWrong": "A bypasses governance. C is wrong — SBBs can change through governance. D is wrong — SBB selection is an architectural decision because SBBs must satisfy ABB specifications.",
+      "examTip": "SBB changes are permitted with governance. Always check: (1) does the new SBB satisfy the ABB? (2) is the change approved by the Architecture Board? (3) is it documented?"
+    },
+    "tags": [
+      "ABB",
+      "SBB",
+      "Phase G",
+      "architecture change",
+      "governance"
+    ],
+    "adm_phase": "G",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-040",
+    "moduleId": "MOD-F-01",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "An enterprise architecture team is asked to scope a new initiative. The CTO says: 'We should cover the entire global enterprise, all four architecture domains, at full specification depth, for a 10-year horizon.' The Chief Architect advises against this scope. What TOGAF guidance supports the Chief Architect's position?",
+    "options": [
+      {
+        "key": "A",
+        "text": "TOGAF limits architecture work to a maximum of two domains at a time"
+      },
+      {
+        "key": "B",
+        "text": "Architecture scoping guidelines advise calibrating breadth, depth, time period, and domains to the engagement objective — over-scoping is as harmful as under-scoping"
+      },
+      {
+        "key": "C",
+        "text": "Global enterprise architecture is prohibited under TOGAF — it must be partitioned by geography"
+      },
+      {
+        "key": "D",
+        "text": "A 10-year horizon exceeds the maximum permitted by the ADM"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "TOGAF's ADM scoping guidelines explicitly address the four dimensions of scope — breadth, depth, time period, and domains — and advise that each should be calibrated to what is actually needed. Over-ambitious scope produces waste, delays, and stakeholder disengagement.",
+    "explanation": {
+      "whyCorrect": "TOGAF's guidance on scoping exists precisely to prevent the 'boil the ocean' failure pattern. A global, full-depth, all-domain, 10-year architecture engagement would take years and likely never produce anything usable. Calibrated scope is better architecture practice.",
+      "whyOthersWrong": "A is false — TOGAF has no domain count limit. C is false — global architectures are permitted; partitioning is recommended for governance but not a prohibition. D is false — TOGAF sets no maximum time horizon.",
+      "examTip": "Over-scoping questions always have the same answer structure: TOGAF's scoping guidelines advise calibrating all four dimensions to the engagement objective. Excessive scope is explicitly a risk to address."
+    },
+    "tags": [
+      "scoping",
+      "breadth",
+      "depth",
+      "time period",
+      "ADM guidelines"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-041",
+    "moduleId": "MOD-F-02",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "An architect discovers an existing application reference architecture in the Architecture Repository that was used by a different business unit. She wants to reuse it for a new programme in a third business unit, adapting it for local context. Which Enterprise Continuum concept most directly enables and encourages this approach?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Foundation Architecture — the most generic level should be the starting point"
+      },
+      {
+        "key": "B",
+        "text": "Architecture Continuum — storing architectural descriptions from generic to specific enables discovery and reuse"
+      },
+      {
+        "key": "C",
+        "text": "Solutions Continuum — existing deployed solutions should be the starting point"
+      },
+      {
+        "key": "D",
+        "text": "The Standards Information Base — approved standards restrict what can be reused"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Architecture Continuum (part of the Enterprise Continuum) stores architectural descriptions from generic to organisation-specific. Its purpose is to enable discovery and reuse — architects can find relevant existing architectures and specialise them rather than starting from scratch.",
+    "explanation": {
+      "whyCorrect": "The Architecture Continuum is the classification of architectural descriptions. Finding an existing architecture from another business unit and adapting it is exactly the reuse pattern the Continuum enables — the existing architecture sits at a certain Continuum level; the adaptation moves it toward more-specific.",
+      "whyOthersWrong": "Foundation Architecture (A) is the most generic level — useful for absolute starting points, not for finding domain-specific references. The Solutions Continuum (C) contains implementations, not architectural descriptions. The SIB (D) contains standards, not reusable architectures.",
+      "examTip": "Reuse of architectural descriptions = Architecture Continuum. Reuse of deployed solutions = Solutions Continuum. Different purposes, different contents."
+    },
+    "tags": [
+      "Enterprise Continuum",
+      "Architecture Continuum",
+      "reuse",
+      "Architecture Repository"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-042",
+    "moduleId": "MOD-F-03",
+    "domainTag": "Core Concepts",
+    "difficulty": 5,
+    "stem": "An enterprise's Architecture Principles were last reviewed and approved by the Architecture Board three years ago. A new CTO questions whether they are still valid. Which quality of good Architecture Principles is most relevant to this review, and what should the review assess?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Stability — principles should never change, so the review should confirm them unchanged"
+      },
+      {
+        "key": "B",
+        "text": "Robustness — the review should assess whether the principles can withstand challenge"
+      },
+      {
+        "key": "C",
+        "text": "Stability — the review should assess whether enterprise strategy has changed enough to justify a principle update, not update principles reactively"
+      },
+      {
+        "key": "D",
+        "text": "Completeness — the review should add new principles for all technology trends in the last three years"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Stability means principles should persist over time — not that they never change, but that changes are strategic and deliberate, not reactive. The review should assess whether the enterprise strategy has genuinely shifted enough to warrant updates, not update principles because time has passed.",
+    "explanation": {
+      "whyCorrect": "Stability in principles means they endure across multiple programmes and change only when enterprise strategy genuinely shifts. A time-based review is appropriate, but the threshold for change should be 'has the enterprise strategy changed?' not 'have three years passed?'",
+      "whyOthersWrong": "A misunderstands Stability — it doesn't mean 'never change', it means 'change deliberately'. B is relevant but not the primary consideration for a periodic review. D is wrong — adding principles for every technology trend would undermine stability.",
+      "examTip": "Stability ≠ permanence. It means strategic persistence with deliberate, governed change. The review question is: 'has the strategic context changed enough to justify a principle update?'"
+    },
+    "tags": [
+      "Architecture Principles",
+      "Stable",
+      "review",
+      "governance"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-043",
+    "moduleId": "MOD-F-04",
+    "domainTag": "Core Concepts",
+    "difficulty": 5,
+    "stem": "An architecture team has identified 22 stakeholder groups and 67 concerns. A programme director says: 'We need a view for every concern — that's 67 views.' The Chief Architect disagrees. What is the architecturally correct approach?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The programme director is correct — every concern must have its own dedicated view"
+      },
+      {
+        "key": "B",
+        "text": "Group related concerns that can be effectively addressed by a single viewpoint; one view can address multiple concerns for the same audience"
+      },
+      {
+        "key": "C",
+        "text": "A maximum of ten views should be produced regardless of the number of concerns"
+      },
+      {
+        "key": "D",
+        "text": "Only the top five stakeholder groups should have views — the rest receive the main architecture document"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Views address concerns, but one view can address multiple related concerns for the same audience. Related concerns from the same stakeholder group can often be addressed in a single, well-structured view. The goal is concern coverage, not one-to-one mapping.",
+    "explanation": {
+      "whyCorrect": "TOGAF's guidance is that views must address significant stakeholder concerns — but efficiency means grouping related concerns into targeted views. A security and compliance view might address five concerns from the risk team simultaneously.",
+      "whyOthersWrong": "A would produce an unwieldy and often redundant set of views. C is arbitrary — TOGAF has no maximum view count. D is wrong — all identified significant stakeholder concerns must be addressed, not just a subset.",
+      "examTip": "The test is concern coverage, not view count. Group related concerns into coherent viewpoints; one good view can address many related concerns from the same audience."
+    },
+    "tags": [
+      "views",
+      "viewpoints",
+      "stakeholder concerns",
+      "architecture communication"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-044",
+    "moduleId": "MOD-F-01",
+    "domainTag": "Core Concepts",
+    "difficulty": 4,
+    "stem": "A newly appointed Enterprise Architect says: 'TOGAF tells us what architecture to build — we just need to follow the phases and our architecture will be correct.' An experienced colleague corrects her. What is the most important correction?",
+    "options": [
+      {
+        "key": "A",
+        "text": "TOGAF phases must be followed in strict alphabetical order, not sequential phase order"
+      },
+      {
+        "key": "B",
+        "text": "TOGAF is a framework and method that tells you how to approach architecture work — it does not prescribe what the architecture should be"
+      },
+      {
+        "key": "C",
+        "text": "TOGAF only covers IT architecture — business architecture must be determined independently"
+      },
+      {
+        "key": "D",
+        "text": "The ADM phases guarantee correct architecture if followed carefully"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "TOGAF is a framework for doing architecture work — it provides methods, vocabulary, and governance. It does not dictate what the architecture should contain. The architecture content is determined by the enterprise's context, strategy, and requirements.",
+    "explanation": {
+      "whyCorrect": "This is perhaps TOGAF's most fundamental characteristic. The ADM provides the process; architects and stakeholders provide the content. Following the ADM correctly ensures the process is sound — not that the output is predetermined.",
+      "whyOthersWrong": "A is false — phases are labelled Preliminary, A–H, not alphabetically. C is false — TOGAF explicitly covers Business Architecture in Phase B. D is wrong — the ADM ensures process quality, not outcome correctness.",
+      "examTip": "TOGAF = how to do architecture, not what to architect. This framing appears in many question forms. The framework provides process and governance; organisations provide content."
+    },
+    "tags": [
+      "TOGAF",
+      "framework",
+      "method",
+      "ADM",
+      "architecture content"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-045",
+    "moduleId": "MOD-F-02",
+    "domainTag": "Core Concepts",
+    "difficulty": 4,
+    "stem": "An organisation has a strategic-level Architecture Landscape description covering the entire enterprise, and a capability-level description covering a specific shared services function. A new segment-level programme is starting for the finance division. In which part of the Architecture Landscape should this new programme's outputs be stored?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Within the Strategic Architecture — because it affects the whole enterprise"
+      },
+      {
+        "key": "B",
+        "text": "Within the Capability Architecture — because it details specific building blocks"
+      },
+      {
+        "key": "C",
+        "text": "Within the Segment Architecture — because it covers a specific business area"
+      },
+      {
+        "key": "D",
+        "text": "In the Standards Information Base — because it will establish new standards"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Segment Architecture covers a specific significant area of the enterprise — a business division, a major function, or a strategic programme. A finance division programme sits at the segment level, between the enterprise-wide strategic view and the specific capability level.",
+    "explanation": {
+      "whyCorrect": "The Architecture Landscape has three levels: Strategic (whole enterprise, long horizon), Segment (business area or major function, medium horizon), and Capability (specific capability or building block, short horizon). A finance division programme is Segment-level.",
+      "whyOthersWrong": "Strategic (A) is for whole-enterprise, board-level architecture — a finance division programme is more specific. Capability (B) is for specific capabilities within a programme. SIB (D) stores approved standards, not architecture descriptions.",
+      "examTip": "Architecture Landscape levels: Strategic = enterprise. Segment = division/domain. Capability = specific system/building block. Match the scope of the programme to the appropriate level."
+    },
+    "tags": [
+      "Architecture Landscape",
+      "Segment Architecture",
+      "Capability Architecture",
+      "Strategic Architecture"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-046",
+    "moduleId": "MOD-F-03",
+    "domainTag": "Core Concepts",
+    "difficulty": 4,
+    "stem": "An architecture principle states: 'All customer data must remain within EU data centres.' The principle was established when the enterprise operated only in Europe. The enterprise has now expanded to serve customers in the Asia-Pacific region. Which of the following best describes the appropriate response?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The principle is immutable — all Asia-Pacific customer data must be stored in EU data centres"
+      },
+      {
+        "key": "B",
+        "text": "The expansion makes the principle automatically void — architecture principles expire when business context changes"
+      },
+      {
+        "key": "C",
+        "text": "Review the principle through the Architecture Board; the strategic context change may justify an update to address APAC requirements alongside EU requirements"
+      },
+      {
+        "key": "D",
+        "text": "Allow each APAC project to decide individually whether to follow the principle"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Architecture Principles can legitimately evolve when enterprise strategy genuinely changes. A geographic expansion into APAC is exactly the kind of strategic change that may require a principle to be updated — not abandoned, but revised through governance to reflect the new context.",
+    "explanation": {
+      "whyCorrect": "Stability means principles don't change reactively per project — not that they never change when enterprise strategy shifts. An APAC expansion is a strategic context change. The Architecture Board should review and potentially update the principle to address both EU and APAC requirements.",
+      "whyOthersWrong": "A is wrong — forcing APAC data to EU data centres may violate APAC regulations. B is wrong — principles don't automatically expire; they require governance to update. D is wrong — per-project decisions undermine enterprise governance.",
+      "examTip": "Principle updates require governance and strategic justification — not project convenience. Genuine strategic changes (new markets, new regulations) are valid triggers for principle review through the Architecture Board."
+    },
+    "tags": [
+      "Architecture Principles",
+      "update",
+      "governance",
+      "strategic change"
+    ],
+    "adm_phase": "H",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-047",
+    "moduleId": "MOD-F-04",
+    "domainTag": "Core Concepts",
+    "difficulty": 3,
+    "stem": "An architecture team is starting Phase A for a major transformation. The programme manager argues: 'We don't need to identify stakeholders — we know who cares about this.' The Enterprise Architect insists on a formal stakeholder analysis. Which TOGAF concept most strongly supports the architect's position?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Architecture Principles require all stakeholders to be consulted"
+      },
+      {
+        "key": "B",
+        "text": "Stakeholder analysis drives the communication plan and view creation — missing stakeholders means missing concerns and gaps in the architecture"
+      },
+      {
+        "key": "C",
+        "text": "TOGAF requires a minimum of ten identified stakeholders per programme"
+      },
+      {
+        "key": "D",
+        "text": "Stakeholder analysis is mandatory only for programmes above a defined cost threshold"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Stakeholder analysis in Phase A is the foundation of the entire communication strategy and view creation plan. Missing a stakeholder group means their concerns are not identified, no views are created to address them, and the architecture will have gaps.",
+    "explanation": {
+      "whyCorrect": "Unidentified stakeholders = unaddressed concerns = architecture gaps. In practice, 'we know who cares' typically misses peripheral stakeholders (regulators, end users, future maintainers, partner organisations) whose concerns are critical but not immediately obvious.",
+      "whyOthersWrong": "A is relevant but overly general. C is false — TOGAF has no minimum stakeholder count. D is false — stakeholder analysis applies to all architecture engagements.",
+      "examTip": "Stakeholder analysis → concerns → views. Missing any step breaks the chain. The Phase A stakeholder analysis is the mandatory starting point for architecture communication."
+    },
+    "tags": [
+      "stakeholders",
+      "concerns",
+      "Phase A",
+      "communication plan"
+    ],
+    "adm_phase": "A",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-048",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "An ABB for an 'Authentication Service' specifies: OAuth2 support, MFA capability, response time under 200ms, and 99.9% uptime SLA. A delivered implementation supports OAuth2 and MFA but cannot meet the 200ms response time under load. Which conformance level best describes this implementation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Conformant — the core functional requirements (OAuth2, MFA) are met"
+      },
+      {
+        "key": "B",
+        "text": "Compliant — the implementation follows the spirit of the architecture"
+      },
+      {
+        "key": "C",
+        "text": "Non-conformant — a mandatory ABB requirement (200ms SLA) is not satisfied"
+      },
+      {
+        "key": "D",
+        "text": "Fully Conformant — close enough to the specification"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "If 200ms response time is a mandatory ABB requirement, failing to meet it makes the implementation non-conformant — regardless of how many other requirements are met. Non-functional requirements specified in ABBs are architecture requirements, not optional targets.",
+    "explanation": {
+      "whyCorrect": "ABB specifications include non-functional requirements (performance SLAs, availability) as mandatory as functional ones. Failing a mandatory requirement = Non-conformant, requiring remediation or a formal dispensation.",
+      "whyOthersWrong": "Conformant (A) means all architecture requirements are met — this one isn't. Compliant (B) means broadly following the approach — but violating a specific mandatory SLA is a specific non-conformance. Fully Conformant (D) requires all mandatory requirements to be satisfied.",
+      "examTip": "Non-functional requirements in ABBs (SLAs, performance, availability) are as mandatory as functional ones. Failure to meet them = Non-conformant."
+    },
+    "tags": [
+      "ABB",
+      "conformance",
+      "non-functional requirements",
+      "Phase G"
+    ],
+    "adm_phase": "G",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-049",
+    "moduleId": "MOD-F-01",
+    "domainTag": "Core Concepts",
+    "difficulty": 5,
+    "stem": "A CTO argues: 'TOGAF is designed for large enterprises — organisations with fewer than 1,000 employees don't need it and couldn't benefit from it.' What is the most accurate assessment of this claim?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The CTO is correct — TOGAF explicitly targets organisations with more than 500 IT staff"
+      },
+      {
+        "key": "B",
+        "text": "The CTO is incorrect — TOGAF is a foundational framework designed to be scaled and adapted to any size of enterprise"
+      },
+      {
+        "key": "C",
+        "text": "The CTO is partially correct — TOGAF's ADM is only useful for enterprises with 3+ architecture domains"
+      },
+      {
+        "key": "D",
+        "text": "The CTO is correct — the ADM's phase complexity makes it unsuitable for small organisations"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "TOGAF is explicitly described as a foundational framework applicable to any kind of architecture in any context. It is designed to be scaled — smaller organisations use fewer phases, simpler governance, and lighter artefact sets. There are no size prerequisites.",
+    "explanation": {
+      "whyCorrect": "TOGAF's tailoring guidelines exist precisely to enable organisations of any size to adopt what is appropriate for their context. A small organisation might run a simplified ADM with one architect and a lightweight Repository.",
+      "whyOthersWrong": "A is false — TOGAF has no staff size prerequisite. C is false — even a single-domain architecture engagement can benefit from TOGAF's discipline. D is wrong — the ADM is explicitly designed to be adapted for smaller engagements.",
+      "examTip": "TOGAF's applicability is universal. Size-based exclusions don't exist in TOGAF — but the appropriate level of adoption varies with context, which is why tailoring is mandatory."
+    },
+    "tags": [
+      "TOGAF",
+      "applicability",
+      "tailoring",
+      "foundation framework"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-050",
+    "moduleId": "MOD-F-02",
+    "domainTag": "Core Concepts",
+    "difficulty": 5,
+    "stem": "An Architecture Review Board is assessing the Architecture Repository. They find: the Governance Log has 45 entries from last year. The Reference Library has not been updated in 18 months. The Architecture Metamodel was last reviewed 3 years ago. The Architecture Landscape has comprehensive current-state descriptions. Which of these findings indicates the highest governance risk?",
+    "options": [
+      {
+        "key": "A",
+        "text": "An outdated Reference Library — architects will not have access to current patterns"
+      },
+      {
+        "key": "B",
+        "text": "An outdated Architecture Metamodel — architectures may be described using inconsistent concepts and relationships"
+      },
+      {
+        "key": "C",
+        "text": "The high number of Governance Log entries — too many governance decisions are being made"
+      },
+      {
+        "key": "D",
+        "text": "The comprehensive Architecture Landscape — this creates excessive maintenance burden"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Architecture Metamodel defines the schema of all architectural descriptions — what entities and relationships can be described. An outdated Metamodel means newer architectures may use concepts not in the schema, creating inconsistencies that undermine cross-architecture analysis and governance.",
+    "explanation": {
+      "whyCorrect": "The Metamodel is the foundational schema of the entire Architecture Repository. If it is out of date, all architectures created against it may be using inconsistent or undefined concepts, making governance, comparison, and integration impossible.",
+      "whyOthersWrong": "An outdated Reference Library (A) reduces efficiency but doesn't undermine governance integrity. The Governance Log (C) having 45 entries is expected activity — not a risk. A comprehensive Landscape (D) is positive — that's what the Landscape is for.",
+      "examTip": "Architecture Repository health priority: Metamodel consistency > Governance Log > Landscape > Reference Library. The Metamodel is the schema — without it, nothing else in the Repository can be trusted."
+    },
+    "tags": [
+      "Architecture Repository",
+      "Architecture Metamodel",
+      "governance",
+      "risk"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Core"
+  },
+  {
+    "id": "Q1-051",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 2,
+    "stem": "Which of the following best describes an Architecture Building Block (ABB)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A specific technology product selected to implement a capability"
+      },
+      {
+        "key": "B",
+        "text": "An abstract specification defining what a component must do, without specifying how it is implemented"
+      },
+      {
+        "key": "C",
+        "text": "A reusable architecture pattern retrieved from the Foundation Architecture level of the Enterprise Continuum"
+      },
+      {
+        "key": "D",
+        "text": "A governance document produced in Phase G to assess implementation conformance"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "An ABB is an abstract specification of capability — it defines what a component must do, what interfaces it must expose, and what quality attributes it must satisfy. It deliberately avoids specifying any particular implementation.",
+    "explanation": {
+      "whyCorrect": "ABBs describe architectural intent without implementation. 'The authentication service must support OAuth2, enforce MFA, and respond within 200ms' is an ABB — it defines requirements, not solutions.",
+      "whyOthersWrong": "A describes a Solution Building Block (SBB). C conflates ABBs with Foundation Architecture patterns — ABBs exist at all Continuum levels, not just Foundation. D describes a Compliance Assessment artefact.",
+      "examTip": "ABB = abstract 'what'. SBB = concrete 'how'. This distinction is tested in both direct recall and scenario-based questions."
+    },
+    "tags": [
+      "ABB",
+      "building blocks",
+      "abstract specification"
+    ],
+    "adm_phase": "A",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-052",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "An enterprise defines an ABB for an 'API Gateway' with mandatory requirements: OAuth2 authentication, rate limiting, and request logging. Division A implements this with Kong; Division B uses AWS API Gateway. Both satisfy all three mandatory requirements. Which statement is correct?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Division A is non-conformant because Kong is not an enterprise-approved standard"
+      },
+      {
+        "key": "B",
+        "text": "Both implementations are architecturally valid — one ABB can be fulfilled by multiple SBBs in different contexts"
+      },
+      {
+        "key": "C",
+        "text": "Division B needs a dispensation because cloud-hosted services require Architecture Board approval"
+      },
+      {
+        "key": "D",
+        "text": "The ABB is flawed if two different products can satisfy it — ABBs should specify a single implementation"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The ABB/SBB model is specifically designed to allow context-appropriate implementation flexibility. Provided both SBBs satisfy the mandatory ABB requirements, both are architecturally valid. This is a strength of the model, not an inconsistency.",
+    "explanation": {
+      "whyCorrect": "ABBs define 'what'; SBBs define 'how'. Multiple valid 'how' options can satisfy the same 'what'. Division A and B each chose the SBB most appropriate for their context while satisfying the enterprise's architectural intent.",
+      "whyOthersWrong": "A introduces a standard not stated in the scenario. C invents a dispensation requirement with no basis. D misunderstands the model — the ability to support multiple SBBs is intentional and valuable.",
+      "examTip": "When multiple SBBs satisfy the same ABB specification, all are valid. Dispensations are for deviations FROM the specification, not for choice WITHIN it."
+    },
+    "tags": [
+      "ABB",
+      "SBB",
+      "implementation flexibility",
+      "conformance"
+    ],
+    "adm_phase": "E",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-053",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "During Phase D, an architect identifies that the application architecture requires a high-availability database cluster. She documents the required characteristics: active-passive failover, automated backups, and point-in-time recovery. No vendor is specified. What has she produced?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Solution Building Block — because it describes a database system"
+      },
+      {
+        "key": "B",
+        "text": "An Architecture Building Block — because it specifies required capabilities without naming a product"
+      },
+      {
+        "key": "C",
+        "text": "An Architecture Principle — because it establishes rules for database design"
+      },
+      {
+        "key": "D",
+        "text": "An Architecture Requirement — because it specifies what the technology must do"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "An ABB specifies required capabilities, interfaces, and quality attributes without naming a specific implementation. 'Active-passive failover, automated backups, point-in-time recovery' describes what the database capability must provide — this is an ABB.",
+    "explanation": {
+      "whyCorrect": "The absence of a vendor or product name is the key signal. The specification defines requirements for a capability type, which is precisely what an ABB does.",
+      "whyOthersWrong": "An SBB (A) would name a specific product (e.g., 'PostgreSQL 15 on AWS RDS'). A principle (C) is an enterprise governance rule, not a technical specification. An architecture requirement (D) is technically valid but less precise — TOGAF specifically uses ABB for this type of capability specification.",
+      "examTip": "Capability specification + no product name = ABB. Capability specification + specific product = SBB. This pattern appears repeatedly in exam questions."
+    },
+    "tags": [
+      "ABB",
+      "Technology Architecture",
+      "capability specification"
+    ],
+    "adm_phase": "D",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-054",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "A building block for 'Document Management' was designed to support a core HR application. A new Finance programme wants to reuse it but needs the building block to also support digital signatures. What should the architect do?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Create a new, separate Document Management building block for Finance — each domain needs its own"
+      },
+      {
+        "key": "B",
+        "text": "Enhance the existing ABB to include digital signature capability and update the Architecture Repository"
+      },
+      {
+        "key": "C",
+        "text": "Finance must use the existing building block without modification to maintain architectural consistency"
+      },
+      {
+        "key": "D",
+        "text": "Document the digital signature need as an Architecture Principle for future programmes"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Building blocks are designed to be evolved and enhanced. Adding digital signature capability to the existing ABB — and updating the Repository — extends the reusable asset for the whole enterprise while maintaining consistency. This is the preferred TOGAF approach.",
+    "explanation": {
+      "whyCorrect": "TOGAF's reuse model includes the ability to enhance existing building blocks when requirements grow. Updating the ABB and storing the enhanced version in the Repository means all future programmes benefit from the enhancement.",
+      "whyOthersWrong": "A creates fragmentation — Finance and HR end up with separate Document Management components that will diverge. C prevents Finance from meeting its needs. D misclassifies a capability requirement as a principle.",
+      "examTip": "Building blocks are living architectural assets — they can be enhanced, refined, and extended through governance. Duplication to avoid modification is an anti-pattern TOGAF explicitly discourages."
+    },
+    "tags": [
+      "building blocks",
+      "reuse",
+      "enhancement",
+      "Architecture Repository"
+    ],
+    "adm_phase": "E",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-055",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "An architect argues that building blocks should be 'tightly integrated to ensure reliability — loose coupling introduces unnecessary abstraction layers.' What is the main flaw in this reasoning?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tight integration is acceptable as long as building blocks are documented in the Repository"
+      },
+      {
+        "key": "B",
+        "text": "Tight coupling prevents reuse and replacement — building blocks must interact through defined interfaces to be genuinely reusable"
+      },
+      {
+        "key": "C",
+        "text": "The argument is correct for Infrastructure building blocks but not Application building blocks"
+      },
+      {
+        "key": "D",
+        "text": "Reliability and loose coupling are independent concerns — both can be achieved simultaneously"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Loose coupling is not just a design preference — it is one of the defining characteristics of a well-formed building block. Tight coupling makes it impossible to replace or reuse a building block without changing everything that depends on it, defeating the purpose of building blocks entirely.",
+    "explanation": {
+      "whyCorrect": "Loose coupling — interaction through well-defined interfaces rather than internal dependencies — is what makes building blocks genuinely reusable and replaceable. Without it, 'reuse' means copying the whole dependency chain.",
+      "whyOthersWrong": "A is wrong — documentation doesn't compensate for tight coupling. C introduces a false distinction between infrastructure and application building blocks; the principle applies universally. D avoids the issue — while reliability and loose coupling can coexist, the architect's claim that tight integration is preferable for reliability is the flaw to identify.",
+      "examTip": "The five characteristics of building blocks: purposeful, measurable, standards-compliant, loosely coupled, reusable. Loose coupling is what enables the last one — without it, 'reuse' is not achievable in practice."
+    },
+    "tags": [
+      "building blocks",
+      "loose coupling",
+      "characteristics",
+      "reuse"
+    ],
+    "adm_phase": "A",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-056",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "A Phase G compliance review reveals that the delivered 'Customer Notification' SBB fully satisfies the functional and performance requirements in the ABB, but uses an internal proprietary messaging protocol rather than the open standard REST API specified. What is the appropriate conformance classification and action?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Compliant — functional requirements are met, so the protocol choice is an implementation detail"
+      },
+      {
+        "key": "B",
+        "text": "Fully Conformant — all user-facing requirements are satisfied"
+      },
+      {
+        "key": "C",
+        "text": "Non-conformant — the ABB specifies REST as mandatory; using a proprietary protocol is a direct violation requiring remediation or a dispensation"
+      },
+      {
+        "key": "D",
+        "text": "Conformant — the system works correctly, which is the only architectural criterion that matters"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "The ABB specifies REST as a mandatory interface requirement. Using a proprietary protocol instead is a direct non-conformance — not an implementation detail. API standards are architectural requirements because they affect integration, interoperability, and replaceability.",
+    "explanation": {
+      "whyCorrect": "ABBs include interface specifications as mandatory architectural requirements. REST vs proprietary protocol is not an implementation detail — it affects every consumer of the service and directly impacts the building block's standards-compliant and loosely coupled characteristics.",
+      "whyOthersWrong": "Compliant (A) would mean broadly following the architectural approach — using a proprietary protocol instead of the specified REST API is a specific violation, not a minor deviation. Fully Conformant (B) requires ALL mandatory requirements to be met. Conformant (D) would mean satisfying the defined architectures — the interface standard is part of that definition.",
+      "examTip": "Interface standards in ABBs are architectural requirements — not implementation preferences. Violating a specified interface standard = non-conformant, even if functional requirements are met."
+    },
+    "tags": [
+      "ABB",
+      "SBB",
+      "conformance",
+      "Phase G",
+      "interface standards"
+    ],
+    "adm_phase": "G",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-057",
+    "moduleId": "MOD-F-05",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "An enterprise architect is reviewing the Architecture Repository and discovers that 34 of the 47 ABBs in the Architecture Landscape have not been updated in four years. Technology has evolved significantly. What is the most appropriate architectural response?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Delete outdated ABBs — they create confusion and programmes should start from scratch"
+      },
+      {
+        "key": "B",
+        "text": "Mark them all as deprecated and create entirely new ABBs for every capability"
+      },
+      {
+        "key": "C",
+        "text": "Conduct a structured review: assess currency of each ABB, update those still relevant with technology changes, formally retire those that are superseded, and preserve those still valid"
+      },
+      {
+        "key": "D",
+        "text": "ABBs do not expire — they remain valid architectural guidance regardless of technology changes"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "The Architecture Repository requires active maintenance. Outdated ABBs should be reviewed individually — some may be updated with technology changes, some formally retired (with documentation of what replaced them), and others may remain valid. Blanket deletion or blanket preservation are both wrong.",
+    "explanation": {
+      "whyCorrect": "Architecture Repository management is an ongoing responsibility. TOGAF's Phase H (Architecture Change Management) and the Architecture Capability framework both address the need for continuous Repository maintenance. A structured review, with individual assessment of each ABB, is the governed approach.",
+      "whyOthersWrong": "A loses institutional knowledge and traceability. B creates unnecessary duplication work and orphans existing implementations. D is wrong — ABBs can become outdated and must be maintained.",
+      "examTip": "Architecture Repository maintenance is a governance activity. Outdated assets should be reviewed, updated, or formally retired — never ignored or mass-deleted. This reflects Phase H thinking applied to Repository management."
+    },
+    "tags": [
+      "building blocks",
+      "Architecture Repository",
+      "maintenance",
+      "Phase H"
+    ],
+    "adm_phase": "H",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-058",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 2,
+    "stem": "In the TOGAF Content Framework, which of the following correctly describes a 'deliverable'?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Any diagram or model produced during an ADM phase"
+      },
+      {
+        "key": "B",
+        "text": "A work product that is formally reviewed, governed, and signed off — it has contractual significance"
+      },
+      {
+        "key": "C",
+        "text": "A reusable building block component stored in the Architecture Repository"
+      },
+      {
+        "key": "D",
+        "text": "A technical specification produced by the implementation team in Phase G"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "A deliverable is a formal architecture work product that is contractually specified — it is reviewed by governance, signed off by appropriate stakeholders, and enters the Architecture Repository upon completion. It has a formal governance status that artefacts do not.",
+    "explanation": {
+      "whyCorrect": "Deliverables are the formal governance outputs — Statement of Architecture Work, Architecture Definition Document, Architecture Roadmap — each requiring formal review and sign-off. Their status as deliverables gives them governance authority.",
+      "whyOthersWrong": "A describes an artefact, not a deliverable. C describes a building block. D describes an implementation output from Phase G, not an architecture deliverable in the Content Framework sense.",
+      "examTip": "Three Content Framework categories: Deliverables (formal/governance), Artefacts (content elements), Building Blocks (reusable components). Deliverables have formal sign-off; artefacts are within them."
+    },
+    "tags": [
+      "Content Framework",
+      "deliverables",
+      "artefacts",
+      "governance"
+    ],
+    "adm_phase": "A",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-059",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 2,
+    "stem": "An architect produces a structured list of all applications in the enterprise's current landscape, including each application's owner, primary business function, and lifecycle status. What type of artefact is this?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A matrix — it shows relationships between elements"
+      },
+      {
+        "key": "B",
+        "text": "A diagram — it visually represents the application landscape"
+      },
+      {
+        "key": "C",
+        "text": "A catalog — it is a structured inventory of architectural elements"
+      },
+      {
+        "key": "D",
+        "text": "A deliverable — it is a formal governance output"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "A catalog is a structured list of architectural elements — in this case, an Application Catalog listing all applications with their attributes. Catalogs answer 'what exists?' A matrix would show relationships between elements; a diagram would provide a visual representation.",
+    "explanation": {
+      "whyCorrect": "Catalogs are one of the three TOGAF artefact types. They are structured inventories answering 'what exists?' — listing entities with their attributes. An application list with owner, function, and status is a classic Application Catalog.",
+      "whyOthersWrong": "A matrix (A) would show relationships between applications and other elements (e.g., which applications support which business functions). A diagram (B) would be visual — like an application interaction diagram. A deliverable (D) is a formal governance output; a catalog is typically a component within a deliverable.",
+      "examTip": "Three artefact types: Catalogs (lists of things), Matrices (relationships between things), Diagrams (pictures of things). Match the question description to the right type."
+    },
+    "tags": [
+      "artefacts",
+      "catalog",
+      "Content Framework",
+      "Application Architecture"
+    ],
+    "adm_phase": "C",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-060",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "An architect produces a grid showing which of the enterprise's 15 applications create, read, update, or delete each of the 20 core data entities. What type of artefact is this, and in which ADM phase is it most likely produced?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A catalog produced in Phase B: Business Architecture"
+      },
+      {
+        "key": "B",
+        "text": "A matrix produced in Phase C: Information Systems Architectures"
+      },
+      {
+        "key": "C",
+        "text": "A diagram produced in Phase D: Technology Architecture"
+      },
+      {
+        "key": "D",
+        "text": "A deliverable produced in Phase E: Opportunities and Solutions"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "A grid showing relationships between applications and data entities — an Application/Data CRUD matrix — is a matrix artefact. It is produced in Phase C (Information Systems Architectures) where both Data and Application Architectures are developed and their interactions mapped.",
+    "explanation": {
+      "whyCorrect": "Matrices show relationships between catalogue items. 'Applications × Data Entities' is an Application/Data Matrix — produced in Phase C where both application and data architectures are in scope. CRUD analysis (Create/Read/Update/Delete) is a classic Phase C matrix technique.",
+      "whyOthersWrong": "A catalog (A) would list applications or data entities separately, not their relationships. A diagram (C) would be visual. A deliverable (D) is a formal output, not a specific artefact type.",
+      "examTip": "Matrix artefacts always show relationships between two types of catalogue items. The phase is determined by which domains are being developed — Application × Data = Phase C."
+    },
+    "tags": [
+      "artefacts",
+      "matrix",
+      "Phase C",
+      "CRUD",
+      "Application Architecture",
+      "Data Architecture"
+    ],
+    "adm_phase": "C",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-061",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "What does the TOGAF Enterprise Metamodel define?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The sequence of phases in the ADM cycle"
+      },
+      {
+        "key": "B",
+        "text": "The types of architectural entities that can be described and the permitted relationships between them"
+      },
+      {
+        "key": "C",
+        "text": "The format and content of the Architecture Definition Document"
+      },
+      {
+        "key": "D",
+        "text": "The governance rules applied by the Architecture Board during compliance reviews"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Enterprise Metamodel is the schema of the architecture — it defines what types of entities (Business Process, Application Component, Data Entity, Technology Service) can be described and what relationships (supports, implements, runs on) are permitted between them.",
+    "explanation": {
+      "whyCorrect": "The Metamodel is the vocabulary and grammar of the architecture. It ensures that when an architect in one team says 'Application Component' and another says 'Service', they are referring to the same concept with the same permitted relationships.",
+      "whyOthersWrong": "The ADM phase sequence (A) is covered by the ADM itself, not the Metamodel. The ADD format (C) is defined by the Content Framework's deliverable specifications. Architecture Board governance rules (D) are in the Architecture Governance Framework.",
+      "examTip": "Metamodel = schema of what can be described. Think of it as the 'grammar' of the architecture language. Stored in the Architecture Metamodel class of the Architecture Repository."
+    },
+    "tags": [
+      "Enterprise Metamodel",
+      "Content Framework",
+      "architecture schema"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-062",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "An architect is working in Phase B: Business Architecture. She produces: a list of all business capabilities, a grid showing which organisational units are responsible for each capability, and a flow diagram showing how value moves through the enterprise. Which set of artefact types has she produced?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Three diagrams — all represent visual information about the business"
+      },
+      {
+        "key": "B",
+        "text": "A catalog, a matrix, and a diagram — one of each artefact type"
+      },
+      {
+        "key": "C",
+        "text": "Three catalogs — all list business elements"
+      },
+      {
+        "key": "D",
+        "text": "A deliverable, an artefact, and a building block — one of each Content Framework category"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The business capability list is a catalog (structured inventory). The capability/organisation grid is a matrix (showing relationships between two types of element). The value flow diagram is a diagram (visual representation). Each represents one of the three TOGAF artefact types.",
+    "explanation": {
+      "whyCorrect": "This is a perfect illustration of the three artefact types working together in a single phase: Catalog answers 'what capabilities exist?', Matrix answers 'which units own which capabilities?', Diagram answers 'how does value flow?'",
+      "whyOthersWrong": "A is wrong — a list is a catalog, not a diagram. C is wrong — the grid and flow diagram are not catalogs. D incorrectly applies the broader Content Framework categories (deliverable, artefact, building block) when the question asks about artefact types within that framework.",
+      "examTip": "The three artefact types always map to: list/inventory = Catalog; relationship grid = Matrix; visual = Diagram. In Phase B, all three types appear regularly."
+    },
+    "tags": [
+      "artefacts",
+      "catalog",
+      "matrix",
+      "diagram",
+      "Phase B"
+    ],
+    "adm_phase": "B",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-063",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "A programme director argues: 'We don't need the Enterprise Metamodel — architects are experienced enough to apply consistent terminology without a formal schema.' An architecture governance review disagrees. What is the strongest argument against the director's position?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The Metamodel is mandatory under TOGAF certification requirements"
+      },
+      {
+        "key": "B",
+        "text": "Without a shared Metamodel, the same term (e.g., 'Application') may mean different things in different teams' architectures, making cross-domain analysis and governance impossible"
+      },
+      {
+        "key": "C",
+        "text": "The Metamodel is needed to generate automated diagrams from the Architecture Repository tooling"
+      },
+      {
+        "key": "D",
+        "text": "Individual architect experience is unreliable — only formal documentation ensures quality"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Enterprise Metamodel's primary value is ensuring terminological and structural consistency across all architecture work in the enterprise. Without it, 'Application' in one team's model may be a very different concept from 'Application' in another's, making integration analysis, impact assessment, and governance impossible.",
+    "explanation": {
+      "whyCorrect": "In a large enterprise with multiple architecture teams, informal terminological consistency breaks down. The Metamodel is the shared schema that allows architecture work from different teams to be compared, combined, and governed coherently.",
+      "whyOthersWrong": "A is too compliance-focused and doesn't address the practical argument. C is a tool-specific benefit, not the primary governance argument. D is unnecessarily personal and doesn't make the strongest case for the Metamodel.",
+      "examTip": "The Metamodel's governance value: consistent vocabulary + consistent relationship types = comparable, governable architectures across the enterprise. This is its primary purpose."
+    },
+    "tags": [
+      "Enterprise Metamodel",
+      "terminology",
+      "consistency",
+      "governance"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-064",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "In the TOGAF Content Framework, what is the correct relationship between a deliverable and an artefact?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A deliverable is a type of artefact — they are in the same category with deliverables being more formal"
+      },
+      {
+        "key": "B",
+        "text": "An artefact is a building block — they can be used interchangeably in the Content Framework"
+      },
+      {
+        "key": "C",
+        "text": "A deliverable is a formal governance output that typically contains one or more artefacts as its content"
+      },
+      {
+        "key": "D",
+        "text": "Artefacts are produced in delivery phases; deliverables are produced in architecture phases"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "Deliverables are the formal governance containers — they have contractual status and require sign-off. Artefacts are the specific content elements (catalogs, matrices, diagrams) that live inside deliverables. The Architecture Definition Document (a deliverable) contains many artefacts.",
+    "explanation": {
+      "whyCorrect": "The relationship is hierarchical: deliverable > artefact. The Architecture Definition Document (deliverable) contains an Application Catalog, a Data Flow Diagram, and an Application/Data Matrix (all artefacts). The deliverable is signed off; the artefacts are the substance within it.",
+      "whyOthersWrong": "A blurs the distinction — deliverables and artefacts are different categories in the Content Framework, not sub-types of each other. B incorrectly conflates artefacts with building blocks. D introduces a false phase-based distinction.",
+      "examTip": "Deliverable = the envelope (formal, signed). Artefact = what's inside the envelope (the actual diagrams, lists, matrices). One deliverable can contain many artefacts."
+    },
+    "tags": [
+      "Content Framework",
+      "deliverables",
+      "artefacts",
+      "relationship"
+    ],
+    "adm_phase": "A",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-065",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "An architecture programme has produced the following: (1) a system context diagram, (2) a list of all business services, (3) a technology component deployment diagram, (4) a grid mapping applications to business functions. In the TOGAF artefact taxonomy, these are respectively classified as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Diagram, Catalog, Diagram, Matrix"
+      },
+      {
+        "key": "B",
+        "text": "Catalog, Catalog, Diagram, Matrix"
+      },
+      {
+        "key": "C",
+        "text": "Diagram, Diagram, Catalog, Matrix"
+      },
+      {
+        "key": "D",
+        "text": "Matrix, Catalog, Diagram, Diagram"
+      }
+    ],
+    "correctKey": "A",
+    "rationale": "(1) System context diagram = Diagram (visual). (2) List of business services = Catalog (structured inventory). (3) Deployment diagram = Diagram (visual representation of technology layout). (4) Grid mapping applications to business functions = Matrix (showing relationships between two sets).",
+    "explanation": {
+      "whyCorrect": "Apply the three rules: list/inventory = Catalog; relationship grid = Matrix; visual/picture = Diagram. (1) A context diagram is visual = Diagram. (2) A list of services is an inventory = Catalog. (3) A deployment diagram is visual = Diagram. (4) A grid of App × Function relationships = Matrix.",
+      "whyOthersWrong": "B incorrectly classifies the context diagram as a Catalog. C incorrectly classifies the business services list as a Diagram. D misclassifies multiple items.",
+      "examTip": "Train yourself on the three categories: if it's a visual picture = Diagram; if it's a list of things = Catalog; if it's a grid showing how things relate = Matrix. Apply this mechanically to classify any artefact."
+    },
+    "tags": [
+      "artefacts",
+      "catalog",
+      "matrix",
+      "diagram",
+      "classification"
+    ],
+    "adm_phase": "C",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-066",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "The Architecture Metamodel is described as 'the schema governing architecture descriptions.' A new programme team proposes to extend the enterprise Metamodel to add a new entity type for 'AI Model' that doesn't currently exist. What is the correct governance process?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Each programme team can extend the Metamodel independently to meet their needs"
+      },
+      {
+        "key": "B",
+        "text": "The Metamodel cannot be extended — it is a fixed TOGAF standard"
+      },
+      {
+        "key": "C",
+        "text": "The proposed extension should be reviewed by the Architecture Board, approved through the tailoring process, and the updated Metamodel stored in the Architecture Repository"
+      },
+      {
+        "key": "D",
+        "text": "AI Models should be described using the existing Application Component entity type — no extension is needed"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "The Enterprise Metamodel is a governance artefact stored in the Architecture Metamodel class of the Architecture Repository. Changes to it require Architecture Board approval — it is not programme-specific and cannot be changed unilaterally. Once approved, the update benefits all future programmes.",
+    "explanation": {
+      "whyCorrect": "The Metamodel is an enterprise-wide governance artefact. Programme-level extensions that aren't approved create inconsistency. The Architecture Board governs Metamodel changes as part of the tailoring process, ensuring enterprise-wide coherence.",
+      "whyOthersWrong": "A allows fragmentation — every programme with a different Metamodel defeats the purpose of having one. B is too restrictive — TOGAF explicitly supports Metamodel tailoring to organisational context. D may be pragmatic but doesn't address whether the Metamodel should formally recognise AI Models.",
+      "examTip": "Metamodel changes = governance process. The Architecture Board approves, the Preliminary Phase's tailoring mechanism handles it, and the Repository stores the result. Never unilateral programme-level changes."
+    },
+    "tags": [
+      "Enterprise Metamodel",
+      "tailoring",
+      "Architecture Board",
+      "governance"
+    ],
+    "adm_phase": "Preliminary",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-067",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 2,
+    "stem": "Which ADM deliverable formally authorises the architecture engagement, defines its scope and approach, and requires sign-off from the sponsoring organisation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Architecture Vision"
+      },
+      {
+        "key": "B",
+        "text": "Architecture Definition Document"
+      },
+      {
+        "key": "C",
+        "text": "Statement of Architecture Work"
+      },
+      {
+        "key": "D",
+        "text": "Architecture Contract"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "The Statement of Architecture Work formally authorises the architecture engagement. It defines scope, approach, team, schedule, and success criteria — and must be signed off by the sponsoring organisation before architecture development begins.",
+    "explanation": {
+      "whyCorrect": "The Statement of Architecture Work is the 'mandate document' for the architecture engagement — analogous to a project initiation document. Without a signed SAW, the architecture team has no formal authority to proceed.",
+      "whyOthersWrong": "The Architecture Vision (A) communicates strategic direction but doesn't authorise the engagement. The ADD (B) contains the architecture content. The Architecture Contract (D) is a Phase G governance agreement for implementation teams, not an engagement authorisation.",
+      "examTip": "Authorisation document = Statement of Architecture Work. Communication document = Architecture Vision. Both are Phase A outputs but they serve completely different purposes."
+    },
+    "tags": [
+      "Statement of Architecture Work",
+      "Phase A",
+      "authorisation",
+      "deliverables"
+    ],
+    "adm_phase": "A",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-068",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 2,
+    "stem": "The Architecture Definition Document is described as 'the primary deliverable container for architecture content.' By the end of which phase does it contain completed descriptions for all four architecture domains?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Phase A: Architecture Vision"
+      },
+      {
+        "key": "B",
+        "text": "Phase C: Information Systems Architectures"
+      },
+      {
+        "key": "C",
+        "text": "Phase D: Technology Architecture"
+      },
+      {
+        "key": "D",
+        "text": "Phase E: Opportunities and Solutions"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "The ADD grows progressively: Phase B adds Business Architecture, Phase C adds Data and Application Architectures, Phase D adds Technology Architecture. By the end of Phase D, all four domain architectures are complete in the ADD.",
+    "explanation": {
+      "whyCorrect": "The ADD accumulates content phase by phase: B adds Business, C adds Data+Application, D adds Technology. Phase D is the last domain architecture phase, so the ADD reaches completion there.",
+      "whyOthersWrong": "Phase A (A) produces the Architecture Vision — the ADD content doesn't begin until Phase B. Phase C (B) completes Data and Application but Technology Architecture is still missing. Phase E (D) uses the complete ADD as input; it doesn't add domain content.",
+      "examTip": "ADD completion timeline: Phase B = Business done. Phase C = Data + Application done. Phase D = Technology done = ADD complete. This progressive accumulation is tested frequently."
+    },
+    "tags": [
+      "Architecture Definition Document",
+      "Phase D",
+      "deliverables",
+      "ADM phases"
+    ],
+    "adm_phase": "D",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-069",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "A steering committee receives the Architecture Vision document for a new cloud transformation programme. A board member asks: 'Where are the detailed system specifications, the vendor choices, and the integration designs?' The Chief Architect explains this is inappropriate for the Architecture Vision. Why?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Architecture Vision is a Phase A deliverable — those details require Phase B approval first"
+      },
+      {
+        "key": "B",
+        "text": "Architecture Vision is intentionally high-level and aspirational — detailed specifications belong in the Architecture Definition Document produced across Phases B–D"
+      },
+      {
+        "key": "C",
+        "text": "System specifications are vendor-specific and excluded from TOGAF deliverables entirely"
+      },
+      {
+        "key": "D",
+        "text": "Those details would be produced in the Statement of Architecture Work, not the Architecture Vision"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Architecture Vision is deliberately high-level — it communicates strategic direction and builds stakeholder alignment before detailed architecture work begins. Detailed specifications, vendor choices, and integration designs are produced in the Architecture Definition Document across Phases B through D.",
+    "explanation": {
+      "whyCorrect": "The Architecture Vision exists to build executive understanding and secure approval to proceed — not to specify technical details. Adding system-level specifications to a Vision bypasses the governance steps in Phases B, C, and D that ensure those decisions are made with proper analysis.",
+      "whyOthersWrong": "A has the right phase reference but the wrong explanation. C is incorrect — TOGAF deliverables absolutely include system specifications (in the ADD). D is wrong — the SAW defines scope and approach, not architecture specifications.",
+      "examTip": "Architecture Vision = aspirational, strategic, executive-facing. Architecture Definition Document = detailed, technical, domain-specific. This is the most frequently tested deliverable distinction on OGEA-101."
+    },
+    "tags": [
+      "Architecture Vision",
+      "Architecture Definition Document",
+      "Phase A",
+      "deliverables"
+    ],
+    "adm_phase": "A",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-070",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "An implementation team has completed delivery and asks: 'What architectural document should we check our work against to verify conformance?' The architect refers them to two specific deliverables. Which pair is correct?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Architecture Vision and Statement of Architecture Work"
+      },
+      {
+        "key": "B",
+        "text": "Architecture Definition Document and Architecture Requirements Specification"
+      },
+      {
+        "key": "C",
+        "text": "Architecture Roadmap and Implementation and Migration Plan"
+      },
+      {
+        "key": "D",
+        "text": "Architecture Contract and Architecture Roadmap"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "Conformance is assessed against the Architecture Definition Document (what the architecture looks like) and the Architecture Requirements Specification (the measurable requirements it must satisfy). Together they define what was architected and at what quality standard.",
+    "explanation": {
+      "whyCorrect": "Phase G compliance assessments check implementation against the ADD (architecture descriptions) and ARS (testable requirements). The ADD tells you what should have been built; the ARS tells you whether it meets the quality criteria.",
+      "whyOthersWrong": "Architecture Vision (A) and SAW are Phase A documents — they set direction and scope, not detailed specification. Roadmap and Migration Plan (C) describe the delivery sequence, not the architecture to conform to. Architecture Contract (D) governs the implementation obligations but references the ADD/ARS rather than replacing them.",
+      "examTip": "Conformance check = ADD + ARS. The ADD describes the architecture; the ARS provides the measurable test criteria. These two deliverables together define what 'conformant' means."
+    },
+    "tags": [
+      "Architecture Definition Document",
+      "Architecture Requirements Specification",
+      "conformance",
+      "Phase G"
+    ],
+    "adm_phase": "G",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-071",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "Which deliverable contains the sequence of Transition Architectures and work packages that describe how the enterprise will move from its Baseline to its Target Architecture over time?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Architecture Definition Document"
+      },
+      {
+        "key": "B",
+        "text": "Implementation and Migration Plan"
+      },
+      {
+        "key": "C",
+        "text": "Architecture Roadmap"
+      },
+      {
+        "key": "D",
+        "text": "Architecture Vision"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "The Architecture Roadmap is the deliverable that shows the architectural journey from Baseline to Target — the sequence of Transition Architectures and work packages. It is first produced in Phase E and finalised in Phase F.",
+    "explanation": {
+      "whyCorrect": "The Architecture Roadmap is an architectural view of the transformation sequence. It shows which Transition Architectures will be delivered, in what order, and why — communicating the architectural logic of the journey.",
+      "whyOthersWrong": "The ADD (A) describes the Baseline and Target architectures but not the journey between them. The Implementation and Migration Plan (B) provides the detailed, costed delivery plan — more granular than the Roadmap. The Architecture Vision (D) is a high-level Phase A view of the Target only.",
+      "examTip": "Architecture Roadmap = architectural view of the journey (Transition Architectures, work packages, sequence rationale). Migration Plan = detailed delivery plan (resources, costs, timelines). Both are needed; they serve different audiences."
+    },
+    "tags": [
+      "Architecture Roadmap",
+      "Transition Architecture",
+      "Phase E",
+      "deliverables"
+    ],
+    "adm_phase": "E",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-072",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "A programme manager receives the Architecture Roadmap and says: 'I'll use this as our project plan — it tells us what to do and when.' The Enterprise Architect corrects her. What is the key distinction she needs to explain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The Roadmap is produced by architects, not project managers — it has a different owner"
+      },
+      {
+        "key": "B",
+        "text": "The Roadmap is an architectural view of the transformation sequence; it does not contain resource assignments, costs, or delivery timelines — the Implementation and Migration Plan provides those"
+      },
+      {
+        "key": "C",
+        "text": "The Roadmap is a governance document — it cannot be used for project planning"
+      },
+      {
+        "key": "D",
+        "text": "The Roadmap covers the full 5-year horizon; the project plan covers only 12 months"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Architecture Roadmap is an architectural view — it shows the sequence and rationale for Transition Architectures and work packages. It does not contain the resources, costs, timelines, and risk assessments needed for project delivery. The Implementation and Migration Plan (Phase F) provides those.",
+    "explanation": {
+      "whyCorrect": "The distinction is level of detail and audience. The Roadmap is for Architecture Board and executive audiences — communicating architectural logic. The Migration Plan is for programme and project managers — providing delivery-ready specifications.",
+      "whyOthersWrong": "A focuses on ownership, not the substantive difference in content. C overstates — the Roadmap informs delivery but isn't purely a governance document. D introduces an arbitrary time distinction that isn't the core issue.",
+      "examTip": "Roadmap = what to build and in what architectural order (why). Migration Plan = how to build it (who, what cost, when, what risk). The Roadmap precedes and informs the Plan."
+    },
+    "tags": [
+      "Architecture Roadmap",
+      "Implementation and Migration Plan",
+      "Phase F",
+      "deliverables"
+    ],
+    "adm_phase": "F",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-073",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "An Architecture Contract is established for a cloud migration programme. Three months later, the implementation team's technical lead states: 'The Architecture Contract was for the architecture team — it doesn't bind us.' What is wrong with this statement?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nothing — Architecture Contracts are internal architecture team documents"
+      },
+      {
+        "key": "B",
+        "text": "An Architecture Contract is a joint agreement between development partners AND sponsors — implementation teams are development partners and are bound by its terms"
+      },
+      {
+        "key": "C",
+        "text": "Architecture Contracts bind only external vendors, not internal teams"
+      },
+      {
+        "key": "D",
+        "text": "The Architecture Contract is advisory — only the Statement of Architecture Work is binding"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "An Architecture Contract is explicitly a joint agreement between development partners (the teams doing implementation) and the sponsoring organisation. The implementation team is a development partner — the contract exists precisely to define their architectural obligations.",
+    "explanation": {
+      "whyCorrect": "TOGAF defines the Architecture Contract as the document that formalises implementation teams' architectural obligations. It is not an internal architecture document — it is an agreement that the implementation team has entered into and is bound by.",
+      "whyOthersWrong": "A is completely wrong — the Architecture Contract explicitly governs implementation teams. C introduces a false internal/external distinction. D is wrong — Architecture Contracts are governance documents with real authority in Phase G.",
+      "examTip": "Architecture Contract parties: development partners (implementation teams) + sponsoring organisation (Architecture Board and sponsors). Both parties are bound. This is its entire governance purpose."
+    },
+    "tags": [
+      "Architecture Contract",
+      "Phase G",
+      "development partners",
+      "governance"
+    ],
+    "adm_phase": "G",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-074",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "An Architecture Requirements Specification has been produced for a new trading platform. The CTO asks: 'How is this different from the Architecture Definition Document?' What is the most accurate explanation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "They are different names for the same document — the ARS is an older term for the ADD"
+      },
+      {
+        "key": "B",
+        "text": "The ADD describes what the architecture looks like; the ARS specifies the measurable criteria the architecture must satisfy"
+      },
+      {
+        "key": "C",
+        "text": "The ADD covers business and data domains; the ARS covers application and technology domains"
+      },
+      {
+        "key": "D",
+        "text": "The ARS is produced in Phase A; the ADD is produced in Phase E"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The ADD describes the architecture (what it is) — Baseline and Target descriptions across all four domains. The ARS specifies the measurable, testable requirements the architecture must satisfy. They complement each other: the ADD is the design; the ARS is the acceptance criteria.",
+    "explanation": {
+      "whyCorrect": "ADD = architecture description (diagrams, models, component specifications). ARS = requirements specification (measurable criteria: 'response time < 500ms', 'availability > 99.9%'). Together they define both the architecture and how to test whether it has been achieved.",
+      "whyOthersWrong": "A is wrong — they are distinct deliverables with different contents and purposes. C introduces a false domain split; both cover all four domains. D is wrong — both begin to be produced from Phase B onwards, not Phase A and E respectively.",
+      "examTip": "ADD = design. ARS = test criteria. Both are produced across Phases B–D and both are used in Phase G compliance assessments. Never confuse them."
+    },
+    "tags": [
+      "Architecture Definition Document",
+      "Architecture Requirements Specification",
+      "deliverables",
+      "distinction"
+    ],
+    "adm_phase": "B",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-075",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "A governance audit examines a completed enterprise transformation programme. The auditors find: an Architecture Vision document, a Statement of Architecture Work, and an Architecture Definition Document for three of the four domains. The Technology Architecture domain has no ADD section. What governance risk does this create?",
+    "options": [
+      {
+        "key": "A",
+        "text": "No risk — the ADD is optional for the Technology domain if the infrastructure is standard"
+      },
+      {
+        "key": "B",
+        "text": "The programme cannot be closed — all deliverables must be approved before programme closure"
+      },
+      {
+        "key": "C",
+        "text": "Phase D outputs are missing — Phase G compliance assessments for technology implementation have no architecture baseline to assess against"
+      },
+      {
+        "key": "D",
+        "text": "The programme team must redo Phase B through D before the programme can proceed"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "The Technology Architecture section of the ADD is the baseline against which Phase G compliance assessments evaluate infrastructure and platform implementations. Without it, implementation teams have no architectural specification to conform to, and compliance reviews cannot be conducted.",
+    "explanation": {
+      "whyCorrect": "Phase G assesses conformance against the ADD and ARS. If the Technology Architecture section is missing, technology implementations cannot be formally assessed. This creates invisible technical debt — infrastructure choices made without architectural governance.",
+      "whyOthersWrong": "A is wrong — TOGAF does not make the Technology domain optional. B is technically true but doesn't identify the substantive governance risk. D overstates — the missing section needs to be produced, but not necessarily starting from Phase B.",
+      "examTip": "Every domain architecture phase must produce its ADD section. Missing Technology Architecture = no foundation for Phase G technology compliance assessment = ungoverned infrastructure decisions."
+    },
+    "tags": [
+      "Architecture Definition Document",
+      "Phase D",
+      "Phase G",
+      "compliance",
+      "governance"
+    ],
+    "adm_phase": "G",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-076",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "An architecture programme produced an Architecture Vision, Architecture Definition Document, and Architecture Requirements Specification. No Architecture Roadmap was produced. Phase F planning has begun. What is the consequence of this omission?",
+    "options": [
+      {
+        "key": "A",
+        "text": "No consequence — the Architecture Roadmap is optional if the programme has a project plan"
+      },
+      {
+        "key": "B",
+        "text": "Phase F cannot produce a complete Implementation and Migration Plan without the Roadmap providing the architectural sequencing logic and Transition Architecture definitions"
+      },
+      {
+        "key": "C",
+        "text": "The Architecture Board must void the entire programme and restart from Phase A"
+      },
+      {
+        "key": "D",
+        "text": "The Roadmap should have been in Phase A — it cannot be created retrospectively"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Architecture Roadmap (produced in Phase E) provides the architectural sequencing — which Transition Architectures, in what order, with which work packages. Phase F's Implementation and Migration Plan is built from this Roadmap. Without the Roadmap, the Migration Plan has no architectural basis for sequencing.",
+    "explanation": {
+      "whyCorrect": "Phase F takes the Phase E Roadmap and adds detail: resources, costs, risk assessments, timelines. The Roadmap is the input to Phase F. Producing a Migration Plan without a Roadmap means Phase F has no architectural sequencing logic — it risks violating dependency constraints and missing Transition Architecture coherence requirements.",
+      "whyOthersWrong": "A is wrong — the Roadmap is a mandatory Phase E output, not optional. C is disproportionate. D is wrong — the Roadmap is a Phase E deliverable, not Phase A.",
+      "examTip": "Phase E → Architecture Roadmap → Phase F → Implementation and Migration Plan. These are sequential dependencies. Phase F cannot complete without the Phase E Roadmap."
+    },
+    "tags": [
+      "Architecture Roadmap",
+      "Phase E",
+      "Phase F",
+      "Implementation and Migration Plan",
+      "dependencies"
+    ],
+    "adm_phase": "F",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-077",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "An architecture review finds that three separate project teams each have their own 'Statement of Architecture Work' for overlapping scopes within the same enterprise programme. The Architecture Board is concerned. What governance issue does this indicate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Each project needs its own SAW — this is normal and expected"
+      },
+      {
+        "key": "B",
+        "text": "Multiple SAWs for overlapping scopes indicate the programme lacks a properly scoped engagement authorisation — separate projects may be duplicating or conflicting architectural work"
+      },
+      {
+        "key": "C",
+        "text": "The SAW should be replaced by Architecture Contracts for each project"
+      },
+      {
+        "key": "D",
+        "text": "The SAW is reissued for each ADM phase — three phases have completed, hence three SAWs"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Statement of Architecture Work is produced at the start of an architecture engagement to define scope, prevent overlap, and authorise one coherent programme of work. Multiple overlapping SAWs suggest scope was not properly defined — different teams may be architecting the same areas without coordination.",
+    "explanation": {
+      "whyCorrect": "The SAW's explicit purpose is to define and bound the architecture engagement scope. Overlapping scopes in separate SAWs means the scoping exercise failed — creating risk of duplicated effort, conflicting architectures, and missed dependencies.",
+      "whyOthersWrong": "A is wrong — multiple overlapping SAWs represent a governance failure, not normal practice. C conflates the SAW (engagement authorisation) with Architecture Contracts (implementation obligations). D is wrong — the SAW is produced once per engagement, not per phase.",
+      "examTip": "The SAW is a scope-defining, authorisation document produced once per engagement. Multiple overlapping SAWs in the same programme = scope governance failure = conflict risk."
+    },
+    "tags": [
+      "Statement of Architecture Work",
+      "scope",
+      "Phase A",
+      "governance"
+    ],
+    "adm_phase": "A",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-078",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "An architecture programme produces an 'Application Interaction Diagram' showing how eight applications communicate in the target state, what protocols they use, and what data they exchange. In which ADM phase is this most likely produced, and what type of artefact is it?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Phase B (Business Architecture) — Matrix"
+      },
+      {
+        "key": "B",
+        "text": "Phase C (Information Systems Architectures) — Diagram"
+      },
+      {
+        "key": "C",
+        "text": "Phase D (Technology Architecture) — Catalog"
+      },
+      {
+        "key": "D",
+        "text": "Phase E (Opportunities and Solutions) — Deliverable"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "An Application Interaction Diagram showing application communications, protocols, and data exchanges is a visual representation (Diagram) produced in Phase C Application Architecture. Application-level interactions are defined as part of the Application Architecture, which is Phase C's second sub-phase.",
+    "explanation": {
+      "whyCorrect": "Application interactions are a core Phase C Application Architecture concern. A diagram showing application communication patterns is visual = Diagram artefact type. Phase C is correct because it is specifically where application interactions are architecturally defined.",
+      "whyOthersWrong": "Phase B (A) covers business processes and capabilities, not application interactions. Phase D (C) covers infrastructure hosting and networking, not application-level interaction design. Phase E (D) synthesises outputs from earlier phases but doesn't produce domain architecture diagrams.",
+      "examTip": "Application interaction diagrams = Phase C Application Architecture. Technology infrastructure diagrams = Phase D. Business capability maps = Phase B. Match the diagram content to its domain phase."
+    },
+    "tags": [
+      "artefacts",
+      "diagram",
+      "Phase C",
+      "Application Architecture",
+      "interactions"
+    ],
+    "adm_phase": "C",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-079",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "An architect is tasked with producing Phase B Business Architecture artefacts. She produces: (1) a business capability heat map, (2) a value stream map, (3) a business process flow diagram, (4) a Role/Responsibility matrix. Which artefact types have been produced?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Diagram, Diagram, Diagram, Matrix"
+      },
+      {
+        "key": "B",
+        "text": "Catalog, Diagram, Diagram, Matrix"
+      },
+      {
+        "key": "C",
+        "text": "Diagram, Diagram, Catalog, Diagram"
+      },
+      {
+        "key": "D",
+        "text": "Matrix, Catalog, Diagram, Matrix"
+      }
+    ],
+    "correctKey": "A",
+    "rationale": "(1) Business capability heat map = visual representation of capabilities with colour coding = Diagram. (2) Value stream map = visual flow diagram = Diagram. (3) Business process flow = visual workflow diagram = Diagram. (4) Role/Responsibility matrix = grid showing relationships between Roles and Responsibilities = Matrix.",
+    "explanation": {
+      "whyCorrect": "Heat maps, value stream maps, and process flows are all visual representations = Diagrams. A Role/Responsibility grid shows relationships between two types of entity = Matrix. Three diagrams and one matrix.",
+      "whyOthersWrong": "B incorrectly classifies the capability heat map as a Catalog — a heat map is a visual representation, not a list. C misclassifies the value stream map as a Catalog. D misclassifies multiple items.",
+      "examTip": "Key classification rule: if it's primarily visual (even if structured), it's a Diagram. A heat map, despite having structured content, is fundamentally a visual representation. Only flat lists without visual elements are Catalogs."
+    },
+    "tags": [
+      "artefacts",
+      "catalog",
+      "matrix",
+      "diagram",
+      "Phase B",
+      "classification"
+    ],
+    "adm_phase": "B",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-080",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "A post-implementation review reveals that the delivered system satisfies 95% of requirements but uses a deployment topology fundamentally different from the Technology Architecture specified in the ADD. What should the architecture team do?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Update the ADD to match the delivered system — it is now the new baseline"
+      },
+      {
+        "key": "B",
+        "text": "Raise a Phase G non-conformance finding; assess whether a retrospective dispensation is appropriate or remediation is required"
+      },
+      {
+        "key": "C",
+        "text": "Accept the deviation — 95% requirement satisfaction is sufficient for architecture conformance"
+      },
+      {
+        "key": "D",
+        "text": "Initiate a full new ADM cycle to redesign the Technology Architecture"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "A fundamental deviation from the ADD's Technology Architecture topology is a non-conformance, regardless of functional requirement satisfaction. The governance process requires this to be formally assessed — either a retrospective dispensation (with documented justification) or remediation.",
+    "explanation": {
+      "whyCorrect": "Phase G governance applies throughout implementation, not just at functional milestones. A fundamentally different topology may have implications for resilience, scalability, security, or future development that the Architecture Board must assess.",
+      "whyOthersWrong": "A normalises the deviation without governance assessment — this is how undocumented architectural drift accumulates. C incorrectly treats requirement satisfaction percentage as an architectural conformance criterion. D is disproportionate.",
+      "examTip": "Deviations from the ADD discovered post-implementation are still governance events. The options are: retrospective dispensation (if justifiable) or remediation. Neither 'accept quietly' nor 'restart the programme' is the right answer."
+    },
+    "tags": [
+      "Architecture Definition Document",
+      "conformance",
+      "Phase G",
+      "non-conformance",
+      "dispensation"
+    ],
+    "adm_phase": "G",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-081",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "An organisation's Phase E has identified eight work packages but produced no Architecture Roadmap. The team argues: 'The Migration Plan we'll produce in Phase F serves the same purpose.' What is the most important reason this argument is flawed?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The Architecture Roadmap and Migration Plan are different documents with different owners"
+      },
+      {
+        "key": "B",
+        "text": "The Architecture Roadmap provides the architectural sequencing rationale — defining Transition Architectures and work package ordering. Without it, the Migration Plan lacks architectural justification for its sequence"
+      },
+      {
+        "key": "C",
+        "text": "The Migration Plan requires Architecture Board approval; the Roadmap does not"
+      },
+      {
+        "key": "D",
+        "text": "The Roadmap is required for TOGAF certification compliance; the Migration Plan is not"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The Architecture Roadmap is the architectural justification for the transformation sequence — it explains why Transition Architectures are ordered the way they are, based on architectural dependencies and coherence. A Migration Plan without this rationale is a delivery schedule that could inadvertently violate architectural dependencies.",
+    "explanation": {
+      "whyCorrect": "The Roadmap and Plan serve different purposes. The Roadmap provides the 'why' of sequencing (architectural coherence, dependencies, Transition Architecture definitions). The Plan provides the 'how' (resources, costs, timelines). The Plan should derive from the Roadmap — not replace it.",
+      "whyOthersWrong": "A focuses on ownership, which is not the most important issue. C inverts governance reality — both require Architecture Board input. D is a compliance argument that doesn't address the substantive issue.",
+      "examTip": "Architecture Roadmap = architectural logic and justification for sequence. Migration Plan = delivery mechanics. The Plan DEPENDS on the Roadmap — it translates architectural sequencing into delivery reality."
+    },
+    "tags": [
+      "Architecture Roadmap",
+      "Implementation and Migration Plan",
+      "Phase E",
+      "Phase F",
+      "sequencing"
+    ],
+    "adm_phase": "E",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-082",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "During a Phase C review, the architecture team has produced catalogs of data entities and applications, matrices showing application/data relationships, and data flow diagrams. A governance reviewer argues: 'All these separate documents should be combined into one master document.' The Chief Architect disagrees. What is the strongest architectural reason to maintain them separately?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Separate documents are required by TOGAF certification"
+      },
+      {
+        "key": "B",
+        "text": "Different artefact types serve different analytical purposes — catalogs for inventory, matrices for relationship analysis, diagrams for visual communication. Combining them would obscure their distinct governance value"
+      },
+      {
+        "key": "C",
+        "text": "Each artefact must be approved by a different stakeholder — combining them creates approval conflicts"
+      },
+      {
+        "key": "D",
+        "text": "TOGAF limits the number of artefacts per deliverable to a fixed maximum"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The three artefact types serve distinct analytical purposes. Catalogs provide the inventory foundation; matrices reveal relationships between catalogue items; diagrams communicate architecture visually to stakeholders. Each type answers different questions and is consumed differently. Combining them collapses these distinct analytical lenses.",
+    "explanation": {
+      "whyCorrect": "In architectural governance, catalogs enable machine-readable analysis (impact assessment, compliance checking), matrices enable relationship analysis (dependency mapping, CRUD analysis), and diagrams enable stakeholder communication. These purposes are better served by maintaining distinct, structured artefacts.",
+      "whyOthersWrong": "A is a compliance argument that doesn't address the substance. C invents an approval rule. D is false — TOGAF has no fixed maximum artefact count per deliverable.",
+      "examTip": "The three artefact types are complementary analytical instruments, not just different ways to present the same information. Their distinct structure enables different types of analysis — this is why they are maintained separately."
+    },
+    "tags": [
+      "artefacts",
+      "catalog",
+      "matrix",
+      "diagram",
+      "governance",
+      "analytical purpose"
+    ],
+    "adm_phase": "C",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-083",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "An architecture programme has produced both an Architecture Roadmap and an Implementation and Migration Plan. The Architecture Board is reviewing both. A board member asks: 'If we already have the Migration Plan, why do we need the Roadmap?' What is the complete and correct answer?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The Roadmap is produced earlier — it is superseded by the Migration Plan once Phase F is complete"
+      },
+      {
+        "key": "B",
+        "text": "The Roadmap and Migration Plan serve different audiences: architects review the Roadmap; project managers review the Migration Plan"
+      },
+      {
+        "key": "C",
+        "text": "The Roadmap shows the architectural logic and coherence of the transformation sequence — including Transition Architecture definitions. The Migration Plan translates this into delivery. Both are needed because the Roadmap justifies the sequence the Plan implements"
+      },
+      {
+        "key": "D",
+        "text": "The Roadmap covers the future; the Migration Plan covers the past and present state"
+      }
+    ],
+    "correctKey": "C",
+    "rationale": "The Roadmap and Migration Plan are both needed because they serve different purposes within a coherent pair. The Roadmap provides architectural justification and Transition Architecture definitions. The Migration Plan translates that architectural structure into delivery mechanics. Removing either leaves the transformation with either no delivery plan or no architectural rationale.",
+    "explanation": {
+      "whyCorrect": "The Roadmap is the 'why' and 'what' of architectural sequencing — it defines Transition Architectures and justifies their order architecturally. The Plan is the 'how' — the funded, resourced, risk-assessed delivery schedule that implements the Roadmap. They are complementary, not redundant.",
+      "whyOthersWrong": "A is wrong — the Roadmap remains a maintained deliverable throughout the programme. B is partially true but incomplete — audience difference is a consequence, not the full explanation. D is wrong — both cover future state.",
+      "examTip": "The Roadmap is the architecture; the Plan is the delivery. The Plan should derive from and remain consistent with the Roadmap. Neither can fully substitute for the other."
+    },
+    "tags": [
+      "Architecture Roadmap",
+      "Implementation and Migration Plan",
+      "deliverables",
+      "complementary"
+    ],
+    "adm_phase": "F",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-084",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "An organisation tailors TOGAF and decides to combine the Architecture Definition Document and Architecture Requirements Specification into a single document called the 'Architecture Specification.' Supporters argue it reduces document overhead. Critics from the Architecture Board argue against this. What is the strongest architectural governance argument against combining them?",
+    "options": [
+      {
+        "key": "A",
+        "text": "TOGAF prohibits combining deliverables during tailoring"
+      },
+      {
+        "key": "B",
+        "text": "The ADD and ARS serve fundamentally different governance purposes — the ADD describes what was designed; the ARS specifies testable acceptance criteria. Combining them blurs the distinction between design and requirements, complicating compliance assessments"
+      },
+      {
+        "key": "C",
+        "text": "A combined document cannot be approved by the Architecture Board"
+      },
+      {
+        "key": "D",
+        "text": "The combined document would be too large to maintain effectively"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The ADD and ARS serve distinct governance purposes in Phase G: the ADD is the design reference; the ARS is the test specification. In a compliance assessment, reviewers need to distinguish 'what was architected' (ADD) from 'what measurable standard must it meet' (ARS). Combining them obscures this distinction.",
+    "explanation": {
+      "whyCorrect": "Phase G compliance assessments use both documents in specific ways: the ADD to assess whether what was built matches the architectural design; the ARS to assess whether it meets the measurable quality criteria. When combined, compliance reviewers cannot cleanly separate these two analytical tasks.",
+      "whyOthersWrong": "A is wrong — TOGAF's tailoring explicitly permits deliverable combination in appropriate contexts. C is wrong — the Board approves whatever deliverable structure is defined in the Tailored Architecture Framework. D focuses on maintenance, not governance substance.",
+      "examTip": "The strongest argument against combining deliverables is always about governance clarity — what distinct purpose does each serve, and does combining them obscure that purpose? ADD = design reference; ARS = test specification. These are different governance instruments."
+    },
+    "tags": [
+      "Architecture Definition Document",
+      "Architecture Requirements Specification",
+      "tailoring",
+      "governance",
+      "compliance"
+    ],
+    "adm_phase": "G",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-085",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "A Capability Assessment is listed as an optional deliverable in TOGAF. A programme manager asks: 'When should we produce one?' The architect explains. Which situation most strongly justifies producing a Capability Assessment?",
+    "options": [
+      {
+        "key": "A",
+        "text": "When the programme requires more than £1 million of investment"
+      },
+      {
+        "key": "B",
+        "text": "When there is a significant gap between the enterprise's current capabilities and those needed to deliver or operate the Target Architecture"
+      },
+      {
+        "key": "C",
+        "text": "When external auditors require evidence of architecture capability maturity"
+      },
+      {
+        "key": "D",
+        "text": "When the Architecture Board requests one during Phase G compliance review"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "A Capability Assessment documents the current capabilities of the enterprise and assesses any gaps relative to what is needed for the Target Architecture. It is most valuable when the transformation requires significantly different capabilities — people, processes, and technologies — from what currently exists.",
+    "explanation": {
+      "whyCorrect": "The Capability Assessment directly feeds transformation readiness planning. If the enterprise needs capabilities it doesn't currently have, this must be recognised and planned for. It also informs Phase A's assessment of readiness for business transformation.",
+      "whyOthersWrong": "A uses a financial threshold that TOGAF doesn't reference. C is an external compliance trigger, not an internal architectural one. D makes it reactive to Board requests rather than driven by programme need.",
+      "examTip": "Capability Assessment = current vs. required capabilities for the Target Architecture. Most useful when a significant capability gap exists. This directly informs transformation readiness and work package sequencing."
+    },
+    "tags": [
+      "Capability Assessment",
+      "deliverables",
+      "transformation readiness",
+      "Phase A"
+    ],
+    "adm_phase": "A",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-086",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 3,
+    "stem": "Which of the following TOGAF artefacts produced in Phase D (Technology Architecture) is most likely to be a Matrix?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A network topology diagram showing how data centres connect"
+      },
+      {
+        "key": "B",
+        "text": "A platform decomposition diagram showing infrastructure layers"
+      },
+      {
+        "key": "C",
+        "text": "A technology component catalogue listing all infrastructure components"
+      },
+      {
+        "key": "D",
+        "text": "A technology/application matrix showing which applications are hosted on which platforms"
+      }
+    ],
+    "correctKey": "D",
+    "rationale": "A technology/application matrix — showing which application components run on which technology platforms — is a grid-format artefact showing the relationship between two types of architectural element. This is a Matrix. It is a key Phase D artefact that traces applications (Phase C output) to technology platforms (Phase D output).",
+    "explanation": {
+      "whyCorrect": "Matrices show relationships between catalogue items. 'Applications × Technology Platforms' is exactly a matrix — it answers 'which applications run on which infrastructure?' and directly supports deployment planning.",
+      "whyOthersWrong": "A is a Diagram (visual network topology). B is a Diagram (visual platform decomposition). C is a Catalog (structured list of infrastructure components). Only D is a relationship grid between two entity types = Matrix.",
+      "examTip": "Phase D Matrix example: Technology/Application matrix (which apps on which platforms). Phase C Matrix example: Application/Data matrix (which apps use which data). The phase context helps identify the matrix type."
+    },
+    "tags": [
+      "artefacts",
+      "matrix",
+      "Phase D",
+      "Technology Architecture"
+    ],
+    "adm_phase": "D",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-087",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 4,
+    "stem": "A Compliance Assessment is produced during Phase G. A programme director asks: 'What makes this different from just reviewing the Architecture Definition Document?' The architect explains. What is the key distinction?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Compliance Assessment is produced by the project team; the ADD is produced by the architecture team"
+      },
+      {
+        "key": "B",
+        "text": "The ADD describes the intended architecture; a Compliance Assessment formally evaluates whether the implementation conforms to that intended architecture using defined criteria"
+      },
+      {
+        "key": "C",
+        "text": "The ADD covers all four domains; the Compliance Assessment covers only the Technology domain"
+      },
+      {
+        "key": "D",
+        "text": "A Compliance Assessment is optional; the ADD is mandatory"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The ADD is the design reference — it describes what the architecture should be. A Compliance Assessment is a formal evaluation process that assesses whether what has been built actually matches the ADD. One is a specification; the other is a systematic verification of conformance against that specification.",
+    "explanation": {
+      "whyCorrect": "The ADD describes intent; the Compliance Assessment measures actuality against intent. The assessment uses the ADD and ARS as its reference documents — producing a formal verdict (Conformant, Non-conformant, etc.) with specific findings and required actions.",
+      "whyOthersWrong": "A describes a practical ownership distinction but not the substantive difference. C invents a domain restriction. D is wrong — both are formal TOGAF deliverables; neither is optional in a properly governed programme.",
+      "examTip": "ADD = the design. Compliance Assessment = the verdict on whether the delivery matched the design. These are design-time and assessment-time counterparts."
+    },
+    "tags": [
+      "Compliance Assessment",
+      "Architecture Definition Document",
+      "Phase G",
+      "conformance"
+    ],
+    "adm_phase": "G",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-088",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 2,
+    "stem": "The TOGAF Content Framework organises architecture work products into three categories. Which of the following correctly lists all three?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Documents, Models, and Frameworks"
+      },
+      {
+        "key": "B",
+        "text": "Deliverables, Artefacts, and Building Blocks"
+      },
+      {
+        "key": "C",
+        "text": "Specifications, Standards, and Guidelines"
+      },
+      {
+        "key": "D",
+        "text": "Principles, Architectures, and Roadmaps"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "The TOGAF Content Framework organises architecture work products into exactly three categories: Deliverables (formal governance outputs), Artefacts (specific content elements — catalogs, matrices, diagrams), and Building Blocks (reusable capability components — ABBs and SBBs).",
+    "explanation": {
+      "whyCorrect": "This is a foundational Content Framework fact. The three categories serve different purposes: Deliverables for governance, Artefacts for analytical content, Building Blocks for reuse. Together they cover all architecture work products.",
+      "whyOthersWrong": "A introduces informal terms not used in the Content Framework. C lists types of guidance documentation. D lists specific architecture elements, not the framework's organisational categories.",
+      "examTip": "Three Content Framework categories: Deliverables, Artefacts, Building Blocks. If a question asks for 'the three categories' or 'how TOGAF organises work products', this is always the answer."
+    },
+    "tags": [
+      "Content Framework",
+      "deliverables",
+      "artefacts",
+      "building blocks"
+    ],
+    "adm_phase": "A",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-089",
+    "moduleId": "MOD-F-21",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "An organisation has completed a major transformation programme. The Architecture Board proposes to archive all programme deliverables and treat them as 'completed — no longer active.' The Chief Architect objects. What is the strongest architectural argument for maintaining active access to these deliverables?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Regulatory requirements mandate retaining architecture documents for seven years"
+      },
+      {
+        "key": "B",
+        "text": "Completed programme deliverables — particularly the ADD and ARS — become the Baseline Architecture for the next programme and are required inputs for future ADM phases"
+      },
+      {
+        "key": "C",
+        "text": "The Architecture Board is responsible for document retention, not the Chief Architect"
+      },
+      {
+        "key": "D",
+        "text": "Archived deliverables cannot be retrieved in time for future programmes"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "When a programme completes, its Target Architecture becomes the new Baseline Architecture. The ADD from the completed programme is a primary input to future ADM Phase A (assessing current state) and Phase B onwards (developing the new Baseline description). Archiving it as 'inactive' severs this critical link.",
+    "explanation": {
+      "whyCorrect": "The TOGAF Architecture Repository and the ADM are continuous — each cycle's Target Architecture is the next cycle's Baseline. The ADD documents exactly what was built, making it essential for future programmes' Gap Analysis, impact assessment, and baseline documentation.",
+      "whyOthersWrong": "A is a compliance argument that doesn't address the architectural substance. C deflects responsibility. D is an operational concern, not an architectural argument.",
+      "examTip": "Architecture deliverables don't become irrelevant when a programme ends. The Target Architecture becomes the Baseline for the next cycle. This 'living architecture' principle is fundamental to TOGAF's continuous ADM model."
+    },
+    "tags": [
+      "Architecture Definition Document",
+      "Baseline Architecture",
+      "Architecture Repository",
+      "ADM continuity"
+    ],
+    "adm_phase": "H",
+    "domain": "Architecture Content"
+  },
+  {
+    "id": "Q1-090",
+    "moduleId": "MOD-F-20",
+    "domainTag": "Architecture Content",
+    "difficulty": 5,
+    "stem": "A TOGAF architecture programme produces a deliverable described as: 'A formal evaluation of whether a proposed architecture solution complies with enterprise Architecture Principles and Standards.' This is produced mid-programme to assess a vendor's proposed solution. What deliverable is this?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Architecture Requirements Specification"
+      },
+      {
+        "key": "B",
+        "text": "Compliance Assessment"
+      },
+      {
+        "key": "C",
+        "text": "Architecture Contract"
+      },
+      {
+        "key": "D",
+        "text": "Architecture Definition Document"
+      }
+    ],
+    "correctKey": "B",
+    "rationale": "A Compliance Assessment is a formal evaluation of whether something (a solution, a design, an implementation) conforms to the enterprise Architecture Principles and standards. It can be produced during architecture development (assessing a vendor proposal) or during Phase G (assessing implemented work).",
+    "explanation": {
+      "whyCorrect": "Compliance Assessments are not exclusively Phase G deliverables — they can be produced whenever a formal conformance evaluation is needed. Assessing a vendor's proposed solution against Architecture Principles mid-programme is exactly this use case.",
+      "whyOthersWrong": "The ARS (A) specifies requirements; it doesn't evaluate conformance. The Architecture Contract (C) is an agreement for implementation obligations. The ADD (D) describes the architecture design.",
+      "examTip": "Compliance Assessments can be produced in multiple contexts — vendor proposal review, mid-programme milestone assessment, and Phase G post-delivery review. The trigger is always: 'does this conform to the architecture?'"
+    },
+    "tags": [
+      "Compliance Assessment",
+      "deliverables",
+      "conformance",
+      "Architecture Principles"
+    ],
+    "adm_phase": "G",
+    "domain": "Architecture Content"
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "id": "LES-21",
+  "moduleId": "MOD-L21",
+  "order": 21,
+  "title": "ADM Techniques — Interoperability and Risk Management",
+  "sourceCitation": "C220Part2e — Chapters 6 & 8 (ADM Techniques)",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Interoperability = \"the ability to share information and services.\" It starts with business processes (are our processes compatible?) and works down to technology. Most organisations jump straight to APIs — which is why integrations fail. Risk Management in TOGAF is pragmatic: classify risks, assess impact and frequency, mitigate, assess residual risk, govern acceptance. The key insight: the EA identifies risks but the governance framework accepts them." },
+
+    { "type": "heading", "level": 3, "text": "2a. Key Points — Interoperability" },
+    { "type": "paragraph", "text": "Three categories: **Operational/Business** (how business processes are shared) · **Information** (how information is shared) · **Technical** (how technical services are shared or connected)." },
+    { "type": "paragraph", "text": "Four degrees of interoperability (Defence/NATO example):" },
+    { "type": "table", "headers": ["Degree", "Name", "What it means"], "rows": [
+      ["1", "Unstructured Data Exchange", "Human-interpretable unstructured data (e.g., free text emails, documents)"],
+      ["2", "Structured Data Exchange", "Human-interpretable structured data — requires manual handling"],
+      ["3", "Seamless Sharing of Data", "Automated sharing between systems via a common exchange model"],
+      ["4", "Seamless Sharing of Information", "Extension of Degree 3 — universal interpretation through co-operating applications"]
+    ]},
+    { "type": "paragraph", "text": "Interoperability across the ADM: Phase A (nature and security of exchanges in business scenarios) → Phase B (defined in business terms) → Phase C Data (content detailed) → Phase C Application (how apps share) → Phase D (technical mechanisms) → Phase E (solutions selected) → Phase F (logically implemented)." },
+    { "type": "paragraph", "text": "The most significant interoperability challenge: **Business interoperability**. Most COTS products have embedded business processes — changing them often requires so much work that the advantages of re-using the solution are lost." },
+
+    { "type": "heading", "level": 3, "text": "2b. Key Points — Risk Management" },
+    { "type": "paragraph", "text": "Two risk levels — ALWAYS both: **Initial Level of Risk** (before mitigation) · **Residual Level of Risk** (after mitigation). Both are Phase A outputs and Phase G governance artefacts." },
+    { "type": "paragraph", "text": "Effect scale: Catastrophic · Critical · Marginal · Negligible." },
+    { "type": "paragraph", "text": "Frequency scale: Frequent · Likely · Occasional · Seldom · Unlikely." },
+    { "type": "paragraph", "text": "Combined impact: Extremely High (E) · High (H) · Moderate (M) · Low (L)." },
+    { "type": "paragraph", "text": "Five-activity process: Risk classification → Risk identification → Initial risk assessment → Risk mitigation and residual risk assessment → Risk monitoring (in Phase G)." },
+    { "type": "paragraph", "text": "**Business Transformation Readiness Assessment (BTRA)**: Performed in Phase A (Step 5 — Assess Readiness for Transformation). Feeds Phase E and F (Implementation and Migration Plan). Key readiness factors: Vision, Desire/Willingness/Resolve, Need, Business Case, Funding, Sponsorship, Governance, Accountability, Workable Approach, IT Capacity to Execute, Enterprise Capacity to Execute, Enterprise Ability to Implement and Operate. Each rated for Urgency, Readiness Status, and Degree of Difficulty to Fix." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "Interoperability definition: \"The ability to share information and services.\" — one phrase, lock it in.\n\nThree categories — \"OIT\": Operational/Business · Information · Technical.\n\nFour degrees — progression: Unstructured → Structured → Seamless Data → Seamless Information.\n\nRisk process — \"CIRMMM\": Classify → Identify → Risk assessment (initial) → Mitigate → Monitor → Manage through governance." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — INTEROPERABILITY STARTS AT THE BUSINESS LAYER. Interoperability is defined across all three categories — Operational/Business first, then Information, then Technical. The most significant challenge is business interoperability, not technical integration." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — RISK ACCEPTANCE IS A GOVERNANCE ACT. The EA identifies risks and proposes mitigations. The governance framework (Architecture Board, IT governance) formally accepts the residual risk. The EA cannot unilaterally accept risk." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — A MITIGATION THAT MOVES RISK TO AN EQUALLY HIGH CATEGORY IS INSUFFICIENT. The Standard explicitly warns: changing a risk from Frequent/Catastrophic to Frequent/Critical still results in Extremely High Risk. The mitigation effort must be reconsidered until it produces a genuinely lower combined impact category." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. TOGAF defines interoperability as what — and what are the three categories?" },
+    { "type": "paragraph", "text": "Interoperability = \"the ability to share information and services.\" Three categories: (1) Operational/Business — how business processes are shared. (2) Information — how information is shared. (3) Technical — how technical services are shared or connected." },
+    { "type": "heading", "level": 4, "text": "2. What are the two risk levels TOGAF always requires, and what is the key governance point about risk acceptance?" },
+    { "type": "paragraph", "text": "Initial Level of Risk (before mitigating actions) and Residual Level of Risk (after mitigating actions). Key governance point: the EA may identify risks and propose mitigations, but it is within the governance framework that risks must be first accepted and then managed. Risk acceptance is a governance act — not a unilateral EA decision." },
+    { "type": "heading", "level": 4, "text": "3. At which ADM phase is the Business Transformation Readiness Assessment performed, and where do its outputs feed?" },
+    { "type": "paragraph", "text": "Performed in Phase A (Step 5 — Assess Readiness for Transformation). Its outputs feed into Phase E and Phase F (the Implementation and Migration Plan) — it is not a one-time Phase A exercise that gets filed away." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "paragraph", "text": "**Interoperability**: Phase B interoperability matrix: Procurement→Finance exchange currently Degree 2 (manual CSV export emailed to Finance). Target: Degree 3A (automated API call via Azure API Management). Audit portal currently Degree 1 (auditor logs in manually and runs reports). Target: Degree 3B (read-only OData API endpoint). HR→Azure AD sync: Degree 3D (real-time, Microsoft Azure AD Connect native service)." },
+    { "type": "paragraph", "text": "**Risk Management — Phase A**: Data migration integrity: Effect = Critical, Frequency = Likely → Initial risk = High. Mitigation: parallel running period + automated data quality validation. Residual risk = Moderate. Architecture Board approves as acceptable. SAP decommission before Dynamics stable: Effect = Catastrophic, Frequency = Occasional → Initial risk = High. Mitigation: three-gate decommission approval process (90-day parallel run, two financial close cycles, Architecture Board formal approval). Residual risk = Moderate." },
+    { "type": "paragraph", "text": "**Phase G — risk monitoring escalation**: At Month 7, data reconciliation team reports customer duplicate resolution only 60% complete. Architecture Board re-assesses: Frequency moves from Likely to Frequent → combined impact becomes Extremely High. Architecture Board does not accept this residual risk. Go-live delayed 6 weeks. Architecture governance prevents a go-live disaster." },
+    { "type": "paragraph", "text": "**BTRA — Phase A**: Finance team Desire/Willingness rated Urgent (Low). IT Capacity to Execute rated Fair (no Azure experience). These directly create Work Package 5 (change management and retraining) in the Architecture Roadmap — not a nice-to-have; the BTRA classified it as Urgent." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: INTEROPERABILITY IS ALMOST ALWAYS UNDERSPECIFIED. Integration requirements in most programmes are captured as \"System A must connect to System B\" — with no specification of degree, data, frequency, latency, or error handling. The Degrees of Interoperability matrix creates a shared language between business stakeholders and technical architects." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: RISK ACCEPTANCE HAPPENS LATER THAN EAS EXPECT. The Architecture Board must formally sign off that they understand and accept the residual risk level. If they don't accept it, the mitigation must be strengthened or programme scope changed. The GlobalTech example — where the Board delays go-live because residual risk becomes unacceptable — is exactly how this should work in practice." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. According to TOGAF, interoperability is defined as:" },
+    { "type": "list", "ordered": false, "items": [
+      "A) The ability to integrate applications using standard middleware protocols",
+      "B) The ability to share information and services ✓",
+      "C) The degree to which systems can communicate using open standards",
+      "D) Technical compatibility between systems in the same technology domain"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — verbatim from the Standard. Deliberately broad — encompasses business, information, and technical interoperability." },
+    { "type": "heading", "level": 4, "text": "Q2. Two business units currently exchange data by one unit manually emailing a spreadsheet that the recipient re-keys into their system. Using TOGAF's Degrees of Interoperability, classify this exchange." },
+    { "type": "list", "ordered": false, "items": [
+      "A) Degree 1 — Unstructured Data Exchange",
+      "B) Degree 2 — Structured Data Exchange ✓",
+      "C) Degree 3 — Seamless Sharing of Data",
+      "D) Degree 4 — Seamless Sharing of Information"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — the spreadsheet is structured, human-interpretable data requiring manual handling. Degree 1 = unstructured free text. Degrees 3 and 4 involve automation." },
+    { "type": "heading", "level": 4, "text": "Q3. A risk is assessed as Catastrophic/Likely (Extremely High). A proposed mitigation reduces it to Critical/Likely. Which statement is most accurate?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) The mitigation is sufficient — the risk has been reduced from Catastrophic to Critical",
+      "B) The mitigation should be accepted — any reduction in risk impact is an improvement",
+      "C) The mitigation should be challenged — Critical/Likely still results in Extremely High combined risk; the mitigation effort must be reconsidered ✓",
+      "D) The residual risk can now be accepted by the EA without requiring governance approval"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — the Standard explicitly warns that moving from Frequent/Catastrophic to Frequent/Critical still delivers an Extremely High risk. Also, D is wrong — risk acceptance is always a governance act." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's Phase C Application Architecture specifies the Procurement-to-Dynamics 365 integration should operate at Degree 3A (automated API call via standardised format). The Procurement vendor notifies GlobalTech that their system's API only supports Degree 2 (scheduled file export requiring manual trigger and upload). The programme delivery manager argues: \"Degree 2 is fine — we can use a scheduled job to automate the upload. That's close enough to Degree 3A. Let's keep moving.\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 1 pt", "Agree. A scheduled automated file upload achieves the same outcome as Degree 3A — update the specification. Recognises pragmatism correctly. Loses marks for accepting the deviation without formal assessment or governance. A scheduled upload is NOT equivalent to Degree 3A — the business impact of the scheduling delay must be assessed first."],
+      ["B — 0 pts", "Disagree — if the vendor cannot support Degree 3A, GlobalTech must select a different Procurement system. Too rigid. TOGAF supports pragmatic solutions and explicitly addresses reconciling interoperability requirements with potential solutions (ADM Techniques §6.6)."],
+      ["C — 5 pts", "Partially agree, but requires formal governance. Degree 2 is technically NOT equivalent to Degree 3A. The business impact must be assessed — does the scheduling frequency meet the business requirement for how quickly purchase orders must flow to Dynamics 365? If the deviation is acceptable, it requires a formal Change Request to the Application Architecture, Architecture Board approval, and specification updated. If the scheduling frequency does not meet business requirements, alternatives must be evaluated. Best answer."],
+      ["D — 0 pts", "The programme should be paused and the Procurement vendor replaced immediately. Disproportionate and contradicts TOGAF's pragmatic approach. Architecture specifications can be changed through formal governance."]
+    ]}
+  ]
+}

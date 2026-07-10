@@ -1,0 +1,88 @@
+{
+  "id": "LES-04",
+  "moduleId": "MOD-L04",
+  "order": 4,
+  "title": "Deliverables, Artifacts, and Building Blocks",
+  "sourceCitation": "C220Part0e — Section 3.6",
+  "estimatedMinutes": 25,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "TOGAF draws a precise three-way distinction between output types: **Deliverable** = the formal, contractually agreed output. **Artifact** = a specific work product describing one aspect of the architecture (lives inside a deliverable). **Building Block** = a reusable component assembled to form architectures and solutions." },
+    { "type": "paragraph", "text": "Building blocks split into two subtypes: **ABB** (Architecture Building Block) = describes what capability is needed (implementation-independent). **SBB** (Solution Building Block) = describes how that capability is actually delivered (the real product/component)." },
+    { "type": "paragraph", "text": "The nesting relationship: **Deliverable contains Artifacts → Artifacts describe Building Blocks.**" },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points to Remember" },
+    { "type": "list", "ordered": false, "items": [
+      "**Deliverable**: Contractually specified; formally reviewed, approved, signed off; archived at project completion. Examples: Architecture Definition Document, Statement of Architecture Work.",
+      "**Artifact** — three types (**CMD**): Catalog (list of things) · Matrix (relationships between things) · Diagram (pictures of things)",
+      "**ABB**: \"Identity and Access Management capability\" — no vendor named",
+      "**SBB**: \"Azure Active Directory via SAML 2.0\" — specific product chosen"
+    ]},
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "The Russian Doll: Deliverable (outer — stakeholders sign off) → Artifact (middle — specific diagram/list/matrix) → Building Block (inner — reusable component).\n\nABB vs SBB — \"what vs which\": ABB = What capability? (no vendor) · SBB = Which product? (specific)\n\nCMD artifacts: Catalog (list) · Matrix (relationships) · Diagram (picture)" },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP — An artifact may or may not be a deliverable — it depends on whether it is contractually specified. Not every artifact is a deliverable, and not every deliverable is just one artifact." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What is the defining characteristic of a Deliverable that distinguishes it from an Artifact?" },
+    { "type": "paragraph", "text": "A Deliverable is contractually specified and formally reviewed, approved, and signed off by stakeholders. An Artifact is a work product describing one aspect of architecture — it may or may not be contractually specified." },
+    { "type": "heading", "level": 4, "text": "2. Name the three types of Artifact and what each one shows." },
+    { "type": "paragraph", "text": "Catalog (list of things), Matrix (relationships between things), Diagram (pictures of things) — CMD." },
+    { "type": "heading", "level": 4, "text": "3. What is the key distinction between an ABB and an SBB?" },
+    { "type": "paragraph", "text": "ABB describes required capability with no specific product named (implementation-independent). SBB represents an actual implementation choice — a specific product or component." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — ServiceNow ITSM" },
+    { "type": "paragraph", "text": "**Deliverables**: The signed-off ITSM Design Document, Integration Specification, Data Migration Plan — formally reviewed and archived." },
+    { "type": "paragraph", "text": "**Artifacts**: Catalog — list of all ITSM processes in scope; Matrix — mapping ServiceNow applications to business processes; Diagram — swimlane diagram showing the Incident Management workflow." },
+    { "type": "paragraph", "text": "**Building Blocks**: ABB — \"Identity Integration capability\" (no product named). SBB — \"Azure AD via SAML 2.0 with MID Server sync\" (specific implementation)." },
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes a TOGAF Deliverable?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Any diagram produced during the ADM",
+      "B) A reusable component combined with others to deliver architectures",
+      "C) A work product that is contractually specified and formally reviewed, approved, and signed off ✓",
+      "D) A list of architectural standards in the Architecture Repository"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — the contractual, formally signed-off nature defines a Deliverable." },
+    { "type": "heading", "level": 4, "text": "Q2. An architect produces an Application Interaction Matrix in Phase C. How should it be classified?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) A deliverable, because it is produced during a formal ADM phase",
+      "B) A building block, because it describes application components",
+      "C) An artifact — specifically a matrix type — because it shows relationships between things ✓",
+      "D) A Solution Building Block"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — produced in a formal phase does not make it a deliverable." },
+    { "type": "heading", "level": 4, "text": "Q3. What is the key distinction between an ABB and an SBB?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) ABBs are used in Business Architecture; SBBs are used in Technology Architecture",
+      "B) ABBs describe required capability and are implementation-independent; SBBs represent actual implementation choices ✓",
+      "C) ABBs are created in Phase A; SBBs in Phase E",
+      "D) ABBs are reusable; SBBs cannot be reused"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — ABB = what capability; SBB = which product." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's architecture team has produced: (1) a signed Architecture Definition Document approved by the Architecture Board; (2) a Data Entity Catalog listing all master data objects to be migrated; (3) a diagram showing how Dynamics 365 integrates with the HR system; (4) a requirement for a \"Master Data Management capability\" — vendor not yet selected; (5) a decision to implement that capability using Azure Data Factory." },
+    { "type": "paragraph", "text": "Question: Classify each of the five outputs using correct TOGAF terminology. Justify each classification in one sentence." },
+    { "type": "list", "ordered": true, "items": [
+      "**Architecture Definition Document → Deliverable** — formally reviewed, approved, and signed off by the Architecture Board.",
+      "**Data Entity Catalog → Artifact (Catalog type)** — a list of data entities describing an aspect of the Data Architecture; lives inside the deliverable.",
+      "**Integration diagram → Artifact (Diagram type)** — a picture of application interactions describing an aspect of the Application Architecture.",
+      "**\"Master Data Management capability\" → ABB** — describes a required capability in an implementation-independent way; no product named.",
+      "**Azure Data Factory → SBB** — the actual implementation choice made to realise the MDM capability defined in the ABB."
+    ]},
+
+    { "type": "divider" },
+    { "type": "heading", "level": 3, "text": "Fold-In: Architecture Patterns (ADM Techniques Ch.4)" },
+    { "type": "paragraph", "text": "Closely related to Building Blocks: a pattern is \"an idea that has been useful in one practical context and will probably be useful in others\" (M. Fowler). In TOGAF terms, patterns are a way of putting Building Blocks into context — Building Blocks are what you use; patterns tell you how, when, why, and what trade-offs apply. A pattern helps identify combinations of ABBs/SBBs proven to deliver effective solutions before." },
+    { "type": "paragraph", "text": "A typical pattern documents: Name (memorable reference) · Problem (the goals to reach) · Context (preconditions) · Forces (competing constraints and trade-offs, e.g. security vs performance vs scalability) · Solution (structure and behaviour) · Resulting Context (what's resolved, what remains open) · Examples and Known Uses." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP — Don't confuse an Architecture Pattern (a reusable enterprise-level solution structure, TOGAF's usage) with a Design Pattern (a software-specific, code-level recurring structure) or an Idiom (a language-specific low-level pattern). TOGAF patterns concern enterprise information systems — software, hardware, networks, and people — not purely software design." }
+  ]
+}

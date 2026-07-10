@@ -1,0 +1,90 @@
+{
+  "id": "LES-14",
+  "moduleId": "MOD-L14",
+  "order": 14,
+  "title": "Phase D — Technology Architecture",
+  "sourceCitation": "C220-Part1e — Chapter 8",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Phase D is the last of the four architecture design phases. It answers: \"What technology infrastructure will make all of this run?\" Every decision in Technology Architecture must be traceable back to requirements from Phases B, C. Phase D is also where abstract becomes concrete — logical application components (ABBs) become actual products and platforms (SBBs)." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points" },
+    { "type": "paragraph", "text": "Two objectives: Develop the Target Technology Architecture enabling the Architecture Vision, target Business, Data, and Application building blocks · Identify candidate Architecture Roadmap components from gap analysis." },
+    { "type": "paragraph", "text": "Nine steps — same pattern as Phases B and C: Select → Baseline → Target → Gap → Roadmap Candidates → Landscape Impacts → Stakeholder Review → Finalise → Update Architecture Definition Document." },
+    { "type": "paragraph", "text": "Technology Architecture metamodel — three levels (**SLP**):" },
+    { "type": "table", "headers": ["Level", "What it describes", "Example"], "rows": [
+      ["Technology Service", "A technical capability the architecture requires", "\"Identity Management Service\""],
+      ["Logical Technology Component", "Logical grouping delivering a service (ABB)", "\"Identity Provider Platform\""],
+      ["Physical Technology Component", "The actual product selected (SBB)", "\"Azure Active Directory\""]
+    ]},
+    { "type": "paragraph", "text": "Four key areas Technology Architecture covers: Technology components and services · Technology platforms and their decomposition (stacks) · Environments and locations (dev/test/prod, data residency) · Physical communications (network diagrams, routers, firewalls)." },
+    { "type": "paragraph", "text": "Governance checkpoint: At the end of Phase D, the Architecture Definition Document (now containing all four BDAT domains) is typically submitted to the Architecture Board for formal review and baselining before Phase E begins." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"Choose the technology stack that makes everything above it run — justified by requirements from every phase before it.\"\n\nTechnology metamodel — SLP: Service → Logical → Physical (same progression as ABB → SBB).\n\nThe dependency chain: Business requirements (B) → constrain Application requirements (C) → constrain Data residency requirements (C) → constrain Technology Architecture (D). Every Phase D decision must trace back up this chain." },
+    { "type": "callout", "variant": "info", "text": "EMERGING TECHNOLOGIES — FROM THE STANDARD. Phase D is the only ADM phase where TOGAF explicitly acknowledges that technology can be a driver of business change — not just a recipient of requirements. A new technology (AI, IoT) might open up business capabilities not considered in Phases A and B, creating a legitimate feedback loop back to earlier phases." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — COMPLEX PRODUCT SELECTION BELONGS IN PHASE E, NOT PHASE D. Where product selection \"deviates from existing standards, involves significant effort, or has wide-ranging impact, this activity should be flagged as an opportunity and addressed through Phase E.\"" },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — ARCHITECTURE DEFINITION DOCUMENT BASELINED AT END OF PHASE D. Phase D completion is typically when the Architecture Definition Document is formally submitted to the Architecture Board for baselining — the major governance gate before delivery planning (Phase E) begins." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What is the dependency chain that constrains Technology Architecture decisions?" },
+    { "type": "paragraph", "text": "Business requirements (Phase B) → constrain Application requirements (Phase C) → constrain Data residency/interoperability requirements (Phase C) → constrain Technology Architecture (Phase D). Every Phase D decision must be traceable back up this chain." },
+    { "type": "heading", "level": 4, "text": "2. Name the three levels of the Technology Architecture metamodel." },
+    { "type": "paragraph", "text": "Technology Service (what capability is needed) → Logical Technology Component (ABB — logical grouping, no vendor) → Physical Technology Component (SBB — the actual product selected)." },
+    { "type": "heading", "level": 4, "text": "3. What governance event typically happens at the end of Phase D, and why is it significant?" },
+    { "type": "paragraph", "text": "The Architecture Definition Document (now complete across all four BDAT domains) is submitted to the Architecture Board for formal review and baselining. This is the major governance gate before Phase E (delivery planning) begins." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "paragraph", "text": "**Target Technology Architecture**: Dynamics 365 Finance and HR (SaaS — Microsoft hosted, Azure Australia East). Azure API Management (PaaS — all integrations routed through middleware, respecting the Architecture Principle). Azure Data Factory (PaaS — ETL and data migration). Azure Synapse Analytics (data warehouse — Power BI reports from Synapse, not directly from Dynamics 365, for performance). Azure Active Directory/Entra ID (cloud identity, replacing on-premises AD). Azure ExpressRoute — private dedicated connection from GlobalTech's on-premises network to Azure Australia East (security and performance requirement for financial data)." },
+    { "type": "paragraph", "text": "**Gap analysis**: SAP on-premises servers: Eliminated. On-premises SQL Server: Eliminated. On-premises AD: Transformed (migrated to Azure AD). Azure API Management: Added. Azure Data Factory: Added. Azure ExpressRoute: Added. Cisco network infrastructure: Retained (configuration updated)." },
+    { "type": "paragraph", "text": "**Critical finding — Architecture Landscape impact**: GlobalTech's SharePoint HR portal authenticates via on-premises AD. When AD migrates to Azure, the SharePoint portal will break — it's out of scope for this programme but will be affected. Flagged as an impact requiring a separate programme decision." },
+    { "type": "paragraph", "text": "**Architecture Board baselining**: Architecture Definition Document (all four BDAT domains) submitted and approved by the Architecture Board. Phase E begins." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 1: PHASE D IS WHERE EA AND INFRASTRUCTURE TEAMS COLLIDE. \"I'm not telling you how to build it — I'm telling you what constraints the business, data, and application architecture place on the infrastructure. You design the implementation within those constraints.\" The non-functional requirements from Phase C (performance SLAs, data residency, availability targets) are the inputs. The infrastructure team meets them." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 2: TECHNOLOGY STANDARDS ARE POLITICAL. When your Architecture Principles say \"cloud-first\" and the infrastructure team has spent 20 years on on-premises VMware, Phase D is where that tension surfaces. Your Architecture Board is your shield — you're implementing what's been agreed, not making a personal technology choice." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 3: PHASE D IS THE LAST PHASE WHERE \"ARCHITECTURE\" IS DONE. Phases E, F, G are about delivery. Phase D completion is when the Architecture Definition Document must be genuinely complete and coherent. Everything after this is either planning, governance, or building. If something gets built that contradicts the Architecture Definition Document, Phase G exists to catch it." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which correctly states the objectives of Phase D?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) To select all technology products and obtain procurement approval",
+      "B) To develop the Target Technology Architecture enabling the Architecture Vision and target BDAT building blocks, and identify candidate Architecture Roadmap components ✓",
+      "C) To finalise the Architecture Roadmap and identify projects to deliver the Technology Architecture",
+      "D) To develop the Technology Architecture independently of Business and Application Architecture outputs"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — option C describes Phase E; option D directly contradicts the dependency chain." },
+    { "type": "heading", "level": 4, "text": "Q2. During Phase D, the EA identifies that the SharePoint portal — out of scope — will break when Active Directory is migrated. What is the correct action?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Expand scope to include the SharePoint portal migration",
+      "B) Document the impact in the Architecture Landscape impact assessment and flag as an out-of-scope impact requiring a separate programme decision ✓",
+      "C) Defer the Active Directory migration until SharePoint is resolved",
+      "D) Remove the Azure AD migration from the Target Technology Architecture"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — Step 6 (Resolve Impacts Across the Architecture Landscape) is designed exactly for this. Surface and govern, don't unilaterally change scope." },
+    { "type": "heading", "level": 4, "text": "Q3. At the end of Phase D, the Architecture Definition Document contains all four BDAT domains. What typically happens next?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Immediately handed to project teams to begin implementation",
+      "B) Submitted to the Architecture Board for formal review and baselining before Phase E begins ✓",
+      "C) Archived in the Architecture Repository and replaced by the Architecture Roadmap",
+      "D) Returned to Phase A for re-validation against the Architecture Vision"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — this is the major governance checkpoint before delivery planning begins." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's Phase D Technology Architecture is almost complete. The Infrastructure Director says: \"I think we should use AWS instead of Azure — our team has more AWS experience and I've found a better price point. Can we update the Technology Architecture?\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 1 pt", "Agree. ADM is flexible and cost/team experience are valid architectural considerations. Correctly identifies these as valid inputs but misses the governance requirement — a platform change of this scale requires Architecture Board approval, not a bilateral conversation."],
+      ["B — 0 pts", "Decline — there is a Microsoft-only Architecture Principle. Wrong — no such principle exists. Also shuts down a legitimate concern without analysis."],
+      ["C — 5 pts", "Acknowledge the concern as legitimate. Conduct a formal trade-off analysis comparing Azure and AWS against requirements from Phases B, C, and D — data residency, Dynamics 365 integration, cost, skills. Present options to the Architecture Board for a governed decision. The current Technology Architecture baseline must not change without Architecture Board approval. Best answer."],
+      ["D — 1 pt", "Defer the decision to Phase E. Partially right — TOGAF does say significant product selection belongs in Phase E — but switching the entire cloud platform would require revisiting Application Architecture, Data Architecture, and possibly Phase B. This is an Architecture Board decision, not a Phase E item."]
+    ]}
+  ]
+}

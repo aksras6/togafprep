@@ -1,0 +1,72 @@
+{
+  "id": "LES-03",
+  "moduleId": "MOD-L03",
+  "order": 3,
+  "title": "The Four Architecture Domains (BDAT)",
+  "sourceCitation": "C220Part0e — Section 3.3",
+  "estimatedMinutes": 25,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Every enterprise has four fundamental questions: What do we do? (Business) · What information do we use? (Data) · What systems support us? (Application) · What technology makes it run? (Technology). These four domains are always worked in the order B → D → A → T. Business drives everything. Technology is always last." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points to Remember" },
+    { "type": "table", "headers": ["Domain", "Core Question", "Key Outputs"], "rows": [
+      ["Business", "What are we trying to achieve? How are we organised?", "Process maps, capability models, org charts, value chains"],
+      ["Data", "What data do we have? Where does it live? How is it managed?", "Data models, data flow diagrams, data governance policies"],
+      ["Application", "What applications support our processes? How do they interact?", "Application portfolio catalogs, integration maps, interaction matrices"],
+      ["Technology", "What infrastructure underpins everything above?", "Infrastructure diagrams, technology standards catalogs, platform specs"]
+    ]},
+    { "type": "callout", "variant": "info", "text": "IMPORTANT — BDAT are not the only possible domains. Security, Risk, and Digital Architecture are created by combining views across the four core domains. There is no fifth domain." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "BDAT = \"Big Dogs Always Thrive\"\n\n\"The Boss decided what needed to be done. The Data team figured out what information was needed. The App team built the systems. The Tech team laid the cables.\"" },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP — PHASE C COVERS BOTH DATA AND APPLICATION. The four domains do NOT each have their own ADM phase. Phase C is called \"Information Systems Architectures\" (plural) and covers both Data Architecture AND Application Architecture." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What does Business Architecture define, and why must it come before Technology Architecture?" },
+    { "type": "paragraph", "text": "Business Architecture defines strategy, governance, organisation structure, and key business processes. Technology Architecture must come last because technology exists to serve business needs, not the other way around." },
+    { "type": "heading", "level": 4, "text": "2. Which single ADM phase covers both Data Architecture and Application Architecture?" },
+    { "type": "paragraph", "text": "Phase C — Information Systems Architectures (plural). Both domains share this one phase." },
+    { "type": "heading", "level": 4, "text": "3. How does TOGAF handle Security Architecture — is it a fifth domain?" },
+    { "type": "paragraph", "text": "No. Security Architecture is created by combining appropriate views across the four core BDAT domains. There is no fifth domain." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — ServiceNow ITSM" },
+    { "type": "list", "ordered": false, "items": [
+      "**Business**: ITSM processes (Incident, Change, Problem, Request), governance model, SLAs. If this wasn't right first, the tool configuration would be wrong.",
+      "**Data**: What constitutes an \"Incident record\"? How does a CI in the CMDB relate to an Incident? How does data flow to Azure AD?",
+      "**Application**: ServiceNow modules, integrations with Dynatrace/Splunk, APIs to Azure AD.",
+      "**Technology**: ServiceNow SaaS on AWS Sydney, MID Server on-prem, TLS, firewall rules."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which architecture domain defines the business strategy, governance, organisation, and key business processes?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Data", "B) Application", "C) Technology", "D) Business ✓"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: D — verbatim from the Standard." },
+    { "type": "heading", "level": 4, "text": "Q2. In which ADM Phase are both Data Architecture and Application Architecture developed?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Phase B", "B) Phase C ✓", "C) Phase D", "D) Phase E"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — Phase C. Very common exam trap." },
+    { "type": "heading", "level": 4, "text": "Q3. An organisation wants a Security Architecture. Which is the most accurate statement?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Security Architecture is a fifth domain",
+      "B) Security Architecture can be created by combining views across the four core domains ✓",
+      "C) Security Architecture is outside the scope of TOGAF",
+      "D) Security Architecture replaces Technology Architecture"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — no fifth domain. TOGAF explicitly states this." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: The IT Director has immediately commissioned a Technology Architecture workstream to assess cloud infrastructure for Dynamics 365. The Business Transformation lead is concerned: \"We haven't agreed on the new operating model yet. Finance and HR processes are changing, and we don't have a clear picture of what data we're migrating.\"" },
+    { "type": "paragraph", "text": "Question: Using the four-domain framework, explain what risk the IT Director's approach creates and what the correct sequencing should be." },
+    { "type": "callout", "variant": "tip", "text": "Strong Answer: The IT Director has jumped directly to Technology Architecture without first establishing Business, Data, or Application Architecture. Business Architecture must be defined first — it defines the strategy, governance, and processes that all other domains must support. Without it, there is no basis for determining what data needs to be migrated, which applications will be retained or replaced, or what technology infrastructure is needed. The risk: cloud infrastructure sized and designed for a target state that doesn't yet exist, leading to costly rework. The correct approach is Phase B (Business Architecture) → Phase C (Data + Application Architecture) → Phase D (Technology Architecture)." }
+  ]
+}

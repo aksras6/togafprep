@@ -1,0 +1,84 @@
+{
+  "id": "LES-01",
+  "moduleId": "MOD-L01",
+  "order": 1,
+  "title": "What is TOGAF — and What Problem Does It Solve?",
+  "sourceCitation": "C220Part0e — Introduction & Core Concepts (§3.1–3.3)",
+  "estimatedMinutes": 25,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Imagine you're building a new city. You need roads, power lines, water pipes, buildings — all to work together. Without a common plan, different contractors will build things that don't connect. You need a framework — a set of rules, methods, and tools — to ensure everything fits together coherently. TOGAF is that framework, but for an enterprise." },
+    { "type": "paragraph", "text": "TOGAF provides: a common language so architects, business leaders, and IT teams can talk to each other; a method (the ADM) for designing and evolving the enterprise architecture; and tools and techniques to produce consistent architecture work." },
+    { "type": "paragraph", "text": "The official TOGAF definition of Architecture has two meanings — and this is an exam trap:" },
+    { "type": "list", "ordered": false, "items": [
+      "**Meaning 1**: A formal description of a system, or a detailed plan of the system at component level, to guide its implementation.",
+      "**Meaning 2**: The structure of components, their inter-relationships, and the principles and guidelines governing their design and evolution over time."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "2. Key Points to Remember" },
+    { "type": "list", "ordered": false, "items": [
+      "TOGAF stands for **The Open Group Architecture Framework**, maintained by The Open Group — a vendor-neutral consortium",
+      "TOGAF is both a **framework** (structure/vocabulary) and a **method** (the ADM process)",
+      "An **Enterprise** in TOGAF = any collection of organisations with a common set of goals — NOT necessarily a large company",
+      "TOGAF deals with four architecture domains: **BDAT** — Business, Data, Application, Technology",
+      "The primary method in TOGAF is the **ADM** — Architecture Development Method"
+    ]},
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "The city planner analogy: TOGAF is the city planning code for enterprises. Without it: chaos. With it: coherent streets, utilities, and zoning that work together and can evolve.\n\nBDAT = \"Big Data Always Today\" — Business drives everything; Technology is last." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP — ENTERPRISE ≠ BIG. Enterprise does NOT mean a large company. A small team, an NGO, a department — all qualify as an \"Enterprise\" in TOGAF. This is the #1 exam trap in Lesson 1." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer these from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What does \"Enterprise\" mean in TOGAF — and what common assumption does it NOT imply?" },
+    { "type": "paragraph", "text": "Any collection of organisations with a common set of goals. It does NOT imply large or corporate — a small team or NGO qualifies." },
+    { "type": "heading", "level": 4, "text": "2. Name the four architecture domains in the correct order." },
+    { "type": "paragraph", "text": "Business → Data → Application → Technology (BDAT). Business always first; Technology always last." },
+    { "type": "heading", "level": 4, "text": "3. TOGAF defines \"Architecture\" in two ways. State both." },
+    { "type": "paragraph", "text": "(1) A formal description / detailed plan at component level to guide implementation. (2) The structure of components, their inter-relationships, and the principles governing their design and evolution." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — ServiceNow ITSM" },
+    { "type": "paragraph", "text": "When implementing ServiceNow for ITSM, multiple teams were involved: the service desk, infrastructure, HR, and security. Each had their own view of what \"a service\" or \"an incident\" meant. Without an architecture framework: duplicate data, disconnected processes, no shared language between business and IT." },
+    { "type": "paragraph", "text": "TOGAF would have provided the blueprint — Business Architecture (what processes exist), Application Architecture (ServiceNow + integrations), Data Architecture (what \"incident record\" means across teams), and Technology Architecture (servers, cloud, network). Your ServiceNow ITSM rollout was, in essence, an informal EA exercise. TOGAF gives you the formal method to do that rigorously and repeatably." },
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes the term \"Enterprise\" in the context of TOGAF?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Any large multinational corporation with more than 1,000 employees",
+      "B) Any collection of organisations with a common set of goals ✓",
+      "C) The IT department of an organisation",
+      "D) A government body that manages public infrastructure"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — size is irrelevant. Common goals is the only criterion." },
+    { "type": "heading", "level": 4, "text": "Q2. TOGAF defines \"Architecture\" in two ways. Which correctly identifies BOTH?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) A diagram of systems AND a document approved by senior management",
+      "B) A formal description of a system AND the structure of components with governing principles ✓",
+      "C) A project plan for IT AND a governance board decision",
+      "D) A vendor product roadmap AND a security policy framework"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — both the formal description/plan AND the structure + governing principles." },
+    { "type": "heading", "level": 4, "text": "Q3. What are the four architecture domains of TOGAF?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Strategy, Operations, Technology, Security",
+      "B) Business, Data, Application, Technology ✓",
+      "C) People, Process, Platform, Policy",
+      "D) Vision, Analysis, Design, Delivery"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — BDAT. Memorise this." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech Inc. has initiated a migration from SAP to Dynamics 365. Multiple departments are each engaging different consultants and producing their own requirements documents independently. There is no shared vocabulary, no agreed target state, and no governance process to manage conflicts." },
+    { "type": "paragraph", "text": "Question: As the newly appointed Enterprise Architect, which aspect of TOGAF would you propose to address the core problem, and why?" },
+    { "type": "callout", "variant": "tip", "text": "Strong Answer: The core problem is the absence of a shared architecture framework and governance structure. You would propose establishing an Architecture Capability — specifically, creating an Architecture Vision (Phase A of the ADM) to align all stakeholders on a common goal, and an Architecture Governance structure to manage cross-departmental conflicts. The Business Architecture domain would be the starting point — understanding GlobalTech's target operating model before any technology decisions are made." },
+
+    { "type": "divider" },
+    { "type": "heading", "level": 3, "text": "Fold-In: Boundaryless Information Flow™" },
+    { "type": "callout", "variant": "note", "text": "The Open Group's stated mission is to drive the creation of Boundaryless Information Flow™ — a shorthand for \"access to integrated information to support business process improvements,\" representing the desired end-state of an enterprise's infrastructure. It is the trademarked aspiration that TOGAF as a whole exists to help organisations achieve; TOGAF is the method, Boundaryless Information Flow is the goal. You'll meet the two reference models built specifically to support this goal — the Technical Reference Model (TRM) and the Integrated Information Infrastructure Reference Model (III-RM) — in a later lesson." }
+  ]
+}

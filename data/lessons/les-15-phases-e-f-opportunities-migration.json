@@ -1,0 +1,92 @@
+{
+  "id": "LES-15",
+  "moduleId": "MOD-L15",
+  "order": 15,
+  "title": "Phases E & F — Opportunities & Solutions, and Migration Planning",
+  "sourceCitation": "C220-Part1e — Chapters 9 & 10",
+  "estimatedMinutes": 40,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Phase E is where architecture transitions into delivery planning. You take everything from Phases B, C, D — all the gap analyses and candidate roadmap components — consolidate them, and produce the first complete Architecture Roadmap: a sequenced plan of the work needed to realise the Target Architecture." },
+    { "type": "paragraph", "text": "Phase F takes that roadmap and turns it into a detailed, costed, scheduled Implementation and Migration Plan that portfolio and programme management teams can actually use to govern delivery." },
+
+    { "type": "heading", "level": 3, "text": "2a. Key Points — Phase E: Opportunities & Solutions" },
+    { "type": "paragraph", "text": "Three objectives: Generate the initial complete Architecture Roadmap · Determine if incremental approach is needed and identify Transition Architectures · Define overall SBBs to finalise the Target Architecture based on ABBs." },
+    { "type": "paragraph", "text": "Four key concepts of Phase E — **RWTI**:" },
+    { "type": "table", "headers": ["Concept", "Definition"], "rows": [
+      ["Architecture Roadmap", "A timeline of work packages that will realise the Target Architecture"],
+      ["Work Package", "A logical group of changes necessary to realise the Target Architecture"],
+      ["Transition Architecture", "The enterprise at an architecturally significant state between Baseline and Target — must deliver measurable business value"],
+      ["Implementation and Migration Plan", "A schedule of the projects that will realise the Architecture Roadmap"]
+    ]},
+    { "type": "paragraph", "text": "Three implementation strategies: **Greenfield** (new implementation) · **Revolutionary** (big bang, switch on/switch off) · **Evolutionary** (phased/incremental — most common in large enterprises)." },
+    { "type": "paragraph", "text": "System classification in Phase E: **Mainstream** (continues into future) · **Contain** (to be replaced/modified within 3 years) · **Replace** (to be replaced within 3 years)." },
+
+    { "type": "heading", "level": 3, "text": "2b. Key Points — Phase F: Migration Planning" },
+    { "type": "paragraph", "text": "Three objectives: Finalise the Architecture Roadmap and Implementation and Migration Plan · Ensure co-ordination with the enterprise's overall change portfolio · Ensure business value and cost of work packages and Transition Architectures is understood by key stakeholders." },
+    { "type": "paragraph", "text": "Seven steps: Confirm management framework interactions → Assign business value to each work package → Estimate resource requirements and timings → Prioritise via cost/benefit and risk assessment → Confirm Architecture Roadmap and update Architecture Definition Document → Complete the Implementation and Migration Plan → Complete the architecture development cycle and document lessons learned." },
+    { "type": "paragraph", "text": "Four management frameworks Phase F must co-ordinate with: **Business Planning** · **Enterprise Architecture** · **Portfolio/Project Management** · **Operations Management**." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "Phase E: \"Consolidate all the gaps, pick your delivery vehicles, sequence the work, and produce the Roadmap.\"\n\nPhase F: \"Price, resource, and schedule the Roadmap into a plan the business will actually fund and govern.\"\n\nArchitecture Roadmap lifecycle — three stages: Candidates (Phases B–D) → Initial complete version (Phase E) → Finalised (Phase F)." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — SBBS ARE FORMALLY DEFINED IN PHASE E, NOT PHASE D. One of the three formal objectives of Phase E is to \"define the overall Solution Building Blocks (SBBs) to finalise the Target Architecture based on the ABBs.\" In Phases B–D you work with ABBs. Phase E is where ABBs become SBBs." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — TRANSITION ARCHITECTURES MUST DELIVER MEASURABLE BUSINESS VALUE. They are not just technically convenient cut-points. A Transition Architecture must represent a state where the business is genuinely better off — with quantifiable outcomes." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — PHASE F DOES NOT DEVELOP NEW ARCHITECTURE. If new architectural decisions are needed during Phase F, the correct response is to iterate back to the relevant earlier phase — not make ad hoc changes in Phase F." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 4 — ROADMAP CANDIDATES VS INITIAL COMPLETE VS FINALISED. Candidates (Phases B, C, D) → Initial complete version (Phase E) → Finalised (Phase F). Candidates frequently confuse which phase produces which version." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. The Architecture Roadmap evolves across three phases. At which phase does each version appear?" },
+    { "type": "paragraph", "text": "Candidate components produced in Phases B, C, and D. Initial complete version produced in Phase E. Finalised in Phase F." },
+    { "type": "heading", "level": 4, "text": "2. What is a Transition Architecture, and what is its most important quality?" },
+    { "type": "paragraph", "text": "A description of the enterprise at an architecturally significant state between the Baseline and Target Architectures. Its most important quality is that it must deliver measurable business value — it is not just a technically convenient cut-point." },
+    { "type": "heading", "level": 4, "text": "3. In which phase are SBBs formally defined to finalise the Target Architecture — and why not earlier?" },
+    { "type": "paragraph", "text": "Phase E. In Phases B–D, the architecture is expressed using ABBs (logical, implementation-independent). Phase E is where those ABBs become SBBs — specific products and solutions that will actually deliver the Target Architecture." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "paragraph", "text": "**Phase E — Consolidation**: Consolidated Gaps, Solutions, and Dependencies matrix assembled from all Phase B, C, and D gap analyses. Critical dependency identified: Azure AD migration must complete before any Dynamics 365 application can go live (Dynamics 365 uses Azure AD for authentication). ExpressRoute must be provisioned before Azure AD migration can be fully tested. These dependencies force technology work early in the sequence." },
+    { "type": "paragraph", "text": "**Implementation strategy**: Evolutionary — phased approach with parallel running. Rationale: GlobalTech cannot afford the operational risk of a big bang cutover on financial systems. Parallel running validates before SAP is decommissioned." },
+    { "type": "paragraph", "text": "**Six Work Packages**: WP1 Foundation (Azure tenant, ExpressRoute, Azure AD migration, IT skills uplift) · WP2 Data Preparation (Customer deduplication, SAP-to-AD reconciliation, Absence Record design) · WP3 Finance Core (GL migration, AP transformation, data migration) · WP4 Financial Reporting (Power BI pipeline, Synapse Analytics) · WP5 Integrations (Procurement and Audit portal API redesign) · WP6 HR Capability (Dynamics 365 HR, Self-Service HR)." },
+    { "type": "paragraph", "text": "**Two Transition Architectures**: TA1 \"Finance Live\" (Month 9) — Dynamics 365 Finance live, SAP ECC decommissioned, financial close reduced to 3 days, AP automated. Measurable business value: SAP maintenance cost eliminated, AP processing automated. TA2 \"Full Target\" (Month 18) — Dynamics 365 HR live, SAP HR decommissioned, all integrations live, 20% total cost reduction achieved." },
+    { "type": "paragraph", "text": "**Phase F — Finalise**: Architecture Roadmap adopted into the PMO portfolio. Business value assigned to each Work Package. Critical risk flagged: ExpressRoute takes 8–12 weeks from Telstra — must be commissioned in Week 1 of the programme. Implementation and Migration Plan produced: fully resourced, named project managers, budget allocations, milestone dates. Lessons learned documented. Phase G begins." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 1: PHASE E IS WHERE ARCHITECTS AND PROGRAMME MANAGERS FIRST SPEAK THE SAME LANGUAGE. For the first time in the ADM, you have a document the programme delivery team can actually use — work packages, sequence, dependencies, timelines. Before Phase E, all architecture deliverables are largely invisible to the delivery team. Phase E translates architecture into programme language." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 2: TRANSITION ARCHITECTURES ARE OFTEN NEGOTIATED, NOT DESIGNED. In practice, they're heavily influenced by budget cycles, contract end dates, political commitments, and the organisation's capacity to absorb change. The EA's job is to ensure whatever Transition Architecture is agreed actually makes technical sense — that the enterprise in TA1 is a stable, operable state, not a half-built mess." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 3: PHASE F IS OFTEN DONE BY A DIFFERENT TEAM TO PHASE E. The EA drives Phase E. The PMO drives Phase F. This handover is critical — the EA must ensure the PMO hasn't lost or reinterpreted the architectural constraints in the translation from Architecture Roadmap to Implementation and Migration Plan. The most common Phase F failure is a plan that is commercially or politically driven, inadvertently violating architectural dependencies." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Phase E produces the initial complete Architecture Roadmap. From which earlier phases does it draw candidate components?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Preliminary and Phase A only", "B) Phases A and B only", "C) Phases B, C, and D ✓", "D) All phases including Preliminary and Phase A"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — candidate components come from the three architecture development phases: B, C, and D." },
+    { "type": "heading", "level": 4, "text": "Q2. Which best describes a Transition Architecture?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) A temporary architecture used only during migration, discarded once the Target is reached",
+      "B) A description of the enterprise at an architecturally significant state between Baseline and Target, which must deliver measurable business value ✓",
+      "C) An alternative Target Architecture considered but not selected",
+      "D) A simplified version of the Target when the full Target cannot be achieved due to budget constraints"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — verbatim TOGAF definition. Must deliver measurable business value — not just a convenient technical cut-point." },
+    { "type": "heading", "level": 4, "text": "Q3. At which phase are Solution Building Blocks (SBBs) formally defined to finalise the Target Architecture?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Phase C", "B) Phase D", "C) Phase E ✓", "D) Phase F"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — one of Phase E's three formal objectives. In Phases B–D you work with ABBs; Phase E converts ABBs into SBBs." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's Phase E is complete. The Architecture Roadmap defines two Transition Architectures and six Work Packages. Phase F is underway. The PMO Programme Director has produced a revised Implementation and Migration Plan where Work Package 3 (Finance Core — GL and AP migration) is scheduled to begin before Work Package 2 (Data Preparation — Customer deduplication and SAP-to-AD reconciliation) has been completed. The Programme Director argues: \"WP2 is taking too long — data cleansing always slips. We can run them in parallel. It'll save us two months.\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 1 pt", "Agree. ADM explicitly supports parallel execution of work packages. Correctly notes TOGAF supports parallel execution but ignores the specific architectural dependency formally validated in Phase E. \"TOGAF supports parallel execution\" does not override a specific, documented dependency."],
+      ["B — 0 pts", "Disagree. In Phase F, all work packages must be executed in the exact sequence defined in the Architecture Roadmap. Fundamentally wrong — TOGAF does not require exact adherence to Phase E sequence in Phase F."],
+      ["C — 5 pts", "Disagree. The WP2→WP3 dependency was formally validated in Phase E (Step 6) based on the architectural requirement that Customer master data must be cleansed before migration into Dynamics 365 Finance. Proceeding with WP3 before WP2 would migrate dirty data into the target system. The correct response is to formally document this as a risk, escalate to the Architecture Board, and propose either accelerating WP2 or formally revising the Architecture Roadmap through the governance process — not making an ad hoc delivery decision that overrides an architecturally validated dependency. Best answer."],
+      ["D — 3 pts", "Accept conditionally — a parallel running period will allow data quality issues to be identified and remediated before go-live. Shows genuine architectural thinking — parallel running is a legitimate technique. Loses marks for not engaging with the governance dimension. Accepting a change that overrides a formally validated dependency without Architecture Board involvement is a governance failure, even if the mitigation is technically sound."]
+    ]}
+  ]
+}

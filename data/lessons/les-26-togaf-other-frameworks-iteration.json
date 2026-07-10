@@ -1,0 +1,100 @@
+{
+  "id": "LES-26",
+  "moduleId": "MOD-L26",
+  "order": 25,
+  "title": "Using TOGAF with Other Frameworks, and Applying Iteration to the ADM",
+  "sourceCitation": "C220Part0e §3.14, §3.17 | C220Part3e — Chapter 2",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "**TOGAF with Other Frameworks**: No organisation adopts TOGAF into a vacuum — they already run ITIL, PRINCE2/PMBOK, COBIT, and Agile methods. TOGAF focuses on defining architecture deliverables and method; most other frameworks are relatively silent on architecture method — exactly the gap TOGAF fills. TOGAF integrates with these frameworks rather than replacing them." },
+    { "type": "paragraph", "text": "**Applying Iteration to the ADM**: The sequential phase presentation \"can be read to imply a deterministic waterfall methodology\" — but this is a communication convenience, not a mandate. In practice, organisations apply the ADM through three types of iteration and choose different classes of engagement depending on the work needed." },
+
+    { "type": "heading", "level": 3, "text": "2a. Key Points — TOGAF with Other Frameworks" },
+    { "type": "paragraph", "text": "Two key elements of any EA framework: a definition of deliverables, and a description of method. Most frameworks focus on the first; TOGAF provides the second — a flexible content framework whose generic deliverables can be replaced or extended by another framework's." },
+    { "type": "paragraph", "text": "Frameworks TOGAF integrates with: ITIL, CMMI, COBIT, PRINCE2, PMBOK, MSP — plus TOGAF Library materials like IT4IT." },
+    { "type": "paragraph", "text": "**Architectural Styles**: Addressing a distinctive style should NOT require significant changes to TOGAF itself — it adjusts the models, viewpoints, and tools selected in Phases B, C, D. Dominance of a style may direct a revisit to the Preliminary Phase." },
+    { "type": "paragraph", "text": "**Enterprise Agility**: Broader than Agile software development. TOGAF embraces responsiveness through Partitions (how work is broken down) and Levels (granularity) — see Lesson 20." },
+
+    { "type": "heading", "level": 3, "text": "2b. Key Points — Applying Iteration to the ADM" },
+    { "type": "paragraph", "text": "Three types of iteration:" },
+    { "type": "table", "headers": ["Type", "What it means"], "rows": [
+      ["Landscape iteration", "Multiple ADM cycles, each bound by its own Request for Architecture Work, populate/extend the Architecture Landscape. Concurrent projects; one may trigger another."],
+      ["Within-cycle iteration", "Phases run concurrently, loop in planned cycles, or are revisited to update work products with new information."],
+      ["Capability iteration", "A new pass through the Preliminary Phase — triggered by Phase A needs OR a Phase H Change Request."]
+    ]},
+    { "type": "paragraph", "text": "Four Iteration Cycles: Architecture Capability (mobilise) → Architecture Development (create BDAT content) → Transition Planning (roadmap) → Architecture Governance (oversee delivery)." },
+    { "type": "paragraph", "text": "Three Classes of Engagement: Identification of Required Change (broad, strategic visibility) · Definition of Change (Foundational or Bounded initiatives) · Implementation of Change (governance of delivery)." },
+    { "type": "paragraph", "text": "**Foundational vs Bounded**: Foundational = known objective but NOT strictly scoped by a shared vision (understand the problem first). Bounded = outcome already agreed (elaborate a solution)." },
+    { "type": "paragraph", "text": "Baseline First vs Target First:" },
+    { "type": "table", "headers": ["Approach", "When to use"], "rows": [
+      ["Baseline First", "Baseline is complex, unclear, or not agreed — common with high business unit autonomy"],
+      ["Target First", "Target agreed at a high level; baseline is broadly understood — faster, avoids perpetuating sub-optimal baseline patterns"]
+    ]},
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "Three iteration types — \"Landscape, Cycle, Capability.\" Four iteration cycles — \"CDGT\": Capability → Development → Transition Planning → Governance.\n\nBaseline First vs Target First trigger question: \"Is the current state a mess or well understood?\" Mess → Baseline First. Understood → Target First." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — SEQUENTIAL PRESENTATION ≠ MANDATE. The Standard explicitly warns its own phase-by-phase presentation \"can be read to imply\" waterfall — this is a communication convenience only." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — FOUNDATIONAL ≠ SMALLER/SIMPLER. Foundational means the problem itself isn't yet well-defined — not that the initiative is small." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — CAPABILITY ITERATION HAS TWO TRIGGERS. A Request for Architecture Work needing capability not yet established, OR a Change Request from Phase H. Not only at the very start." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. Why does TOGAF integrate with ITIL, COBIT, PRINCE2 rather than compete with them?" },
+    { "type": "paragraph", "text": "Most EA frameworks focus on deliverables but are silent on method. TOGAF provides that method as a flexible, extensible framework. Other frameworks' deliverables can replace or extend TOGAF's generic ones; the architect tailors TOGAF to integrate with existing processes." },
+    { "type": "heading", "level": 4, "text": "2. Name the three types of iteration in the ADM." },
+    { "type": "paragraph", "text": "(1) Landscape iteration — multiple ADM cycles, concurrent projects. (2) Within-cycle iteration — phases run concurrently, loop, or are revisited. (3) Capability iteration — a new Preliminary Phase pass, triggered by Phase A needs or a Phase H Change Request." },
+    { "type": "heading", "level": 4, "text": "3. What's the difference between Baseline First and Target First, and when is each used?" },
+    { "type": "paragraph", "text": "Baseline First — assess current state first; used when baseline is complex/unclear/not agreed. Target First — elaborate target then map back; used when target is agreed and baseline is broadly understood." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "paragraph", "text": "**Framework integration**: ITIL — Architecture Compliance review timed to align with ITIL's Change Advisory Board process. PRINCE2 — Statement of Architecture Work mapped directly onto the PRINCE2 Project Initiation Document, avoiding a new document type." },
+    { "type": "paragraph", "text": "**Classes of engagement**: Establishing the EA practice (L25) = Identification of Required Change (Supporting Business Strategy). The Dynamics 365 migration itself = Bounded Change Initiative — outcome (replace SAP, 20% cost reduction) already agreed before the ADM cycle began. Phase G governance throughout = Implementation of Change." },
+    { "type": "paragraph", "text": "**Baseline First vs Target First applied**: Finance domain (L12) used Target First — Dynamics 365 Finance is a standard, well-understood module. The data quality problem (L13, 23% duplicates) required Baseline First for that specific workstream — the actual state of customer data was poorly understood." },
+    { "type": "paragraph", "text": "**Capability iteration in practice**: The APRA regulation change (L17) triggered a new Preliminary Phase iteration — adjusting the Architecture Capability to add a Data Sovereignty Compliance Assessment process (also referenced in L25) — a textbook Phase H-triggered Capability iteration." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: EVERYBODY ITERATES, FEW DOCUMENT IT FORMALLY. Naming which type of iteration you're doing turns \"we're just being pragmatic\" into a structured, defensible justification to governance." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: BASELINE FIRST VS TARGET FIRST IS OFTEN CHOSEN UNCONSCIOUSLY. Different architects have different instinctive biases. Making the choice explicit — matched to the actual state of baseline understanding — resolves team friction quickly." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes the relationship between TOGAF and frameworks like ITIL, COBIT, PRINCE2?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) TOGAF replaces these frameworks entirely",
+      "B) TOGAF defines architecture deliverables and method; designed to be tailored and integrated with these frameworks ✓",
+      "C) TOGAF cannot be used where these frameworks already exist",
+      "D) TOGAF and these frameworks have no overlap"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — TOGAF integrates with, not replaces, other frameworks." },
+    { "type": "heading", "level": 4, "text": "Q2. What's the difference between a \"Foundational\" and \"Bounded\" change initiative?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Foundational is always smaller in scope",
+      "B) Foundational has a known objective but isn't strictly scoped by a shared vision (structure the problem first); Bounded has an agreed outcome (elaborate a solution) ✓",
+      "C) Bounded requires a new ADM cycle; Foundational doesn't",
+      "D) Foundational applies only to Business Architecture"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — the distinction is about how well-defined the outcome is, not scope size." },
+    { "type": "heading", "level": 4, "text": "Q3. A Change Request during Phase H requires adjusting the Architecture Capability. What happens next?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Implement directly within Phase H, no earlier phase revisited",
+      "B) A new iteration of the Preliminary Phase should be initiated ✓",
+      "C) Defer until the next full ADM cycle from Phase A",
+      "D) The Architecture Board must dissolve and reform"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — one of the two triggers for Architecture Capability iteration." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech is exploring consolidating three regional data centres into Azure. The CTO says: \"We don't know what's running in each data centre in detail — minimal documentation across independently managed sites. But we know we want to end up fully in Azure.\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 1 pt", "Use Target First since the target (Azure) is stated — elaborate it first, then map back. Misapplies the decision criteria — Target First requires the baseline to be understood, which it explicitly isn't here."],
+      ["B — 5 pts", "Use Baseline First — the baseline (undocumented, independently managed) is complex and unclear, exactly the trigger condition. Classify as a Foundational Change Initiative — although the target direction is known, the true nature/scope of the problem isn't yet understood. Best answer."],
+      ["C — 1 pt", "Use Target First, classify as Bounded since the CTO has a clear desired outcome. Conflates \"has a target direction\" with \"Bounded\" — the real complexity is in the unknown baseline."],
+      ["D — 0 pts", "Neither approach appropriate until a full new Preliminary Phase reassesses the entire Architecture Capability. Unnecessarily disruptive — confuses content decisions with Capability iteration, which is only needed if the capability itself is inadequate."]
+    ]}
+  ]
+}

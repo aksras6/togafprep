@@ -1,0 +1,87 @@
+{
+  "id": "LES-13",
+  "moduleId": "MOD-L13",
+  "order": 13,
+  "title": "Phase C — Information Systems Architectures (Data + Application)",
+  "sourceCitation": "C220-Part1e — Chapters 6 & 7",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Phase C covers two architecture domains in one phase — Data Architecture and Application Architecture — collectively called Information Systems Architectures (plural, deliberately). Phase B defined what the business needs to do. Phase C answers: \"What data does the enterprise need to manage?\" and \"What applications will support the business processes?\" The order of Data vs Application within Phase C is deliberately left flexible by TOGAF — both orderings are valid." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points" },
+    { "type": "paragraph", "text": "One objective for the whole phase: Develop the Target Information Systems Architectures (Data and Application) and identify candidate Architecture Roadmap components from gap analysis." },
+    { "type": "paragraph", "text": "Data Architecture — three data entity levels (**ELP**):" },
+    { "type": "list", "ordered": false, "items": [
+      "**Data Entity** — conceptual; the business concept (e.g., \"Customer,\" \"Invoice\")",
+      "**Logical Data Component** — logical; how data is organised (implementation-independent)",
+      "**Physical Data Component** — physical; actual database schemas or XML structures"
+    ]},
+    { "type": "paragraph", "text": "Four types of data: **Data at rest** (in stores) · **Data in motion** (in transactions/APIs) · **Data in use** (at application border) · **Open data** (publicly available)." },
+    { "type": "paragraph", "text": "Application Architecture provides a blueprint for applications to be deployed, their interactions, and their relationships to business processes and data. Key artifact: **Application Portfolio Catalog**." },
+    { "type": "paragraph", "text": "Both sub-phases follow the same nine steps as Phase B: Select → Baseline → Target → Gap → Roadmap Candidates → Landscape Impacts → Stakeholder Review → Finalise → Update Architecture Definition Document." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"Define what data you need and what apps will handle it — both feeding Phase D and the roadmap.\"\n\nData entity levels — ELP: Entity (conceptual) → Logical component (logical) → Physical component (physical)." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — DATA AND APPLICATION SHARE PHASE C. They do NOT each have their own phase. Phase C is called \"Information Systems Architectures\" (plural) for this reason." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — NO MANDATORY ORDER FOR DATA VS APPLICATION WITHIN PHASE C. TOGAF explicitly does NOT mandate whether Data or Application Architecture comes first. Both orderings are valid. If asked which comes first, the correct answer is: \"it depends on the context.\"" },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — DATA ARCHITECTURE STARTS AT THE CONCEPTUAL LEVEL. Data Architecture starts with business data entities (\"Customer,\" \"Invoice\") — not database schemas. The business stakeholder owns the conceptual level." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 4 — APPLICATION PORTFOLIO CATALOG BELONGS IN PHASE C. Candidates sometimes place this in Phase B. It is an Application Architecture artifact produced in Phase C." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. Phase C covers two domains. Name them and explain why they share one phase." },
+    { "type": "paragraph", "text": "Data Architecture and Application Architecture. They share Phase C (called \"Information Systems Architectures\") because both deal with the information systems layer — the data and the applications that manage it — sitting between Business Architecture (Phase B) and Technology Architecture (Phase D)." },
+    { "type": "heading", "level": 4, "text": "2. Name the three data entity levels in TOGAF and what each one represents." },
+    { "type": "paragraph", "text": "Data Entity (conceptual — the business concept, e.g., \"Customer\") · Logical Data Component (logical — how data is organised, implementation-independent) · Physical Data Component (physical — actual database schema or XML structure)." },
+    { "type": "heading", "level": 4, "text": "3. Does TOGAF mandate whether Data Architecture or Application Architecture comes first within Phase C?" },
+    { "type": "paragraph", "text": "No. TOGAF explicitly does not mandate the order. Both orderings are valid and TOGAF acknowledges advocates for both approaches. The order depends on context." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "paragraph", "text": "**Data Architecture**: Baseline — 14 master data entities in SAP; Customer master has 23% duplicates; SAP-to-AD identity records don't match. Target — Dynamics 365 as the single system of record for all Finance and HR master data; new entity \"Absence Record\" added. Gap analysis: Customer master Retained (but requires deduplication); Absence Record Added; SAP custom Z-tables Eliminated; Payroll data Intentionally Omitted in Wave 1." },
+    { "type": "paragraph", "text": "**Application Architecture**: Baseline — SAP ECC, SAP HR, Legacy Procurement, Active Directory, Power BI (direct SAP connector), External Audit portal (direct SAP read). Target — Dynamics 365 Finance, Dynamics 365 HR, Power Automate, Azure Data Factory, Azure API Management (middleware for all integrations), Azure Synapse for reporting. Gap: SAP ECC Eliminated; Dynamics 365 Finance Added; Azure API Management Added; Procurement integration Transformed (point-to-point → API-managed)." },
+    { "type": "paragraph", "text": "**Architecture Landscape check**: Power BI's direct SAP connector will break — requires new data pipeline from Dynamics 365. SharePoint HR portal authenticates via on-premises AD — will be affected by AD migration. Both flagged as impacts." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 1: DATA ARCHITECTURE IS WHERE SKELETONS EMERGE. Every organisation thinks it knows its data until a migration forces proper examination. 23% duplicate customer records and SAP-to-AD reconciliation problems are typical Phase C findings. This is exactly what Phase C is designed to surface before migration — not after go-live, which is catastrophically expensive." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 2: THE DATA/APPLICATION ORDERING DEBATE IS REAL. On ERP migrations, most experienced architects start with Data Architecture first — because the data model is what applications work with, and ERP systems like Dynamics 365 have very opinionated data models. On greenfield application modernisations, Application Architecture first often makes more sense. TOGAF's flexibility here is genuine, not wishy-washy." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 3: APPLICATION PORTFOLIO CATALOG IS ALMOST ALWAYS OUT OF DATE. The official application list in the CMDB typically hasn't been maintained — it includes decommissioned systems and misses shadow IT. Budget three times longer than you expect for this step. The surprises (a critical process running in a spreadsheet nobody told you about; an undocumented integration with a payroll provider) will directly affect your target architecture design." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes the overall objective of Phase C?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) To develop the Target Technology Architecture",
+      "B) To develop the Target Information Systems Architectures (Data and Application) and identify candidate Architecture Roadmap components ✓",
+      "C) To finalise the Architecture Roadmap by consolidating all gap analysis findings",
+      "D) To develop Data Architecture first, then Application Architecture, in that mandatory sequence"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — option D is a trap. TOGAF does NOT mandate the Data/Application sequence." },
+    { "type": "heading", "level": 4, "text": "Q2. Which term describes the conceptual-level representation of a business concept — e.g., \"Customer\" or \"Invoice\" — before any implementation decisions?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Logical Data Component", "B) Physical Data Component", "C) Data Entity ✓", "D) Data Building Block"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — Data Entity is the conceptual-level representation." },
+    { "type": "heading", "level": 4, "text": "Q3. An architect argues Data Architecture must precede Application Architecture. A colleague says TOGAF mandates Data first. Which is the most accurate statement?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) The colleague is correct — TOGAF mandates Data first",
+      "B) The architect is correct — TOGAF recommends Application first",
+      "C) TOGAF mandates simultaneous development",
+      "D) TOGAF explicitly does not mandate the sequence — both orderings are valid depending on context ✓"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: D — one of the most important nuances in Phase C." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's Phase C Data Architecture has discovered: (1) 23% duplicate Customer records; (2) SAP-to-Active Directory employee records don't match; (3) Power BI connector pulls directly from SAP and will break when SAP is decommissioned. The programme delivery manager says: \"These are operational data quality issues and an IT infrastructure problem — not architecture concerns. Let's document them in the project risk register and move on to Phase D.\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 0 pts", "Agree. These are data quality and infrastructure issues, not architecture concerns. Fundamentally wrong — all three are core Phase C architectural concerns."],
+      ["B — 1 pt", "Disagree. All three issues must be fully resolved before Phase C can close. Correctly identifies them as architectural concerns but wrong on the action — Phase C identifies and creates roadmap work packages, not necessarily resolves everything before proceeding."],
+      ["C — 5 pts", "Disagree. All three are architectural concerns Phase C is designed to surface. They must be formally documented in the Architecture Definition Document and Architecture Requirements Specification, and work packages added to the roadmap candidates. Phase D can begin once formally captured and governed — they cannot be parked in a project risk register. Best answer."],
+      ["D — 1 pt", "Escalate to the Architecture Board. Discovery of data quality issues during Phase C is a normal, expected outcome — not an Architecture Board escalation trigger."]
+    ]}
+  ]
+}

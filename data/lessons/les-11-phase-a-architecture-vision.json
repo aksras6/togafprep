@@ -1,0 +1,94 @@
+{
+  "id": "LES-11",
+  "moduleId": "MOD-L11",
+  "order": 11,
+  "title": "Phase A — Architecture Vision",
+  "sourceCitation": "C220-Part1e — Chapter 3",
+  "estimatedMinutes": 30,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Phase A is the entry point of every ADM cycle. By the end of it: you understand who cares about the work and what they need; you've created a high-level picture of where you're going (the Architecture Vision); and you have formal approval to proceed. The trigger for Phase A is the Request for Architecture Work — the starting gun from the sponsoring organisation." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points" },
+    { "type": "paragraph", "text": "Two objectives:" },
+    { "type": "list", "ordered": false, "items": [
+      "Develop a high-level aspirational vision of the capabilities and business value to be delivered",
+      "Obtain approval for a Statement of Architecture Work that defines a programme of works to develop and deploy the architecture"
+    ]},
+    { "type": "paragraph", "text": "Eleven steps — four clusters: **SETUP** (establish project, identify stakeholders) → **CONTEXT** (confirm goals, evaluate capabilities, assess readiness) → **DESIGN** (define scope, confirm principles, develop Vision) → **APPROVE** (define value/KPIs, identify risks, develop Statement of Architecture Work and secure approval)." },
+    { "type": "paragraph", "text": "Key outputs: Approved Statement of Architecture Work (the gate) · Architecture Vision document · Capability Assessment · Communications Plan · Draft Architecture Definition Document · Updated Architecture Repository." },
+    { "type": "paragraph", "text": "Three scope dimensions: **Breadth · Depth · Time**. Two risk levels: **Initial** (before mitigation) · **Residual** (after mitigation)." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"Get the mandate, set the scope, create the vision, secure the approval.\"\n\nArchitecture Vision = the WHAT and WHY · Statement of Architecture Work = the HOW and WHEN (the approval gate)." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — STATEMENT OF ARCHITECTURE WORK IS THE GATE, NOT THE VISION. The Statement of Architecture Work is approved in Phase A and authorises proceeding to Phase B. The Architecture Vision is not the approval document." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — COMMUNICATIONS PLAN IS A PHASE A OUTPUT. Candidates forget this entirely. It specifies when, how, and to whom the EA team communicates throughout the ADM cycle." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — CAPABILITY GAPS MAY TRIGGER RETURN TO PRELIMINARY. If Architecture Capability gaps are found in Step 4, the team may need to iterate back to the Preliminary Phase before proceeding." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What triggers Phase A, and what is the critical gate output that authorises proceeding to Phase B?" },
+    { "type": "paragraph", "text": "Trigger = Request for Architecture Work. Gate output = Approved Statement of Architecture Work (not the Architecture Vision)." },
+    { "type": "heading", "level": 4, "text": "2. What is the difference between the Architecture Vision and the Statement of Architecture Work?" },
+    { "type": "paragraph", "text": "Architecture Vision = the WHAT and WHY (the picture of where you're going and why it matters). Statement of Architecture Work = the HOW and WHEN (the programme plan, resources, schedule, and formal approval to proceed)." },
+    { "type": "heading", "level": 4, "text": "3. Name one Phase A output that candidates frequently forget." },
+    { "type": "paragraph", "text": "The Communications Plan — specifies when, how, and to whom the EA team communicates throughout the ADM cycle." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "list", "ordered": false, "items": [
+      "**Step 1**: EA team constituted — referenced in PMO register, budget allocated, sponsor confirmed (CTO), Architecture Board notified.",
+      "**Step 2 — Stakeholders**: CFO (cost/process continuity) · Head of HR (data integrity, GDPR) · IT Ops (downtime risk) · DPO (data residency, Australian data centres) · Finance end users (retraining).",
+      "**Step 3 — Constraints**: SAP maintenance contract expires in 18 months (hard deadline). Budget: $4.2M.",
+      "**Step 4 — Capability gap**: Limited cloud architecture capability internally. Decision: engage cloud architecture partner for Phases C and D.",
+      "**Step 6 — Scope**: Breadth: Finance and HR modules. Depth: Full BDAT domains. Time: 18 months; two Transition Architectures.",
+      "**Step 7 — Principles confirmed**: Six from Preliminary confirmed. One new addition: \"All cloud services must be hosted in Australian data centres.\"",
+      "**Step 11 — Statement of Architecture Work approved**: CTO and Architecture Board sign off. Phase B begins."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. What is the primary trigger for beginning Phase A?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Completion of Preliminary Phase outputs",
+      "B) A Request for Architecture Work from the sponsoring organisation ✓",
+      "C) An Architecture Board decision",
+      "D) Identification of a gap in the Architecture Landscape"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — the Request for Architecture Work is the explicit trigger." },
+    { "type": "heading", "level": 4, "text": "Q2. Which is the critical gate output of Phase A, without which the EA team cannot proceed to Phase B?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) The Architecture Vision document",
+      "B) The Capability Assessment",
+      "C) The Approved Statement of Architecture Work ✓",
+      "D) The Communications Plan"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — the Statement of Architecture Work, once approved, is the formal authorisation to proceed." },
+    { "type": "heading", "level": 4, "text": "Q3. During Phase A, the EA discovers the organisation lacks cloud architecture skills. What is the most appropriate TOGAF response?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Proceed to Phase B and address the gap when Phase D begins",
+      "B) Halt the ADM cycle and raise a formal exception",
+      "C) Document the gap in the Capability Assessment and, if necessary, iterate back to Preliminary to address the shortfall ✓",
+      "D) Descope the Technology Architecture domain"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — Phase A capability gaps may require iteration back to Preliminary." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech is in Phase A. The Head of Finance says: \"I'm concerned the Architecture Vision doesn't address our financial close process — that's our most critical process and any disruption would be catastrophic. Can you just add a note to the Vision and move on to Phase B? We're already behind schedule.\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 3 pts", "Agree to add a brief note and proceed. Process detail belongs in Phase B. Partially right — Phase A is high-level. But \"add a note and move on\" is too casual; the concern needs formal capture."],
+      ["B — 0 pts", "Decline until a full detailed analysis of the financial close process is completed. Contradicts TOGAF — Phase A produces a high-level aspirational vision, not detailed process analysis."],
+      ["C — 5 pts", "Acknowledge the concern formally. Update the stakeholder map. Ensure the financial close process is referenced in the Architecture Vision scope, flagged as a high-priority risk in the Statement of Architecture Work, and identified as a specific focus area for Phase B. Then proceed. Best answer."],
+      ["D — 1 pt", "Escalate to the Architecture Board before proceeding. Disproportionate — a stakeholder raising a process concern is a routine governance event, not an Architecture Board escalation trigger."]
+    ]},
+
+    { "type": "divider" },
+    { "type": "heading", "level": 3, "text": "Fold-In: Business Scenarios Technique" },
+    { "type": "paragraph", "text": "Business Scenarios are the recommended technique for discovering and documenting business requirements in Phase A, and for articulating an Architecture Vision that genuinely responds to those requirements (detailed further in the TOGAF Series Guide: Business Scenarios). The technique analyses how a business goal or objective can be met by a process or value stream — specifically by examining where the activities in that process are performed by human versus computer actors. This is a highly effective way to identify and clarify architecture requirements before committing to a solution direction." },
+    { "type": "paragraph", "text": "Multiple Business Scenarios may be used to generate a single Architecture Vision, and the technique can also be applied at more detailed levels of architecture work — for example, in Phase B when elaborating specific business processes." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP — Business Scenarios are explicitly recommended for Phase A (and optionally Phase B) — not a Phase C or D technique. If a question asks how to discover and clarify unclear business requirements before defining the Architecture Vision, Business Scenarios is the TOGAF-named answer, not \"stakeholder interviews\" generically." }
+  ]
+}

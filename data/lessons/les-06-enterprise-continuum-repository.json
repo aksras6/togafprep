@@ -1,0 +1,122 @@
+{
+  "id": "LES-06",
+  "moduleId": "MOD-L06",
+  "order": 6,
+  "title": "The Enterprise Continuum and Architecture Repository",
+  "sourceCitation": "C220Part0e — Section 3.10",
+  "estimatedMinutes": 30,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "The Enterprise Continuum is a classification system for architecture assets — from the most generic (applicable to any organisation anywhere) to the most specific (built for your organisation's unique context). The Architecture Repository is the actual storage system where all these assets live." },
+    { "type": "paragraph", "text": "Enterprise Continuum = the classification scheme. Architecture Repository = the library that uses that scheme. Together they answer: \"Before I build something new — what already exists that I can reuse or adapt?\"" },
+
+    { "type": "heading", "level": 3, "text": "2a. Key Points — Enterprise Continuum" },
+    { "type": "table", "headers": ["Level", "Description", "Example"], "rows": [
+      ["Foundation", "Generic — any organisation anywhere", "ITIL: Incident, Problem, Change"],
+      ["Common Systems", "Patterns common to many industries", "Generic ITSM platform + CMDB"],
+      ["Industry-Specific", "Patterns for a specific sector", "Financial services ITSM with audit trails"],
+      ["Organisation-Specific", "Your organisation only", "GlobalTech's ServiceNow with Azure AD"]
+    ]},
+    { "type": "paragraph", "text": "Two complementary halves: **Architecture Continuum** (models/patterns) and **Solutions Continuum** (products/components) — both running generic to specific in parallel." },
+
+    { "type": "heading", "level": 3, "text": "2b. Key Points — Architecture Repository (8 Components)" },
+    { "type": "table", "headers": ["Component", "What it stores"], "rows": [
+      ["Architecture Metamodel", "Tailored architecture framework and content metamodel"],
+      ["Architecture Capability", "Parameters, structures, and processes supporting governance"],
+      ["Architecture Landscape", "Snapshot of architecture assets deployed at a point in time"],
+      ["Standards Library", "Standards new architectures must comply with"],
+      ["Reference Library", "Guidelines, templates, patterns to accelerate architecture work"],
+      ["Governance Repository", "Record of all governance activity"],
+      ["Architecture Requirements Repository", "All authorised architecture requirements"],
+      ["Solutions Landscape", "SBBs planned or deployed — the implementation view"]
+    ]},
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "Continuum — \"From FCIO to You\": Foundation → Common Systems → Industry → Organisation-specific." },
+
+    { "type": "heading", "level": 3, "text": "Remembering the 8 Repository Components — Four Groups of Two" },
+    { "type": "paragraph", "text": "Instead of memorising eight isolated names, group them into four pairs — each pair answers a different question about how the architecture practice runs." },
+
+    { "type": "heading", "level": 4, "text": "1. The Foundations — \"How we operate\"" },
+    { "type": "paragraph", "text": "These two define how you do architecture in the company." },
+    { "type": "list", "ordered": false, "items": [
+      "**Architecture Metamodel** — the rules of the language (the definitions and framework you use)",
+      "**Architecture Capability** — the team and processes (governance structures, skills, and parameters that let the team function)"
+    ]},
+
+    { "type": "heading", "level": 4, "text": "2. The Guidance — \"Our reference material\"" },
+    { "type": "paragraph", "text": "These two are the books you read to make sure you are doing things right." },
+    { "type": "list", "ordered": false, "items": [
+      "**Standards Library** — the strict rules (the compliance standards you must follow)",
+      "**Reference Library** — the best practices (templates, patterns, and guidelines that help you work faster)"
+    ]},
+
+    { "type": "heading", "level": 4, "text": "3. The Views — \"What exists\"" },
+    { "type": "paragraph", "text": "These two are your maps of reality." },
+    { "type": "list", "ordered": false, "items": [
+      "**Architecture Landscape** — the blueprints (a conceptual snapshot of the assets running at a specific point in time)",
+      "**Solutions Landscape** — the actual gear (the physical SBBs planned or deployed — what is actually sitting in the data centre or cloud)"
+    ]},
+
+    { "type": "heading", "level": 4, "text": "4. The Logs — \"What we are tracking\"" },
+    { "type": "paragraph", "text": "These two are your operational transaction logs." },
+    { "type": "list", "ordered": false, "items": [
+      "**Architecture Requirements Repository** — the to-do list (all authorised business and technical requirements you have to deliver)",
+      "**Governance Repository** — the paper trail (the historical record of all Architecture Board decisions, approvals, and audits)"
+    ]},
+
+    { "type": "callout", "variant": "info", "text": "KEY DISTINCTION — Architecture Landscape = what architecture DESCRIBES (the design view). Solutions Landscape = what is actually BUILT or planned (the implementation view)." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP — The Enterprise Continuum is a classification METHOD — not a process or database. The Architecture Repository is the actual storage mechanism. Related but distinct." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What is the Enterprise Continuum — and what is it NOT?" },
+    { "type": "paragraph", "text": "It is a classification method for architecture assets, ranging from generic to organisation-specific. It is NOT a process, a database, or the Architecture Repository itself." },
+    { "type": "heading", "level": 4, "text": "2. How many components does the Architecture Repository have? Name at least four." },
+    { "type": "paragraph", "text": "Eight components. Key ones: Architecture Metamodel, Architecture Landscape, Standards Library, Reference Library, Governance Repository, Solutions Landscape, Architecture Requirements Repository, Architecture Capability." },
+    { "type": "heading", "level": 4, "text": "3. What is the difference between the Architecture Landscape and the Solutions Landscape?" },
+    { "type": "paragraph", "text": "Architecture Landscape = the design view (what architecture describes). Solutions Landscape = the implementation view (what is actually built or planned — SBBs deployed or planned)." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — ServiceNow ITSM" },
+    { "type": "list", "ordered": false, "items": [
+      "**Foundation**: ITIL — applicable to any organisation running IT services.",
+      "**Common Systems**: Generic ITSM platform with CMDB + monitoring integration. ServiceNow's reference architecture sits here.",
+      "**Industry-Specific**: Financial services ITSM with audit trails, regulatory reporting, segregation of duties.",
+      "**Organisation-Specific**: GlobalTech's ServiceNow — specific workflows, CMDB taxonomy, SLA tiers, Azure AD integration."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. The Enterprise Continuum is best described as:" },
+    { "type": "list", "ordered": false, "items": [
+      "A) A database storing all architecture deliverables from ADM phases",
+      "B) A categorisation method for architecture assets ranging from generic to organisation-specific ✓",
+      "C) A process for transitioning from baseline to target architecture",
+      "D) A governance model for managing change requests"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — classification method, not a database or process." },
+    { "type": "heading", "level": 4, "text": "Q2. Which component stores a snapshot of architecture assets deployed at a particular point in time?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Reference Library", "B) Solutions Landscape", "C) Architecture Landscape ✓", "D) Standards Library"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — don't confuse with Solutions Landscape which shows implementations." },
+    { "type": "heading", "level": 4, "text": "Q3. An architect needs approved templates and patterns from previous projects. Which component?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Governance Repository", "B) Requirements Repository", "C) Standards Library", "D) Reference Library ✓"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: D — Reference Library has reusable accelerators. Standards Library has compliance requirements." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech has completed its first ADM cycle and produced: an Architecture Vision document; a set of architecture principles; a data entity catalog; a compliance record of all Architecture Board decisions; and a selection of reusable integration patterns for future projects. Where in the Architecture Repository should each be stored?" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 0 pts", "All outputs in the Reference Library. Wrong — the Reference Library is not a catch-all."],
+      ["B — 1 pt", "Vision and principles in Landscape; compliance in Governance; data entity catalog and patterns in Reference Library. Partially right but incorrectly groups the data entity catalog with integration patterns."],
+      ["C — 3 pts", "Vision and principles in Landscape; compliance in Governance; data entity catalog in Landscape; patterns in Reference Library. Mostly right but misplaces principles — they belong in the Architecture Metamodel, not the Landscape."],
+      ["D — 5 pts", "Architecture Vision in Architecture Landscape; principles in Architecture Metamodel; compliance record in Governance Repository; data entity catalog in Architecture Landscape; integration patterns in Reference Library. Correct placement of every output."]
+    ]}
+  ]
+}

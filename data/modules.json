@@ -1,0 +1,515 @@
+[
+  {
+    "id": "MOD-L01",
+    "order": 1,
+    "title": "What is TOGAF — and What Problem Does It Solve?",
+    "sourceCitation": "C220Part0e §3.1–3.3",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-01",
+        "slug": "les-01-what-is-togaf",
+        "title": "What is TOGAF — and What Problem Does It Solve?",
+        "estimatedMinutes": 25
+      }
+    ],
+    "description": "What TOGAF is, why it exists, and the two official meanings of \"Architecture.\" Covers BDAT, the ADM, and the Enterprise definition.",
+    "estimatedMinutes": 25,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L02",
+    "order": 2,
+    "title": "The TOGAF Documentation Set",
+    "sourceCitation": "C220Part0e §2.1–2.3",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-02",
+        "slug": "les-02-documentation-set",
+        "title": "The TOGAF Documentation Set",
+        "estimatedMinutes": 25
+      }
+    ],
+    "description": "The six core TOGAF documents and the TOGAF Library. What each document covers and how selective, incremental adoption works.",
+    "estimatedMinutes": 25,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L03",
+    "order": 3,
+    "title": "The Four Architecture Domains (BDAT)",
+    "sourceCitation": "C220Part0e §3.3",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-03",
+        "slug": "les-03-bdat-domains",
+        "title": "The Four Architecture Domains (BDAT)",
+        "estimatedMinutes": 25
+      }
+    ],
+    "description": "The four architecture domains — Business, Data, Application, Technology — and why Phase C covers two domains in one phase.",
+    "estimatedMinutes": 25,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L04",
+    "order": 4,
+    "title": "Deliverables, Artifacts, and Building Blocks (ABB/SBB)",
+    "sourceCitation": "C220Part0e §3.6",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-04",
+        "slug": "les-04-deliverables-artifacts-building-blocks",
+        "title": "Deliverables, Artifacts, and Building Blocks",
+        "estimatedMinutes": 25
+      }
+    ],
+    "description": "Deliverables, Artifacts, and Building Blocks (ABB/SBB) — the three-way distinction that underlies every TOGAF output, plus Architecture Patterns.",
+    "estimatedMinutes": 25,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L05",
+    "order": 5,
+    "title": "Architecture Principles — NSRI, Hierarchy, Five Qualities",
+    "sourceCitation": "C220Part0e §3.8",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-05",
+        "slug": "les-05-architecture-principles-nsri",
+        "title": "Architecture Principles — The Rules That Govern Everything",
+        "estimatedMinutes": 25
+      }
+    ],
+    "description": "Architecture Principles: the four-component NSRI template, the Enterprise→Architecture→Domain hierarchy, and how principles compete.",
+    "estimatedMinutes": 25,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L06",
+    "order": 6,
+    "title": "Enterprise Continuum and Architecture Repository",
+    "sourceCitation": "C220Part0e §3.10",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-06",
+        "slug": "les-06-enterprise-continuum-repository",
+        "title": "The Enterprise Continuum and Architecture Repository",
+        "estimatedMinutes": 30
+      }
+    ],
+    "description": "The Enterprise Continuum's four levels (generic to specific) and the Architecture Repository's eight components, grouped into four memorable pairs.",
+    "estimatedMinutes": 30,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L07",
+    "order": 7,
+    "title": "The ADM Overview — 10 Elements, Clock-Face Model",
+    "sourceCitation": "C220Part0e §3.4",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-07",
+        "slug": "les-07-adm-overview",
+        "title": "The ADM — The Heart of TOGAF",
+        "estimatedMinutes": 30
+      }
+    ],
+    "description": "The ADM as a continuous clock-face cycle — all 10 elements, the three bookend phases, and why Requirements Management sits at the centre.",
+    "estimatedMinutes": 30,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L08",
+    "order": 8,
+    "title": "Architecture Abstraction — Four Levels (Contextual to Physical)",
+    "sourceCitation": "C220Part0e §3.7",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-08",
+        "slug": "les-08-architecture-abstraction",
+        "title": "Architecture Abstraction — The Four Levels",
+        "estimatedMinutes": 25
+      }
+    ],
+    "description": "The four levels of Architecture Abstraction — Contextual, Conceptual, Logical, Physical — and how they map directly to ABBs and SBBs.",
+    "estimatedMinutes": 25,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L09",
+    "order": 9,
+    "title": "Architecture Views and Viewpoints — Stakeholder Chain",
+    "sourceCitation": "C220Part0e §3.16",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-09",
+        "slug": "les-09-views-viewpoints",
+        "title": "Architecture Views and Viewpoints",
+        "estimatedMinutes": 25
+      }
+    ],
+    "description": "Architecture Views and Viewpoints: the stakeholder chain from concerns to viewpoints to views, and the Architecture Description as their sum.",
+    "estimatedMinutes": 25,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L10",
+    "order": 10,
+    "title": "The Preliminary Phase — Setting Up Architecture Capability",
+    "sourceCitation": "C220-Part1e Ch.2",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-10",
+        "slug": "les-10-preliminary-phase",
+        "title": "The Preliminary Phase",
+        "estimatedMinutes": 30
+      }
+    ],
+    "description": "The Preliminary Phase — establishing Architecture Capability, governance, tailoring (TPC), and principles before the first ADM cycle begins.",
+    "estimatedMinutes": 30,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L11",
+    "order": 11,
+    "title": "Phase A — Architecture Vision",
+    "sourceCitation": "C220-Part1e Ch.3",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-11",
+        "slug": "les-11-phase-a-architecture-vision",
+        "title": "Phase A — Architecture Vision",
+        "estimatedMinutes": 30
+      }
+    ],
+    "description": "Phase A: Architecture Vision — the eleven-step entry point of every ADM cycle, from Request for Architecture Work to the Statement of Architecture Work, plus Business Scenarios.",
+    "estimatedMinutes": 30,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L12",
+    "order": 12,
+    "title": "Phase B — Business Architecture",
+    "sourceCitation": "C220-Part1e Ch.4",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-12",
+        "slug": "les-12-phase-b-business-architecture",
+        "title": "Phase B — Business Architecture",
+        "estimatedMinutes": 30
+      }
+    ],
+    "description": "Phase B: Business Architecture — Baseline, Target, and Gap Analysis (Retained/Eliminated/Added/Intentionally Omitted) for the business domain.",
+    "estimatedMinutes": 30,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L13",
+    "order": 13,
+    "title": "Phase C — Information Systems Architectures (Data + Application)",
+    "sourceCitation": "C220-Part1e Ch.6–7",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-13",
+        "slug": "les-13-phase-c-information-systems",
+        "title": "Phase C — Information Systems Architectures (Data + Application)",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "Phase C: Information Systems Architectures — Data and Application Architecture together, the ELP data entity levels, and why TOGAF doesn't mandate their order.",
+    "estimatedMinutes": 35,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L14",
+    "order": 14,
+    "title": "Phase D — Technology Architecture",
+    "sourceCitation": "C220-Part1e Ch.8",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-14",
+        "slug": "les-14-phase-d-technology-architecture",
+        "title": "Phase D — Technology Architecture",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "Phase D: Technology Architecture — the SLP metamodel, the dependency chain from Business through to Technology, and the Architecture Board baselining gate.",
+    "estimatedMinutes": 35,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L15",
+    "order": 15,
+    "title": "Phases E & F — Opportunities & Solutions, and Migration Planning",
+    "sourceCitation": "C220-Part1e Ch.9–10",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-15",
+        "slug": "les-15-phases-e-f-opportunities-migration",
+        "title": "Phases E & F — Opportunities & Solutions, and Migration Planning",
+        "estimatedMinutes": 40
+      }
+    ],
+    "description": "Phases E & F — Opportunities & Solutions (the Architecture Roadmap, Transition Architectures, ABBs becoming SBBs) and Migration Planning.",
+    "estimatedMinutes": 40,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L16",
+    "order": 16,
+    "title": "Phases G & H — Implementation Governance and Change Management",
+    "sourceCitation": "C220-Part1e Ch.11–12",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-16",
+        "slug": "les-16-phases-g-h-governance-change",
+        "title": "Phases G & H — Implementation Governance and Architecture Change Management",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "Phases G & H — Implementation Governance (Architecture Contracts, Compliance, Dispensations) and Architecture Change Management (Simplification/Incremental/Re-architecting).",
+    "estimatedMinutes": 35,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L17",
+    "order": 17,
+    "title": "Requirements Management — The Continuous Process",
+    "sourceCitation": "C220-Part1e Ch.13",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-17",
+        "slug": "les-17-requirements-management",
+        "title": "Requirements Management — The Continuous Process at the Centre",
+        "estimatedMinutes": 30
+      }
+    ],
+    "description": "Requirements Management — the continuous, non-prioritising process at the centre of the ADM, the Specification vs Repository distinction, and gap requirements.",
+    "estimatedMinutes": 30,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L18",
+    "order": 18,
+    "title": "Architecture Governance — Framework, Board, Contracts, Compliance",
+    "sourceCitation": "C220Part5e Ch.3–6",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-18",
+        "slug": "les-18-architecture-governance",
+        "title": "Architecture Governance — Framework, Board, Contracts, and Compliance",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "Architecture Governance — the governance hierarchy, the Architecture Board (size, responsibilities), three types of Architecture Contract, and five compliance levels.",
+    "estimatedMinutes": 35,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L19",
+    "order": 19,
+    "title": "ADM Techniques — Stakeholder Management and Architecture Principles (Five Qualities)",
+    "sourceCitation": "C220Part2e Ch.2–3",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-19",
+        "slug": "les-19-stakeholder-management-principles-qualities",
+        "title": "ADM Techniques — Stakeholder Management and Architecture Principles (Five Qualities)",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "Stakeholder Management (ICDT, the Power/Interest grid) and the Five Qualities of good Architecture Principles (Understandable, Robust, Complete, Consistent, Stable).",
+    "estimatedMinutes": 35,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L20",
+    "order": 20,
+    "title": "Architecture Landscape Levels, Partitioning, and Scoping",
+    "sourceCitation": "C220Part3e Ch.3–4",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-20",
+        "slug": "les-20-architecture-landscape-partitioning-scoping",
+        "title": "Architecture Landscape Levels, Partitioning, and Scoping",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "Architecture Landscape Levels (Strategic/Segment/Capability), the BDTR organising characteristics, and Architecture Partitioning.",
+    "estimatedMinutes": 35,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L21",
+    "order": 21,
+    "title": "ADM Techniques — Interoperability Requirements and Risk Management",
+    "sourceCitation": "C220Part2e Ch.6, Ch.8",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-21",
+        "slug": "les-21-interoperability-risk-management",
+        "title": "ADM Techniques — Interoperability and Risk Management",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "Interoperability (three categories, four degrees of data/information sharing) and Risk Management (Initial/Residual risk, governance-owned acceptance).",
+    "estimatedMinutes": 35,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L23",
+    "order": 22,
+    "title": "Architecture Alternatives and Trade-offs",
+    "sourceCitation": "C220Part2e Ch.9",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-23",
+        "slug": "les-23-architecture-alternatives-tradeoffs",
+        "title": "Architecture Alternatives and Trade-offs",
+        "estimatedMinutes": 30
+      }
+    ],
+    "description": "Architecture Alternatives and Trade-offs — the three-part method (Define Criteria → Describe Alternatives → Select or Combine) for governed decision-making.",
+    "estimatedMinutes": 30,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L24",
+    "order": 23,
+    "title": "Architecture Content Framework — Deliverables and Artifacts by Phase",
+    "sourceCitation": "C220Part4e Ch.3–4",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-24",
+        "slug": "les-24-content-framework-deliverables-artifacts",
+        "title": "Architecture Content Framework — Deliverables and Artifacts by Phase",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "The Architecture Content Framework — BCMD content concepts and the specific catalogs, matrices, and diagrams produced in each ADM phase.",
+    "estimatedMinutes": 35,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L25",
+    "order": 24,
+    "title": "EA Capability — Establishing and Maturing the Architecture Practice",
+    "sourceCitation": "C220Part5e Ch.2",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-25",
+        "slug": "les-25-ea-capability-maturity",
+        "title": "EA Capability — Establishing and Maturing the Architecture Practice",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "EA Capability — applying the ADM reflexively to the architecture practice itself, plus the TOGAF Skills Framework for architecture roles.",
+    "estimatedMinutes": 35,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L26",
+    "order": 25,
+    "title": "Using TOGAF with Other Frameworks & Applying Iteration to the ADM",
+    "sourceCitation": "C220Part0e §3.14/3.17, C220Part3e Ch.2",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-26",
+        "slug": "les-26-togaf-other-frameworks-iteration",
+        "title": "Using TOGAF with Other Frameworks, and Applying Iteration to the ADM",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "Using TOGAF alongside ITIL, COBIT, PRINCE2 and others, plus the three types of ADM iteration and Baseline First vs Target First.",
+    "estimatedMinutes": 35,
+    "partLabel": "foundation"
+  },
+  {
+    "id": "MOD-L27",
+    "order": 26,
+    "title": "Part 2 Exam Technique — Scenario Drilling and Gradient Scoring Mastery",
+    "sourceCitation": "Synthesis",
+    "part": 2,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-27",
+        "slug": "les-27-part2-exam-technique",
+        "title": "Part 2 Exam Technique — Scenario Drilling and Gradient Scoring Mastery",
+        "estimatedMinutes": 35
+      }
+    ],
+    "description": "Part 2 exam technique — the anatomy of gradient-scored questions, the MGP-C diagnostic framework, and the four common trap answer patterns.",
+    "estimatedMinutes": 35,
+    "partLabel": "practitioner"
+  },
+  {
+    "id": "MOD-L28",
+    "order": 27,
+    "title": "The Technical Reference Model (TRM) and III-RM",
+    "sourceCitation": "TOGAF Series Guides G175, G179",
+    "part": 1,
+    "status": "built",
+    "lessons": [
+      {
+        "id": "LES-28",
+        "slug": "les-28-trm-iii-rm",
+        "title": "The Technical Reference Model (TRM) and Integrated Information Infrastructure Reference Model (III-RM)",
+        "estimatedMinutes": 30
+      }
+    ],
+    "description": "The Technical Reference Model (TRM) and Integrated Information Infrastructure Reference Model (III-RM) — TOGAF's own generic reference models for platform portability and application interoperability.",
+    "estimatedMinutes": 30,
+    "partLabel": "foundation"
+  }
+]

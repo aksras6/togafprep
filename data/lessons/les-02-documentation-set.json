@@ -1,0 +1,78 @@
+{
+  "id": "LES-02",
+  "moduleId": "MOD-L02",
+  "order": 2,
+  "title": "The TOGAF Documentation Set",
+  "sourceCitation": "C220Part0e — Section 2",
+  "estimatedMinutes": 25,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "TOGAF is not one giant book. It is a set of specialist documents — each covering a distinct topic, but all working together. The TOGAF Standard (10th Edition) is structured as six core documents, plus a growing library of practical guides." },
+    { "type": "paragraph", "text": "The Standard = the Highway Code (method + structure). The Library = the specialist driving guide for trucks, motorcycles, or icy roads (practical, context-specific guidance layered on top)." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points to Remember — The Six Documents" },
+    { "type": "table", "headers": ["#", "Document", "What it covers"], "rows": [
+      ["1", "Introduction and Core Concepts", "What TOGAF is, definitions, the big picture"],
+      ["2", "Architecture Development Method (ADM)", "The iterative process for developing architecture"],
+      ["3", "ADM Techniques", "Tools and techniques to apply within the ADM"],
+      ["4", "Applying the ADM", "Adapting the ADM for specific contexts (Agile, Digital, etc.)"],
+      ["5", "Architecture Content", "The Content Framework: deliverables, artifacts, and building blocks"],
+      ["6", "EA Capability and Governance", "How to set up and run an architecture function"]
+    ]},
+    { "type": "paragraph", "text": "Three important statements from the source document:" },
+    { "type": "list", "ordered": false, "items": [
+      "TOGAF is a **foundational framework** — applicable to any kind of architecture in any context",
+      "Organisations are expected to **customise** it — pick some elements, exclude others, create new ones",
+      "EA done after decisions are made is merely documentation. EA should be done **early and throughout** the change process."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"I Introduced my Method, practised my Techniques, Applied them, created Content, then set up Governance.\"" },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP — Many candidates assume \"TOGAF\" = the ADM. The ADM is just ONE of the six documents. The Standard is much broader." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. How many documents make up the TOGAF Standard Fundamental Content?" },
+    { "type": "paragraph", "text": "Six documents." },
+    { "type": "heading", "level": 4, "text": "2. What is the difference between the TOGAF Standard and the TOGAF Library?" },
+    { "type": "paragraph", "text": "The Standard is the core, universally applicable framework. The Library provides practical, context-specific guidance to supplement the Standard." },
+    { "type": "heading", "level": 4, "text": "3. Does an organisation have to implement all six documents from day one?" },
+    { "type": "paragraph", "text": "No — selective and incremental adoption is explicitly encouraged. Organisations deliberately choose, customise, exclude, and create elements." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — ServiceNow ITSM" },
+    { "type": "paragraph", "text": "When you deployed ServiceNow, you used: an implementation method (comparable to the ADM); techniques within that method — gap analysis, process mapping, stakeholder workshops; content frameworks — defining what a \"Change Record\" looks like; and governance — the CAB, ITSM steering committee. ServiceNow's \"Success Playbook\" is their version of \"Applying the ADM.\" The TOGAF Library plays the same role at the enterprise level." },
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. How many free-standing documents make up the TOGAF Standard Fundamental Content?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Three", "B) Four", "C) Six ✓", "D) Eight"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — six. Commonly tested." },
+    { "type": "heading", "level": 4, "text": "Q2. What is the primary purpose of the TOGAF Library?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) To replace the TOGAF Standard",
+      "B) To provide practical, context-specific guidance to supplement the Standard ✓",
+      "C) To list all certified TOGAF architects",
+      "D) To define formal TOGAF terminology"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — supplements, does not replace, the Standard." },
+    { "type": "heading", "level": 4, "text": "Q3. An organisation wants to use the ADM but not the Architecture Capability guidance. Is this permitted?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Not permitted — all six documents must be adopted together",
+      "B) Permitted — selective adoption is explicitly encouraged ✓",
+      "C) Permitted only for smaller organisations",
+      "D) Requires special approval from The Open Group"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — the Standard explicitly encourages selective adoption." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's CTO says: \"I've looked at TOGAF and it seems enormous. Do we have to implement all of it from day one? Our immediate priority is just getting a consistent architecture process running.\"" },
+    { "type": "paragraph", "text": "Question: How would you advise the CTO?" },
+    { "type": "callout", "variant": "tip", "text": "Strong Answer: TOGAF is explicitly designed for incremental adoption. The immediate focus should be the Architecture Development Method document — the ADM provides the consistent architecture process she needs. ADM Techniques and Applying the ADM can be introduced progressively. The TOGAF Library and Series Guides can be pulled in as needed. The key principle: organisations should deliberately choose some elements, customise some, exclude some, and create others — this is not just permitted, it is the expected approach." }
+  ]
+}

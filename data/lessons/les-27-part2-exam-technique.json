@@ -1,0 +1,84 @@
+{
+  "id": "LES-27",
+  "moduleId": "MOD-L27",
+  "order": 26,
+  "title": "Part 2 Exam Technique — Scenario Drilling and Gradient Scoring Mastery",
+  "sourceCitation": "Synthesis of Lessons 1–26 | Exam Technique",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "trap", "text": "⚠ CORRECTION TO EARLIER LESSONS — Earlier lessons described OGEA-102 as \"40 questions, 60 minutes.\" This was imprecise. The actual format is: 8 scenario-based questions, 90 minutes total, each scenario scored via ranked options (0/1/3/5, sometimes 0/1/3/4/5). Pass mark: 60% overall AND a minimum per-scenario threshold — you cannot pass by acing some scenarios while bombing others. This means each scenario carries far more weight, and you have roughly 11 minutes per scenario — speed is not your constraint; judgment is." },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "This lesson is not new TOGAF content — it's the meta-skill of reading a Part 2 scenario correctly and consistently identifying the 5-point answer. Every scoring guide across Lessons 1–26 follows the same underlying pattern. Once you see the pattern explicitly, you'll recognise it in the real exam under time pressure." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points — The Anatomy of a Gradient-Scored Question" },
+    { "type": "paragraph", "text": "Every Part 2 scenario has the same structure: a realistic situation with a tension → a stakeholder statement framing a tempting but flawed interpretation → four options of varying TOGAF-aligned quality." },
+    { "type": "paragraph", "text": "The four-tier pattern:" },
+    { "type": "table", "headers": ["Score", "Pattern", "What it looks like"], "rows": [
+      ["5 (Best)", "Correct mechanism + correct governance + acknowledges pressure", "Names the specific TOGAF concept/phase/artifact, routes to the right governance body, doesn't ignore the legitimate business concern"],
+      ["3 (Good, incomplete)", "Right instinct, missing a dimension", "Correct general principle but misses the specific mechanism, governance body, or trade-off"],
+      ["1 (Partial, flawed)", "Right idea, wrong action", "Correctly diagnoses the concern but recommends a disproportionate, premature, or ungoverned response"],
+      ["0 (Wrong)", "Contradicts the Standard, or bypasses governance", "States something the Standard explicitly denies, OR resolves the tension by ignoring TOGAF's process entirely"]
+    ]},
+    { "type": "paragraph", "text": "Five diagnostic questions for every option — \"MGP-C\" plus proportionality:" },
+    { "type": "list", "ordered": true, "items": [
+      "Does it name the correct TOGAF phase, artifact, or mechanism?",
+      "Does it route the decision to the correct governance body? (EA proposes; Board decides)",
+      "Does it acknowledge the legitimate pressure in the scenario, rather than dismissing it?",
+      "Is the response proportionate — not escalating routine matters, not trivialising major ones?",
+      "Does it contradict anything the Standard states explicitly? (Instant disqualifier)"
+    ]},
+    { "type": "paragraph", "text": "Four reliable trap patterns:" },
+    { "type": "table", "headers": ["Trap", "Why tempting", "Why it scores low"], "rows": [
+      ["Rigid/bureaucratic", "Sounds safe", "Over-applies rules; ignores TOGAF's explicit flexibility"],
+      ["Pragmatic-but-ungoverned", "Sounds efficient", "Bypasses the Architecture Board or formal documentation"],
+      ["Disproportionate escalation", "Sounds cautious", "Treats a routine event as a Board-level crisis"],
+      ["Technically-correct-but-incomplete", "Uses the right vocabulary", "Names the right concept but misses a critical piece (often the governance step)"]
+    ]},
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"Eight scenarios, ninety minutes, no need to rush — the exam rewards precision of TOGAF vocabulary and governance routing, not speed.\"\n\nMGP-C: Mechanism → Governance → Pressure → Contradiction check.\n\nHighest-value habit: Write your own one-sentence answer BEFORE reading the four options — using TOGAF vocabulary. Then match. This prevents the options from anchoring your reasoning (same principle as Lesson 23's \"define criteria before alternatives\")." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — NEVER SACRIFICE A SCENARIO. Because of the per-scenario minimum threshold, a single very poor scenario can fail you even if your overall percentage would otherwise pass. Spend the full ~11 minutes on every scenario." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — THE \"SOUNDS EFFICIENT\" ANSWER IS THE MOST COMMON WRONG ANSWER. If an option lets someone act unilaterally without Architecture Board involvement on a significant decision, be suspicious — even if it sounds pragmatic." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — THE MOST RIGID ANSWER IS ALMOST NEVER CORRECT EITHER. TOGAF consistently rewards governed flexibility, not rigid rule-following and not ungoverned pragmatism." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What is the actual format of OGEA-102, and how does it change exam strategy vs a 40-question exam?" },
+    { "type": "paragraph", "text": "8 scenario-based questions, 90 minutes, gradient-scored (0/1/3/5). Pass = 60% overall AND a per-scenario minimum. Each scenario carries much more weight; ~11 minutes per scenario means speed isn't the constraint — don't rush or neglect any single scenario." },
+    { "type": "heading", "level": 4, "text": "2. What does MGP-C check for?" },
+    { "type": "paragraph", "text": "Mechanism (correct TOGAF concept/phase/artifact named?) · Governance (routed to the correct body?) · Pressure (acknowledges the real tension?) · Contradiction check (does it deny something the Standard states?)." },
+    { "type": "heading", "level": 4, "text": "3. Name the four trap option patterns." },
+    { "type": "paragraph", "text": "Rigid/bureaucratic (over-applies rules) · Pragmatic-but-ungoverned (bypasses governance) · Disproportionate escalation (treats routine as crisis) · Technically-correct-but-incomplete (right vocabulary, missing piece)." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Worked Example · How It Works in Practice · Practice Drill" },
+
+    { "type": "heading", "level": 3, "text": "4. Worked Example — Applying MGP-C to a Fresh Scenario" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's Self-Service HR module, once live, will expose salary bands to line managers due to Dynamics 365's standard role permissions. The Head of HR says: \"This is a data privacy problem, not an architecture problem. Let's just have IT quietly restrict the fields before go-live — we don't have time for a big governance process.\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 0 pts", "Agree — technical fix, not architecture. Have IT adjust the database directly. Mechanism ❌ none named. Governance ❌ \"quietly\"/\"have IT\" bypasses everything. Contradiction ❌ this IS a Data Security Diagram / Compliance concern — calling it \"not architecture\" is factually wrong."],
+      ["B — 1 pt", "Disagree — must go through a full new ADM cycle from Phase A. Mechanism ✅ names ADM cycle. Governance ⚠️ over-applies. Pressure ❌ ignores timeline entirely. This is likely Simplification/Incremental, not Re-architecting."],
+      ["C — 5 pts", "Acknowledge as a Data Security concern. Raise as a Compliance Assessment against the Data Security Diagram and Architecture Principles. Classify as Simplification/Incremental (configuration change, not new pattern), resolve via existing Change Request process, document and verify before go-live — without skipping governance. Hits all four MGP-C criteria."],
+      ["D — 3 pts", "Escalate immediately to an emergency out-of-cycle Architecture Board session. Names the Board ⚠️ but disproportionate — an emergency session is slower to convene than a standard Change Request, actually worse for the timeline than Option C."]
+    ]},
+    { "type": "paragraph", "text": "Notice: the 5-point answer names mechanisms from multiple earlier lessons (Data Security Diagram from L24, Compliance Assessment from L18, change classification from L16) while respecting the real time pressure. This is the consistent signature of a 5-point answer throughout this programme." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: THE EXAM TESTS EA JUDGMENT, NOT MEMORISATION. Every scenario mirrors a genuine tension — legitimate business pressure colliding with the need for governed decision-making. The correct answer honours both, never sacrificing one for the other entirely." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: SPECIFICITY SIGNALS UNDERSTANDING. When torn between two options, default to the one with more specific TOGAF vocabulary. \"Raise with the Architecture Board\" vs \"raise as a Compliance Assessment reviewed by the Architecture Board, with a documented dispensation if approved\" — the second is very likely the better-scoring answer." },
+
+    { "type": "heading", "level": 3, "text": "6. Practice Drill" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO — APPLY MGP-C YOURSELF: GlobalTech's Data Architecture team discovers a proposed Data Migration tool for Customer master data is not on the approved Technology Standards Catalog — but it's significantly cheaper and faster. The Data Architecture Lead says: \"Let's just use it — we can add it to the Standards Catalog retroactively once we've proven it works.\"" },
+    { "type": "paragraph", "text": "**Diagnostic:**" },
+    { "type": "list", "ordered": false, "items": [
+      "**Mechanism**: A formal Dispensation or Compliance Assessment escalation is the relevant mechanism. \"Add it retroactively\" names no formal TOGAF mechanism.",
+      "**Governance**: \"Let's just use it\" is unilateral — the ungoverned-pragmatism trap. Retroactive legitimisation inverts the correct sequence (approve first, then use).",
+      "**Pressure**: Cost/speed is legitimate and should be acknowledged, not dismissed.",
+      "**Contradiction**: Directly contradicts the Dispensation process (Lessons 16, 18) — Dispensations are formally approved before or concurrent with the deviation, never retroactively rubber-stamped."
+    ]},
+    { "type": "paragraph", "text": "**Correct approach**: Raise a formal Dispensation to the Architecture Board before using the tool, citing cost/speed as rationale, with a condition to formally evaluate the tool for Standards Catalog addition within a defined timeframe." }
+  ]
+}

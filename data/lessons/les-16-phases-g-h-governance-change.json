@@ -1,0 +1,95 @@
+{
+  "id": "LES-16",
+  "moduleId": "MOD-L16",
+  "order": 16,
+  "title": "Phases G & H — Implementation Governance and Architecture Change Management",
+  "sourceCitation": "C220-Part1e — Chapters 11 & 12",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Phase G — Implementation Governance answers: \"Are the projects building what we designed?\" Think of the EA as a site inspector — they don't lay bricks, but they visit regularly to check what's being built matches the approved plans. Phase G issues Architecture Contracts, reviews compliance, and raises non-conformances." },
+    { "type": "paragraph", "text": "Phase H — Architecture Change Management answers: \"How do we manage changes to the architecture once it's live — and when should we start a new ADM cycle?\" Phase H monitors for change drivers and determines whether they require a patch or major surgery (a new ADM cycle)." },
+
+    { "type": "heading", "level": 3, "text": "2a. Key Points — Phase G: Implementation Governance" },
+    { "type": "paragraph", "text": "Two objectives: Ensure conformance with the Target Architecture by implementation projects · Perform appropriate Architecture Governance functions for the solution and any implementation-driven Change Requests." },
+    { "type": "paragraph", "text": "Six steps: (1) Confirm scope and priorities for deployment · (2) Identify deployment resources and skills · (3) Guide development of solutions deployment — including documenting and signing the Architecture Contract · (4) Perform Architecture Compliance reviews · (5) Implement business and IT operations — publish new Baseline Architectures · (6) Perform post-implementation review and close." },
+    { "type": "paragraph", "text": "**The Architecture Contract**: The joint agreement between development partners and sponsors on the deliverables, quality, and fitness-for-purpose of an architecture. Signed by all developing organisations and the sponsoring organisation. Transforms the Architecture Definition Document from a reference into a binding agreement." },
+    { "type": "paragraph", "text": "Two compliance outcomes: **Compliance Assessment** (formal review of compliance) · **Dispensation** (formal, time-bound, conditioned permission to deviate)." },
+    { "type": "paragraph", "text": "Key outputs: Architecture Contract (signed) · Compliance Assessments · Change Requests · Architecture-compliant solutions deployed · Updated Architecture Repository with new Baseline Architecture." },
+
+    { "type": "heading", "level": 3, "text": "2b. Key Points — Phase H: Architecture Change Management" },
+    { "type": "paragraph", "text": "Three objectives: Ensure the architecture development cycle is maintained · Ensure the Architecture Governance Framework is executed · Ensure EA Capability meets current requirements." },
+    { "type": "paragraph", "text": "Three types of architecture change — exam-critical:" },
+    { "type": "table", "headers": ["Change Type", "Description", "Response"], "rows": [
+      ["Simplification", "Reduces investment/complexity without affecting architectural intent", "Change management — no new ADM cycle"],
+      ["Incremental", "Derives additional value from existing investment", "Change management OR partial re-architecting"],
+      ["Re-architecting", "Requires new investment to create new architectural value", "New full ADM cycle — new Request for Architecture Work issued"]
+    ]},
+    { "type": "paragraph", "text": "Key outputs: Architecture updates · Changes to framework and principles · New Request for Architecture Work (triggers new ADM cycle for re-architecting changes) · Updated Architecture Contract · Updated Compliance Assessments." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "Phase G: \"Inspect the build against the approved plans — govern conformance, don't run the projects.\"\n\nPhase H: \"Monitor the world for changes; triage them; patch or rebuild as needed.\"\n\nThree change types — \"SIR\": Simplification (patch) · Incremental (may partial re-architect) · Re-architecting (new ADM cycle)." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — PHASE G IS NOT PROJECT MANAGEMENT. Phase G reviews architectural compliance. The EA does not run, resource, or schedule delivery projects — that is the PMO's role." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — DISPENSATION ≠ NON-COMPLIANCE. A Dispensation is a formal, time-bound, conditioned governance approval to deviate. Non-compliance is unapproved deviation. Both are gaps between design and build — but only one is governed." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — PHASE H DOES NOT TRIGGER A NEW ADM CYCLE FOR EVERY CHANGE. Only re-architecting changes trigger a new ADM cycle. Simplification and incremental changes are handled via change management." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What is an Architecture Contract, and why is it significant in Phase G?" },
+    { "type": "paragraph", "text": "The Architecture Contract is the joint agreement between development partners and sponsors on the deliverables, quality, and fitness-for-purpose of an architecture — signed by all parties. It transforms the Architecture Definition Document from a reference document into a binding agreement, giving governance formal authority over delivery." },
+    { "type": "heading", "level": 4, "text": "2. Name the three types of architecture change in Phase H and what response each requires." },
+    { "type": "paragraph", "text": "Simplification (reduce complexity — change management, no new ADM cycle) · Incremental (add value from existing investment — change management or partial re-architecting) · Re-architecting (create new value requiring new investment — full new ADM cycle, new Request for Architecture Work)." },
+    { "type": "heading", "level": 4, "text": "3. What is a Dispensation, and how does it differ from non-compliance?" },
+    { "type": "paragraph", "text": "A Dispensation is a formal, governed, time-bound approval to deviate from the architecture for a specific justified reason — with conditions for remediation. Non-compliance is unapproved deviation. Both are gaps between the designed architecture and what is built — but a Dispensation is governed and documented; non-compliance is not." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "paragraph", "text": "**Phase G — Architecture Contract**: EA prepares Architecture Contracts for each of the six Work Packages specifying scope, compliance rules (e.g., \"all integrations must route through Azure API Management\"), measures of effectiveness, acceptance criteria, and risks. Contracts signed by Work Package leads and the CTO." },
+    { "type": "paragraph", "text": "**Compliance Review — Dispensation granted**: The Procurement integration team wants to route directly to Dynamics 365 via REST API, bypassing Azure API Management. EA raises non-compliance. Team requests Dispensation. Architecture Board grants it — 90 days, conditioned on migration to API Management before Wave 2, direct connection monitored for security events." },
+    { "type": "paragraph", "text": "**Compliance Review — Dispensation refused**: Power BI team implements direct query against Dynamics 365 transactional tables (performance risk). Architecture Board refuses dispensation — directs redesign to use Azure Synapse Analytics layer as specified." },
+    { "type": "paragraph", "text": "**Phase H — three change signals post go-live**: Microsoft AI cash flow feature = Incremental (change management, no new ADM cycle) · Strategic acquisition of competitor using Oracle ERP = Re-architecting (new Request for Architecture Work, new ADM cycle initiated) · Telstra ExpressRoute configuration change = Simplification (IT Operations manages, no Board involvement)." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: GOVERNANCE WITHOUT EXECUTIVE SPONSORSHIP IS FICTION. The Architecture Board can only function if the executive sponsor actively backs its authority. If the CTO routinely overrides Architecture Board decisions, the governance framework collapses within months. The Dispensation process is particularly vulnerable — without enforcement, Dispensations quietly become permanent workarounds." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: COMPLIANCE REVIEWS ARE MOST VALUABLE EARLY. The primary goal is to catch errors when they are still cheap to fix — at project initiation and initial design, not before go-live. Reviews held too late find problems that are impossibly expensive to correct." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which best describes the primary purpose of Phase G?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) To manage project teams responsible for implementing the Target Architecture",
+      "B) To ensure conformance with the Target Architecture by implementation projects, and perform Architecture Governance functions ✓",
+      "C) To finalise the Architecture Roadmap",
+      "D) To monitor for changes that may require a new ADM cycle"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — Phase G is about architectural conformance and governance, not project management. Option D describes Phase H." },
+    { "type": "heading", "level": 4, "text": "Q2. A project team requests permission to use a direct database connection instead of the approved middleware layer. The EA determines the deviation is technically sound but architecturally non-compliant. What is the most appropriate response?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Reject — the Architecture Contract is binding and cannot be amended",
+      "B) Approve informally and address in the next ADM cycle",
+      "C) Grant a formal Dispensation — documented, governed, time-bound, with conditions for remediation ✓",
+      "D) Escalate to the Architecture Board as any deviation requires Board approval"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — a Dispensation is the correct TOGAF mechanism. Formal, time-bound, conditioned." },
+    { "type": "heading", "level": 4, "text": "Q3. GlobalTech's board announces a major strategic acquisition. The acquired company runs a completely different ERP system. How should the EA respond in Phase H?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Treat as a simplification change — handle via change management",
+      "B) Treat as an incremental change — partially re-architect the Application Architecture only",
+      "C) Treat as a re-architecting change — issue a new Request for Architecture Work and initiate a new ADM cycle ✓",
+      "D) Defer until the acquisition is formally complete"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — a strategic acquisition fundamentally changing the enterprise landscape is a re-architecting change requiring a new ADM cycle." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: Wave 2 is in delivery. The Architecture Board receives four simultaneous Change Requests: CR-01: Upgrade Azure API Management tier from Standard to Premium (cost increase, no functional change). CR-02: Implement new AI-powered invoice matching in Dynamics 365 (uses existing platform). CR-03: Replace TLS 1.3 with a new organisation-wide proprietary encryption protocol across all integrations. CR-04: CEO announces entry into wealth management — a new market segment requiring completely new business capabilities. Classify each CR and recommend the appropriate governance response." },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 0 pts", "All four are incremental changes — all approved via standard change management. Wrong on every count. CR-01 is simplification; CR-04 is re-architecting; CR-03 affects the entire enterprise."],
+      ["B — 3 pts", "CR-01: Simplification. CR-02: Incremental. CR-03: Incremental (partial re-architecting of Technology Architecture). CR-04: Re-architecting. Correct on three; loses marks because CR-03 — replacing a security protocol across ALL integrations — affects every integration pattern and every stakeholder. The Standard's guideline (two or more stakeholders = likely requires redesign) makes CR-03 a re-architecting change, not incremental."],
+      ["C — 5 pts", "CR-01: Simplification (change management). CR-02: Incremental (change management). CR-03: Re-architecting (new ADM cycle — affects all integrations, all stakeholders, all Architecture Contracts). CR-04: Re-architecting (new ADM cycle). Two new Requests for Architecture Work issued. Best answer."],
+      ["D — 1 pt", "CR-01, 02, 03 are simplification; CR-04 is re-architecting. CR-03 as simplification is a significant error. CR-02 as simplification (not incremental) is also imprecise."]
+    ]}
+  ]
+}

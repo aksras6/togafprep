@@ -1,0 +1,94 @@
+{
+  "id": "LES-20",
+  "moduleId": "MOD-L20",
+  "order": 20,
+  "title": "Architecture Landscape Levels, Partitioning, and Scoping",
+  "sourceCitation": "C220Part3e — Chapters 3 & 4 | C220-Part4e — Chapter 7",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Architecture Levels answer: \"How detailed is this architecture and how much of the enterprise does it cover?\" Architecture Partitions answer: \"Who owns this piece of architecture and what are its boundaries?\" Think of levels as zoom levels on a map (satellite → city → street). Partitions are about who makes each map and what rules they follow from the level above." },
+
+    { "type": "heading", "level": 3, "text": "2a. Key Points — Three Architecture Landscape Levels" },
+    { "type": "table", "headers": ["Level", "Scope", "Purpose", "Time Horizon"], "rows": [
+      ["Strategic Architecture", "Entire enterprise", "Organising framework for operational and change activity; direction setting at executive level", "Long-term: 3–10 years"],
+      ["Segment Architecture", "Area within the enterprise", "More detailed operating models; organises and aligns change activity at programme or portfolio level", "Programme lifecycle"],
+      ["Capability Architecture", "A specific unit of capability", "Overview of current/target capability; groups individual work packages and projects within managed portfolios", "Project level"]
+    ]},
+    { "type": "paragraph", "text": "The hierarchy: Strategic constrains Segment. Segment constrains Capability. Broader architectures are valid for longer time periods. The three levels also apply to the Architecture Requirements Repository (Strategic/Segment/Capability Requirements) and the Solutions Landscape (Strategic/Segment/Capability SBBs)." },
+
+    { "type": "heading", "level": 3, "text": "2b. Key Points — Four Organising Characteristics" },
+    { "type": "paragraph", "text": "**BDTR**: Breadth (subject matter — primary organising characteristic) · Depth (level of detail) · Time (time period covered) · Recency (how current the architecture is)." },
+
+    { "type": "heading", "level": 3, "text": "2c. Key Points — Architecture Partitioning" },
+    { "type": "paragraph", "text": "**Definition**: A subset of architecture resulting from dividing that architecture to facilitate its development and management." },
+    { "type": "paragraph", "text": "Three reasons for partitioning: Organisational unit architectures conflict with one another · Different teams need to work on different elements simultaneously · Effective architecture re-use requires modular segments." },
+    { "type": "paragraph", "text": "Key principle: Each architecture partition should have **one owning team**. Partitioning is established in the **Preliminary Phase**." },
+    { "type": "paragraph", "text": "Levels vs Partitions — the Standard explicitly states these are DISTINCT: Levels = granularity (how broad/detailed). Partitions = ownership and boundaries (who owns it). Also both distinct from the Architecture Continuum (Foundation/Common Systems/Industry/Organisation-Specific)." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"Satellites See Cities\": Strategic (Satellite — whole enterprise) · Segment (City — one business area) · Capability (Close-up — one specific capability).\n\nBDTR: Breadth · Depth · Time · Recency.\n\nExam question test: \"Whole enterprise, board-level\" = Strategic · \"Specific business division, programme\" = Segment · \"Specific capability, work package, project\" = Capability." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — SEGMENT, NOT CAPABILITY, FOR A DIVISION PROGRAMME. \"Capability Architecture\" sounds important. In TOGAF it is the MOST GRANULAR level — a specific unit of capability. A whole division's architecture programme = Segment." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — LEVELS ≠ PARTITIONS ≠ ARCHITECTURE CONTINUUM. Three different classification schemes. Levels = granularity. Partitions = ownership. Architecture Continuum = Foundation/Common/Industry/Organisation-Specific. All operate on the Architecture Repository but serve different purposes." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — ARCHITECTURE PARTITIONING IS ESTABLISHED IN THE PRELIMINARY PHASE. Team boundaries and governance structures are Preliminary Phase work — not Phase A, and not as part of each ADM cycle." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. Name the three Architecture Landscape levels, their scope, and typical time horizon." },
+    { "type": "paragraph", "text": "Strategic Architecture (entire enterprise, executive level, 3–10 years) · Segment Architecture (a specific area or division, programme or portfolio level, medium-term) · Capability Architecture (a specific unit of capability, work package or project level, short-term)." },
+    { "type": "heading", "level": 4, "text": "2. What is the difference between an Architecture Level and an Architecture Partition?" },
+    { "type": "paragraph", "text": "Architecture Level = granularity — how broad and how detailed the architecture is (Strategic/Segment/Capability). Architecture Partition = a bounded subset of architecture assigned to a specific owning team for development and governance purposes. The Standard explicitly states they are distinct from each other." },
+    { "type": "heading", "level": 4, "text": "3. A new programme is starting to implement a shared identity platform across the entire enterprise. At which Architecture Landscape level should this programme's architecture sit?" },
+    { "type": "paragraph", "text": "Strategic Architecture — because it covers the entire enterprise and is driven by enterprise-wide direction. An enterprise-wide shared platform is a whole-enterprise concern, making it Strategic-level. If it were limited to one division, it would be Segment-level." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Architecture Landscape" },
+    { "type": "paragraph", "text": "**Strategic Architecture**: GlobalTech's 5-year enterprise-wide target operating model — cloud-first, Microsoft-aligned platform, unified data strategy, API-first integration. Breadth = whole enterprise; depth = high-level, directional; time = 5-year horizon." },
+    { "type": "paragraph", "text": "**Segment Architecture** (three segments): Finance Segment (Dynamics 365 Finance, GL/AP/AR, Power BI reporting, Finance data model) · HR Segment (Dynamics 365 HR, Self-Service HR, payroll integration) · IT Operations Segment (Azure platform, ExpressRoute, Azure AD, API Management — shared service supporting all segments)." },
+    { "type": "paragraph", "text": "**Capability Architecture** (within Finance Segment): AP Automation Capability (exact workflow configuration, exception handling, Procurement integration) · Financial Reporting Capability (Power BI specifics, Synapse Analytics configuration, report templates)." },
+    { "type": "paragraph", "text": "**Architecture Partitioning** (established in Preliminary Phase): Enterprise Architecture team (EA Lead) = owns Strategic Architecture partition · Finance Architecture team (Business Architect + Data Architect) = owns Finance Segment and Finance Capability partitions · HR Architecture team = owns HR Segment and HR Capability partitions. IT Operations Segment shared between EA Lead and Technology Architect due to cross-enterprise impact." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: MOST ORGANISATIONS DON'T FORMALLY LABEL THEIR LEVELS. In practice, organisations call things \"enterprise architecture\" (Strategic), \"domain architecture\" or \"programme architecture\" (Segment), and \"solution architecture\" (Capability). TOGAF formalises what practitioners already do intuitively — and gives it governance structure." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: PARTITIONING FAILURES ARE GOVERNANCE FAILURES. When two teams both try to own the integration layer — because it sits in the seam between two Segment architectures — you get conflicting design decisions and duplicated work. The solution is to explicitly assign the integration layer to one owning team during the Preliminary Phase." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which correctly describes the Segment Architecture level?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) A long-term summary view of the entire enterprise used for executive direction-setting",
+      "B) More detailed operating models for areas within an enterprise, used at the programme or portfolio level to organise and align change activity ✓",
+      "C) The most detailed level, showing how the enterprise supports a particular unit of capability",
+      "D) A classification scheme for organising reference architectures from generic to organisation-specific"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — verbatim from the Standard. A = Strategic; C = Capability; D = Architecture Continuum." },
+    { "type": "heading", "level": 4, "text": "Q2. Architecture Levels and Architecture Partitions are:" },
+    { "type": "list", "ordered": false, "items": [
+      "A) The same concept — both describe how the Architecture Landscape is divided",
+      "B) Different concepts — levels describe granularity (Strategic/Segment/Capability); partitions describe bounded ownership areas assigned to specific teams ✓",
+      "C) Both established during Phase A of the ADM",
+      "D) Both described within the Enterprise Continuum"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — the Standard explicitly states Levels are distinct from Partitions. Both are established in the Preliminary Phase, not Phase A." },
+    { "type": "heading", "level": 4, "text": "Q3. A financial services enterprise has: a whole-enterprise operating model; a payments division architecture covering all payment systems; and a fraud detection AI architecture within the payments division. Classify these three architectures." },
+    { "type": "list", "ordered": false, "items": [
+      "A) All three are Segment Architectures",
+      "B) Strategic; Capability; Segment",
+      "C) Strategic; Segment; Capability ✓",
+      "D) Segment; Segment; Capability"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — whole-enterprise operating model = Strategic; payments division = Segment (major business area); fraud detection AI = Capability (specific capability within the payments domain)." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: Post-migration, three architecture teams are established. Problem 1: The Finance Architecture team wants to introduce a data replication pattern connecting Dynamics 365 Finance directly to a Finance-specific data lake, bypassing the enterprise Azure Synapse data warehouse. Team A (EA) says this violates the Strategic Architecture principle \"single data warehouse layer.\" Team B (Finance) says this is a Finance-specific decision within their partition. Problem 2: The Platform Architecture team (Team C) wants to add rate limiting to all APIs via Azure API Management. They argue this is a platform Capability Architecture decision entirely within their partition. Team B (Finance Architecture) says this will break several Finance integrations and should require Finance's approval." },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 0 pts", "Team B is right on both counts: the data replication is within the Finance partition; Finance should approve the API Management change. Wrong on both — a Segment partition cannot override a Strategic Architecture principle; Finance does not own the platform."],
+      ["B — 3 pts", "Team A is right on Problem 1 (Strategic Architecture governs Segment decisions); Team C is right on Problem 2 (platform decisions within their partition; Team B must adapt). Correct on Problem 1. Loses marks on Problem 2 — a platform change that breaks multiple Segment partitions requires cross-partition coordination, not unilateral action."],
+      ["C — 1 pt", "Both problems should be escalated to the Architecture Board regardless. Not wrong — Board resolves disputes — but disproportionate for Problem 2 if teams can resolve via cross-partition coordination. Architecture Board is escalation, not first resort."],
+      ["D — 5 pts", "Problem 1: Strategic Architecture governs Segment partitions — Team B cannot override an enterprise principle by claiming partition ownership. Problem 2: Even within a partition, changes that materially affect other partitions require cross-partition coordination. This is the governance relationship that partitioning establishes — boundaries with defined interfaces, not isolation. Architecture Board escalation is the backstop if coordination fails. Best answer."]
+    ]}
+  ]
+}

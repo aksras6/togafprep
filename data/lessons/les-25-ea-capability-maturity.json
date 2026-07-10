@@ -1,0 +1,94 @@
+{
+  "id": "LES-25",
+  "moduleId": "MOD-L25",
+  "order": 24,
+  "title": "EA Capability — Establishing and Maturing the Architecture Practice",
+  "sourceCitation": "C220Part5e — Chapter 2",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "What method do you use to build the team and function that does architecture work in the first place? The answer is elegantly self-referential: you use the ADM on itself. The EA Capability — team, tools, processes, governance — is treated as its own architecture, designed using the exact same method taught throughout this programme." },
+    { "type": "paragraph", "text": "The EA practice has its own Business Architecture (governance, processes, org structure, principles), its own Data Architecture (the structure of its Enterprise Continuum and Repository — literally called \"the metamodel of the architecture practice\"), its own Application Architecture (the tools used to generate and govern deliverables), and its own Technology Architecture (infrastructure supporting those tools)." },
+    { "type": "paragraph", "text": "Establishing the practice is explicitly **not a one-off project** — it is an ongoing discipline that can trigger repeated ADM cycles as it matures." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points" },
+    { "type": "paragraph", "text": "The reflexive BDAT:" },
+    { "type": "table", "headers": ["Domain", "What it means for the EA practice itself"], "rows": [
+      ["Business Architecture", "Architecture Governance, processes, org structure, information requirements, products"],
+      ["Data Architecture", "The structure of the Enterprise Continuum and Architecture Repository — \"the metamodel of the architecture practice\""],
+      ["Application Architecture", "Tools to generate, maintain, publish, distribute, and govern deliverables"],
+      ["Technology Architecture", "Infrastructure supporting the practice's applications and Enterprise Continuum"]
+    ]},
+    { "type": "paragraph", "text": "Key artifacts specific to establishing the practice (mainly Phase B): Architecture Ontology (common terms/definitions) · Architecture Process (tailored ADM + governance) · Architecture Viewpoints and Views (including a specific Architecture Governance viewpoint) · Architecture Framework (deliverables, relationships, rules) · Architecture Accountability Matrix (roles and accountability) · Architecture Performance Metrics · Architecture Governance Framework." },
+    { "type": "paragraph", "text": "Per-phase notes: Phase A focuses on the practice as a whole (not one project) — includes reviewing architecture practice principles (distinct from Architecture Principles) and an optional maturity assessment. Phase E focuses on organisational change, not technology selection. Phase G focuses on implementing the practice's Business Architecture — actually getting the organisation to adopt structured governance." },
+    { "type": "paragraph", "text": "**Architecture Principles vs Architecture Practice Principles**: The former govern deliverables (what the target architecture must be). The latter govern the practice itself — its organisation, content, tools, process." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"You architect the architecture practice the same way you architect anything else — apply the ADM to the EA function itself.\"" },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — NOT A ONE-OFF PROJECT. Establishing the practice is an ongoing discipline, not something completed once in the Preliminary Phase. It can trigger repeated ADM cycles as the practice matures." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — \"DATA ARCHITECTURE\" OF THE PRACTICE = ITS OWN METAMODEL. Specifically the Enterprise Continuum and Architecture Repository structure — not general business data." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — ARCHITECTURE PRINCIPLES ≠ ARCHITECTURE PRACTICE PRINCIPLES. Different scopes: deliverables vs the practice itself. Both reviewed in Phase A." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What is the fundamental principle behind establishing an Architecture Capability?" },
+    { "type": "paragraph", "text": "The ADM is used to establish the Architecture Capability — the same method used for any enterprise architecture. The EA practice is treated as an \"enterprise\" with its own BDAT domains. It is an ongoing discipline, not a one-off project." },
+    { "type": "heading", "level": 4, "text": "2. What does \"Data Architecture\" mean specifically when applied to the practice itself?" },
+    { "type": "paragraph", "text": "The structure of the Enterprise Continuum and Architecture Repository — explicitly called \"the metamodel of the architecture practice.\"" },
+    { "type": "heading", "level": 4, "text": "3. What is the difference between Architecture Principles and Architecture Practice Principles?" },
+    { "type": "paragraph", "text": "Architecture Principles govern the deliverables being produced. Architecture Practice Principles govern the practice itself — organisation, content, tools, process. Both reviewed in Phase A, different scopes." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Establishes Its EA Practice" },
+    { "type": "paragraph", "text": "**Phase A**: Scope = \"establish an EA function,\" not \"migrate to Dynamics 365.\" Architecture practice principles reviewed: \"EA operates as a shared service\"; \"decisions are documented and auditable\"; \"mature incrementally.\" Maturity assessment: Level 1 (ad hoc) → target Level 3 in 18 months." },
+    { "type": "paragraph", "text": "**Phase B**: Architecture Ontology (terminology tailored to business language) · Architecture Process (ADM tailored — combined steps for small initiatives) · Architecture Governance viewpoint defined for the Board · Architecture Accountability Matrix (EA Lead owns Repository, Segment Architects own Segments, Board owns governance) · Performance Metrics (\"% of projects passing Compliance on first attempt\")." },
+    { "type": "paragraph", "text": "**Phase H — the practice evolves**: The APRA regulation change (Lesson 17) triggers a new deliverable type — a Data Sovereignty Compliance Checklist — added to the Architecture Framework via Phase H of the practice's own ADM cycle, separate from the Dynamics 365 programme's cycle." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: MOST ORGANISATIONS IMPROVISE THEIR EA FUNCTION INSTEAD. Retroactively applying the ADM to formalise an existing informal practice is common and valuable — you don't need to have started this way to benefit from the discipline now." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: RUNNING TWO ADM CYCLES IN PARALLEL IS CONFUSING BUT ESSENTIAL. The practice's own cycle (evolving itself) and programme-specific cycles (like Dynamics 365) are separate but related. Keeping them conceptually distinct avoids confusion about which \"architecture\" is being discussed." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which method should be used to establish an Enterprise Architecture Capability?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) A dedicated EA Capability Establishment Framework, separate from the ADM",
+      "B) The same ADM used to develop any enterprise architecture — the EA practice is its own architecture ✓",
+      "C) The Architecture Governance Framework exclusively",
+      "D) An informal, ad hoc approach"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — the ADM is used, with the same approach as establishing any business capability." },
+    { "type": "heading", "level": 4, "text": "Q2. What does the \"Data Architecture\" of the practice specifically refer to?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Business data used by core operational systems",
+      "B) The structure of the Enterprise Continuum and Architecture Repository — the metamodel of the practice ✓",
+      "C) Data governance policies for customer/financial data",
+      "D) The Architecture Requirements Repository only"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — explicitly stated in the Standard." },
+    { "type": "heading", "level": 4, "text": "Q3. Which best describes the relationship between establishing an Architecture Capability and the ADM structure?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) One-time activity completed within the Preliminary Phase",
+      "B) Follows the same phase-by-phase structure, is ongoing (not one-off), can trigger repeated cycles ✓",
+      "C) Bypasses the ADM entirely, uses a separate maturity model",
+      "D) Only requires Phases A and B"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — explicitly ongoing, not one-off." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: During Wave 2, the Architecture Board realises a new AI/ML Governance Compliance Assessment is needed for the HR module's AI recruitment screening feature. The Programme Delivery Manager says: \"This is just a documentation update — let's have the EA team quickly add a checklist and move on.\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 0 pts", "Agree — this is a minor administrative task, no formal process needed. Treats a change to the practice's structural framework as trivial — precisely the ungoverned drift that undermines credibility over time."],
+      ["B — 5 pts", "Disagree. This is a change to the practice's own Architecture Framework — a new deliverable type. Process through Phase H of the practice's own ADM cycle: classify as simplification/incremental/re-architecting; update Framework, Ontology, and Accountability Matrix; ensure governed before applying to any programme. Best answer."],
+      ["C — 1 pt", "Disagree — any change must always trigger a completely new ADM cycle from Phase A regardless of scale. Overly rigid, contradicts TOGAF's flexibility emphasis."],
+      ["D — 1 pt", "Agree it's not a big deal but require project-specific Board approval without involving the practice's broader Framework. Excludes the reusable, governed template — undermining the Framework's purpose."]
+    ]},
+
+    { "type": "divider" },
+    { "type": "heading", "level": 3, "text": "Fold-In: TOGAF Skills Framework" },
+    { "type": "paragraph", "text": "When defining the Architecture Accountability Matrix (roles and accountability within the practice), the Standard points to the **TOGAF® Series Guide: Architecture Skills Framework** for guidance on the specific skills, experience, and competency levels expected of different architecture roles (e.g., Enterprise Architect, Business Architect, Data Architect, Solution Architect). It is a reference resource for structuring the EA team's capability and career development — not a separate method or deliverable type in its own right, and not required reading depth for Part 1, but useful to recognise by name if referenced in a scenario about staffing or role definition within the practice." }
+  ]
+}

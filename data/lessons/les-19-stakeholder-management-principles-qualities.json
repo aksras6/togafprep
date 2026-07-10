@@ -1,0 +1,104 @@
+{
+  "id": "LES-19",
+  "moduleId": "MOD-L19",
+  "order": 19,
+  "title": "ADM Techniques — Stakeholder Management and Architecture Principles (Five Qualities)",
+  "sourceCitation": "C220Part2e — Chapters 2 & 3 (ADM Techniques)",
+  "estimatedMinutes": 35,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Every architecture initiative has one fundamental human problem: people who care about different things, have different levels of power, and need different information. Stakeholder Management is the discipline of knowing who matters, how much they matter, what they need from you, and how to give them exactly that — and nothing more. This lesson also covers the five qualities that distinguish a good set of Architecture Principles from words nobody uses." },
+
+    { "type": "heading", "level": 3, "text": "2a. Key Points — Stakeholder Management" },
+    { "type": "paragraph", "text": "Four steps — **ICDT**:" },
+    { "type": "table", "headers": ["Step", "What it does"], "rows": [
+      ["1. Identify", "Work out who ALL stakeholders are — formal and informal. Ask: who gains and who loses? Include the \"Invisible Team\" (must contribute but not obviously associated)."],
+      ["2. Classify", "Understand each stakeholder's current and required levels of understanding, commitment, and support. Assess their ability to disrupt change."],
+      ["3. Determine approach", "Map stakeholders on the Power/Interest grid to determine engagement strategy for each group."],
+      ["4. Tailor deliverables", "Identify specific catalogs, matrices, and diagrams needed for each stakeholder group — linking directly to Views and Viewpoints."]
+    ]},
+    { "type": "paragraph", "text": "Power/Interest Grid — four strategies:" },
+    { "type": "table", "headers": ["Quadrant", "Strategy"], "rows": [
+      ["High Power + High Interest", "Manage Closely — frequent, detailed engagement"],
+      ["High Power + Low Interest", "Keep Satisfied — regular updates at their level; don't overload"],
+      ["Low Power + High Interest", "Keep Informed — communicate clearly; don't involve in decisions"],
+      ["Low Power + Low Interest", "Monitor — minimal engagement; watch for changes"]
+    ]},
+
+    { "type": "heading", "level": 3, "text": "2b. Key Points — Five Qualities of Good Architecture Principles" },
+    { "type": "table", "headers": ["Quality", "What it means"], "rows": [
+      ["Understandable", "The underlying tenets can be quickly grasped and understood throughout the organisation. Clear and unambiguous — violations minimised."],
+      ["Robust", "Enable good quality decisions and enforceable policies. Sufficiently definitive and precise to support consistent decision-making in complex, potentially controversial situations."],
+      ["Complete", "Every potentially important principle governing the management of information and technology is defined — covers every situation perceived."],
+      ["Consistent", "Expressed in a way that allows a balance of interpretations. Principles should not be contradictory to the point where adhering to one violates the spirit of another."],
+      ["Stable", "Principles should be enduring, yet able to accommodate changes. An amendment process should be established for adding, removing, or altering principles after initial ratification."]
+    ]},
+    { "type": "paragraph", "text": "Additional points: Recommended number of principles = **10 to 20** · Principles are developed by EAs in conjunction with key stakeholders and approved by the **Architecture Board** · Principles will sometimes compete — the rationale for which takes precedence must always be documented." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "Four stakeholder steps — \"ICDT\": Identify → Classify → Determine approach → Tailor deliverables.\n\nPower/Interest strategies — \"MKIMS\": High/High = Manage Closely · High/Low = Keep Satisfied · Low/High = Keep Informed · Low/Low = Monitor.\n\nFive principle qualities — \"URCS²\": Understandable · Robust · Complete · Consistent · Stable." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — HIGH POWER + LOW INTEREST = KEEP SATISFIED, NOT MANAGE CLOSELY. Managing closely a high-power, low-interest stakeholder wastes their time and creates resentment. Keep them informed at a high level and act quickly if their interest level changes." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — PRINCIPLES ARE APPROVED BY THE ARCHITECTURE BOARD. Principles are developed by EAs in conjunction with stakeholders but formally approved by the Architecture Board — not by the CTO or CEO directly." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — PRINCIPLES WILL SOMETIMES COMPETE — THAT IS NORMAL. TOGAF explicitly acknowledges this. When principles compete, the rationale for which takes precedence must be documented. Saying \"principles should not conflict\" is a misreading of the Standard." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. Name the four steps of TOGAF Stakeholder Management in order." },
+    { "type": "paragraph", "text": "(1) Identify stakeholders — formal and informal, including the invisible team. (2) Classify stakeholder positions — current/required understanding, commitment, support; ability to disrupt. (3) Determine stakeholder management approach — Power/Interest grid and engagement strategy. (4) Tailor engagement deliverables — specific catalogs, matrices, and diagrams for each stakeholder group." },
+    { "type": "heading", "level": 4, "text": "2. Name the four Power/Interest grid quadrants and the strategy for each." },
+    { "type": "paragraph", "text": "High Power + High Interest = Manage Closely. High Power + Low Interest = Keep Satisfied. Low Power + High Interest = Keep Informed. Low Power + Low Interest = Monitor." },
+    { "type": "heading", "level": 4, "text": "3. Name the five qualities of a good set of Architecture Principles." },
+    { "type": "paragraph", "text": "Understandable (clear, unambiguous, violations minimised) · Robust (precise enough to drive consistent decisions in controversial situations) · Complete (covers every situation perceived) · Consistent (allows balance of interpretations; principles don't contradict each other's spirit) · Stable (enduring, but with an amendment process for change)." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Phase A" },
+    { "type": "paragraph", "text": "**Identify** — beyond the org chart: SAP System Administrator (critical knowledge of current system; not in any formal governance role — but could slow data extraction if unco-operative) · External Audit firm IT liaison (portal reads directly from SAP; no contractual obligation to co-operate with GlobalTech's timelines) · Finance team super-users (3 experienced staff who are informal opinion leaders — if negative, the whole Finance team follows)." },
+    { "type": "paragraph", "text": "**Classify** — the Head of Finance problem: Currently LOW commitment (prefers upgrading SAP, not replacing). HIGH power and HIGH interest. Current commitment must move to HIGH. This is the highest-priority engagement in Phase A." },
+    { "type": "paragraph", "text": "**Power/Interest grid**: Manage Closely: CFO, Head of Finance, Head of IT Ops · Keep Satisfied: CTO, Board of Directors · Keep Informed: Finance super-users, end users · Monitor: Telstra account manager (reclassified to Keep Informed as Phase D approaches)." },
+    { "type": "paragraph", "text": "**Tailor deliverables**: CTO/CFO → Architecture Vision, Benefits diagram (value, not technical detail) · IT Ops → Application Interaction Matrix, Platform Decomposition diagram · Finance super-users → Process Flow diagrams showing exactly how their daily work will change · DPO → Data Security diagram, Data Dissemination diagram." },
+    { "type": "paragraph", "text": "**Principle quality assessment**: \"Security and privacy by design — not as an afterthought\" flagged as NOT Robust. \"Not as an afterthought\" is too vague to be enforceable — the Architecture Board is asked to add specific Implications so the Compliance review process can actually measure against it." },
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: THE HEAD OF FINANCE WHO DOESN'T WANT DYNAMICS 365. Every large programme has one — a senior stakeholder who was bypassed in the initial decision. Stakeholder Management gives you the language (\"current commitment: LOW; required commitment: HIGH\") and the discipline to address it systematically — months of one-on-one conversations, genuine input into process design decisions, and early visible wins before any formal workshops." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK: PRINCIPLES THAT LOOK GOOD BUT DON'T DRIVE BEHAVIOUR. \"Security and privacy by design\" is extremely common in real organisations — aspirational but not Robust. If the Architecture Board can't look at a project and say \"yes, this complies\" or \"no, it doesn't,\" the principle isn't Robust enough. An effective principle creates clear Implications that make compliance testable." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. The CFO is identified as having high power and high interest in the programme. Which stakeholder management strategy applies?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Keep Satisfied — update her but don't involve in detailed decisions",
+      "B) Monitor — track her position but engage only if it changes",
+      "C) Keep Informed — communicate clearly but don't involve in decisions",
+      "D) Manage Closely — frequent, detailed engagement on key programme decisions ✓"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: D — High Power + High Interest = Manage Closely. This is the most critical quadrant for EA engagement." },
+    { "type": "heading", "level": 4, "text": "Q2. Which best describes the quality of \"Robust\" in TOGAF Architecture Principles?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Principles should be enduring and accommodate changes through an amendment process",
+      "B) Principles should enable good quality decisions and enforceable policies — sufficiently definitive and precise to support consistent decision-making in complex, potentially controversial situations ✓",
+      "C) Principles should be understandable throughout the organisation",
+      "D) Principles should cover every situation perceived"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — Robust = precise and definitive enough to drive consistent decisions and create enforceable policies. A describes Stable; C describes Understandable; D describes Complete." },
+    { "type": "heading", "level": 4, "text": "Q3. The recommended number of Architecture Principles is:" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Exactly five — one per domain plus one enterprise-level",
+      "B) As many as needed to cover every governance scenario",
+      "C) Between 10 and 20 ✓",
+      "D) No more than five, to ensure maximum simplicity"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — explicitly stated in the Standard. Too many reduces architectural flexibility." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: Phase A stakeholder analysis produces four stakeholders: Maria Chen, CTO — executive sponsor; very busy, rarely available for detailed discussions. Robert Patel, Head of Finance — his team experiences most disruption; currently opposed to the migration; influences 45 Finance staff. Anna Kowalski, SAP System Administrator — holds critical knowledge of current SAP configuration; not in any formal governance role; could significantly slow data extraction if unco-operative. James Liu, External Audit Firm IT Liaison — his firm's portal reads from SAP; the integration will need redesigning; no contractual obligation to co-operate. Classify each stakeholder and determine the appropriate engagement approach." },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 1 pt", "Maria Chen: Manage Closely (sponsor must be deeply involved). Robert Patel: Keep Informed. Anna Kowalski: Monitor. James Liu: Keep Satisfied. Maria Chen as Manage Closely is wrong — the CTO is high power but low direct interest (too busy for detail = Keep Satisfied). Robert Patel as Keep Informed is significantly wrong — high power, high interest, currently opposed = Manage Closely, highest-priority engagement."],
+      ["B — 5 pts", "Maria Chen: Keep Satisfied (high power but \"very busy, rarely available\" signals low direct interest in programme details — classic Keep Satisfied). Robert Patel: Manage Closely (high power, high interest, currently opposed — most important stakeholder engagement in Phase A). Anna Kowalski: Keep Informed (direct interest in data extraction outcomes; low formal power but high disruption potential). James Liu: Monitor initially, reclassify to Keep Informed as integration redesign approaches. Best answer — sophisticated and correct."],
+      ["C — 1 pt", "Maria Chen: Manage Closely. Robert Patel: Keep Satisfied. Anna Kowalski: Monitor. All four stakeholders receive Architecture Vision documents. Maria Chen as Manage Closely is wrong. Also, saying all four need Architecture Vision documents misunderstands Step 4 (Tailor Deliverables) — different stakeholders need different artifacts."],
+      ["D — 1 pt", "Maria Chen: Keep Satisfied. Robert Patel: Monitor (his opposition makes him a risk to manage at distance). Anna Kowalski: Manage Closely. James Liu: Keep Satisfied. Robert Patel as Monitor is a serious error — managing an opposed high-power stakeholder at a distance is exactly the wrong approach. Opposition intensifies the need for engagement, not reduces it."]
+    ]}
+  ]
+}

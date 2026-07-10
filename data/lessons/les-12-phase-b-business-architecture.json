@@ -1,0 +1,91 @@
+{
+  "id": "LES-12",
+  "moduleId": "MOD-L12",
+  "order": 12,
+  "title": "Phase B — Business Architecture",
+  "sourceCitation": "C220-Part1e — Chapter 4",
+  "estimatedMinutes": 30,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Phase B answers: \"What does the business actually need to look like to achieve the Vision?\" You map the Baseline (current state), define the Target (future state), and identify the gap. Phase B is the most foundational phase — TOGAF explicitly states that knowledge of Business Architecture is a prerequisite for all other architecture domains." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points" },
+    { "type": "paragraph", "text": "Two objectives: Develop the Target Business Architecture · Identify candidate Architecture Roadmap components from gap analysis." },
+    { "type": "paragraph", "text": "Nine steps — four clusters: **SETUP** (select models/viewpoints/tools) → **DESCRIBE** (develop Baseline and Target) → **ANALYSE** (gap analysis, candidate roadmap, Architecture Landscape impacts) → **CLOSE** (stakeholder review, finalise, update Architecture Definition Document)." },
+    { "type": "paragraph", "text": "Gap analysis — four classifications:" },
+    { "type": "table", "headers": ["Classification", "Meaning"], "rows": [
+      ["Retained", "Exists in Baseline AND still needed in Target"],
+      ["Eliminated", "Exists in Baseline, NOT needed in Target"],
+      ["Added", "Does NOT exist in Baseline, required in Target"],
+      ["Intentionally Omitted", "Known gap — consciously not addressed in this ADM cycle"]
+    ]},
+    { "type": "paragraph", "text": "Modelling techniques — key selector: **Business Capability Mapping** (what can the business DO?) · **Value Stream Mapping** (how does it CREATE and DELIVER value end to end?) · **Process Modelling/BPMN** (detailed process steps) · **Organisation Mapping** (who does what?) · **Use-Case Analysis** (what does the user need the system to do?)" },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"Map what you have, define what you need, gap what's missing, and feed the roadmap.\"\n\nThe pattern: Baseline → Target → Gap → Candidate Roadmap Components — this repeats in every phase from B through D." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 1 — PHASE B PRODUCES CANDIDATES, NOT THE ARCHITECTURE ROADMAP. Phase B produces candidate roadmap components. Phases C and D add more. Phase E consolidates them all into the actual Architecture Roadmap." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 2 — \"BUSINESS ARCHITECTURE EXISTS\" DOES NOT MEAN SKIP PHASE B. If process maps exist, Phase B's job is to verify, update, and bridge that material into the architecture — not skip it." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP 3 — ARCHITECTURE DEFINITION DOCUMENT IS STILL A DRAFT AT END OF PHASE B. It is not formally baselined until all BDAT domains (Phases B, C, D) have contributed to it." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. What are the two objectives of Phase B?" },
+    { "type": "paragraph", "text": "(1) Develop the Target Business Architecture. (2) Identify candidate Architecture Roadmap components based on gaps between the Baseline and Target Business Architectures." },
+    { "type": "heading", "level": 4, "text": "2. Name the four gap analysis classifications." },
+    { "type": "paragraph", "text": "Retained (exists in both) · Eliminated (exists in Baseline, not needed in Target) · Added (doesn't exist in Baseline, required in Target) · Intentionally Omitted (known gap, consciously deferred)." },
+    { "type": "heading", "level": 4, "text": "3. The CFO asks \"why does our financial close take 8 days?\" Which modelling technique?" },
+    { "type": "paragraph", "text": "Value Stream Mapping — it shows how the business creates and delivers value end to end, revealing where delays and inefficiencies occur in the flow." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · How It Works in Practice · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — GlobalTech Dynamics 365" },
+    { "type": "list", "ordered": false, "items": [
+      "**Baseline**: Five Finance capabilities mapped (GL, AP, AR, Fixed Assets, Financial Reporting). Heat map: AP is Red (manual, error-prone); Financial Reporting is Amber (works but slow). Financial close: 8 working days.",
+      "**Target**: AP fully automated (Green); Financial Reporting to Power BI (Green); close target: 3 days. New capability: Self-Service Employee Management (Added — doesn't exist today).",
+      "**Gap analysis**: GL: Retained. AP: Transformed. Financial Reporting: Replaced. Self-Service HR: Added. SAP contractors: Eliminated.",
+      "**Architecture Landscape check**: Procurement system feeds SAP (will break). External audit portal reads SAP (will break). Both flagged for Phase C.",
+      "**Stakeholder review**: CFO approves. Head of Finance raises concern about 3-day close assumption — needs validation in Phase C."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "5. How It Actually Works in Practice" },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 1: NOBODY HAS A CLEAN BASELINE. Process maps are typically 3 years old, in SharePoint folders nobody maintains. Your first two weeks of Phase B is detective work — interviewing process owners, running workshops, reconciling conflicting documents." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 2: BUSINESS STAKEHOLDERS DO NOT SPEAK TOGAF. Don't say \"I need to develop your Business Capability Map.\" Say \"Walk me through your most important processes and where they break down today.\" The TOGAF structure is your internal framework." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 3: GAP ANALYSIS IS WHERE POLITICS LIVE. When your capability map shows \"AP team: 12 people → 6 people after automation,\" expect pushback. Your Architecture Principles are your shield — you're describing what the Target Architecture requires, not making the headcount decision personally." },
+    { "type": "callout", "variant": "note", "text": "REALITY CHECK 4: PHASE B IS ITERATIVE, NOT LINEAR. Draft Baseline → present → get corrections → update → start Target → realise Baseline was incomplete → loop back. The Architecture Definition Document at the end of Phase B is \"good enough to enable Phase C\" — not complete." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which correctly states the two objectives of Phase B?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Develop the Baseline Business Architecture and obtain approval to proceed",
+      "B) Develop the Target Business Architecture and identify candidate Architecture Roadmap components based on gaps ✓",
+      "C) Define the business case and identify transformation risks",
+      "D) Develop Business Architecture models and conduct stakeholder review for sign-off"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — precise verbatim objectives. \"Identify candidate roadmap components\" is frequently forgotten." },
+    { "type": "heading", "level": 4, "text": "Q2. An EA needs to show the CFO how the organisation creates and delivers value end to end. Which technique?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Organisation Mapping", "B) Business Capability Mapping", "C) Value Stream Mapping ✓", "D) Use-Case Analysis"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: C — Value Stream Mapping shows end-to-end value delivery for a specific stakeholder." },
+    { "type": "heading", "level": 4, "text": "Q3. At the end of Phase B, gap analysis has produced a list of capability changes needed. What happens to these findings?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Formally approved by the Architecture Board as the Architecture Roadmap",
+      "B) Documented as candidate Architecture Roadmap components to be consolidated in Phase E ✓",
+      "C) Handed to the project delivery team to begin implementation planning",
+      "D) Submitted to the Requirements Repository and closed in Phase B"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — candidates only. Consolidated Architecture Roadmap is produced in Phase E." },
+
+    { "type": "heading", "level": 3, "text": "7. Part 2 Scenario Question (Exam-Authentic Format)" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech's Phase B is underway. The EA team has developed a detailed Target Business Architecture for the Finance domain. The Head of IT requests the EA team begin Phase C immediately: \"We know what systems we're replacing. We don't need to finish the Business Architecture for HR before we start the data model — that will just slow us down.\"" },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 3 pts", "Agree. TOGAF supports parallel development — no rule prevents Phase C beginning while Phase B is in progress for HR. Correctly identifies TOGAF flexibility. Loses marks for not acknowledging governance requirement (updating Statement of Architecture Work) or the dependency risk."],
+      ["B — 0 pts", "Decline. Phase B must be fully completed before Phase C begins. Directly contradicts TOGAF."],
+      ["C — 5 pts", "Agree to begin Phase C for Finance in parallel with completing Phase B for HR, provided this is formally reflected in the Statement of Architecture Work and approved under Architecture Governance. Document the dependency risk — Data Architecture for HR cannot be finalised until Phase B for HR is complete. Best answer."],
+      ["D — 1 pt", "Escalate to the Architecture Board. Architecture Board escalation not required for phasing decisions within the scope of an approved Statement of Architecture Work."]
+    ]}
+  ]
+}

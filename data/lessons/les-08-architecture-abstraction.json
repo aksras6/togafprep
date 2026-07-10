@@ -1,0 +1,78 @@
+{
+  "id": "LES-08",
+  "moduleId": "MOD-L08",
+  "order": 8,
+  "title": "Architecture Abstraction — The Four Levels",
+  "sourceCitation": "C220Part0e — Section 3.7",
+  "estimatedMinutes": 25,
+  "blocks": [
+    { "type": "callout", "variant": "info", "text": "SESSION 1 — Concept · Key Points · Memory Technique. Read, absorb, stop." },
+
+    { "type": "heading", "level": 3, "text": "1. Concept Explained Simply" },
+    { "type": "paragraph", "text": "Abstraction is a technique for creating simplified views of a system for the purpose of communication and decision-making, pertinent to its stakeholders. The same system is described at four different levels of detail for different purposes and audiences — like describing a building differently to the city planner, the client, the structural engineer, and the builder." },
+
+    { "type": "heading", "level": 3, "text": "2. Key Points — The Four Abstraction Levels" },
+    { "type": "table", "headers": ["Level", "Question", "Focus"], "rows": [
+      ["Contextual", "Why?", "Environment, goals, drivers, scope, motivation"],
+      ["Conceptual", "What?", "Services and required behaviour — what must be delivered"],
+      ["Logical", "How?", "Components and structure — implementation-independent"],
+      ["Physical", "With what?", "Actual products, platforms, physical components"]
+    ]},
+    { "type": "paragraph", "text": "The levels map directly to building blocks: **Logical = ABB** (no vendor) · **Physical = SBB** (specific product)." },
+    { "type": "callout", "variant": "info", "text": "IMPORTANT WARNING FROM THE STANDARD — The Why/What/How/With-what usage here has NO connection to the Zachman Framework's similar terminology. Do not conflate them." },
+
+    { "type": "heading", "level": 3, "text": "3. Memory Technique" },
+    { "type": "callout", "variant": "tip", "text": "\"Wise Consultants Like Plans\" — Why, What, How, With-what = Contextual, Conceptual, Logical, Physical." },
+    { "type": "callout", "variant": "trap", "text": "EXAM TRAP — CONTEXTUAL VS CONCEPTUAL CONFUSION. \"Conceptual\" does NOT mean vague or high-level in the everyday sense. In TOGAF it specifically means service/behaviour modelling. Contextual = why/environment. Conceptual = what/services. These are tested as distinct levels." },
+
+    { "type": "divider" },
+    { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },
+    { "type": "heading", "level": 4, "text": "1. Name the four abstraction levels in order and the question each answers." },
+    { "type": "paragraph", "text": "Contextual (Why) → Conceptual (What) → Logical (How) → Physical (With what)." },
+    { "type": "heading", "level": 4, "text": "2. How do the abstraction levels map to Building Blocks (ABB/SBB)?" },
+    { "type": "paragraph", "text": "Logical level = ABB (implementation-independent component, no vendor named). Physical level = SBB (specific product or platform chosen)." },
+    { "type": "heading", "level": 4, "text": "3. What does \"Conceptual\" specifically mean in TOGAF — and what does it NOT mean?" },
+    { "type": "paragraph", "text": "In TOGAF, Conceptual means service/behaviour modelling — what the system must do, without specifying how. It does NOT mean vague or high-level in the everyday sense." },
+    { "type": "divider" },
+
+    { "type": "callout", "variant": "info", "text": "SESSION 2 — Real-World Example · Practice Questions · Part 2 Scenario" },
+
+    { "type": "heading", "level": 3, "text": "4. Real-World Example — ServiceNow ITSM at All Four Levels" },
+    { "type": "list", "ordered": false, "items": [
+      "**Contextual (Why)**: \"GlobalTech receives 300+ calls/day to a shared mailbox. SLA breaches are invisible. IT is losing business confidence.\" Goals and drivers — no system named.",
+      "**Conceptual (What)**: \"We need an Incident Management service, a Change Management service, a Self-Service Portal, and an Integration service.\" Services and required behaviour — no product named. Could be ServiceNow, Jira, or custom build.",
+      "**Logical (How)**: \"The ITSM platform will consist of: a ticketing engine, a CMDB, a workflow engine, a notification service, an API gateway, and a reporting layer, connected via REST APIs.\" Component structure — implementation-independent.",
+      "**Physical (With what)**: \"ServiceNow ITSM (SaaS on AWS Sydney), Azure AD for SSO via SAML 2.0, MID Server on-prem, Power BI, Mulesoft.\" Actual products and platforms."
+    ]},
+
+    { "type": "heading", "level": 3, "text": "5. Part 1 Practice Questions" },
+    { "type": "heading", "level": 4, "text": "Q1. Which abstraction level answers WHY an enterprise undertakes architecture work?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Conceptual", "B) Physical", "C) Logical", "D) Contextual ✓"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: D — Contextual answers \"why.\" Don't confuse with Conceptual which answers \"what.\"" },
+    { "type": "heading", "level": 4, "text": "Q2. An architect produces service models showing required behaviour without specifying implementation. Which level?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Contextual", "B) Conceptual ✓", "C) Logical", "D) Physical"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — Conceptual = what services are needed, without implementation detail." },
+    { "type": "heading", "level": 4, "text": "Q3. Which correctly describes the relationship between Logical and Physical levels?" },
+    { "type": "list", "ordered": false, "items": [
+      "A) Physical defines service requirements that Logical then structures",
+      "B) Logical identifies implementation-independent components; Physical allocates actual products to realise them ✓",
+      "C) They are interchangeable",
+      "D) Physical always precedes Logical"
+    ]},
+    { "type": "callout", "variant": "tip", "text": "Answer: B — Logical = ABB (component structure); Physical = SBB (real products)." },
+
+    { "type": "heading", "level": 3, "text": "6. Part 2 Scenario Question" },
+    { "type": "callout", "variant": "note", "text": "SCENARIO: GlobalTech is in Phase C of the ADM for the Dynamics 365 migration. The Data Architecture team is about to begin modelling the data layer. A junior architect on the team says: \"I've started defining the Azure SQL database schema for Dynamics 365 — I figured we'd begin at the Physical level since we already know the target platform is Azure. It'll be faster than going through conceptual and logical levels first.\"" },
+    { "type": "paragraph", "text": "Question: The junior architect's approach raises an architectural concern. Using TOGAF's abstraction levels, explain what the problem is and what the correct approach should be." },
+    { "type": "table", "headers": ["Score", "Answer & Rationale"], "rows": [
+      ["A — 0 pts", "Agree with the junior architect. Since Azure is already confirmed as the platform, starting at the Physical level is an efficient use of time and consistent with the ADM's flexibility. Wrong — ADM flexibility applies to phase sequencing, not to skipping abstraction levels within a phase. Starting at Physical without Conceptual or Logical means the data model is driven by the platform's constraints rather than the business's requirements."],
+      ["B — 1 pt", "Disagree. The junior architect should begin at the Logical level before moving to the Physical level, since the Logical level is implementation-independent. Partially right in identifying the need for a Logical level, but skips the Conceptual level entirely — without first defining the business data entities (what \"Customer,\" \"Invoice,\" \"Employee\" mean to GlobalTech), the Logical data model will be incomplete."],
+      ["C — 5 pts", "Disagree. The correct approach is to work through the abstraction levels in sequence: Contextual (why this data matters — what business goals and drivers it supports), Conceptual (what data entities the business needs — \"Customer,\" \"Invoice,\" \"Absence Record\"), Logical (how those entities are structured and related, implementation-independent), then Physical (how they are implemented in Azure SQL). Starting at the Physical level means the data schema will be shaped by what Azure SQL makes easy, rather than what GlobalTech's business processes require. The result is a data model that is technically functional but architecturally misaligned — and expensive to fix once data is migrated. Best answer."],
+      ["D — 3 pts", "Disagree. The junior architect should first complete the Data Entity model (the conceptual level) to ensure all business data concepts are captured before designing the database schema. Correctly identifies the need to start at the Conceptual level. Loses marks for not mentioning the Logical level between Conceptual and Physical, and for not explaining why the sequence matters architecturally."]
+    ]}
+  ]
+}
