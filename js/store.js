@@ -3,6 +3,8 @@
  * Thin typed wrappers over localStorage. Single namespace prefix.
  */
 
+import * as cloudSync from './cloudSync.js';
+
 const NS = 'togaf_';
 
 // ── DEFAULT STATE SHAPES ──
@@ -70,6 +72,15 @@ export function set(name, value) {
   } catch (e) {
     console.warn('[store] write failed:', e);
   }
+  if (cloudSync.isEnabled()) {
+    cloudSync.schedulePush(getAllStateSnapshot());
+  }
+}
+
+function getAllStateSnapshot() {
+  const snap = {};
+  for (const name of Object.keys(DEFAULTS)) snap[name] = get(name);
+  return snap;
 }
 
 export function update(name, updater) {
@@ -165,8 +176,21 @@ export const examHistory = {
   },
 };
 
-// ── INIT: apply persisted theme on load ──
-export function initStore() {
-  const theme = settings.getTheme();
-  document.documentElement.setAttribute('data-theme', theme);
+// ── INIT: apply persisted theme, pull cloud data if sync enabled ──
+export async function initStore() {
+  document.documentElement.setAttribute('data-theme', settings.getTheme());
+
+  if (cloudSync.isEnabled()) {
+    const cloudSnap = await cloudSync.pullSnapshot();
+    if (cloudSnap) {
+      // Direct localStorage writes here (not set()) to avoid an
+      // immediate, redundant push of data we just pulled.
+      for (const name of Object.keys(DEFAULTS)) {
+        if (cloudSnap[name] !== undefined) {
+          localStorage.setItem(key(name), JSON.stringify(cloudSnap[name]));
+        }
+      }
+      document.documentElement.setAttribute('data-theme', settings.getTheme());
+    }
+  }
 }

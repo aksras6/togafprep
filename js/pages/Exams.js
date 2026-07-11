@@ -113,7 +113,7 @@ window._p2Select = function (letter) {
             <span class="p2-rat-text">${esc(o.action)} <span class="p2-rat-verdict">${esc(o.rationale)}</span>${o.letter === letter ? ' <em>(your choice)</em>' : ''}</span>
           </div>`).join('')}
       </div>
-      <div class="p2-source-tag">Source: ${esc(s.sourceCitation)} · ${esc(s.lessonTitle)}</div>
+      <div class="p2-source-tag">${s.tier === 'source' ? 'Source-based · ' + esc(s.sourceRef) : 'TOGAF-reasoning'} · ${esc(s.lessonTitle)}</div>
     </div>`;
   document.getElementById('p2-rationale').innerHTML = ratHtml;
 

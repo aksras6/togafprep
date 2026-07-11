@@ -13,8 +13,28 @@ import { Exams }      from './pages/Exams.js';
 import { Glossary }   from './pages/Glossary.js';
 import { Settings }   from './pages/Settings.js';
 
-initStore();
-refreshStreakUI();
+async function boot() {
+  await initStore();
+  refreshStreakUI();
+  streak.recordActivity();
+  refreshStreakUI();
+  start();
+}
+
+function executeInjectedScripts(container) {
+  // <script> tags inserted via innerHTML are marked "already started" by the
+  // browser and never execute. Re-creating them as fresh elements is the
+  // standard workaround — this makes addEventListener-based page scripts
+  // (e.g. Settings.js) actually run after being injected this way.
+  container.querySelectorAll('script').forEach((oldScript) => {
+    const newScript = document.createElement('script');
+    for (const attr of oldScript.attributes) {
+      newScript.setAttribute(attr.name, attr.value);
+    }
+    newScript.textContent = oldScript.textContent;
+    oldScript.replaceWith(newScript);
+  });
+}
 
 function mount(pageFn) {
   return async (params) => {
@@ -26,6 +46,7 @@ function mount(pageFn) {
       </div>`;
     try {
       container.innerHTML = await pageFn(params);
+      executeInjectedScripts(container);
     } catch (err) {
       console.error('[page error]', err);
       container.innerHTML = `
@@ -82,11 +103,6 @@ sidebar.addEventListener('click', (e) => {
   }
 });
 
-streak.recordActivity();
-refreshStreakUI();
-
-start();
-
 function refreshStreakUI() {
   const count = streak.get().currentStreak;
   const el  = document.getElementById('streak-count');
@@ -96,3 +112,5 @@ function refreshStreakUI() {
 }
 
 window.__app = { refreshStreakUI };
+
+boot();

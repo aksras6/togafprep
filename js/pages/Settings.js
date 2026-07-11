@@ -1,4 +1,5 @@
 import { settings as settingsStore, resetAll, streak, user } from '../store.js';
+import * as cloudSync from '../cloudSync.js';
 
 export async function Settings() {
   const s    = settingsStore.get();
@@ -77,6 +78,49 @@ export async function Settings() {
         <div class="settings-label">Started</div>
         <span class="text-mono text-secondary">${u.startDate}</span>
       </div>
+    </div>
+
+    <div class="settings-section">
+      <div class="settings-section-title">Cloud Sync</div>
+      ${cloudSync.isEnabled() ? `
+        <div class="settings-row">
+          <div>
+            <div class="settings-label">Sync Code</div>
+            <div class="settings-desc">Enter this same code on your other devices to keep progress in sync</div>
+          </div>
+          <span class="text-mono text-accent" id="sync-code-display" style="font-size:1.1rem;letter-spacing:2px;cursor:pointer;" title="Click to copy">${cloudSync.getSyncCode()}</span>
+        </div>
+        <div class="settings-row">
+          <div class="settings-label">Last Synced</div>
+          <span class="text-mono text-secondary" id="sync-last-synced" style="font-size:.8rem;">${cloudSync.getLastSynced() ? new Date(cloudSync.getLastSynced()).toLocaleString() : 'Not yet synced'}</span>
+        </div>
+        <div class="settings-row">
+          <div>
+            <div class="settings-label">Disable Sync on This Device</div>
+            <div class="settings-desc">Stops syncing here. Your data remains in the cloud under this code.</div>
+          </div>
+          <button class="btn btn-danger btn-sm" id="btn-sync-disable">Disable</button>
+        </div>
+      ` : `
+        <div class="settings-row">
+          <div>
+            <div class="settings-label">Set Up Cross-Device Sync</div>
+            <div class="settings-desc">Generate a new code on your first device, then enter that same code on any other device.</div>
+          </div>
+          <button class="btn btn-primary btn-sm" id="btn-sync-generate">Generate New Code</button>
+        </div>
+        <div class="settings-row">
+          <div style="flex:1;">
+            <div class="settings-label">Already Have a Code?</div>
+            <div class="settings-desc" style="margin-bottom:8px;">Enter the code from your other device</div>
+            <div style="display:flex;gap:8px;">
+              <input type="text" id="sync-code-input" placeholder="e.g. 7K9XQ2R4" maxlength="8"
+                     style="flex:1;padding:8px 10px;border-radius:var(--radius);border:1px solid var(--border);background:var(--bg-elevated);color:var(--text-primary);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:1px;" />
+              <button class="btn btn-secondary btn-sm" id="btn-sync-enter">Connect</button>
+            </div>
+          </div>
+        </div>
+      `}
     </div>
 
     <div class="settings-section">
@@ -171,6 +215,56 @@ export async function Settings() {
           a.href = url; a.download = 'togaf-prep-data.json'; a.click();
           URL.revokeObjectURL(url);
         });
+
+        // Cloud Sync — generate a new code (first device)
+        var genBtn = document.getElementById('btn-sync-generate');
+        if (genBtn) {
+          genBtn.addEventListener('click', async function() {
+            var mod = await import('./js/cloudSync.js');
+            var code = mod.generateCode();
+            mod.setSyncCode(code);
+            alert('Sync code created: ' + code + '\\n\\nEnter this exact code in Settings on your other device(s) to keep them in sync. Write it down — you will need it again.');
+            location.reload();
+          });
+        }
+
+        // Cloud Sync — enter an existing code (second+ device)
+        var enterBtn = document.getElementById('btn-sync-enter');
+        if (enterBtn) {
+          enterBtn.addEventListener('click', async function() {
+            var input = document.getElementById('sync-code-input');
+            var code = input.value.trim();
+            if (!code) { alert('Please enter a sync code first.'); return; }
+            var mod = await import('./js/cloudSync.js');
+            mod.setSyncCode(code);
+            alert('Connecting with code ' + code.toUpperCase() + ' — reloading to sync now.');
+            location.reload();
+          });
+        }
+
+        // Cloud Sync — copy code to clipboard
+        var codeDisplay = document.getElementById('sync-code-display');
+        if (codeDisplay) {
+          codeDisplay.addEventListener('click', function() {
+            navigator.clipboard.writeText(codeDisplay.textContent.trim()).then(function() {
+              var original = codeDisplay.textContent;
+              codeDisplay.textContent = 'Copied!';
+              setTimeout(function() { codeDisplay.textContent = original; }, 1200);
+            });
+          });
+        }
+
+        // Cloud Sync — disable on this device
+        var disableBtn = document.getElementById('btn-sync-disable');
+        if (disableBtn) {
+          disableBtn.addEventListener('click', async function() {
+            if (confirm('Disable sync on this device? Your data stays safe in the cloud under this code — you can reconnect anytime by entering the same code again.')) {
+              var mod = await import('./js/cloudSync.js');
+              mod.disableSync();
+              location.reload();
+            }
+          });
+        }
       })();
     <\/script>`;
 }
