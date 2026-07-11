@@ -1,5 +1,5 @@
 import { getData } from '../data.js';
-import { quizHistory } from '../store.js';
+import { quizHistory, streak } from '../store.js';
 
 /* ─── utilities ─────────────────────────────────────────── */
 function esc(s) {
@@ -221,21 +221,11 @@ function _renderSummary() {
   const color = pct >= 70 ? 'var(--success)' : pct >= 50 ? 'var(--warning)' : 'var(--danger)';
   /* save session */
   try {
-    const hist = JSON.parse(localStorage.getItem('togaf_quiz_history') || '[]');
-    hist.unshift({ sessionId: 'sess-' + Date.now(), timestamp: new Date().toISOString(), config: window._pqCfg, answers: ans, score: pct, duration: dur });
-    localStorage.setItem('togaf_quiz_history', JSON.stringify(hist.slice(0, 100)));
+    quizHistory.add({ sessionId: 'sess-' + Date.now(), timestamp: new Date().toISOString(), config: window._pqCfg, answers: ans, score: pct, duration: dur });
   } catch (_) {}
   /* streak */
   try {
-    const today = new Date().toISOString().slice(0, 10);
-    const yest  = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
-    let sk = JSON.parse(localStorage.getItem('togaf_streak') || '{}');
-    if (sk.lastActivityDate !== today) {
-      const cont = sk.lastActivityDate === yest;
-      const ns = cont ? (sk.currentStreak || 0) + 1 : 1;
-      sk = { currentStreak: ns, longestStreak: Math.max(sk.longestStreak || 0, ns), lastActivityDate: today, totalStudyDays: (sk.totalStudyDays || 0) + 1 };
-      localStorage.setItem('togaf_streak', JSON.stringify(sk));
-    }
+    streak.recordActivity();
   } catch (_) {}
   const items = [...ans.filter(a => !a.correct), ...ans.filter(a => a.correct)].map(a => {
     const q = _state.pool.find(x => x.id === a.questionId);

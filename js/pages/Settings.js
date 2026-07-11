@@ -148,40 +148,39 @@ export async function Settings() {
     <script>
       (function() {
         // Theme toggle
-        document.getElementById('toggle-theme').addEventListener('change', function() {
+        document.getElementById('toggle-theme').addEventListener('change', async function() {
           var theme = this.checked ? 'dark' : 'light';
           document.documentElement.setAttribute('data-theme', theme);
           try {
-            var s = JSON.parse(localStorage.getItem('togaf_settings') || '{}');
-            s.theme = theme;
-            localStorage.setItem('togaf_settings', JSON.stringify(s));
+            var storeMod = await import('./js/store.js');
+            storeMod.settings.update(function(s) { s.theme = theme; return s; });
           } catch(e) {}
         });
 
         // Rationale toggle
-        document.getElementById('toggle-rationale').addEventListener('change', function() {
+        document.getElementById('toggle-rationale').addEventListener('change', async function() {
+          var checked = this.checked;
           try {
-            var s = JSON.parse(localStorage.getItem('togaf_settings') || '{}');
-            s.showRationaleImmediately = this.checked;
-            localStorage.setItem('togaf_settings', JSON.stringify(s));
+            var storeMod = await import('./js/store.js');
+            storeMod.settings.update(function(s) { s.showRationaleImmediately = checked; return s; });
           } catch(e) {}
         });
 
         // Timer toggle
-        document.getElementById('toggle-timer').addEventListener('change', function() {
+        document.getElementById('toggle-timer').addEventListener('change', async function() {
+          var checked = this.checked;
           try {
-            var s = JSON.parse(localStorage.getItem('togaf_settings') || '{}');
-            s.timerEnabled = this.checked;
-            localStorage.setItem('togaf_settings', JSON.stringify(s));
+            var storeMod = await import('./js/store.js');
+            storeMod.settings.update(function(s) { s.timerEnabled = checked; return s; });
           } catch(e) {}
         });
 
         // Exam mode toggle
-        document.getElementById('toggle-exam').addEventListener('change', function() {
+        document.getElementById('toggle-exam').addEventListener('change', async function() {
+          var checked = this.checked;
           try {
-            var s = JSON.parse(localStorage.getItem('togaf_settings') || '{}');
-            s.examMode = this.checked;
-            localStorage.setItem('togaf_settings', JSON.stringify(s));
+            var storeMod = await import('./js/store.js');
+            storeMod.settings.update(function(s) { s.examMode = checked; return s; });
           } catch(e) {}
         });
 

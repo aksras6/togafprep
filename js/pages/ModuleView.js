@@ -209,34 +209,27 @@ async function renderLessonView(mod, slug) {
     (function() {
       var btn = document.getElementById('btn-mark-complete');
       if (!btn) return;
-      btn.addEventListener('click', function() {
+      btn.addEventListener('click', async function() {
         var lessonId  = btn.dataset.lessonId;
         var modId     = btn.dataset.modId;
         var lessonCount = parseInt(btn.dataset.lessonCount, 10) || 1;
 
-        // Update progress in localStorage
         try {
-          var raw  = localStorage.getItem('togaf_progress');
-          var prog = raw ? JSON.parse(raw) : { lessons: {}, modules: {} };
-          if (!prog.lessons) prog.lessons = {};
-          if (!prog.modules) prog.modules = {};
+          // Route through store.js's set()/update() so cloud sync (if enabled)
+          // actually gets triggered — a direct localStorage write here would
+          // silently bypass cloudSync entirely.
+          var storeMod = await import('./js/store.js');
 
-          prog.lessons[lessonId] = {
-            status: 'complete',
-            completedAt: new Date().toISOString(),
-            timeSpentSeconds: prog.lessons[lessonId]?.timeSpentSeconds ?? 0
-          };
+          storeMod.progress.markLessonComplete(lessonId);
 
-          // Recalculate module percent
-          // We can only count lessons we know about from data — use lessonCount
+          var prog = storeMod.progress.get();
           var doneLessons = Object.values(prog.lessons).filter(function(l) { return l.status === 'complete'; }).length;
           var pct = Math.min(100, Math.round((doneLessons / lessonCount) * 100));
           prog.modules[modId] = {
             status: pct >= 100 ? 'complete' : 'in_progress',
             percentComplete: pct
           };
-
-          localStorage.setItem('togaf_progress', JSON.stringify(prog));
+          storeMod.progress.set(prog);
         } catch(e) { console.warn('progress save failed', e); }
 
         // Update button UI
