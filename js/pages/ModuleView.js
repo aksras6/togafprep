@@ -452,7 +452,7 @@ async function renderLessonView(mod, slug) {
           var range = sel.getRangeAt(0);
           var rect = range.getBoundingClientRect();
           floatBtn.style.left = Math.max(8, rect.left) + 'px';
-          floatBtn.style.top  = (rect.top - 38 + window.scrollY) + 'px';
+          floatBtn.style.top  = (rect.top - 38) + 'px';
           floatBtn.style.display = 'block';
           floatBtn.dataset.selectedText = text;
         }, 10);
@@ -461,13 +461,16 @@ async function renderLessonView(mod, slug) {
       floatBtn.addEventListener('click', function() {
         pendingSelectionText = floatBtn.dataset.selectedText;
         editingNoteId = null;
+        console.log('[notes] "+ Note" clicked — captured pendingSelectionText =', JSON.stringify(pendingSelectionText));
         popupQuote.textContent = '"' + pendingSelectionText + '"';
         popupText.value = '';
         popupDelete.style.display = 'none';
 
         var btnRect = floatBtn.getBoundingClientRect();
+        // popup is position:fixed (already viewport-relative) — do NOT add scrollY here,
+        // that was double-counting scroll offset and pushing the popup off-screen.
         popup.style.left = Math.max(8, Math.min(btnRect.left, window.innerWidth - 360)) + 'px';
-        popup.style.top  = (btnRect.top + 44 + window.scrollY) + 'px';
+        popup.style.top  = (btnRect.top + 44) + 'px';
         popup.style.display = 'block';
         floatBtn.style.display = 'none';
         popupText.focus();
@@ -479,11 +482,23 @@ async function renderLessonView(mod, slug) {
         var text = popupText.value.trim();
         if (!text) return;
 
+        console.log('[notes] Save clicked — at this moment: editingNoteId =', JSON.stringify(editingNoteId), ', pendingSelectionText =', JSON.stringify(pendingSelectionText));
+
+        var saved = false;
         if (editingNoteId) {
           storeMod.notes.update(lessonId, editingNoteId, text);
+          saved = true;
         } else if (pendingSelectionText) {
           storeMod.notes.add(lessonId, pendingSelectionText, text);
+          saved = true;
         }
+
+        if (!saved) {
+          console.warn('[notes] Save produced no write — both editingNoteId and pendingSelectionText were falsy at save time. Keeping popup open so nothing is silently lost.');
+          alert('Something went wrong saving this note — please try selecting the text again. (Check the console for [notes] logs.)');
+          return; // do NOT close the popup or wipe the typed note on a failed save
+        }
+
         hidePopup();
         applyHighlights();
         renderNotesList();
@@ -501,6 +516,7 @@ async function renderLessonView(mod, slug) {
       // Clicking outside the popup closes it without saving
       document.addEventListener('mousedown', function(e) {
         if (popup.style.display === 'block' && !popup.contains(e.target) && e.target !== floatBtn) {
+          console.log('[notes] outside-click detected, closing popup. e.target =', e.target, ', was inside popup?', popup.contains(e.target));
           hidePopup();
         }
       });
@@ -559,7 +575,7 @@ async function renderLessonView(mod, slug) {
 
         var rect = mark.getBoundingClientRect();
         popup.style.left = Math.max(8, Math.min(rect.left, window.innerWidth - 360)) + 'px';
-        popup.style.top  = (rect.bottom + 8 + window.scrollY) + 'px';
+        popup.style.top  = (rect.bottom + 8) + 'px';
         popup.style.display = 'block';
         popupText.focus();
       });
