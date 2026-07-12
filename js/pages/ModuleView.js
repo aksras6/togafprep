@@ -433,9 +433,49 @@ async function renderLessonView(mod, slug) {
 
       function hidePopup() {
         popup.style.display = 'none';
+        popup.style.visibility = 'visible';
+        popup.style.transform = '';
         floatBtn.style.display = 'none';
         pendingSelectionText = null;
         editingNoteId = null;
+      }
+
+      // Positions the popup so it always stays fully within the viewport —
+      // measures the popup's ACTUAL rendered size first (rather than assuming
+      // a fixed width/height), and flips above the anchor if there isn't
+      // enough room below. This is what the earlier scrollY-offset bugs were
+      // really symptoms of: the popup could render partly or fully off-screen,
+      // making its own Save button unclickable (clicks there hit whatever was
+      // behind it, which registered as an "outside click" and silently closed
+      // the popup before Save was ever reached).
+      function positionPopupNear(rect) {
+        var margin = 10;
+        popup.style.transform = '';
+        popup.style.visibility = 'hidden';
+        popup.style.display = 'block';
+        popup.style.left = margin + 'px';
+        popup.style.top  = margin + 'px';
+
+        var popupRect = popup.getBoundingClientRect();
+        var popupW = popupRect.width;
+        var popupH = popupRect.height;
+
+        var left = Math.max(margin, Math.min(rect.left, window.innerWidth - popupW - margin));
+
+        var spaceBelow = window.innerHeight - rect.bottom;
+        var spaceAbove = rect.top;
+        var top;
+        if (spaceBelow >= popupH + margin) {
+          top = rect.bottom + margin;
+        } else if (spaceAbove >= popupH + margin) {
+          top = rect.top - popupH - margin; // not enough room below — flip above the anchor
+        } else {
+          top = Math.max(margin, window.innerHeight - popupH - margin); // neither fits fully — clamp as best we can
+        }
+
+        popup.style.left = left + 'px';
+        popup.style.top  = top + 'px';
+        popup.style.visibility = 'visible';
       }
 
       // ── Selection → floating "+ Note" button ──────────────────────
@@ -467,12 +507,8 @@ async function renderLessonView(mod, slug) {
         popupDelete.style.display = 'none';
 
         var btnRect = floatBtn.getBoundingClientRect();
-        // popup is position:fixed (already viewport-relative) — do NOT add scrollY here,
-        // that was double-counting scroll offset and pushing the popup off-screen.
-        popup.style.left = Math.max(8, Math.min(btnRect.left, window.innerWidth - 360)) + 'px';
-        popup.style.top  = (btnRect.top + 44) + 'px';
-        popup.style.display = 'block';
         floatBtn.style.display = 'none';
+        positionPopupNear(btnRect);
         popupText.focus();
       });
 
@@ -574,9 +610,7 @@ async function renderLessonView(mod, slug) {
         popupDelete.style.display = 'inline-block';
 
         var rect = mark.getBoundingClientRect();
-        popup.style.left = Math.max(8, Math.min(rect.left, window.innerWidth - 360)) + 'px';
-        popup.style.top  = (rect.bottom + 8) + 'px';
-        popup.style.display = 'block';
+        positionPopupNear(rect);
         popupText.focus();
       });
 
@@ -615,10 +649,7 @@ async function renderLessonView(mod, slug) {
             popupQuote.textContent = '"' + note.selectedText + '"';
             popupText.value = note.noteText;
             popupDelete.style.display = 'inline-block';
-            popup.style.left = '50%';
-            popup.style.top = '120px';
-            popup.style.transform = 'translateX(-50%)';
-            popup.style.display = 'block';
+            positionPopupNear(btn.getBoundingClientRect());
             popupText.focus();
           });
         });
