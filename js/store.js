@@ -42,6 +42,7 @@ const DEFAULTS = {
     tags: {},
     lastRecalculated: null,
   },
+  notes: {},  // { lessonId: [{ id, selectedText, noteText, createdAt }] }
   streak: {
     currentStreak: 0,
     longestStreak: 0,
@@ -104,6 +105,42 @@ export const user = {
   get: ()  => get('user'),
   set: (v) => set('user', v),
   update: (fn) => update('user', fn),
+};
+
+export const notes = {
+  get:    ()  => get('notes'),
+  set:    (v) => set('notes', v),
+  getForLesson(lessonId) {
+    return get('notes')[lessonId] ?? [];
+  },
+  add(lessonId, selectedText, noteText) {
+    const entry = {
+      id: 'note-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7),
+      selectedText,
+      noteText,
+      createdAt: new Date().toISOString(),
+    };
+    update('notes', (n) => {
+      if (!n[lessonId]) n[lessonId] = [];
+      n[lessonId].push(entry);
+      return n;
+    });
+    return entry;
+  },
+  update(lessonId, noteId, newText) {
+    update('notes', (n) => {
+      const list = n[lessonId] ?? [];
+      const found = list.find((x) => x.id === noteId);
+      if (found) found.noteText = newText;
+      return n;
+    });
+  },
+  remove(lessonId, noteId) {
+    update('notes', (n) => {
+      n[lessonId] = (n[lessonId] ?? []).filter((x) => x.id !== noteId);
+      return n;
+    });
+  },
 };
 
 export const progress = {
