@@ -15,12 +15,10 @@ export async function ModuleView({ moduleId, lessonSlug }) {
 
   if (!mod) return notFound();
 
-  // If a lesson slug is present, render the lesson reader
   if (lessonSlug) {
     return renderLessonView(mod, lessonSlug);
   }
 
-  // Otherwise render the module overview
   return renderModuleOverview(mod);
 }
 
@@ -128,7 +126,6 @@ async function renderLessonView(mod, slug) {
   const lessonStatus = prog.lessons[lesson.id]?.status ?? 'new';
   const isDone  = lessonStatus === 'complete';
 
-  // Find prev/next lesson within module
   const lessons = mod.lessons ?? [];
   const currentIdx = lessons.findIndex(l => l.slug === slug);
   const prevLesson = currentIdx > 0 ? lessons[currentIdx - 1] : null;
@@ -138,7 +135,7 @@ async function renderLessonView(mod, slug) {
 
   return `
     <!-- BREADCRUMB -->
-    <div class="lesson-breadcrumb">
+    <div class="lesson-breadcrumb no-print">
       <a href="#/modules" style="color:var(--text-muted);text-decoration:none;">Modules</a>
       <span style="color:var(--text-muted);margin:0 6px;">›</span>
       <a href="#/modules/${mod.id}" style="color:var(--text-muted);text-decoration:none;">${mod.title}</a>
@@ -148,12 +145,13 @@ async function renderLessonView(mod, slug) {
 
     <!-- LESSON HEADER -->
     <div class="lesson-header">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;">
         <span class="module-num part${mod.part}" style="font-size:.7rem;">Part ${mod.part}</span>
         <span style="font-size:.75rem;font-family:var(--font-mono);color:var(--text-muted);">${lesson.estimatedMinutes} min read</span>
         ${isDone ? `<span class="badge badge-complete">✓ completed</span>` : ''}
+        <button id="btn-export-pdf" class="btn btn-secondary btn-sm no-print" style="margin-left:auto;">📄 Export as PDF</button>
       </div>
-      <h1 class="lesson-title">${lesson.title}</h1>
+      <h1 class="lesson-title" id="lesson-title-print">${lesson.title}</h1>
     </div>
 
     <!-- LESSON CONTENT -->
@@ -162,10 +160,10 @@ async function renderLessonView(mod, slug) {
     </div>
 
     <!-- FLOATING "+ NOTE" BUTTON (hidden until a selection is made) -->
-    <button id="note-float-btn" class="note-float-btn" style="display:none;">+ Note</button>
+    <button id="note-float-btn" class="note-float-btn no-print" style="display:none;">+ Note</button>
 
     <!-- NOTE POPUP (for adding/editing/viewing a note) -->
-    <div id="note-popup" class="note-popup" style="display:none;">
+    <div id="note-popup" class="note-popup no-print" style="display:none;">
       <div class="note-popup-quote" id="note-popup-quote"></div>
       <textarea id="note-popup-textarea" class="note-popup-textarea" placeholder="Write your note…"></textarea>
       <div class="note-popup-actions">
@@ -177,7 +175,7 @@ async function renderLessonView(mod, slug) {
     </div>
 
     <!-- MY NOTES SECTION -->
-    <div class="my-notes-section" id="my-notes-section">
+    <div class="my-notes-section no-print" id="my-notes-section">
       <div class="my-notes-header" id="my-notes-toggle">
         <span>📝 My Notes (<span id="my-notes-count">0</span>)</span>
         <span class="my-notes-chevron" id="my-notes-chevron">▾</span>
@@ -186,7 +184,7 @@ async function renderLessonView(mod, slug) {
     </div>
 
     <!-- END OF LESSON ACTIONS -->
-    <div class="lesson-end-actions" id="lesson-end-actions">
+    <div class="lesson-end-actions no-print" id="lesson-end-actions">
       <div class="lesson-end-card">
         <div class="lesson-end-title">Finished reading?</div>
         <div class="lesson-end-sub">Lock in what you learned — mark complete, then test yourself.</div>
@@ -207,7 +205,7 @@ async function renderLessonView(mod, slug) {
     </div>
 
     <!-- NAV: PREV / NEXT -->
-    <div class="lesson-nav">
+    <div class="lesson-nav no-print">
       <div>
         ${prevLesson ? `
           <a href="#/modules/${mod.id}/lesson/${prevLesson.slug}" class="lesson-nav-btn">
@@ -228,6 +226,24 @@ async function renderLessonView(mod, slug) {
       </div>
     </div>
 
+    <!-- PRINT STYLESHEET — for the Export as PDF button (native browser print-to-PDF) -->
+    <style>
+      @media print {
+        #sidebar, #sidebar-toggle, #sidebar-overlay, .no-print { display: none !important; }
+        body, #page-container, .lesson-body, .lesson-header { background: #ffffff !important; }
+        .lesson-body, .lesson-body *, .lesson-title, .lesson-header * {
+          color: #000000 !important;
+          background: transparent !important;
+        }
+        .lesson-body table, .lesson-body .callout, .lesson-body .list-block, .lesson-body img {
+          page-break-inside: avoid;
+        }
+        .lesson-body a { color: #000000 !important; text-decoration: underline !important; }
+        mark.user-highlight { background: #f0e6c8 !important; border-bottom: 1px solid #999 !important; }
+        #page-container { margin: 0 !important; padding: 0 !important; max-width: 100% !important; }
+      }
+    </style>
+
     <!-- MARK COMPLETE LOGIC -->
     <script>
     (function() {
@@ -239,9 +255,6 @@ async function renderLessonView(mod, slug) {
         var lessonCount = parseInt(btn.dataset.lessonCount, 10) || 1;
 
         try {
-          // Route through store.js's set()/update() so cloud sync (if enabled)
-          // actually gets triggered — a direct localStorage write here would
-          // silently bypass cloudSync entirely.
           var storeMod = await import('./js/store.js');
 
           storeMod.progress.markLessonComplete(lessonId);
@@ -256,18 +269,27 @@ async function renderLessonView(mod, slug) {
           storeMod.progress.set(prog);
         } catch(e) { console.warn('progress save failed', e); }
 
-        // Update button UI
         btn.textContent = '✓ Completed';
         btn.classList.remove('btn-primary');
         btn.classList.add('btn-secondary');
         btn.disabled = true;
 
-        // Flash success
         var card = document.querySelector('.lesson-end-card');
         if (card) {
           card.style.borderColor = 'var(--success)';
           setTimeout(function() { card.style.borderColor = ''; }, 1500);
         }
+      });
+    })();
+    <\/script>
+
+    <!-- EXPORT AS PDF LOGIC (native browser print-to-PDF, works fully offline) -->
+    <script>
+    (function() {
+      var exportBtn = document.getElementById('btn-export-pdf');
+      if (!exportBtn) return;
+      exportBtn.addEventListener('click', function() {
+        window.print();
       });
     })();
     <\/script>
@@ -423,8 +445,8 @@ async function renderLessonView(mod, slug) {
       var popupCancel = document.getElementById('note-popup-cancel');
       var popupDelete = document.getElementById('note-popup-delete');
 
-      var pendingSelectionText = null;   // text captured from a fresh selection, awaiting save
-      var editingNoteId = null;          // set when popup is editing an existing note
+      var pendingSelectionText = null;
+      var editingNoteId = null;
 
       function escHtml(s) {
         return String(s == null ? '' : s)
@@ -440,14 +462,6 @@ async function renderLessonView(mod, slug) {
         editingNoteId = null;
       }
 
-      // Positions the popup so it always stays fully within the viewport —
-      // measures the popup's ACTUAL rendered size first (rather than assuming
-      // a fixed width/height), and flips above the anchor if there isn't
-      // enough room below. This is what the earlier scrollY-offset bugs were
-      // really symptoms of: the popup could render partly or fully off-screen,
-      // making its own Save button unclickable (clicks there hit whatever was
-      // behind it, which registered as an "outside click" and silently closed
-      // the popup before Save was ever reached).
       function positionPopupNear(rect) {
         var margin = 10;
         popup.style.transform = '';
@@ -468,9 +482,9 @@ async function renderLessonView(mod, slug) {
         if (spaceBelow >= popupH + margin) {
           top = rect.bottom + margin;
         } else if (spaceAbove >= popupH + margin) {
-          top = rect.top - popupH - margin; // not enough room below — flip above the anchor
+          top = rect.top - popupH - margin;
         } else {
-          top = Math.max(margin, window.innerHeight - popupH - margin); // neither fits fully — clamp as best we can
+          top = Math.max(margin, window.innerHeight - popupH - margin);
         }
 
         popup.style.left = left + 'px';
@@ -478,14 +492,12 @@ async function renderLessonView(mod, slug) {
         popup.style.visibility = 'visible';
       }
 
-      // ── Selection → floating "+ Note" button ──────────────────────
       lessonBody.addEventListener('mouseup', function() {
         setTimeout(function() {
           var sel = window.getSelection();
           var text = sel ? sel.toString().trim() : '';
           if (!text || text.length < 3) { floatBtn.style.display = 'none'; return; }
 
-          // Confirm selection is actually within the lesson body
           var anchor = sel.anchorNode;
           if (!anchor || !lessonBody.contains(anchor)) { floatBtn.style.display = 'none'; return; }
 
@@ -501,7 +513,6 @@ async function renderLessonView(mod, slug) {
       floatBtn.addEventListener('click', function() {
         pendingSelectionText = floatBtn.dataset.selectedText;
         editingNoteId = null;
-        console.log('[notes] "+ Note" clicked — captured pendingSelectionText =', JSON.stringify(pendingSelectionText));
         popupQuote.textContent = '"' + pendingSelectionText + '"';
         popupText.value = '';
         popupDelete.style.display = 'none';
@@ -518,8 +529,6 @@ async function renderLessonView(mod, slug) {
         var text = popupText.value.trim();
         if (!text) return;
 
-        console.log('[notes] Save clicked — at this moment: editingNoteId =', JSON.stringify(editingNoteId), ', pendingSelectionText =', JSON.stringify(pendingSelectionText));
-
         var saved = false;
         if (editingNoteId) {
           storeMod.notes.update(lessonId, editingNoteId, text);
@@ -530,9 +539,9 @@ async function renderLessonView(mod, slug) {
         }
 
         if (!saved) {
-          console.warn('[notes] Save produced no write — both editingNoteId and pendingSelectionText were falsy at save time. Keeping popup open so nothing is silently lost.');
-          alert('Something went wrong saving this note — please try selecting the text again. (Check the console for [notes] logs.)');
-          return; // do NOT close the popup or wipe the typed note on a failed save
+          console.warn('[notes] Save produced no write — both editingNoteId and pendingSelectionText were falsy at save time.');
+          alert('Something went wrong saving this note — please try selecting the text again.');
+          return;
         }
 
         hidePopup();
@@ -549,17 +558,13 @@ async function renderLessonView(mod, slug) {
         renderNotesList();
       });
 
-      // Clicking outside the popup closes it without saving
       document.addEventListener('mousedown', function(e) {
         if (popup.style.display === 'block' && !popup.contains(e.target) && e.target !== floatBtn) {
-          console.log('[notes] outside-click detected, closing popup. e.target =', e.target, ', was inside popup?', popup.contains(e.target));
           hidePopup();
         }
       });
 
-      // ── Apply highlights for all existing notes on this lesson ────
       function applyHighlights() {
-        // Remove any existing highlight wrappers first (unwrap back to plain text)
         lessonBody.querySelectorAll('mark.user-highlight').forEach(function(mark) {
           var parent = mark.parentNode;
           parent.replaceChild(document.createTextNode(mark.textContent), mark);
@@ -589,12 +594,11 @@ async function renderLessonView(mod, slug) {
           mark.dataset.noteId = noteId;
           try {
             range.surroundContents(mark);
-          } catch (e) { continue; } // selection crossed element boundaries — skip, non-fatal
-          return; // only highlight the first occurrence
+          } catch (e) { continue; }
+          return;
         }
       }
 
-      // Clicking an existing highlight opens the popup in edit mode
       lessonBody.addEventListener('click', function(e) {
         var mark = e.target.closest('mark.user-highlight');
         if (!mark) return;
@@ -614,7 +618,6 @@ async function renderLessonView(mod, slug) {
         popupText.focus();
       });
 
-      // ── "My Notes" summary section ─────────────────────────────────
       function renderNotesList() {
         var lessonNotes = storeMod.notes.getForLesson(lessonId);
         var countEl = document.getElementById('my-notes-count');
@@ -676,7 +679,6 @@ async function renderLessonView(mod, slug) {
         });
       }
 
-      // Initial render
       applyHighlights();
       renderNotesList();
     })();
