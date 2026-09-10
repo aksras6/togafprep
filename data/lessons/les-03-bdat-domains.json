@@ -18,11 +18,13 @@
       ["Application", "What applications support our processes? How do they interact?", "Application portfolio catalogs, integration maps, interaction matrices"],
       ["Technology", "What infrastructure underpins everything above?", "Infrastructure diagrams, technology standards catalogs, platform specs"]
     ]},
-    { "type": "callout", "variant": "info", "text": "IMPORTANT — BDAT are not the only possible domains. Security, Risk, and Digital Architecture are created by combining views across the four core domains. There is no fifth domain." },
+    { "type": "callout", "variant": "info", "text": "IMPORTANT — BDAT are not the only possible domains. Information Architecture, Security/Risk Architectures, and Digital Architecture are created by combining views across the four core domains. There is no fifth domain." },
+    { "type": "callout", "variant": "info", "text": "TECHNOLOGY ARCHITECTURE'S SPECIFIC SCOPE (C220Part0e §3.3, verbatim list). The Standard names exactly what Technology Architecture covers — this includes digital services, Internet of Things (IoT), social media infrastructure, cloud services, IT infrastructure, middleware, networks, communications, processing, and standards. \"Infrastructure\" alone undersells the domain's breadth." },
 
     { "type": "heading", "level": 3, "text": "3. Memory Technique" },
     { "type": "callout", "variant": "tip", "text": "BDAT = \"Big Dogs Always Thrive\"\n\n\"The Boss decided what needed to be done. The Data team figured out what information was needed. The App team built the systems. The Tech team laid the cables.\"" },
     { "type": "callout", "variant": "trap", "text": "EXAM TRAP — PHASE C COVERS BOTH DATA AND APPLICATION. The four domains do NOT each have their own ADM phase. Phase C is called \"Information Systems Architectures\" (plural) and covers both Data Architecture AND Application Architecture." },
+    { "type": "callout", "variant": "info", "text": "PREVIEW — FOUR TYPES OF DATA (full depth in Lesson 13, C220-Part1e §6.5.1). Within the Data domain specifically, a complete Data Architecture addresses four recognised types: data at rest (in stores/databases), data in motion (in transactions/APIs), data in use (at the application border, e.g. the GUI/screen), and open data (publicly available disclosures). A model covering only database schemas and API payloads — data at rest and data in motion — is missing two of the four. Lesson 13 covers this in full." },
 
     { "type": "divider" },
     { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },

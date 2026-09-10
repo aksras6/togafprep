@@ -20,6 +20,7 @@
       ["Organisation-Specific", "Your organisation only", "GlobalTech's ServiceNow with Azure AD"]
     ]},
     { "type": "paragraph", "text": "Two complementary halves: **Architecture Continuum** (models/patterns) and **Solutions Continuum** (products/components) — both running generic to specific in parallel." },
+    { "type": "callout", "variant": "info", "text": "DECISION RULE — THE CONTINUUM MOVES IN BOTH DIRECTIONS (C220-Part1e §6.5). \"Left to right\" is architecture development — adopting and adapting generic architectures and solutions into progressively more specific ones for this engagement. \"Right to left\" is harvesting — specific architectures and solutions that prove credible and effective are generalised and fed back for future re-use elsewhere. The Continuum isn't just a one-way consumption path; mature practices actively harvest proven specific solutions back into more generic, reusable form." },
 
     { "type": "heading", "level": 3, "text": "2b. Key Points — Architecture Repository (8 Components)" },
     { "type": "table", "headers": ["Component", "What it stores"], "rows": [
@@ -69,6 +70,7 @@
 
     { "type": "callout", "variant": "info", "text": "KEY DISTINCTION — Architecture Landscape = what architecture DESCRIBES (the design view). Solutions Landscape = what is actually BUILT or planned (the implementation view)." },
     { "type": "callout", "variant": "trap", "text": "EXAM TRAP — The Enterprise Continuum is a classification METHOD — not a process or database. The Architecture Repository is the actual storage mechanism. Related but distinct." },
+    { "type": "callout", "variant": "info", "text": "DECISION RULE — NOT STRICTLY CHAINED (C220-Part4e §6.6.1). The Enterprise Continuum should NOT be interpreted as representing strictly chained relationships between its four levels. An Organisation-Specific Architecture or Solution can directly incorporate a Foundation-level component (e.g., a generic operating system) without needing to pass through Common Systems or Industry levels first. The levels describe genericity, not a mandatory sequence you must traverse." },
 
     { "type": "divider" },
     { "type": "callout", "variant": "note", "text": "✋ PAUSE POINT — CHECK BEFORE CONTINUING. Answer from memory before reading Session 2." },

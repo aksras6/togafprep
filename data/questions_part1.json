@@ -1054,8 +1054,8 @@
   },
   {
     "id": "Q1-029",
-    "moduleId": "MOD-F-04",
-    "domainTag": "Core Concepts",
+    "moduleId": "MOD-L13",
+    "domainTag": "Phase C Information Systems Architectures",
     "difficulty": 4,
     "stem": "Two architecture views of the same enterprise show different owners for the 'Customer Master Record' data entity. One shows the Sales department as owner; the other shows the Data Governance team. What does this indicate?",
     "options": [
@@ -7407,8 +7407,8 @@
   },
   {
     "id": "Q1-200",
-    "moduleId": "MOD-L20",
-    "domainTag": "Architecture Landscape and Partitioning",
+    "moduleId": "MOD-L21",
+    "domainTag": "Interoperability and Risk Management",
     "difficulty": 3,
     "stem": "An integration architect specifies \"Degree 3\" interoperability between two systems, without further detail. Why might a technical reviewer ask for more precision?",
     "options": [
